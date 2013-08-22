@@ -1,0 +1,174 @@
+\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic}{\section{Open\-T\-K.\-Bezier\-Curve\-Cubic Struct Reference}
+\label{struct_open_t_k_1_1_bezier_curve_cubic}\index{Open\-T\-K.\-Bezier\-Curve\-Cubic@{Open\-T\-K.\-Bezier\-Curve\-Cubic}}
+}
+
+
+Represents a cubic bezier curve with two anchor and two control points.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_bezier_curve_cubic_a12915e85a0b2b00607c763120fb1c7a4}{Bezier\-Curve\-Cubic} (\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} start\-Anchor, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} end\-Anchor, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} first\-Control\-Point, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} second\-Control\-Point)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic}{Bezier\-Curve\-Cubic}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_bezier_curve_cubic_ab57d55cfffe00a55fabd06f9580cda01}{Bezier\-Curve\-Cubic} (float parallel, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} start\-Anchor, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} end\-Anchor, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} first\-Control\-Point, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} second\-Control\-Point)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic}{Bezier\-Curve\-Cubic}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic_a1677b71f53c424532c4e08b3bf21b732}{Calculate\-Point} (float t)
+\begin{DoxyCompactList}\small\item\em Calculates the point with the specified t. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic_a37f531f056bb9960c4bdf68cca8d9dcb}{Calculate\-Length} (float precision)
+\begin{DoxyCompactList}\small\item\em Calculates the length of this bezier curve. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic_aa122836d3a523f8ad11ea8280f27d428}{Start\-Anchor}
+\begin{DoxyCompactList}\small\item\em Start anchor point. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic_a8f31d2c4462dd02e5482de3ad157614d}{End\-Anchor}
+\begin{DoxyCompactList}\small\item\em End anchor point. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic_ad55e000d61da79664cb352672d5ed4b0}{First\-Control\-Point}
+\begin{DoxyCompactList}\small\item\em First control point, controls the direction of the curve start. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic_a1c0ba9edf4e147f97a4a15aff048ed73}{Second\-Control\-Point}
+\begin{DoxyCompactList}\small\item\em Second control point, controls the direction of the curve end. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic_ab908cd04927982b845885e24587f19c8}{Parallel}
+\begin{DoxyCompactList}\small\item\em Gets or sets the parallel value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a cubic bezier curve with two anchor and two control points. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic_a12915e85a0b2b00607c763120fb1c7a4}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Cubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}!Bezier\-Curve\-Cubic@{Bezier\-Curve\-Cubic}}
+\index{Bezier\-Curve\-Cubic@{Bezier\-Curve\-Cubic}!OpenTK::BezierCurveCubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}}
+\subsubsection[{Bezier\-Curve\-Cubic}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Bezier\-Curve\-Cubic.\-Bezier\-Curve\-Cubic (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{start\-Anchor, }
+\item[{{\bf Vector2}}]{end\-Anchor, }
+\item[{{\bf Vector2}}]{first\-Control\-Point, }
+\item[{{\bf Vector2}}]{second\-Control\-Point}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_cubic_a12915e85a0b2b00607c763120fb1c7a4}
+
+
+Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic}{Bezier\-Curve\-Cubic}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\-Anchor} & The start anchor point.\\
+\hline
+{\em end\-Anchor} & The end anchor point.\\
+\hline
+{\em first\-Control\-Point} & The first control point.\\
+\hline
+{\em second\-Control\-Point} & The second control point.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic_ab57d55cfffe00a55fabd06f9580cda01}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Cubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}!Bezier\-Curve\-Cubic@{Bezier\-Curve\-Cubic}}
+\index{Bezier\-Curve\-Cubic@{Bezier\-Curve\-Cubic}!OpenTK::BezierCurveCubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}}
+\subsubsection[{Bezier\-Curve\-Cubic}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Bezier\-Curve\-Cubic.\-Bezier\-Curve\-Cubic (
+\begin{DoxyParamCaption}
+\item[{float}]{parallel, }
+\item[{{\bf Vector2}}]{start\-Anchor, }
+\item[{{\bf Vector2}}]{end\-Anchor, }
+\item[{{\bf Vector2}}]{first\-Control\-Point, }
+\item[{{\bf Vector2}}]{second\-Control\-Point}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_cubic_ab57d55cfffe00a55fabd06f9580cda01}
+
+
+Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve_cubic}{Bezier\-Curve\-Cubic}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parallel} & The parallel value.\\
+\hline
+{\em start\-Anchor} & The start anchor point.\\
+\hline
+{\em end\-Anchor} & The end anchor point.\\
+\hline
+{\em first\-Control\-Point} & The first control point.\\
+\hline
+{\em second\-Control\-Point} & The second control point.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic_a37f531f056bb9960c4bdf68cca8d9dcb}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Cubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}!Calculate\-Length@{Calculate\-Length}}
+\index{Calculate\-Length@{Calculate\-Length}!OpenTK::BezierCurveCubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}}
+\subsubsection[{Calculate\-Length}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Bezier\-Curve\-Cubic.\-Calculate\-Length (
+\begin{DoxyParamCaption}
+\item[{float}]{precision}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_cubic_a37f531f056bb9960c4bdf68cca8d9dcb}
+
+
+Calculates the length of this bezier curve. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em precision} & The precision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Length of the curve.
+\end{DoxyReturn}
+
+
+The precision gets better when the {\itshape precision}  value gets smaller.\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic_a1677b71f53c424532c4e08b3bf21b732}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Cubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}!Calculate\-Point@{Calculate\-Point}}
+\index{Calculate\-Point@{Calculate\-Point}!OpenTK::BezierCurveCubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}}
+\subsubsection[{Calculate\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve\-Cubic.\-Calculate\-Point (
+\begin{DoxyParamCaption}
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_cubic_a1677b71f53c424532c4e08b3bf21b732}
+
+
+Calculates the point with the specified t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The t value, between 0.\-0f and 1.\-0f.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting point.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic_a8f31d2c4462dd02e5482de3ad157614d}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Cubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}!End\-Anchor@{End\-Anchor}}
+\index{End\-Anchor@{End\-Anchor}!OpenTK::BezierCurveCubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}}
+\subsubsection[{End\-Anchor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve\-Cubic.\-End\-Anchor}}\label{struct_open_t_k_1_1_bezier_curve_cubic_a8f31d2c4462dd02e5482de3ad157614d}
+
+
+End anchor point. 
+
+\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic_ad55e000d61da79664cb352672d5ed4b0}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Cubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}!First\-Control\-Point@{First\-Control\-Point}}
+\index{First\-Control\-Point@{First\-Control\-Point}!OpenTK::BezierCurveCubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}}
+\subsubsection[{First\-Control\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve\-Cubic.\-First\-Control\-Point}}\label{struct_open_t_k_1_1_bezier_curve_cubic_ad55e000d61da79664cb352672d5ed4b0}
+
+
+First control point, controls the direction of the curve start. 
+
+\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic_ab908cd04927982b845885e24587f19c8}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Cubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}!Parallel@{Parallel}}
+\index{Parallel@{Parallel}!OpenTK::BezierCurveCubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}}
+\subsubsection[{Parallel}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Bezier\-Curve\-Cubic.\-Parallel}}\label{struct_open_t_k_1_1_bezier_curve_cubic_ab908cd04927982b845885e24587f19c8}
+
+
+Gets or sets the parallel value. 
+
+This value defines whether the curve should be calculated as a parallel curve to the original bezier curve. A value of 0.\-0f represents the original curve, 5.\-0f i.\-e. stands for a curve that has always a distance of 5.\-f to the orignal curve at any point.\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic_a1c0ba9edf4e147f97a4a15aff048ed73}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Cubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}!Second\-Control\-Point@{Second\-Control\-Point}}
+\index{Second\-Control\-Point@{Second\-Control\-Point}!OpenTK::BezierCurveCubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}}
+\subsubsection[{Second\-Control\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve\-Cubic.\-Second\-Control\-Point}}\label{struct_open_t_k_1_1_bezier_curve_cubic_a1c0ba9edf4e147f97a4a15aff048ed73}
+
+
+Second control point, controls the direction of the curve end. 
+
+\hypertarget{struct_open_t_k_1_1_bezier_curve_cubic_aa122836d3a523f8ad11ea8280f27d428}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Cubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}!Start\-Anchor@{Start\-Anchor}}
+\index{Start\-Anchor@{Start\-Anchor}!OpenTK::BezierCurveCubic@{Open\-T\-K\-::\-Bezier\-Curve\-Cubic}}
+\subsubsection[{Start\-Anchor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve\-Cubic.\-Start\-Anchor}}\label{struct_open_t_k_1_1_bezier_curve_cubic_aa122836d3a523f8ad11ea8280f27d428}
+
+
+Start anchor point. 
+

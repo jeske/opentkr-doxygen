@@ -1,0 +1,541 @@
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context}{\section{Open\-T\-K.\-Audio.\-Audio\-Context Class Reference}
+\label{class_open_t_k_1_1_audio_1_1_audio_context}\index{Open\-T\-K.\-Audio.\-Audio\-Context@{Open\-T\-K.\-Audio.\-Audio\-Context}}
+}
+
+
+Provides methods to instantiate, use and destroy an audio context for playback. Static methods are provided to list available devices known by the driver.  
+
+
+
+
+Inherits I\-Disposable.
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8}{Max\-Auxiliary\-Sends} \-: int \{ \\*
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8a9a2bd99ca94c5dfe66d8b3ae993e896c}{Max\-Auxiliary\-Sends.\-Use\-Driver\-Default} = 0, 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8a06c2cea18679d64399783748fa367bdd}{Max\-Auxiliary\-Sends.\-One} = 1, 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8aaada29daee1d64ed0fe907043855cb7e}{Max\-Auxiliary\-Sends.\-Two} = 2, 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8aca8a2087e5557e317599344687a57391}{Max\-Auxiliary\-Sends.\-Three} = 3, 
+\\*
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8a981b8fcee42e1e726a67a2b9a98ea6e9}{Max\-Auxiliary\-Sends.\-Four} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em May be passed at context construction time to indicate the number of desired auxiliary effect slot sends per source.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a67dcf4c26382b5230c495787881ea24d}{Audio\-Context} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, using the default audio device.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a838a89f8a5f73958787069e708a3c757}{Audio\-Context} (string device)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} instance. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a2d59b0b019a649f59bd2d2fe42a2aa1b}{Audio\-Context} (string device, int freq)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, using the specified audio device and device parameters.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a032dd59f508aaf6e21cd020004ad78b3}{Audio\-Context} (string device, int freq, int refresh)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, using the specified audio device and device parameters.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_ace1d50b8e25d332413dd103924146102}{Audio\-Context} (string device, int freq, int refresh, bool sync)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, using the specified audio device and device parameters.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a13cbaaffb75b41a5c65d202d3659d02d}{Audio\-Context} (string device, int freq, int refresh, bool sync, bool enable\-Efx)
+\begin{DoxyCompactList}\small\item\em Creates the audio context using the specified device and device parameters.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a0729f1d2e9eea3c8971bd1bbd547f435}{Audio\-Context} (string device, int freq, int refresh, bool sync, bool enable\-Efx, \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8}{Max\-Auxiliary\-Sends} efx\-Max\-Aux\-Sends)
+\begin{DoxyCompactList}\small\item\em Creates the audio context using the specified device and device parameters.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_ae7e4f34f10cfc77d771a7ca70df914ad}{Check\-Errors} ()
+\begin{DoxyCompactList}\small\item\em Checks for A\-L\-C error conditions. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a2ffa1096806ba6c55a9c15bca24e794a}{Make\-Current} ()
+\begin{DoxyCompactList}\small\item\em Makes the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} current in the calling thread.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_af396e510f2039ee580a0d21a20304956}{Process} ()
+\begin{DoxyCompactList}\small\item\em Processes queued audio events. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a62417c8652bc1f7c22bf9a1cf83ed115}{Suspend} ()
+\begin{DoxyCompactList}\small\item\em Suspends processing of audio events. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a3bbbeadd712d216f9092f87713e0c5e6}{Supports\-Extension} (string extension)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} extension is supported. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a9c824f8429d084efb010a662f032fd93}{Dispose} ()
+\begin{DoxyCompactList}\small\item\em Disposes of the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, cleaning up all resources consumed by it. \end{DoxyCompactList}\item 
+override int \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a708a651ebbac9237b0db78a2ced332a6}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Calculates the hash code for this instance. \end{DoxyCompactList}\item 
+override bool \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a0b960cc160220ccef7d58f1c0c6727ae}{Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Compares this instance with another. \end{DoxyCompactList}\item 
+override string \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a06065d4fd3854dd2a446c6237cf77616}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String that desrcibes this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a2684b7587fe0457a0203cacbdace7bc5}{Alc\-Error} \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a83bd17325ea568fb38e754eebd63b62f}{Current\-Error}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the A\-L\-C error code for this instance. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a24dfcaa456f5c1d8ce6ac0d7a1858d18}{Is\-Processing}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} is currently processing audio events. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_aa1f3721b71e83da2c94d637eab4fbbcf}{Is\-Synchronized}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} is synchronized. \end{DoxyCompactList}\item 
+string \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_ac7f2d8425e9afff0f9cca419792b1746}{Current\-Device}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-String with the name of the device used in this context. \end{DoxyCompactList}\item 
+static \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a9dcc253ceab5ef47b59029df44f45423}{Current\-Context}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Open\-T\-K.\-Audio.\-Audio\-Context} which is current in the application. \end{DoxyCompactList}\item 
+static I\-List$<$ string $>$ \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_ad4ab739b8e7f4568350d081b0b66bb96}{Available\-Devices}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a list of strings containing all known playback devices. \end{DoxyCompactList}\item 
+static string \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a9d503b9eaaca60548894f74113f897a1}{Default\-Device}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the name of the device that will be used as playback default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides methods to instantiate, use and destroy an audio context for playback. Static methods are provided to list available devices known by the driver. 
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Max\-Auxiliary\-Sends@{Max\-Auxiliary\-Sends}}
+\index{Max\-Auxiliary\-Sends@{Max\-Auxiliary\-Sends}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Max\-Auxiliary\-Sends}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Open\-T\-K.\-Audio.\-Audio\-Context.\-Max\-Auxiliary\-Sends} \-: int}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8}
+
+
+May be passed at context construction time to indicate the number of desired auxiliary effect slot sends per source.
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Use\-Driver\-Default@{Use\-Driver\-Default}!Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Use\-Driver\-Default@{Use\-Driver\-Default}}\item[{\em 
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8a9a2bd99ca94c5dfe66d8b3ae993e896c}{Use\-Driver\-Default}\label{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8a9a2bd99ca94c5dfe66d8b3ae993e896c}
+}]Will chose a reliably working parameter.\index{One@{One}!Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!One@{One}}\item[{\em 
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8a06c2cea18679d64399783748fa367bdd}{One}\label{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8a06c2cea18679d64399783748fa367bdd}
+}]One send per source.\index{Two@{Two}!Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Two@{Two}}\item[{\em 
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8aaada29daee1d64ed0fe907043855cb7e}{Two}\label{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8aaada29daee1d64ed0fe907043855cb7e}
+}]Two sends per source.\index{Three@{Three}!Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Three@{Three}}\item[{\em 
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8aca8a2087e5557e317599344687a57391}{Three}\label{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8aca8a2087e5557e317599344687a57391}
+}]Three sends per source.\index{Four@{Four}!Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Four@{Four}}\item[{\em 
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8a981b8fcee42e1e726a67a2b9a98ea6e9}{Four}\label{class_open_t_k_1_1_audio_1_1_audio_context_a97c79a9ffc0910a0b644856cf82afdd8a981b8fcee42e1e726a67a2b9a98ea6e9}
+}]Four sends per source.\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a67dcf4c26382b5230c495787881ea24d}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Audio\-Context@{Audio\-Context}}
+\index{Audio\-Context@{Audio\-Context}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Audio\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Audio\-Context.\-Audio\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a67dcf4c26382b5230c495787881ea24d}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, using the default audio device.
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a838a89f8a5f73958787069e708a3c757}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Audio\-Context@{Audio\-Context}}
+\index{Audio\-Context@{Audio\-Context}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Audio\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Audio\-Context.\-Audio\-Context (
+\begin{DoxyParamCaption}
+\item[{string}]{device}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a838a89f8a5f73958787069e708a3c757}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The device name that will host this instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a2d59b0b019a649f59bd2d2fe42a2aa1b}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Audio\-Context@{Audio\-Context}}
+\index{Audio\-Context@{Audio\-Context}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Audio\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Audio\-Context.\-Audio\-Context (
+\begin{DoxyParamCaption}
+\item[{string}]{device, }
+\item[{int}]{freq}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a2d59b0b019a649f59bd2d2fe42a2aa1b}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, using the specified audio device and device parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The name of the audio device to use.\\
+\hline
+{\em freq} & Frequency for mixing output buffer, in units of Hz. Pass 0 for driver default.\\
+\hline
+\end{DoxyParams}
+
+
+Use \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_ad4ab739b8e7f4568350d081b0b66bb96}{Audio\-Context.\-Available\-Devices} to obtain a list of all available audio devices. devices. \hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a032dd59f508aaf6e21cd020004ad78b3}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Audio\-Context@{Audio\-Context}}
+\index{Audio\-Context@{Audio\-Context}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Audio\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Audio\-Context.\-Audio\-Context (
+\begin{DoxyParamCaption}
+\item[{string}]{device, }
+\item[{int}]{freq, }
+\item[{int}]{refresh}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a032dd59f508aaf6e21cd020004ad78b3}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, using the specified audio device and device parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The name of the audio device to use.\\
+\hline
+{\em freq} & Frequency for mixing output buffer, in units of Hz. Pass 0 for driver default.\\
+\hline
+{\em refresh} & Refresh intervals, in units of Hz. Pass 0 for driver default.\\
+\hline
+\end{DoxyParams}
+
+
+Use \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_ad4ab739b8e7f4568350d081b0b66bb96}{Audio\-Context.\-Available\-Devices} to obtain a list of all available audio devices. devices. \hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_ace1d50b8e25d332413dd103924146102}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Audio\-Context@{Audio\-Context}}
+\index{Audio\-Context@{Audio\-Context}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Audio\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Audio\-Context.\-Audio\-Context (
+\begin{DoxyParamCaption}
+\item[{string}]{device, }
+\item[{int}]{freq, }
+\item[{int}]{refresh, }
+\item[{bool}]{sync}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_ace1d50b8e25d332413dd103924146102}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, using the specified audio device and device parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The name of the audio device to use.\\
+\hline
+{\em freq} & Frequency for mixing output buffer, in units of Hz. Pass 0 for driver default.\\
+\hline
+{\em refresh} & Refresh intervals, in units of Hz. Pass 0 for driver default.\\
+\hline
+{\em sync} & Flag, indicating a synchronous context.\\
+\hline
+\end{DoxyParams}
+
+
+Use \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_ad4ab739b8e7f4568350d081b0b66bb96}{Audio\-Context.\-Available\-Devices} to obtain a list of all available audio devices. devices. \hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a13cbaaffb75b41a5c65d202d3659d02d}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Audio\-Context@{Audio\-Context}}
+\index{Audio\-Context@{Audio\-Context}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Audio\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Audio\-Context.\-Audio\-Context (
+\begin{DoxyParamCaption}
+\item[{string}]{device, }
+\item[{int}]{freq, }
+\item[{int}]{refresh, }
+\item[{bool}]{sync, }
+\item[{bool}]{enable\-Efx}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a13cbaaffb75b41a5c65d202d3659d02d}
+
+
+Creates the audio context using the specified device and device parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The device descriptor obtained through \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_ad4ab739b8e7f4568350d081b0b66bb96}{Audio\-Context.\-Available\-Devices}.\\
+\hline
+{\em freq} & Frequency for mixing output buffer, in units of Hz. Pass 0 for driver default.\\
+\hline
+{\em refresh} & Refresh intervals, in units of Hz. Pass 0 for driver default.\\
+\hline
+{\em sync} & Flag, indicating a synchronous context.\\
+\hline
+{\em enable\-Efx} & Indicates whether the E\-F\-X extension should be initialized, if present.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\-Null\-Exception} & Occurs when the device string is invalid.\\
+\hline
+{\em Argument\-Out\-Of\-Range\-Exception} & Occurs when a specified parameter is invalid.\\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_device_exception}{Audio\-Device\-Exception}} & Occurs when the specified device is not available, or is in use by another program. \\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_exception}{Audio\-Context\-Exception}} & Occurs when an audio context could not be created with the specified parameters. \\
+\hline
+{\em Not\-Supported\-Exception} & Occurs when an \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} already exists.\\
+\hline
+\end{DoxyExceptions}
+
+
+For maximum compatibility, you are strongly recommended to use the default constructor.
+
+Multiple Audio\-Contexts are not supported at this point.
+
+The number of auxilliary E\-F\-X sends depends on the audio hardware and drivers. Most Realtek devices, as well as the Creative S\-B Live!, support 1 auxilliary send. Creative's Audigy and X-\/\-Fi series support 4 sends. Values higher than supported will be clamped by the driver. \hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a0729f1d2e9eea3c8971bd1bbd547f435}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Audio\-Context@{Audio\-Context}}
+\index{Audio\-Context@{Audio\-Context}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Audio\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Audio\-Context.\-Audio\-Context (
+\begin{DoxyParamCaption}
+\item[{string}]{device, }
+\item[{int}]{freq, }
+\item[{int}]{refresh, }
+\item[{bool}]{sync, }
+\item[{bool}]{enable\-Efx, }
+\item[{{\bf Max\-Auxiliary\-Sends}}]{efx\-Max\-Aux\-Sends}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a0729f1d2e9eea3c8971bd1bbd547f435}
+
+
+Creates the audio context using the specified device and device parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The device descriptor obtained through \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_ad4ab739b8e7f4568350d081b0b66bb96}{Audio\-Context.\-Available\-Devices}.\\
+\hline
+{\em freq} & Frequency for mixing output buffer, in units of Hz. Pass 0 for driver default.\\
+\hline
+{\em refresh} & Refresh intervals, in units of Hz. Pass 0 for driver default.\\
+\hline
+{\em sync} & Flag, indicating a synchronous context.\\
+\hline
+{\em enable\-Efx} & Indicates whether the E\-F\-X extension should be initialized, if present.\\
+\hline
+{\em efx\-Max\-Aux\-Sends} & Requires E\-F\-X enabled. The number of desired Auxiliary Sends per source.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\-Null\-Exception} & Occurs when the device string is invalid.\\
+\hline
+{\em Argument\-Out\-Of\-Range\-Exception} & Occurs when a specified parameter is invalid.\\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_device_exception}{Audio\-Device\-Exception}} & Occurs when the specified device is not available, or is in use by another program. \\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_exception}{Audio\-Context\-Exception}} & Occurs when an audio context could not be created with the specified parameters. \\
+\hline
+{\em Not\-Supported\-Exception} & Occurs when an \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} already exists.\\
+\hline
+\end{DoxyExceptions}
+
+
+For maximum compatibility, you are strongly recommended to use the default constructor.
+
+Multiple Audio\-Contexts are not supported at this point.
+
+The number of auxilliary E\-F\-X sends depends on the audio hardware and drivers. Most Realtek devices, as well as the Creative S\-B Live!, support 1 auxilliary send. Creative's Audigy and X-\/\-Fi series support 4 sends. Values higher than supported will be clamped by the driver. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_ae7e4f34f10cfc77d771a7ca70df914ad}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Check\-Errors@{Check\-Errors}}
+\index{Check\-Errors@{Check\-Errors}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Check\-Errors}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Context.\-Check\-Errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_ae7e4f34f10cfc77d771a7ca70df914ad}
+
+
+Checks for A\-L\-C error conditions. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Out\-Of\-Memory\-Exception} & Raised when an out of memory error is detected.\\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_value_exception}{Audio\-Value\-Exception}} & Raised when an invalid value is detected.\\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_device_exception}{Audio\-Device\-Exception}} & Raised when an invalid device is detected.\\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_exception}{Audio\-Context\-Exception}} & Raised when an invalid context is detected.\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a9c824f8429d084efb010a662f032fd93}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Context.\-Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a9c824f8429d084efb010a662f032fd93}
+
+
+Disposes of the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}, cleaning up all resources consumed by it. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a0b960cc160220ccef7d58f1c0c6727ae}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Audio.\-Audio\-Context.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a0b960cc160220ccef7d58f1c0c6727ae}
+
+
+Compares this instance with another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The instance to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if obj refers to this instance; false otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a708a651ebbac9237b0db78a2ced332a6}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Audio.\-Audio\-Context.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a708a651ebbac9237b0db78a2ced332a6}
+
+
+Calculates the hash code for this instance. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a2ffa1096806ba6c55a9c15bca24e794a}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Make\-Current@{Make\-Current}}
+\index{Make\-Current@{Make\-Current}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Make\-Current}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Context.\-Make\-Current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a2ffa1096806ba6c55a9c15bca24e794a}
+
+
+Makes the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} current in the calling thread.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Object\-Disposed\-Exception} & Occurs if this function is called after the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} has been disposed. \\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_exception}{Audio\-Context\-Exception}} & Occurs when the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} could not be made current. \\
+\hline
+\end{DoxyExceptions}
+
+
+Only one \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} can be current in the application at any time, {\bfseries regardless of the number of threads}. \hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_af396e510f2039ee580a0d21a20304956}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Process@{Process}}
+\index{Process@{Process}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Context.\-Process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_af396e510f2039ee580a0d21a20304956}
+
+
+Processes queued audio events. 
+
+If \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_aa1f3721b71e83da2c94d637eab4fbbcf}{Audio\-Context.\-Is\-Synchronized} is true, this function will resume the internal audio processing thread. If \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_aa1f3721b71e83da2c94d637eab4fbbcf}{Audio\-Context.\-Is\-Synchronized} is false, you will need to call this function multiple times per second to process audio events. 
+
+In some implementations this function may have no effect. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Object\-Disposed\-Exception} & Occurs when this function is called after the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} had been disposed.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a62417c8652bc1f7c22bf9a1cf83ed115}{Suspend}, \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a24dfcaa456f5c1d8ce6ac0d7a1858d18}{Is\-Processing}, \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_aa1f3721b71e83da2c94d637eab4fbbcf}{Is\-Synchronized}
+
+
+\end{DoxySeeAlso}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a3bbbeadd712d216f9092f87713e0c5e6}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Supports\-Extension@{Supports\-Extension}}
+\index{Supports\-Extension@{Supports\-Extension}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Supports\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Audio\-Context.\-Supports\-Extension (
+\begin{DoxyParamCaption}
+\item[{string}]{extension}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a3bbbeadd712d216f9092f87713e0c5e6}
+
+
+Checks whether the specified \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} extension is supported. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em extension} & The name of the extension to check (e.\-g. \char`\"{}\-A\-L\-C\-\_\-\-E\-X\-T\-\_\-\-E\-F\-X\char`\"{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the extension is supported; false otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a62417c8652bc1f7c22bf9a1cf83ed115}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Suspend@{Suspend}}
+\index{Suspend@{Suspend}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Suspend}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Context.\-Suspend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a62417c8652bc1f7c22bf9a1cf83ed115}
+
+
+Suspends processing of audio events. 
+
+To avoid audio artifacts when calling this function, set audio gain to zero before suspending an \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context}. 
+
+In some implementations, it can be faster to suspend processing before changing \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} state. 
+
+In some implementations this function may have no effect. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Object\-Disposed\-Exception} & Occurs when this function is called after the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} had been disposed.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_af396e510f2039ee580a0d21a20304956}{Process}, \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a24dfcaa456f5c1d8ce6ac0d7a1858d18}{Is\-Processing}, \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_aa1f3721b71e83da2c94d637eab4fbbcf}{Is\-Synchronized}
+
+
+\end{DoxySeeAlso}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a06065d4fd3854dd2a446c6237cf77616}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Audio.\-Audio\-Context.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a06065d4fd3854dd2a446c6237cf77616}
+
+
+Returns a System.\-String that desrcibes this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-String that desrcibes this instance.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_ad4ab739b8e7f4568350d081b0b66bb96}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Available\-Devices@{Available\-Devices}}
+\index{Available\-Devices@{Available\-Devices}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Available\-Devices}]{\setlength{\rightskip}{0pt plus 5cm}I\-List$<$string$>$ Open\-T\-K.\-Audio.\-Audio\-Context.\-Available\-Devices\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_context_ad4ab739b8e7f4568350d081b0b66bb96}
+
+
+Returns a list of strings containing all known playback devices. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a9dcc253ceab5ef47b59029df44f45423}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Current\-Context@{Current\-Context}}
+\index{Current\-Context@{Current\-Context}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Current\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Audio\-Context} Open\-T\-K.\-Audio.\-Audio\-Context.\-Current\-Context\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a9dcc253ceab5ef47b59029df44f45423}
+
+
+Gets the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Open\-T\-K.\-Audio.\-Audio\-Context} which is current in the application. 
+
+Only one \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} can be current in the application at any time, {\bfseries regardless of the number of threads}. \hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_ac7f2d8425e9afff0f9cca419792b1746}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Current\-Device@{Current\-Device}}
+\index{Current\-Device@{Current\-Device}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Current\-Device}]{\setlength{\rightskip}{0pt plus 5cm}string Open\-T\-K.\-Audio.\-Audio\-Context.\-Current\-Device\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_context_ac7f2d8425e9afff0f9cca419792b1746}
+
+
+Gets a System.\-String with the name of the device used in this context. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a83bd17325ea568fb38e754eebd63b62f}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Current\-Error@{Current\-Error}}
+\index{Current\-Error@{Current\-Error}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Current\-Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alc\-Error} Open\-T\-K.\-Audio.\-Audio\-Context.\-Current\-Error\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a83bd17325ea568fb38e754eebd63b62f}
+
+
+Returns the A\-L\-C error code for this instance. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a9d503b9eaaca60548894f74113f897a1}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Default\-Device@{Default\-Device}}
+\index{Default\-Device@{Default\-Device}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Default\-Device}]{\setlength{\rightskip}{0pt plus 5cm}string Open\-T\-K.\-Audio.\-Audio\-Context.\-Default\-Device\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a9d503b9eaaca60548894f74113f897a1}
+
+
+Returns the name of the device that will be used as playback default. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_a24dfcaa456f5c1d8ce6ac0d7a1858d18}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Is\-Processing@{Is\-Processing}}
+\index{Is\-Processing@{Is\-Processing}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Is\-Processing}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Audio\-Context.\-Is\-Processing\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_audio_1_1_audio_context_a24dfcaa456f5c1d8ce6ac0d7a1858d18}
+
+
+Gets a System.\-Boolean indicating whether the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} is currently processing audio events. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_af396e510f2039ee580a0d21a20304956}{Process}, \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_a62417c8652bc1f7c22bf9a1cf83ed115}{Suspend}
+
+
+\end{DoxySeeAlso}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_context_aa1f3721b71e83da2c94d637eab4fbbcf}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Context@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}!Is\-Synchronized@{Is\-Synchronized}}
+\index{Is\-Synchronized@{Is\-Synchronized}!OpenTK::Audio::AudioContext@{Open\-T\-K\-::\-Audio\-::\-Audio\-Context}}
+\subsubsection[{Is\-Synchronized}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Audio\-Context.\-Is\-Synchronized\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_audio_1_1_audio_context_aa1f3721b71e83da2c94d637eab4fbbcf}
+
+
+Gets a System.\-Boolean indicating whether the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context}{Audio\-Context} is synchronized. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_af396e510f2039ee580a0d21a20304956}{Process}
+
+
+\end{DoxySeeAlso}

@@ -1,0 +1,112 @@
+\hypertarget{class_open_t_k_1_1_input_1_1_joystick_device}{\section{Open\-T\-K.\-Input.\-Joystick\-Device Class Reference}
+\label{class_open_t_k_1_1_input_1_1_joystick_device}\index{Open\-T\-K.\-Input.\-Joystick\-Device@{Open\-T\-K.\-Input.\-Joystick\-Device}}
+}
+
+
+Represents a joystick device and provides methods to query its status.  
+
+
+Inheritance diagram for Open\-T\-K.\-Input.\-Joystick\-Device\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_open_t_k_1_1_input_1_1_joystick_device}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Event\-Handler\\*
+$<$ \hyperlink{class_open_t_k_1_1_input_1_1_joystick_move_event_args}{Joystick\-Move\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device_ad9dcc4f6506c543d16e326c7ee08da39}{Move}
+\begin{DoxyCompactList}\small\item\em Occurs when an axis of this \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device}{Joystick\-Device} instance is moved. \end{DoxyCompactList}\item 
+Event\-Handler\\*
+$<$ \hyperlink{class_open_t_k_1_1_input_1_1_joystick_button_event_args}{Joystick\-Button\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device_a677045ca3c8a2ac98095680bb5746ede}{Button\-Down}
+\begin{DoxyCompactList}\small\item\em Occurs when a button of this \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device}{Joystick\-Device} instance is pressed. \end{DoxyCompactList}\item 
+Event\-Handler\\*
+$<$ \hyperlink{class_open_t_k_1_1_input_1_1_joystick_button_event_args}{Joystick\-Button\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device_a837891423d49811a2384c95f7576fbc2}{Button\-Up}
+\begin{DoxyCompactList}\small\item\em Occurs when a button of this \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device}{Joystick\-Device} is released. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_t_k_1_1_input_1_1_joystick_axis_collection}{Joystick\-Axis\-Collection} \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device_a21ae34496707cad92024def6a122e878}{Axis}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a \hyperlink{class_open_t_k_1_1_input_1_1_joystick_axis_collection}{Joystick\-Axis\-Collection} containing the state of each axis on this instance. Values are normalized in the \mbox{[}-\/1, 1\mbox{]} range. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_input_1_1_joystick_button_collection}{Joystick\-Button\-Collection} \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device_afab123d1de6fce4b1ce79a8480d6bc4b}{Button}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets \hyperlink{class_open_t_k_1_1_input_1_1_joystick_button_collection}{Joystick\-Button\-Collection} containing the state of each button on this instance. True indicates that the button is pressed. \end{DoxyCompactList}\item 
+string \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device_ae04707b3c97c5aeedde335995c1821f6}{Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-String containing a unique description for this instance. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_input_a1d147c6256b0adaa5288eec90ed93270}{Input\-Device\-Type} \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device_af1eddeb505296cf4a598090113b1f5df}{Device\-Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating the Input\-Device\-Type of this Input\-Device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a joystick device and provides methods to query its status. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_joystick_device_a677045ca3c8a2ac98095680bb5746ede}{\index{Open\-T\-K\-::\-Input\-::\-Joystick\-Device@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}!Button\-Down@{Button\-Down}}
+\index{Button\-Down@{Button\-Down}!OpenTK::Input::JoystickDevice@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}}
+\subsubsection[{Button\-Down}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Joystick\-Button\-Event\-Args}$>$ Open\-T\-K.\-Input.\-Joystick\-Device.\-Button\-Down}}\label{class_open_t_k_1_1_input_1_1_joystick_device_a677045ca3c8a2ac98095680bb5746ede}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+            delegate(\textcolor{keywordtype}{object} sender, JoystickButtonEventArgs e) \{ \}
+\end{DoxyCode}
+
+
+Occurs when a button of this \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device}{Joystick\-Device} instance is pressed. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_joystick_device_a837891423d49811a2384c95f7576fbc2}{\index{Open\-T\-K\-::\-Input\-::\-Joystick\-Device@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}!Button\-Up@{Button\-Up}}
+\index{Button\-Up@{Button\-Up}!OpenTK::Input::JoystickDevice@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}}
+\subsubsection[{Button\-Up}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Joystick\-Button\-Event\-Args}$>$ Open\-T\-K.\-Input.\-Joystick\-Device.\-Button\-Up}}\label{class_open_t_k_1_1_input_1_1_joystick_device_a837891423d49811a2384c95f7576fbc2}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+            delegate(\textcolor{keywordtype}{object} sender, JoystickButtonEventArgs e) \{ \}
+\end{DoxyCode}
+
+
+Occurs when a button of this \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device}{Joystick\-Device} is released. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_joystick_device_ad9dcc4f6506c543d16e326c7ee08da39}{\index{Open\-T\-K\-::\-Input\-::\-Joystick\-Device@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}!Move@{Move}}
+\index{Move@{Move}!OpenTK::Input::JoystickDevice@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}}
+\subsubsection[{Move}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Joystick\-Move\-Event\-Args}$>$ Open\-T\-K.\-Input.\-Joystick\-Device.\-Move}}\label{class_open_t_k_1_1_input_1_1_joystick_device_ad9dcc4f6506c543d16e326c7ee08da39}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+            delegate(\textcolor{keywordtype}{object} sender, JoystickMoveEventArgs e) \{ \}
+\end{DoxyCode}
+
+
+Occurs when an axis of this \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device}{Joystick\-Device} instance is moved. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_joystick_device_a21ae34496707cad92024def6a122e878}{\index{Open\-T\-K\-::\-Input\-::\-Joystick\-Device@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}!Axis@{Axis}}
+\index{Axis@{Axis}!OpenTK::Input::JoystickDevice@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}}
+\subsubsection[{Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joystick\-Axis\-Collection} Open\-T\-K.\-Input.\-Joystick\-Device.\-Axis\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_joystick_device_a21ae34496707cad92024def6a122e878}
+
+
+Gets a \hyperlink{class_open_t_k_1_1_input_1_1_joystick_axis_collection}{Joystick\-Axis\-Collection} containing the state of each axis on this instance. Values are normalized in the \mbox{[}-\/1, 1\mbox{]} range. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_joystick_device_afab123d1de6fce4b1ce79a8480d6bc4b}{\index{Open\-T\-K\-::\-Input\-::\-Joystick\-Device@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}!Button@{Button}}
+\index{Button@{Button}!OpenTK::Input::JoystickDevice@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}}
+\subsubsection[{Button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joystick\-Button\-Collection} Open\-T\-K.\-Input.\-Joystick\-Device.\-Button\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_joystick_device_afab123d1de6fce4b1ce79a8480d6bc4b}
+
+
+Gets \hyperlink{class_open_t_k_1_1_input_1_1_joystick_button_collection}{Joystick\-Button\-Collection} containing the state of each button on this instance. True indicates that the button is pressed. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_joystick_device_ae04707b3c97c5aeedde335995c1821f6}{\index{Open\-T\-K\-::\-Input\-::\-Joystick\-Device@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}!Description@{Description}}
+\index{Description@{Description}!OpenTK::Input::JoystickDevice@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}}
+\subsubsection[{Description}]{\setlength{\rightskip}{0pt plus 5cm}string Open\-T\-K.\-Input.\-Joystick\-Device.\-Description\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_joystick_device_ae04707b3c97c5aeedde335995c1821f6}
+
+
+Gets a System.\-String containing a unique description for this instance. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_joystick_device_af1eddeb505296cf4a598090113b1f5df}{\index{Open\-T\-K\-::\-Input\-::\-Joystick\-Device@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}!Device\-Type@{Device\-Type}}
+\index{Device\-Type@{Device\-Type}!OpenTK::Input::JoystickDevice@{Open\-T\-K\-::\-Input\-::\-Joystick\-Device}}
+\subsubsection[{Device\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input\-Device\-Type} Open\-T\-K.\-Input.\-Joystick\-Device.\-Device\-Type\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_joystick_device_af1eddeb505296cf4a598090113b1f5df}
+
+
+Gets a value indicating the Input\-Device\-Type of this Input\-Device. 
+

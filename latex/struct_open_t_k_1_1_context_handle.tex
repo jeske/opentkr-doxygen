@@ -1,0 +1,268 @@
+\hypertarget{struct_open_t_k_1_1_context_handle}{\section{Open\-T\-K.\-Context\-Handle Struct Reference}
+\label{struct_open_t_k_1_1_context_handle}\index{Open\-T\-K.\-Context\-Handle@{Open\-T\-K.\-Context\-Handle}}
+}
+
+
+Represents a handle to an Open\-G\-L or Open\-A\-L context.  
+
+
+
+
+Inherits I\-Comparable$<$ Context\-Handle $>$, and I\-Equatable$<$ Context\-Handle $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_context_handle_a9f28d608f392e028316170761d838579}{Context\-Handle} (Int\-Ptr h)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance with the specified handle. \end{DoxyCompactList}\item 
+override string \hyperlink{struct_open_t_k_1_1_context_handle_a20cadbf82331ed88599b86cd2129aec2}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Converts this instance to its equivalent string representation. \end{DoxyCompactList}\item 
+override bool \hyperlink{struct_open_t_k_1_1_context_handle_ad0c7d1aaa648f1c891b0928f00ca9b9c}{Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Compares this instance to the specified object. \end{DoxyCompactList}\item 
+override int \hyperlink{struct_open_t_k_1_1_context_handle_abd04bc3828451409789d7296d9e2122e}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Returns the hash code for this instance. \end{DoxyCompactList}\item 
+int \hyperlink{struct_open_t_k_1_1_context_handle_a179bf07f12867e4ab9c8dc52becea6b3}{Compare\-To} (\hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} other)
+\begin{DoxyCompactList}\small\item\em Compares the numerical value of this instance to the specified \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} and returns a value indicating their relative order. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_context_handle_aa086559f49576c119614c41698d05ca8}{Equals} (\hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} other)
+\begin{DoxyCompactList}\small\item\em Compares this instance to the specified \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} for equality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_open_t_k_1_1_context_handle_afe60b9eefe44b6b1bc9dca2e8241f7d7}{operator Int\-Ptr} (\hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} c)
+\begin{DoxyCompactList}\small\item\em Converts the specified \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} to the equivalent Int\-Ptr. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_context_handle_ae5a727d7e97ecf5a9b19aaae0c393ecc}{operator Context\-Handle} (Int\-Ptr p)
+\begin{DoxyCompactList}\small\item\em Converts the specified Int\-Ptr to the equivalent \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle}. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_context_handle_a18ab9a9c5a6b948f94704b38c8e48727}{operator==} (\hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} left, \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} right)
+\begin{DoxyCompactList}\small\item\em Compares two Context\-Handles for equality. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_context_handle_acfb221980963d886bb4a8b65397b1c9c}{operator!=} (\hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} left, \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} right)
+\begin{DoxyCompactList}\small\item\em Compares two Context\-Handles for inequality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_open_t_k_1_1_context_handle_adf7043e0734eaf9f7d3cad9420ec7d29}{Int\-Ptr {\bfseries handle}}\label{struct_open_t_k_1_1_context_handle_adf7043e0734eaf9f7d3cad9420ec7d29}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} \hyperlink{struct_open_t_k_1_1_context_handle_a2f93cb64d85fc3c2669d4726488a8c00}{Zero} = new \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle}(Int\-Ptr.\-Zero)
+\begin{DoxyCompactList}\small\item\em A read-\/only field that represents a handle that has been initialized to zero.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Int\-Ptr \hyperlink{struct_open_t_k_1_1_context_handle_aa0cad213b26464434068e1006d587ae7}{Handle}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Int\-Ptr that represents the handle of this \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a handle to an Open\-G\-L or Open\-A\-L context. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_context_handle_a9f28d608f392e028316170761d838579}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!Context\-Handle@{Context\-Handle}}
+\index{Context\-Handle@{Context\-Handle}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{Context\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Context\-Handle.\-Context\-Handle (
+\begin{DoxyParamCaption}
+\item[{Int\-Ptr}]{h}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_context_handle_a9f28d608f392e028316170761d838579}
+
+
+Constructs a new instance with the specified handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & A System.\-Int\-Ptr containing the value for this instance.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_context_handle_a179bf07f12867e4ab9c8dc52becea6b3}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!Compare\-To@{Compare\-To}}
+\index{Compare\-To@{Compare\-To}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{Compare\-To}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Context\-Handle.\-Compare\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\-Handle}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_context_handle_a179bf07f12867e4ab9c8dc52becea6b3}
+
+
+Compares the numerical value of this instance to the specified \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} and returns a value indicating their relative order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Less than 0, if this instance is less than other; 0 if both are equal; Greater than 0 if other is greater than this instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_context_handle_ad0c7d1aaa648f1c891b0928f00ca9b9c}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Context\-Handle.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_context_handle_ad0c7d1aaa648f1c891b0928f00ca9b9c}
+
+
+Compares this instance to the specified object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The System.\-Object to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if obj is a \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} that is equal to this instance; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_context_handle_aa086559f49576c119614c41698d05ca8}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Context\-Handle.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\-Handle}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_context_handle_aa086559f49576c119614c41698d05ca8}
+
+
+Compares this instance to the specified \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this instance is equal to other; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_context_handle_abd04bc3828451409789d7296d9e2122e}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Context\-Handle.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_context_handle_abd04bc3828451409789d7296d9e2122e}
+
+
+Returns the hash code for this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-Int32 with the hash code of this instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_context_handle_ae5a727d7e97ecf5a9b19aaae0c393ecc}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!operator Context\-Handle@{operator Context\-Handle}}
+\index{operator Context\-Handle@{operator Context\-Handle}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{operator Context\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}static Open\-T\-K.\-Context\-Handle.\-operator {\bf Context\-Handle} (
+\begin{DoxyParamCaption}
+\item[{Int\-Ptr}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}}\label{struct_open_t_k_1_1_context_handle_ae5a727d7e97ecf5a9b19aaae0c393ecc}
+
+
+Converts the specified Int\-Ptr to the equivalent \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The System.\-Int\-Ptr to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} equivalent to the specified Int\-Ptr.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_context_handle_afe60b9eefe44b6b1bc9dca2e8241f7d7}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!operator Int\-Ptr@{operator Int\-Ptr}}
+\index{operator Int\-Ptr@{operator Int\-Ptr}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{operator Int\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}static Open\-T\-K.\-Context\-Handle.\-operator Int\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\-Handle}}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}}\label{struct_open_t_k_1_1_context_handle_afe60b9eefe44b6b1bc9dca2e8241f7d7}
+
+
+Converts the specified \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} to the equivalent Int\-Ptr. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A System.\-Int\-Ptr equivalent to the specified \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle}.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_context_handle_acfb221980963d886bb4a8b65397b1c9c}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Context\-Handle.\-operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\-Handle}}]{left, }
+\item[{{\bf Context\-Handle}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_context_handle_acfb221980963d886bb4a8b65397b1c9c}
+
+
+Compares two Context\-Handles for inequality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} to compare.\\
+\hline
+{\em right} & The \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if left is not equal to right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_context_handle_a18ab9a9c5a6b948f94704b38c8e48727}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!operator==@{operator==}}
+\index{operator==@{operator==}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Context\-Handle.\-operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\-Handle}}]{left, }
+\item[{{\bf Context\-Handle}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_context_handle_a18ab9a9c5a6b948f94704b38c8e48727}
+
+
+Compares two Context\-Handles for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} to compare.\\
+\hline
+{\em right} & The \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if left is equal to right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_context_handle_a20cadbf82331ed88599b86cd2129aec2}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Context\-Handle.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_context_handle_a20cadbf82331ed88599b86cd2129aec2}
+
+
+Converts this instance to its equivalent string representation. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-String that contains the string representation of this instance.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_context_handle_a2f93cb64d85fc3c2669d4726488a8c00}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!Zero@{Zero}}
+\index{Zero@{Zero}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{Zero}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Context\-Handle} Open\-T\-K.\-Context\-Handle.\-Zero = new {\bf Context\-Handle}(Int\-Ptr.\-Zero)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_context_handle_a2f93cb64d85fc3c2669d4726488a8c00}
+
+
+A read-\/only field that represents a handle that has been initialized to zero.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_context_handle_aa0cad213b26464434068e1006d587ae7}{\index{Open\-T\-K\-::\-Context\-Handle@{Open\-T\-K\-::\-Context\-Handle}!Handle@{Handle}}
+\index{Handle@{Handle}!OpenTK::ContextHandle@{Open\-T\-K\-::\-Context\-Handle}}
+\subsubsection[{Handle}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Ptr Open\-T\-K.\-Context\-Handle.\-Handle\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_context_handle_aa0cad213b26464434068e1006d587ae7}
+
+
+Gets a System.\-Int\-Ptr that represents the handle of this \hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle}. 
+

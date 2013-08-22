@@ -1,0 +1,191 @@
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension}{\section{Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension Class Reference}
+\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension}\index{Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension@{Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension}}
+}
+
+
+The X-\/\-Ram Extension is provided on the top-\/end Sound Blaster X-\/\-Fi solutions (Sound Blaster X-\/\-Fi Fatal1ty, Sound Blaster X-\/\-Fi Elite Pro, or later). These products feature 64\-M\-B of X-\/\-Ram that can only be used for audio purposes, which can be controlled by this Extension. /summary$>$  
+
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3f}{X\-Ram\-Storage} \-: byte \{ \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3fa086247a9b57fde6eefee2a0c4752242d}{X\-Ram\-Storage.\-Automatic} = 0, 
+\hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3fa3c02a379965ab0dfcd77b1c484450433}{X\-Ram\-Storage.\-Hardware} = 1, 
+\hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3fab003b8bdb02a559a786c7b2c0eacde0b}{X\-Ram\-Storage.\-Accessible} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em This enum is used to abstract the need of using A\-L.\-Get\-Enum\-Value() with the Extension. The values do N\-O\-T correspond to A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-$\ast$ tokens!\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a5bbdd3c65e96f12dbc05c41258505438}{X\-Ram\-Extension} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension}{X\-Ram\-Extension} instance. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_afb7db35bd51bbeaa515ca62246a69feb}{Set\-Buffer\-Mode} (int n, ref uint buffer, \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3f}{X\-Ram\-Storage} mode)
+\begin{DoxyCompactList}\small\item\em This function is used to set the storage Mode of an array of \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffers.\end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a07697ac8d3690dc730dc6d104e3487cb}{Set\-Buffer\-Mode} (int n, ref int buffer, \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3f}{X\-Ram\-Storage} mode)
+\begin{DoxyCompactList}\small\item\em This function is used to set the storage Mode of an array of \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffers.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3f}{X\-Ram\-Storage} \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a01383d8e9a8622ce4db20d70cb345847}{Get\-Buffer\-Mode} (ref uint buffer)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve the storage Mode of a single \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffer.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3f}{X\-Ram\-Storage} \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_abfcce8897017cfeda943cfb1bcbc27e4}{Get\-Buffer\-Mode} (ref int buffer)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve the storage Mode of a single \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffer.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_ad20a93cf7373b02fa38cfe469706113c}{Is\-Initialized}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns True if the X-\/\-Ram Extension has been found and could be initialized.\end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a6e8366ca9f296a39641b08b65844b212}{Get\-Ram\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Query total amount of X-\/\-R\-A\-M in bytes.\end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_afc089bafb3c8e9e3228d5d9fcb65796e}{Get\-Ram\-Free}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Query free X-\/\-R\-A\-M available in bytes.\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The X-\/\-Ram Extension is provided on the top-\/end Sound Blaster X-\/\-Fi solutions (Sound Blaster X-\/\-Fi Fatal1ty, Sound Blaster X-\/\-Fi Elite Pro, or later). These products feature 64\-M\-B of X-\/\-Ram that can only be used for audio purposes, which can be controlled by this Extension. /summary$>$ 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3f}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!X\-Ram\-Storage@{X\-Ram\-Storage}}
+\index{X\-Ram\-Storage@{X\-Ram\-Storage}!OpenTK::Audio::OpenAL::XRamExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}
+\subsubsection[{X\-Ram\-Storage}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension.\-X\-Ram\-Storage} \-: byte}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3f}
+
+
+This enum is used to abstract the need of using A\-L.\-Get\-Enum\-Value() with the Extension. The values do N\-O\-T correspond to A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-$\ast$ tokens!
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Automatic@{Automatic}!Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Automatic@{Automatic}}\item[{\em 
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3fa086247a9b57fde6eefee2a0c4752242d}{Automatic}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3fa086247a9b57fde6eefee2a0c4752242d}
+}]Put an Open A\-L Buffer into X-\/\-R\-A\-M if memory is available, otherwise use host R\-A\-M. This is the default mode.\index{Hardware@{Hardware}!Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Hardware@{Hardware}}\item[{\em 
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3fa3c02a379965ab0dfcd77b1c484450433}{Hardware}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3fa3c02a379965ab0dfcd77b1c484450433}
+}]Force an Open A\-L Buffer into X-\/\-R\-A\-M, good for non-\/streaming buffers.\index{Accessible@{Accessible}!Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Accessible@{Accessible}}\item[{\em 
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3fab003b8bdb02a559a786c7b2c0eacde0b}{Accessible}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a3803535777a75c990d24d61ac1acfd3fab003b8bdb02a559a786c7b2c0eacde0b}
+}]Force an Open A\-L Buffer into 'accessible' (currently host) R\-A\-M, good for streaming buffers.\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a5bbdd3c65e96f12dbc05c41258505438}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!X\-Ram\-Extension@{X\-Ram\-Extension}}
+\index{X\-Ram\-Extension@{X\-Ram\-Extension}!OpenTK::Audio::OpenAL::XRamExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}
+\subsubsection[{X\-Ram\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension.\-X\-Ram\-Extension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a5bbdd3c65e96f12dbc05c41258505438}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension}{X\-Ram\-Extension} instance. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a01383d8e9a8622ce4db20d70cb345847}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Get\-Buffer\-Mode@{Get\-Buffer\-Mode}}
+\index{Get\-Buffer\-Mode@{Get\-Buffer\-Mode}!OpenTK::Audio::OpenAL::XRamExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}
+\subsubsection[{Get\-Buffer\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-Ram\-Storage} Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension.\-Get\-Buffer\-Mode (
+\begin{DoxyParamCaption}
+\item[{ref uint}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a01383d8e9a8622ce4db20d70cb345847}
+
+
+This function is used to retrieve the storage Mode of a single \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The handle of an \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current Mode of the Buffer.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_abfcce8897017cfeda943cfb1bcbc27e4}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Get\-Buffer\-Mode@{Get\-Buffer\-Mode}}
+\index{Get\-Buffer\-Mode@{Get\-Buffer\-Mode}!OpenTK::Audio::OpenAL::XRamExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}
+\subsubsection[{Get\-Buffer\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-Ram\-Storage} Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension.\-Get\-Buffer\-Mode (
+\begin{DoxyParamCaption}
+\item[{ref int}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_abfcce8897017cfeda943cfb1bcbc27e4}
+
+
+This function is used to retrieve the storage Mode of a single \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The handle of an \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current Mode of the Buffer.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_afb7db35bd51bbeaa515ca62246a69feb}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Set\-Buffer\-Mode@{Set\-Buffer\-Mode}}
+\index{Set\-Buffer\-Mode@{Set\-Buffer\-Mode}!OpenTK::Audio::OpenAL::XRamExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}
+\subsubsection[{Set\-Buffer\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension.\-Set\-Buffer\-Mode (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{ref uint}]{buffer, }
+\item[{{\bf X\-Ram\-Storage}}]{mode}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_afb7db35bd51bbeaa515ca62246a69feb}
+
+
+This function is used to set the storage Mode of an array of \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The number of \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffers pointed to by buffer.\\
+\hline
+{\em buffer} & An array of \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffer handles.\\
+\hline
+{\em mode} & The storage mode that should be used for all the given buffers. Should be the value of one of the following enum names\-: X\-Ram\-Storage.\-Automatic, X\-Ram\-Storage.\-Hardware, X\-Ram\-Storage.\-Accessible\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if all the Buffers were successfully set to the requested storage mode, False otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a07697ac8d3690dc730dc6d104e3487cb}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Set\-Buffer\-Mode@{Set\-Buffer\-Mode}}
+\index{Set\-Buffer\-Mode@{Set\-Buffer\-Mode}!OpenTK::Audio::OpenAL::XRamExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}
+\subsubsection[{Set\-Buffer\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension.\-Set\-Buffer\-Mode (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{ref int}]{buffer, }
+\item[{{\bf X\-Ram\-Storage}}]{mode}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a07697ac8d3690dc730dc6d104e3487cb}
+
+
+This function is used to set the storage Mode of an array of \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The number of \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffers pointed to by buffer.\\
+\hline
+{\em buffer} & An array of \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} Buffer handles.\\
+\hline
+{\em mode} & The storage mode that should be used for all the given buffers. Should be the value of one of the following enum names\-: X\-Ram\-Storage.\-Automatic, X\-Ram\-Storage.\-Hardware, X\-Ram\-Storage.\-Accessible\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if all the Buffers were successfully set to the requested storage mode, False otherwise.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_afc089bafb3c8e9e3228d5d9fcb65796e}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Get\-Ram\-Free@{Get\-Ram\-Free}}
+\index{Get\-Ram\-Free@{Get\-Ram\-Free}!OpenTK::Audio::OpenAL::XRamExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}
+\subsubsection[{Get\-Ram\-Free}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension.\-Get\-Ram\-Free\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_afc089bafb3c8e9e3228d5d9fcb65796e}
+
+
+Query free X-\/\-R\-A\-M available in bytes.
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a6e8366ca9f296a39641b08b65844b212}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Get\-Ram\-Size@{Get\-Ram\-Size}}
+\index{Get\-Ram\-Size@{Get\-Ram\-Size}!OpenTK::Audio::OpenAL::XRamExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}
+\subsubsection[{Get\-Ram\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension.\-Get\-Ram\-Size\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_a6e8366ca9f296a39641b08b65844b212}
+
+
+Query total amount of X-\/\-R\-A\-M in bytes.
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_ad20a93cf7373b02fa38cfe469706113c}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}!Is\-Initialized@{Is\-Initialized}}
+\index{Is\-Initialized@{Is\-Initialized}!OpenTK::Audio::OpenAL::XRamExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-X\-Ram\-Extension}}
+\subsubsection[{Is\-Initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-X\-Ram\-Extension.\-Is\-Initialized\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_x_ram_extension_ad20a93cf7373b02fa38cfe469706113c}
+
+
+Returns True if the X-\/\-Ram Extension has been found and could be initialized.
+

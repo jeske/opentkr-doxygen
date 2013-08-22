@@ -1,0 +1,1588 @@
+\hypertarget{struct_open_t_k_1_1_vector2d}{\section{Open\-T\-K.\-Vector2d Struct Reference}
+\label{struct_open_t_k_1_1_vector2d}\index{Open\-T\-K.\-Vector2d@{Open\-T\-K.\-Vector2d}}
+}
+
+
+Represents a 2\-D vector using two double-\/precision floating-\/point numbers. 
+
+
+
+
+Inherits I\-Equatable$<$ Vector2d $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_vector2d_ab1ef1fd6f8d3e24c94a62654caf19a5a}{Vector2d} (double value)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d_a39cb7f684191381835c2898762af5d1a}{Vector2d} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Constructs left vector with the given coordinates.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_a3aca3a33031d205732b63ba6ccc498a0}{Add} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right)
+\begin{DoxyCompactList}\small\item\em Add the Vector passed as parameter to this instance.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_a4d7ef861a76264c3af6451f9aad2018c}{Add} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right)
+\begin{DoxyCompactList}\small\item\em Add the Vector passed as parameter to this instance.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_a10928e4fdfbbeb9d1456d40bcae37ff3}{Sub} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right)
+\begin{DoxyCompactList}\small\item\em Subtract the Vector passed as parameter from this instance.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_a7434fda20de398c11d44733632c0c11b}{Sub} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right)
+\begin{DoxyCompactList}\small\item\em Subtract the Vector passed as parameter from this instance.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_a5db83f4f71416f7071600ef409489468}{Mult} (double f)
+\begin{DoxyCompactList}\small\item\em Multiply this instance by a scalar.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_aae73c1afcfa593971e3acb1376c40648}{Div} (double f)
+\begin{DoxyCompactList}\small\item\em Divide this instance by a scalar.\end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a23c635b67beef38dd3e6c7d2885ddad7}{Normalized} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of the \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scaled to unit length. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_af272c675141ac462c157924b5b602e10}{Normalize} ()
+\begin{DoxyCompactList}\small\item\em Scales the \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} to unit length. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_a89cbe06302962e5fc919265186bc1ce1}{Scale} (double sx, double sy)
+\begin{DoxyCompactList}\small\item\em Scales the current \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} by the given amounts. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_ae10ad5814fb0786b66e5a5b17243d416}{Scale} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scale)
+\begin{DoxyCompactList}\small\item\em Scales this instance by the given parameter.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector2d_a4937f85e59ff76c22f60d3845c8ac3ed}{Scale} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scale)
+\begin{DoxyCompactList}\small\item\em Scales this instance by the given parameter.\end{DoxyCompactList}\item 
+override string \hyperlink{struct_open_t_k_1_1_vector2d_a5fa1b9e286d7d4b5b6122061367f7791}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String that represents the current instance. \end{DoxyCompactList}\item 
+override int \hyperlink{struct_open_t_k_1_1_vector2d_a85fe46ce348dd886d2a6faaff4ad654b}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Returns the hashcode for this instance. \end{DoxyCompactList}\item 
+override bool \hyperlink{struct_open_t_k_1_1_vector2d_a859fe5d578bb0195d359d7be28924083}{Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Indicates whether this instance and a specified object are equal. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_vector2d_a83e718d36d904b34676d6f7f1397c945}{Equals} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} other)
+\begin{DoxyCompactList}\small\item\em Indicates whether the current vector is equal to another vector.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a590ffd8418e1905e0e00e1a9d418a1d9}{Sub} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b)
+\begin{DoxyCompactList}\small\item\em Subtract one Vector from another \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a729dd99b0789cf7113f87f678f63db9c}{Sub} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Subtract one Vector from another \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a2ef7c5f5c0272bf301c939d9265bdf70}{Mult} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, double d)
+\begin{DoxyCompactList}\small\item\em Multiply a vector and a scalar \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a3131fe454013b47008690fba20d44874}{Mult} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, double d, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Multiply a vector and a scalar \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a0d626b8988d598f950b92fe7db3feb97}{Div} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, double d)
+\begin{DoxyCompactList}\small\item\em Divide a vector by a scalar \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_ad8c7eec2c10ebe396e8d2b932ed00706}{Div} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, double d, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Divide a vector by a scalar \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a6b293e21fb885643fbf2c3a516e82a25}{Add} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b)
+\begin{DoxyCompactList}\small\item\em Adds two vectors. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_ae1dff815a79e5cd41c5b76cff5a52ad8}{Add} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Adds two vectors. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a0b6e92bd9dda7a083b2efa24f55f93c2}{Subtract} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b)
+\begin{DoxyCompactList}\small\item\em Subtract one Vector from another \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a003dd00f3eee8b0f12870e1c514e7912}{Subtract} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Subtract one Vector from another \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a1844f648753c7458a611c6b4c64573c5}{Multiply} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vector, double scale)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by a scalar. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_abb63cc7484db05bad56ffc80ed425589}{Multiply} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vector, double scale, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_aa1cb0a7d7febee295cf9e6951d4a99ec}{Multiply} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vector, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scale)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by the components a vector (scale). \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_af1e49cfbc565bba1ae86f390d56b9ca8}{Multiply} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vector, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scale, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by the components of a vector (scale). \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_af568798c385e9d498a4a8cc08977ba9f}{Divide} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vector, double scale)
+\begin{DoxyCompactList}\small\item\em Divides a vector by a scalar. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a38ffee811bf1f1f12c5325b82a4011fd}{Divide} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vector, double scale, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Divides a vector by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a3d4e9431e33cbfe73d704cb56e963846}{Divide} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vector, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scale)
+\begin{DoxyCompactList}\small\item\em Divides a vector by the components of a vector (scale). \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a107e0c2d951b215a797cdd06ae3a7c66}{Divide} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vector, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scale, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Divide a vector by the components of a vector (scale). \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a7708efc90e19b365d34bc90a23f35da8}{Min} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b)
+\begin{DoxyCompactList}\small\item\em Calculate the component-\/wise minimum of two vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a83a45ef8e39bfc05a619714066245d0d}{Min} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Calculate the component-\/wise minimum of two vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_aa8579863bb3cf5006eb1d2005ddbd7a3}{Max} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b)
+\begin{DoxyCompactList}\small\item\em Calculate the component-\/wise maximum of two vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a7e3fb96a578d026bcb224d48fe0e6bcd}{Max} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Calculate the component-\/wise maximum of two vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a108801468e6e0af6ae59f9af67c2093e}{Clamp} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} min, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} max)
+\begin{DoxyCompactList}\small\item\em Clamp a vector to the given minimum and maximum vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_afb0928c5d97706c011362a530e647d25}{Clamp} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} min, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} max, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Clamp a vector to the given minimum and maximum vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_af2c16f2f19bb27b3c33e1dd31b3235e2}{Normalize} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec)
+\begin{DoxyCompactList}\small\item\em Scale a vector to unit length \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_aa1c1de04a4d305db58a6306df85dd122}{Normalize} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Scale a vector to unit length \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a0e7a39a93a67fcfcd2d0044967d6cea4}{Normalize\-Fast} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec)
+\begin{DoxyCompactList}\small\item\em Scale a vector to approximately unit length \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a19d77a95f855f644e51e47e681222c0a}{Normalize\-Fast} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Scale a vector to approximately unit length \end{DoxyCompactList}\item 
+static double \hyperlink{struct_open_t_k_1_1_vector2d_a04f60a0ff453ecc042d11aa04650da9c}{Dot} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} left, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right)
+\begin{DoxyCompactList}\small\item\em Calculate the dot (scalar) product of two vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a203f790daceb5dd391b3afcdaddfc6ca}{Dot} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} left, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right, out double result)
+\begin{DoxyCompactList}\small\item\em Calculate the dot (scalar) product of two vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a46089aefe12a5f0497582f6d1134febe}{Lerp} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b, double blend)
+\begin{DoxyCompactList}\small\item\em Returns a new Vector that is the linear blend of the 2 given Vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a3e402184be7cdf45bb6517c4ad96edde}{Lerp} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b, double blend, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Returns a new Vector that is the linear blend of the 2 given Vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a5f4cb45a17f9e62a4b3dfdffb1bf6058}{Bary\-Centric} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} c, double u, double v)
+\begin{DoxyCompactList}\small\item\em Interpolate 3 Vectors using Barycentric coordinates \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_af3d32ab76d0f6cf85248d79608858a19}{Bary\-Centric} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} a, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} b, ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} c, double u, double v, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Interpolate 3 Vectors using Barycentric coordinates\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a4b77f6d5ddd6dcb88bb9be38c838ddb1}{Transform} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} quat)
+\begin{DoxyCompactList}\small\item\em Transforms a vector by a quaternion rotation. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector2d_a0f888c6ed5e9fe810341214004607a2a}{Transform} (ref \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec, ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} quat, out \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} result)
+\begin{DoxyCompactList}\small\item\em Transforms a vector by a quaternion rotation. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a251b196f64b1ea5ad9b68f3995100faf}{operator+} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} left, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right)
+\begin{DoxyCompactList}\small\item\em Adds two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_ad046f955a83215dafa09a8ad34f345d0}{operator-\/} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} left, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_ae6a1ed03e3e0f7d2c0e4d82912fe989a}{operator-\/} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec)
+\begin{DoxyCompactList}\small\item\em Negates an instance. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a20dbfda77980897863a01ed1232e0907}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec, double f)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a7fbb650025220146c1536644d4972044}{operator$\ast$} (double f, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec)
+\begin{DoxyCompactList}\small\item\em Multiply an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_aaa4d82b39bee4eab099d5787296770b1}{operator/} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} vec, double f)
+\begin{DoxyCompactList}\small\item\em Divides an instance by a scalar. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_vector2d_a39904d09b13eb916bdfbd2674ae8e45a}{operator==} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} left, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for equality. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_vector2d_a1fbab1a71c9c88c004a0dd80f758be8c}{operator!=} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} left, \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for ienquality. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d_a4cd1827967be65100a30bcb47ea1824b}{operator Vector2d} (\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} v2)
+\begin{DoxyCompactList}\small\item\em Converts \hyperlink{struct_open_t_k_1_1_vector2}{Open\-T\-K.\-Vector2} to \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d}.\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2d_a1f22ade575ea23e634f296aa01f93623}{operator Vector2} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} v2d)
+\begin{DoxyCompactList}\small\item\em Converts \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} to \hyperlink{struct_open_t_k_1_1_vector2}{Open\-T\-K.\-Vector2}.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{struct_open_t_k_1_1_vector2d_aef1217aed33a0d3273c53e67828274c3}{X}
+\begin{DoxyCompactList}\small\item\em The X coordinate of this instance.\end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_vector2d_a2f7fee61d8a69fbfbbf221bad820927b}{Y}
+\begin{DoxyCompactList}\small\item\em The Y coordinate of this instance.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_aef5769e047c770dcc537be20baf7fdab}{Unit\-X} = new \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}(1, 0)
+\begin{DoxyCompactList}\small\item\em Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} that points towards the X-\/axis. \end{DoxyCompactList}\item 
+static readonly \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a3bcd3b007dba58a896c0016ae27c21d2}{Unit\-Y} = new \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}(0, 1)
+\begin{DoxyCompactList}\small\item\em Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} that points towards the Y-\/axis. \end{DoxyCompactList}\item 
+static readonly \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a5b5b62970c7d37767d4d665068714638}{Zero} = new \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}(0, 0)
+\begin{DoxyCompactList}\small\item\em Defines a zero-\/length \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}. \end{DoxyCompactList}\item 
+static readonly \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_adb9c74ec43c54427fee2f74cb06e1995}{One} = new \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}(1, 1)
+\begin{DoxyCompactList}\small\item\em Defines an instance with all components set to 1. \end{DoxyCompactList}\item 
+static readonly int \hyperlink{struct_open_t_k_1_1_vector2d_aaea85487e5855f3e18e3820ddb005f7b}{Size\-In\-Bytes} = Marshal.\-Size\-Of(new \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}())
+\begin{DoxyCompactList}\small\item\em Defines the size of the \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} struct in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{struct_open_t_k_1_1_vector2d_afb55e4bd5f5fe24a0a7fe0f899bbe876}{this\mbox{[}int index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at the index of the Vector. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_vector2d_a95c8cd7d1f964c7fb7e7ef0acf1487e4}{Length}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the length (magnitude) of the vector. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_vector2d_abbca0e5c823caed814092dd1d7fadc23}{Length\-Squared}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the square of the vector length (magnitude). \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_abcbb2f176283994317680ca8e8a336b3}{Perpendicular\-Right}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the perpendicular vector on the right side of this vector. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_a759a3f93398ef84bf5510c2e486c2f03}{Perpendicular\-Left}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the perpendicular vector on the left side of this vector. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector2d_aec31e1a880019cab41c29650f0facab9}{Yx}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Y and X components of this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a 2\-D vector using two double-\/precision floating-\/point numbers.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_vector2d_ab1ef1fd6f8d3e24c94a62654caf19a5a}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Vector2d@{Vector2d}}
+\index{Vector2d@{Vector2d}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Vector2d}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Vector2d.\-Vector2d (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_ab1ef1fd6f8d3e24c94a62654caf19a5a}
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value that will initialize this instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a39cb7f684191381835c2898762af5d1a}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Vector2d@{Vector2d}}
+\index{Vector2d@{Vector2d}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Vector2d}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Vector2d.\-Vector2d (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a39cb7f684191381835c2898762af5d1a}
+
+
+Constructs left vector with the given coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The X coordinate.\\
+\hline
+{\em y} & The Y coordinate.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_vector2d_a3aca3a33031d205732b63ba6ccc498a0}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{right}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a3aca3a33031d205732b63ba6ccc498a0}
+
+
+Add the Vector passed as parameter to this instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Right operand. This parameter is only read from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a4d7ef861a76264c3af6451f9aad2018c}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Add (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{right}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a4d7ef861a76264c3af6451f9aad2018c}
+
+
+Add the Vector passed as parameter to this instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Right operand. This parameter is only read from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a6b293e21fb885643fbf2c3a516e82a25}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{a, }
+\item[{{\bf Vector2d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a6b293e21fb885643fbf2c3a516e82a25}
+
+
+Adds two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Left operand.\\
+\hline
+{\em b} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_ae1dff815a79e5cd41c5b76cff5a52ad8}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Add (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{a, }
+\item[{ref {\bf Vector2d}}]{b, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_ae1dff815a79e5cd41c5b76cff5a52ad8}
+
+
+Adds two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Left operand.\\
+\hline
+{\em b} & Right operand.\\
+\hline
+{\em result} & Result of operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a5f4cb45a17f9e62a4b3dfdffb1bf6058}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Bary\-Centric@{Bary\-Centric}}
+\index{Bary\-Centric@{Bary\-Centric}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Bary\-Centric}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Bary\-Centric (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{a, }
+\item[{{\bf Vector2d}}]{b, }
+\item[{{\bf Vector2d}}]{c, }
+\item[{double}]{u, }
+\item[{double}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a5f4cb45a17f9e62a4b3dfdffb1bf6058}
+
+
+Interpolate 3 Vectors using Barycentric coordinates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First input Vector\\
+\hline
+{\em b} & Second input Vector\\
+\hline
+{\em c} & Third input Vector\\
+\hline
+{\em u} & First Barycentric Coordinate\\
+\hline
+{\em v} & Second Barycentric Coordinate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a when u=v=0, b when u=1,v=0, c when u=0,v=1, and a linear combination of a,b,c otherwise
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_af3d32ab76d0f6cf85248d79608858a19}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Bary\-Centric@{Bary\-Centric}}
+\index{Bary\-Centric@{Bary\-Centric}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Bary\-Centric}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Bary\-Centric (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{a, }
+\item[{ref {\bf Vector2d}}]{b, }
+\item[{ref {\bf Vector2d}}]{c, }
+\item[{double}]{u, }
+\item[{double}]{v, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_af3d32ab76d0f6cf85248d79608858a19}
+
+
+Interpolate 3 Vectors using Barycentric coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First input Vector.\\
+\hline
+{\em b} & Second input Vector.\\
+\hline
+{\em c} & Third input Vector.\\
+\hline
+{\em u} & First Barycentric Coordinate.\\
+\hline
+{\em v} & Second Barycentric Coordinate.\\
+\hline
+{\em result} & Output Vector. a when u=v=0, b when u=1,v=0, c when u=0,v=1, and a linear combination of a,b,c otherwise\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a108801468e6e0af6ae59f9af67c2093e}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Clamp}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Clamp (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vec, }
+\item[{{\bf Vector2d}}]{min, }
+\item[{{\bf Vector2d}}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a108801468e6e0af6ae59f9af67c2093e}
+
+
+Clamp a vector to the given minimum and maximum vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & \hyperlink{namespace_open_t_k_1_1_input}{Input} vector\\
+\hline
+{\em min} & Minimum vector\\
+\hline
+{\em max} & Maximum vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clamped vector
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_afb0928c5d97706c011362a530e647d25}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Clamp}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Clamp (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{vec, }
+\item[{ref {\bf Vector2d}}]{min, }
+\item[{ref {\bf Vector2d}}]{max, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_afb0928c5d97706c011362a530e647d25}
+
+
+Clamp a vector to the given minimum and maximum vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & \hyperlink{namespace_open_t_k_1_1_input}{Input} vector\\
+\hline
+{\em min} & Minimum vector\\
+\hline
+{\em max} & Maximum vector\\
+\hline
+{\em result} & The clamped vector\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_aae73c1afcfa593971e3acb1376c40648}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Div@{Div}}
+\index{Div@{Div}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Div}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Div (
+\begin{DoxyParamCaption}
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_aae73c1afcfa593971e3acb1376c40648}
+
+
+Divide this instance by a scalar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Scalar operand.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a0d626b8988d598f950b92fe7db3feb97}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Div@{Div}}
+\index{Div@{Div}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Div}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Div (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{a, }
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a0d626b8988d598f950b92fe7db3feb97}
+
+
+Divide a vector by a scalar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector operand\\
+\hline
+{\em d} & Scalar operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the division
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_ad8c7eec2c10ebe396e8d2b932ed00706}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Div@{Div}}
+\index{Div@{Div}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Div}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Div (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{a, }
+\item[{double}]{d, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_ad8c7eec2c10ebe396e8d2b932ed00706}
+
+
+Divide a vector by a scalar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector operand\\
+\hline
+{\em d} & Scalar operand\\
+\hline
+{\em result} & Result of the division\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_af568798c385e9d498a4a8cc08977ba9f}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Divide@{Divide}}
+\index{Divide@{Divide}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Divide (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vector, }
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_af568798c385e9d498a4a8cc08977ba9f}
+
+
+Divides a vector by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a38ffee811bf1f1f12c5325b82a4011fd}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Divide@{Divide}}
+\index{Divide@{Divide}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Divide (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{vector, }
+\item[{double}]{scale, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a38ffee811bf1f1f12c5325b82a4011fd}
+
+
+Divides a vector by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+{\em result} & Result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a3d4e9431e33cbfe73d704cb56e963846}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Divide@{Divide}}
+\index{Divide@{Divide}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Divide (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vector, }
+\item[{{\bf Vector2d}}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a3d4e9431e33cbfe73d704cb56e963846}
+
+
+Divides a vector by the components of a vector (scale). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a107e0c2d951b215a797cdd06ae3a7c66}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Divide@{Divide}}
+\index{Divide@{Divide}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Divide (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{vector, }
+\item[{ref {\bf Vector2d}}]{scale, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a107e0c2d951b215a797cdd06ae3a7c66}
+
+
+Divide a vector by the components of a vector (scale). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+{\em result} & Result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a04f60a0ff453ecc042d11aa04650da9c}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Dot@{Dot}}
+\index{Dot@{Dot}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Dot}]{\setlength{\rightskip}{0pt plus 5cm}static double Open\-T\-K.\-Vector2d.\-Dot (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{left, }
+\item[{{\bf Vector2d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a04f60a0ff453ecc042d11aa04650da9c}
+
+
+Calculate the dot (scalar) product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & First operand\\
+\hline
+{\em right} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dot product of the two inputs
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a203f790daceb5dd391b3afcdaddfc6ca}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Dot@{Dot}}
+\index{Dot@{Dot}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Dot}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Dot (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{left, }
+\item[{ref {\bf Vector2d}}]{right, }
+\item[{out double}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a203f790daceb5dd391b3afcdaddfc6ca}
+
+
+Calculate the dot (scalar) product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & First operand\\
+\hline
+{\em right} & Second operand\\
+\hline
+{\em result} & The dot product of the two inputs\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a859fe5d578bb0195d359d7be28924083}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Vector2d.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a859fe5d578bb0195d359d7be28924083}
+
+
+Indicates whether this instance and a specified object are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instances are equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a83e718d36d904b34676d6f7f1397c945}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Vector2d.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a83e718d36d904b34676d6f7f1397c945}
+
+
+Indicates whether the current vector is equal to another vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A vector to compare with this vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the current vector is equal to the vector parameter; otherwise, false.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a85fe46ce348dd886d2a6faaff4ad654b}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Vector2d.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a85fe46ce348dd886d2a6faaff4ad654b}
+
+
+Returns the hashcode for this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-Int32 containing the unique hashcode for this instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a46089aefe12a5f0497582f6d1134febe}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Lerp}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Lerp (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{a, }
+\item[{{\bf Vector2d}}]{b, }
+\item[{double}]{blend}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a46089aefe12a5f0497582f6d1134febe}
+
+
+Returns a new Vector that is the linear blend of the 2 given Vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First input vector\\
+\hline
+{\em b} & Second input vector\\
+\hline
+{\em blend} & The blend factor. a when blend=0, b when blend=1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a when blend=0, b when blend=1, and a linear combination otherwise
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a3e402184be7cdf45bb6517c4ad96edde}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Lerp}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Lerp (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{a, }
+\item[{ref {\bf Vector2d}}]{b, }
+\item[{double}]{blend, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a3e402184be7cdf45bb6517c4ad96edde}
+
+
+Returns a new Vector that is the linear blend of the 2 given Vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First input vector\\
+\hline
+{\em b} & Second input vector\\
+\hline
+{\em blend} & The blend factor. a when blend=0, b when blend=1.\\
+\hline
+{\em result} & a when blend=0, b when blend=1, and a linear combination otherwise\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_aa8579863bb3cf5006eb1d2005ddbd7a3}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Max@{Max}}
+\index{Max@{Max}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Max}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Max (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{a, }
+\item[{{\bf Vector2d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_aa8579863bb3cf5006eb1d2005ddbd7a3}
+
+
+Calculate the component-\/wise maximum of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The component-\/wise maximum
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a7e3fb96a578d026bcb224d48fe0e6bcd}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Max@{Max}}
+\index{Max@{Max}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Max}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Max (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{a, }
+\item[{ref {\bf Vector2d}}]{b, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a7e3fb96a578d026bcb224d48fe0e6bcd}
+
+
+Calculate the component-\/wise maximum of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+{\em result} & The component-\/wise maximum\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a7708efc90e19b365d34bc90a23f35da8}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Min@{Min}}
+\index{Min@{Min}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Min}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Min (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{a, }
+\item[{{\bf Vector2d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a7708efc90e19b365d34bc90a23f35da8}
+
+
+Calculate the component-\/wise minimum of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The component-\/wise minimum
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a83a45ef8e39bfc05a619714066245d0d}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Min@{Min}}
+\index{Min@{Min}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Min}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Min (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{a, }
+\item[{ref {\bf Vector2d}}]{b, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a83a45ef8e39bfc05a619714066245d0d}
+
+
+Calculate the component-\/wise minimum of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+{\em result} & The component-\/wise minimum\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a5db83f4f71416f7071600ef409489468}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a5db83f4f71416f7071600ef409489468}
+
+
+Multiply this instance by a scalar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Scalar operand.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a2ef7c5f5c0272bf301c939d9265bdf70}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{a, }
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a2ef7c5f5c0272bf301c939d9265bdf70}
+
+
+Multiply a vector and a scalar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector operand\\
+\hline
+{\em d} & Scalar operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a3131fe454013b47008690fba20d44874}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{a, }
+\item[{double}]{d, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a3131fe454013b47008690fba20d44874}
+
+
+Multiply a vector and a scalar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector operand\\
+\hline
+{\em d} & Scalar operand\\
+\hline
+{\em result} & Result of the multiplication\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a1844f648753c7458a611c6b4c64573c5}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vector, }
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a1844f648753c7458a611c6b4c64573c5}
+
+
+Multiplies a vector by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_abb63cc7484db05bad56ffc80ed425589}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{vector, }
+\item[{double}]{scale, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_abb63cc7484db05bad56ffc80ed425589}
+
+
+Multiplies a vector by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+{\em result} & Result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_aa1cb0a7d7febee295cf9e6951d4a99ec}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vector, }
+\item[{{\bf Vector2d}}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_aa1cb0a7d7febee295cf9e6951d4a99ec}
+
+
+Multiplies a vector by the components a vector (scale). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_af1e49cfbc565bba1ae86f390d56b9ca8}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{vector, }
+\item[{ref {\bf Vector2d}}]{scale, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_af1e49cfbc565bba1ae86f390d56b9ca8}
+
+
+Multiplies a vector by the components of a vector (scale). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+{\em result} & Result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_af272c675141ac462c157924b5b602e10}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_af272c675141ac462c157924b5b602e10}
+
+
+Scales the \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} to unit length. 
+
+\hypertarget{struct_open_t_k_1_1_vector2d_af2c16f2f19bb27b3c33e1dd31b3235e2}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Normalize (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_af2c16f2f19bb27b3c33e1dd31b3235e2}
+
+
+Scale a vector to unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The input vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized vector
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_aa1c1de04a4d305db58a6306df85dd122}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Normalize (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{vec, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_aa1c1de04a4d305db58a6306df85dd122}
+
+
+Scale a vector to unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The input vector\\
+\hline
+{\em result} & The normalized vector\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a23c635b67beef38dd3e6c7d2885ddad7}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Normalized}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector2d.\-Normalized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a23c635b67beef38dd3e6c7d2885ddad7}
+
+
+Returns a copy of the \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scaled to unit length. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a0e7a39a93a67fcfcd2d0044967d6cea4}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Normalize\-Fast@{Normalize\-Fast}}
+\index{Normalize\-Fast@{Normalize\-Fast}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Normalize\-Fast}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Normalize\-Fast (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a0e7a39a93a67fcfcd2d0044967d6cea4}
+
+
+Scale a vector to approximately unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The input vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized vector
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a19d77a95f855f644e51e47e681222c0a}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Normalize\-Fast@{Normalize\-Fast}}
+\index{Normalize\-Fast@{Normalize\-Fast}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Normalize\-Fast}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Normalize\-Fast (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{vec, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a19d77a95f855f644e51e47e681222c0a}
+
+
+Scale a vector to approximately unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The input vector\\
+\hline
+{\em result} & The normalized vector\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a1f22ade575ea23e634f296aa01f93623}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator Vector2@{operator Vector2}}
+\index{operator Vector2@{operator Vector2}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator Vector2}]{\setlength{\rightskip}{0pt plus 5cm}static Open\-T\-K.\-Vector2d.\-operator {\bf Vector2} (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{v2d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a1f22ade575ea23e634f296aa01f93623}
+
+
+Converts \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} to \hyperlink{struct_open_t_k_1_1_vector2}{Open\-T\-K.\-Vector2}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v2d} & The \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_vector2}{Vector2}.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a4cd1827967be65100a30bcb47ea1824b}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator Vector2d@{operator Vector2d}}
+\index{operator Vector2d@{operator Vector2d}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator Vector2d}]{\setlength{\rightskip}{0pt plus 5cm}static Open\-T\-K.\-Vector2d.\-operator {\bf Vector2d} (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a4cd1827967be65100a30bcb47ea1824b}
+
+
+Converts \hyperlink{struct_open_t_k_1_1_vector2}{Open\-T\-K.\-Vector2} to \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v2} & The \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a1fbab1a71c9c88c004a0dd80f758be8c}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Vector2d.\-operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{left, }
+\item[{{\bf Vector2d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a1fbab1a71c9c88c004a0dd80f758be8c}
+
+
+Compares two instances for ienquality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left instance.\\
+\hline
+{\em right} & The right instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if the instances are not equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a20dbfda77980897863a01ed1232e0907}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vec, }
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a20dbfda77980897863a01ed1232e0907}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The instance.\\
+\hline
+{\em f} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a7fbb650025220146c1536644d4972044}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{f, }
+\item[{{\bf Vector2d}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a7fbb650025220146c1536644d4972044}
+
+
+Multiply an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The scalar.\\
+\hline
+{\em vec} & The instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a251b196f64b1ea5ad9b68f3995100faf}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator+@{operator+}}
+\index{operator+@{operator+}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{left, }
+\item[{{\bf Vector2d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a251b196f64b1ea5ad9b68f3995100faf}
+
+
+Adds two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left instance.\\
+\hline
+{\em right} & The right instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_ad046f955a83215dafa09a8ad34f345d0}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{left, }
+\item[{{\bf Vector2d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_ad046f955a83215dafa09a8ad34f345d0}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left instance.\\
+\hline
+{\em right} & The right instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_ae6a1ed03e3e0f7d2c0e4d82912fe989a}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_ae6a1ed03e3e0f7d2c0e4d82912fe989a}
+
+
+Negates an instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_aaa4d82b39bee4eab099d5787296770b1}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator/@{operator/}}
+\index{operator/@{operator/}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vec, }
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_aaa4d82b39bee4eab099d5787296770b1}
+
+
+Divides an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The instance.\\
+\hline
+{\em f} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a39904d09b13eb916bdfbd2674ae8e45a}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!operator==@{operator==}}
+\index{operator==@{operator==}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Vector2d.\-operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{left, }
+\item[{{\bf Vector2d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a39904d09b13eb916bdfbd2674ae8e45a}
+
+
+Compares two instances for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left instance.\\
+\hline
+{\em right} & The right instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if both instances are equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a89cbe06302962e5fc919265186bc1ce1}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Scale@{Scale}}
+\index{Scale@{Scale}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Scale (
+\begin{DoxyParamCaption}
+\item[{double}]{sx, }
+\item[{double}]{sy}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a89cbe06302962e5fc919265186bc1ce1}
+
+
+Scales the current \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} by the given amounts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & The scale of the X component.\\
+\hline
+{\em sy} & The scale of the Y component.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_ae10ad5814fb0786b66e5a5b17243d416}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Scale@{Scale}}
+\index{Scale@{Scale}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Scale (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{scale}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_ae10ad5814fb0786b66e5a5b17243d416}
+
+
+Scales this instance by the given parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The scaling of the individual components.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a4937f85e59ff76c22f60d3845c8ac3ed}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Scale@{Scale}}
+\index{Scale@{Scale}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Scale (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{scale}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a4937f85e59ff76c22f60d3845c8ac3ed}
+
+
+Scales this instance by the given parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The scaling of the individual components.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a10928e4fdfbbeb9d1456d40bcae37ff3}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{right}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a10928e4fdfbbeb9d1456d40bcae37ff3}
+
+
+Subtract the Vector passed as parameter from this instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Right operand. This parameter is only read from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a7434fda20de398c11d44733632c0c11b}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector2d.\-Sub (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{right}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a7434fda20de398c11d44733632c0c11b}
+
+
+Subtract the Vector passed as parameter from this instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Right operand. This parameter is only read from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a590ffd8418e1905e0e00e1a9d418a1d9}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{a, }
+\item[{{\bf Vector2d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a590ffd8418e1905e0e00e1a9d418a1d9}
+
+
+Subtract one Vector from another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of subtraction
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a729dd99b0789cf7113f87f678f63db9c}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Sub (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{a, }
+\item[{ref {\bf Vector2d}}]{b, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a729dd99b0789cf7113f87f678f63db9c}
+
+
+Subtract one Vector from another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+{\em result} & Result of subtraction\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a0b6e92bd9dda7a083b2efa24f55f93c2}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Subtract (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{a, }
+\item[{{\bf Vector2d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a0b6e92bd9dda7a083b2efa24f55f93c2}
+
+
+Subtract one Vector from another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of subtraction
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a003dd00f3eee8b0f12870e1c514e7912}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Subtract (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{a, }
+\item[{ref {\bf Vector2d}}]{b, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a003dd00f3eee8b0f12870e1c514e7912}
+
+
+Subtract one Vector from another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+{\em result} & Result of subtraction\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector2d_a5fa1b9e286d7d4b5b6122061367f7791}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Vector2d.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector2d_a5fa1b9e286d7d4b5b6122061367f7791}
+
+
+Returns a System.\-String that represents the current instance. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a4b77f6d5ddd6dcb88bb9be38c838ddb1}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Transform@{Transform}}
+\index{Transform@{Transform}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{vec, }
+\item[{{\bf Quaterniond}}]{quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a4b77f6d5ddd6dcb88bb9be38c838ddb1}
+
+
+Transforms a vector by a quaternion rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform.\\
+\hline
+{\em quat} & The quaternion to rotate the vector by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector2d_a0f888c6ed5e9fe810341214004607a2a}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Transform@{Transform}}
+\index{Transform@{Transform}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector2d.\-Transform (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector2d}}]{vec, }
+\item[{ref {\bf Quaterniond}}]{quat, }
+\item[{out {\bf Vector2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a0f888c6ed5e9fe810341214004607a2a}
+
+
+Transforms a vector by a quaternion rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform.\\
+\hline
+{\em quat} & The quaternion to rotate the vector by.\\
+\hline
+{\em result} & The result of the operation.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_vector2d_adb9c74ec43c54427fee2f74cb06e1995}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!One@{One}}
+\index{One@{One}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{One}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Vector2d} Open\-T\-K.\-Vector2d.\-One = new {\bf Vector2d}(1, 1)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_adb9c74ec43c54427fee2f74cb06e1995}
+
+
+Defines an instance with all components set to 1. 
+
+\hypertarget{struct_open_t_k_1_1_vector2d_aaea85487e5855f3e18e3820ddb005f7b}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Size\-In\-Bytes@{Size\-In\-Bytes}}
+\index{Size\-In\-Bytes@{Size\-In\-Bytes}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Size\-In\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}readonly int Open\-T\-K.\-Vector2d.\-Size\-In\-Bytes = Marshal.\-Size\-Of(new {\bf Vector2d}())\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_aaea85487e5855f3e18e3820ddb005f7b}
+
+
+Defines the size of the \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} struct in bytes. 
+
+\hypertarget{struct_open_t_k_1_1_vector2d_aef5769e047c770dcc537be20baf7fdab}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Unit\-X@{Unit\-X}}
+\index{Unit\-X@{Unit\-X}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Unit\-X}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Unit\-X = new {\bf Vector2d}(1, 0)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_aef5769e047c770dcc537be20baf7fdab}
+
+
+Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} that points towards the X-\/axis. 
+
+\hypertarget{struct_open_t_k_1_1_vector2d_a3bcd3b007dba58a896c0016ae27c21d2}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Unit\-Y@{Unit\-Y}}
+\index{Unit\-Y@{Unit\-Y}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Unit\-Y}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Unit\-Y = new {\bf Vector2d}(0, 1)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a3bcd3b007dba58a896c0016ae27c21d2}
+
+
+Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} that points towards the Y-\/axis. 
+
+\hypertarget{struct_open_t_k_1_1_vector2d_aef1217aed33a0d3273c53e67828274c3}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!X@{X}}
+\index{X@{X}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector2d.\-X}}\label{struct_open_t_k_1_1_vector2d_aef1217aed33a0d3273c53e67828274c3}
+
+
+The X coordinate of this instance.
+
+\hypertarget{struct_open_t_k_1_1_vector2d_a2f7fee61d8a69fbfbbf221bad820927b}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Y@{Y}}
+\index{Y@{Y}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector2d.\-Y}}\label{struct_open_t_k_1_1_vector2d_a2f7fee61d8a69fbfbbf221bad820927b}
+
+
+The Y coordinate of this instance.
+
+\hypertarget{struct_open_t_k_1_1_vector2d_a5b5b62970c7d37767d4d665068714638}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Zero@{Zero}}
+\index{Zero@{Zero}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Zero}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Vector2d} Open\-T\-K.\-Vector2d.\-Zero = new {\bf Vector2d}(0, 0)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector2d_a5b5b62970c7d37767d4d665068714638}
+
+
+Defines a zero-\/length \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_vector2d_a95c8cd7d1f964c7fb7e7ef0acf1487e4}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Length@{Length}}
+\index{Length@{Length}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector2d.\-Length\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_vector2d_a95c8cd7d1f964c7fb7e7ef0acf1487e4}
+
+
+Gets the length (magnitude) of the vector. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_open_t_k_1_1_vector2d_abbca0e5c823caed814092dd1d7fadc23}{Length\-Squared}
+
+
+\end{DoxySeeAlso}
+\hypertarget{struct_open_t_k_1_1_vector2d_abbca0e5c823caed814092dd1d7fadc23}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Length\-Squared@{Length\-Squared}}
+\index{Length\-Squared@{Length\-Squared}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Length\-Squared}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector2d.\-Length\-Squared\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_vector2d_abbca0e5c823caed814092dd1d7fadc23}
+
+
+Gets the square of the vector length (magnitude). 
+
+This property avoids the costly square root operation required by the Length property. This makes it more suitable for comparisons. 
+
+\hyperlink{struct_open_t_k_1_1_vector2d_a95c8cd7d1f964c7fb7e7ef0acf1487e4}{Length} \hypertarget{struct_open_t_k_1_1_vector2d_a759a3f93398ef84bf5510c2e486c2f03}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Perpendicular\-Left@{Perpendicular\-Left}}
+\index{Perpendicular\-Left@{Perpendicular\-Left}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Perpendicular\-Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector2d.\-Perpendicular\-Left\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_vector2d_a759a3f93398ef84bf5510c2e486c2f03}
+
+
+Gets the perpendicular vector on the left side of this vector. 
+
+\hypertarget{struct_open_t_k_1_1_vector2d_abcbb2f176283994317680ca8e8a336b3}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Perpendicular\-Right@{Perpendicular\-Right}}
+\index{Perpendicular\-Right@{Perpendicular\-Right}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Perpendicular\-Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector2d.\-Perpendicular\-Right\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_vector2d_abcbb2f176283994317680ca8e8a336b3}
+
+
+Gets the perpendicular vector on the right side of this vector. 
+
+\hypertarget{struct_open_t_k_1_1_vector2d_afb55e4bd5f5fe24a0a7fe0f899bbe876}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!this\mbox{[}int index\mbox{]}@{this[int index]}}
+\index{this\mbox{[}int index\mbox{]}@{this[int index]}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{this[int index]}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector2d.\-this\mbox{[}int index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector2d_afb55e4bd5f5fe24a0a7fe0f899bbe876}
+
+
+Gets or sets the value at the index of the Vector. 
+
+\hypertarget{struct_open_t_k_1_1_vector2d_aec31e1a880019cab41c29650f0facab9}{\index{Open\-T\-K\-::\-Vector2d@{Open\-T\-K\-::\-Vector2d}!Yx@{Yx}}
+\index{Yx@{Yx}!OpenTK::Vector2d@{Open\-T\-K\-::\-Vector2d}}
+\subsubsection[{Yx}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector2d.\-Yx\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector2d_aec31e1a880019cab41c29650f0facab9}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Y and X components of this instance. 
+

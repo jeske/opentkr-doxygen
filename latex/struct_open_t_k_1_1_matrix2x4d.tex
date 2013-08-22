@@ -1,0 +1,1060 @@
+\hypertarget{struct_open_t_k_1_1_matrix2x4d}{\section{Open\-T\-K.\-Matrix2x4d Struct Reference}
+\label{struct_open_t_k_1_1_matrix2x4d}\index{Open\-T\-K.\-Matrix2x4d@{Open\-T\-K.\-Matrix2x4d}}
+}
+
+
+Represents a 2x4 matrix.  
+
+
+
+
+Inherits I\-Equatable$<$ Matrix2x4d $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_matrix2x4d_ae8fb0f120b322fb576065eda90fbeba8}{Matrix2x4d} (\hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d} row0, \hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d} row1)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_matrix2x4d_ab98efcc89a34a36483827c99a76c1934}{Matrix2x4d} (double m00, double m01, double m02, double m03, double m10, double m11, double m12, double m13)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance \end{DoxyCompactList}\item 
+override string \hyperlink{struct_open_t_k_1_1_matrix2x4d_aa45f5985d5c89c496cf3916aa709f4b4}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4}. \end{DoxyCompactList}\item 
+override int \hyperlink{struct_open_t_k_1_1_matrix2x4d_a25621909c54f22fa193b3fdac3843712}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Returns the hashcode for this instance. \end{DoxyCompactList}\item 
+override bool \hyperlink{struct_open_t_k_1_1_matrix2x4d_aa677af5966068019e9d0c344671b9fb4}{Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Indicates whether this instance and a specified object are equal. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_matrix2x4d_a65019f5e1297414b4242f346ac43ff32}{Equals} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} other)
+\begin{DoxyCompactList}\small\item\em Indicates whether the current matrix is equal to another matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_a724e6cc45d62b5e4b8ff8196c5c0fbd4}{Create\-Rotation} (double angle, out \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} result)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a0d8078a77dfa3958df90d6cb361e028e}{Create\-Rotation} (double angle)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_adeb22dc472bba94329ecae2b73cc6a22}{Create\-Scale} (double scale, out \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} result)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a24786a70e0a557087c805c5639fd072b}{Create\-Scale} (double scale)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_a06f7f896f263d1e538bd91985b4465a5}{Create\-Scale} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scale, out \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} result)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_aed78a116e7617623b1ad05d5fd6bebf6}{Create\-Scale} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} scale)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_a18cfdc7f8440b7db1a6dfd27df21505b}{Create\-Scale} (double x, double y, out \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} result)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a20a7b3128906f8c73308f6d3cc32cfd3}{Create\-Scale} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_a698e7c8241b1d29880130940b17b6161}{Mult} (ref \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, double right, out \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} result)
+\begin{DoxyCompactList}\small\item\em Multiplies and instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a7409eaa2c15c01615661022c0d00c584}{Mult} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, double right)
+\begin{DoxyCompactList}\small\item\em Multiplies and instance by a scalar. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_adf7d26e116ba2865c183eaa747f5d86c}{Mult} (ref \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, ref \hyperlink{struct_open_t_k_1_1_matrix4x2}{Matrix4x2} right, out \hyperlink{struct_open_t_k_1_1_matrix2d}{Matrix2d} result)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2d}{Matrix2d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a9541e4742605a6afe2b77c42457c4711}{Mult} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix4x2}{Matrix4x2} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_acfd012ba1b48ff14486ddc14b49e4263}{Mult} (ref \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, ref \hyperlink{struct_open_t_k_1_1_matrix4x3}{Matrix4x3} right, out \hyperlink{struct_open_t_k_1_1_matrix2x3d}{Matrix2x3d} result)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x3d}{Matrix2x3d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a005c7fb4b0c3b595dcd99d4d2e10c282}{Mult} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix4x3}{Matrix4x3} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_ab7c587b8072eec7d5b655cc593ce6eae}{Mult} (ref \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right, out \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} result)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a430312ade9948c0dd7ce3b9e6ea68fab}{Mult} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_a8faffcf4ea40e807b80b84a67493967d}{Add} (ref \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, ref \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} right, out \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} result)
+\begin{DoxyCompactList}\small\item\em Adds two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_aefcf89d3a9528b6b02eab1f39c35608a}{Add} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} right)
+\begin{DoxyCompactList}\small\item\em Adds two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_aaccf74129bbb455aad90869ddc7a4517}{Subtract} (ref \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, ref \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} right, out \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} result)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a85184adf7c74c438c3bc78cce6c9de9e}{Subtract} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} right)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix2x4d_a9b558320a318c3cd4c8300de411d6fe8}{Transpose} (ref \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} mat, out \hyperlink{struct_open_t_k_1_1_matrix4x2d}{Matrix4x2d} result)
+\begin{DoxyCompactList}\small\item\em Calculate the transpose of the given matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4x2d}{Matrix4x2d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_abbacc2294187b909b18b8660b6fc0bae}{Transpose} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} mat)
+\begin{DoxyCompactList}\small\item\em Calculate the transpose of the given matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a7e1c90d01809e5db67fce054bd278ab2}{operator$\ast$} (double left, \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} right)
+\begin{DoxyCompactList}\small\item\em Scalar multiplication. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a5d7705c753b5e6b39104fa896db13626}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, double right)
+\begin{DoxyCompactList}\small\item\em Scalar multiplication. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2d}{Matrix2d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a316a75161dc332ed8f03a3bae67a5380}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix4x2}{Matrix4x2} right)
+\begin{DoxyCompactList}\small\item\em Matrix multiplication \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x3d}{Matrix2x3d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_ace6a5dd83d0993de8b777326991b0ed4}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix4x3}{Matrix4x3} right)
+\begin{DoxyCompactList}\small\item\em Matrix multiplication \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a202a588af0e40c01035ee65696728696}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Matrix multiplication \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a2edb96b1b069489cfd908c6205f7e63d}{operator+} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} right)
+\begin{DoxyCompactList}\small\item\em Matrix addition \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_ae589655bca0f303ae45df32c8847d949}{operator-\/} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} right)
+\begin{DoxyCompactList}\small\item\em Matrix subtraction \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_matrix2x4d_afbdaa580707b2c2542e5c5ef48231e14}{operator==} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for equality. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_matrix2x4d_afddb5c1ac13a4da18e1e7891692407dc}{operator!=} (\hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} left, \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for inequality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a2003dc9b0f0478fc9ef05008fc493e23}{Row0}
+\begin{DoxyCompactList}\small\item\em Top row of the matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_ac9a7b75a51ad79898e2464d21785e0d3}{Row1}
+\begin{DoxyCompactList}\small\item\em Bottom row of the matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a5abb66a4114192a92a00cffceec3ebe5}{Zero} = new \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d}(Vector4d.\-Zero, Vector4d.\-Zero)
+\begin{DoxyCompactList}\small\item\em The zero matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a0cfdd9379a9b38530ba1f55462bab58c}{Column0}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the first column of the matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_aaaf480494a8e6c10c6cdff9b780a5626}{Column1}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the second column of the matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_afd2f0b4b60359c0acf03fbbe617743f7}{Column2}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the third column of the matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a87200a84b40816d6d53a2414ef4644c4}{Column3}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the fourth column of the matrix. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_a842d3ccd934f5b1e45fd03bde8a1766c}{M11}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 1, column 1 of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_a1741aebdbf36dd902d6b716844130980}{M12}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 1, column 2 of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_af845de5431e5c09062113b273448fe92}{M13}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 1, column 3 of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_a2faa3e91dfd4ec4f58cb8d6941b12622}{M14}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 1, column 4 of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_aacd1ee880aa7955ef81828f7bf0948dc}{M21}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 2, column 1 of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_af2c85ac54d1d99635eff32e5e6d2322a}{M22}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 2, column 2 of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_ae5b70efcca57ecfb2c7da1f19aaad105}{M23}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 2, column 3 of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_a48a33c90ec140be681b04153a81e99c9}{M24}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 2, column 4 of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_matrix2x4d_a6af45195f3072eb873dc29721fdc1075}{Diagonal}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the values along the main diagonal of the matrix. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_a8756b543bb600eaa9e2205b5565ee09b}{Trace}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the trace of the matrix, the sum of the values along the diagonal. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_matrix2x4d_a89ae4635cbac9bcce42f80f0d02d11d8}{this\mbox{[}int row\-Index, int column\-Index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at a specified row and column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a 2x4 matrix. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_ae8fb0f120b322fb576065eda90fbeba8}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Matrix2x4d@{Matrix2x4d}}
+\index{Matrix2x4d@{Matrix2x4d}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Matrix2x4d}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Matrix2x4d.\-Matrix2x4d (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector4d}}]{row0, }
+\item[{{\bf Vector4d}}]{row1}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix2x4d_ae8fb0f120b322fb576065eda90fbeba8}
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row0} & Top row of the matrix.\\
+\hline
+{\em row1} & Bottom row of the matrix.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_ab98efcc89a34a36483827c99a76c1934}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Matrix2x4d@{Matrix2x4d}}
+\index{Matrix2x4d@{Matrix2x4d}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Matrix2x4d}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Matrix2x4d.\-Matrix2x4d (
+\begin{DoxyParamCaption}
+\item[{double}]{m00, }
+\item[{double}]{m01, }
+\item[{double}]{m02, }
+\item[{double}]{m03, }
+\item[{double}]{m10, }
+\item[{double}]{m11, }
+\item[{double}]{m12, }
+\item[{double}]{m13}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix2x4d_ab98efcc89a34a36483827c99a76c1934}
+
+
+Constructs a new instance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m00} & First item of the first row of the matrix.\\
+\hline
+{\em m01} & Second item of the first row of the matrix.\\
+\hline
+{\em m02} & Third item of the first row of the matrix.\\
+\hline
+{\em m03} & Fourth item of the first row of the matrix.\\
+\hline
+{\em m10} & First item of the second row of the matrix.\\
+\hline
+{\em m11} & Second item of the second row of the matrix.\\
+\hline
+{\em m12} & Third item of the second row of the matrix.\\
+\hline
+{\em m13} & Fourth item of the second row of the matrix.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a8faffcf4ea40e807b80b84a67493967d}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Add (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix2x4d}}]{left, }
+\item[{ref {\bf Matrix2x4d}}]{right, }
+\item[{out {\bf Matrix2x4d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a8faffcf4ea40e807b80b84a67493967d}
+
+
+Adds two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the addition.\\
+\hline
+{\em right} & The right operand of the addition.\\
+\hline
+{\em result} & A new instance that is the result of the addition.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_aefcf89d3a9528b6b02eab1f39c35608a}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix2x4d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_aefcf89d3a9528b6b02eab1f39c35608a}
+
+
+Adds two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the addition.\\
+\hline
+{\em right} & The right operand of the addition.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the addition.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a724e6cc45d62b5e4b8ff8196c5c0fbd4}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Create\-Rotation@{Create\-Rotation}}
+\index{Create\-Rotation@{Create\-Rotation}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Create\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Create\-Rotation (
+\begin{DoxyParamCaption}
+\item[{double}]{angle, }
+\item[{out {\bf Matrix2x4d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a724e6cc45d62b5e4b8ff8196c5c0fbd4}
+
+
+Builds a rotation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The counter-\/clockwise angle in radians.\\
+\hline
+{\em result} & The resulting \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a0d8078a77dfa3958df90d6cb361e028e}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Create\-Rotation@{Create\-Rotation}}
+\index{Create\-Rotation@{Create\-Rotation}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Create\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-Create\-Rotation (
+\begin{DoxyParamCaption}
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a0d8078a77dfa3958df90d6cb361e028e}
+
+
+Builds a rotation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The counter-\/clockwise angle in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_matrix2x3d}{Matrix2x3d} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_adeb22dc472bba94329ecae2b73cc6a22}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{double}]{scale, }
+\item[{out {\bf Matrix2x4d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_adeb22dc472bba94329ecae2b73cc6a22}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Single scale factor for the x, y, and z axes.\\
+\hline
+{\em result} & A scale matrix.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a24786a70e0a557087c805c5639fd072b}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a24786a70e0a557087c805c5639fd072b}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Single scale factor for the x and y axes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A scale matrix.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a06f7f896f263d1e538bd91985b4465a5}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{scale, }
+\item[{out {\bf Matrix2x4d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a06f7f896f263d1e538bd91985b4465a5}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Scale factors for the x and y axes.\\
+\hline
+{\em result} & A scale matrix.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_aed78a116e7617623b1ad05d5fd6bebf6}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_aed78a116e7617623b1ad05d5fd6bebf6}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Scale factors for the x and y axes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A scale matrix.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a18cfdc7f8440b7db1a6dfd27df21505b}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{out {\bf Matrix2x4d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a18cfdc7f8440b7db1a6dfd27df21505b}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Scale factor for the x axis.\\
+\hline
+{\em y} & Scale factor for the y axis.\\
+\hline
+{\em result} & A scale matrix.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a20a7b3128906f8c73308f6d3cc32cfd3}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a20a7b3128906f8c73308f6d3cc32cfd3}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Scale factor for the x axis.\\
+\hline
+{\em y} & Scale factor for the y axis.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A scale matrix.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_aa677af5966068019e9d0c344671b9fb4}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Matrix2x4d.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix2x4d_aa677af5966068019e9d0c344671b9fb4}
+
+
+Indicates whether this instance and a specified object are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instances are equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a65019f5e1297414b4242f346ac43ff32}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Matrix2x4d.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix2x4d_a65019f5e1297414b4242f346ac43ff32}
+
+
+Indicates whether the current matrix is equal to another matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & An matrix to compare with this matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the current matrix is equal to the matrix parameter; otherwise, false.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a25621909c54f22fa193b3fdac3843712}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Matrix2x4d.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix2x4d_a25621909c54f22fa193b3fdac3843712}
+
+
+Returns the hashcode for this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-Int32 containing the unique hashcode for this instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a698e7c8241b1d29880130940b17b6161}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix2x4d}}]{left, }
+\item[{double}]{right, }
+\item[{out {\bf Matrix2x4d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a698e7c8241b1d29880130940b17b6161}
+
+
+Multiplies and instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+{\em result} & A new instance that is the result of the multiplication.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a7409eaa2c15c01615661022c0d00c584}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{double}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a7409eaa2c15c01615661022c0d00c584}
+
+
+Multiplies and instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the multiplication.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_adf7d26e116ba2865c183eaa747f5d86c}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix2x4d}}]{left, }
+\item[{ref {\bf Matrix4x2}}]{right, }
+\item[{out {\bf Matrix2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_adf7d26e116ba2865c183eaa747f5d86c}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+{\em result} & A new instance that is the result of the multiplication.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a9541e4742605a6afe2b77c42457c4711}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2d} Open\-T\-K.\-Matrix2x4d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix4x2}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a9541e4742605a6afe2b77c42457c4711}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the multiplication.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_acfd012ba1b48ff14486ddc14b49e4263}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix2x4d}}]{left, }
+\item[{ref {\bf Matrix4x3}}]{right, }
+\item[{out {\bf Matrix2x3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_acfd012ba1b48ff14486ddc14b49e4263}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+{\em result} & A new instance that is the result of the multiplication.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a005c7fb4b0c3b595dcd99d4d2e10c282}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x3d} Open\-T\-K.\-Matrix2x4d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix4x3}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a005c7fb4b0c3b595dcd99d4d2e10c282}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the multiplication.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_ab7c587b8072eec7d5b655cc593ce6eae}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix2x4d}}]{left, }
+\item[{ref {\bf Matrix4}}]{right, }
+\item[{out {\bf Matrix2x4d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_ab7c587b8072eec7d5b655cc593ce6eae}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+{\em result} & A new instance that is the result of the multiplication.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a430312ade9948c0dd7ce3b9e6ea68fab}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a430312ade9948c0dd7ce3b9e6ea68fab}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the multiplication.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_afddb5c1ac13a4da18e1e7891692407dc}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Matrix2x4d.\-operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix2x4d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_afddb5c1ac13a4da18e1e7891692407dc}
+
+
+Compares two instances for inequality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left does not equal right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a7e1c90d01809e5db67fce054bd278ab2}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{left, }
+\item[{{\bf Matrix2x4d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a7e1c90d01809e5db67fce054bd278ab2}
+
+
+Scalar multiplication. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} which holds the result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a5d7705c753b5e6b39104fa896db13626}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{double}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a5d7705c753b5e6b39104fa896db13626}
+
+
+Scalar multiplication. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} which holds the result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a316a75161dc332ed8f03a3bae67a5380}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2d} Open\-T\-K.\-Matrix2x4d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix4x2}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a316a75161dc332ed8f03a3bae67a5380}
+
+
+Matrix multiplication 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix2d}{Matrix2d} which holds the result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_ace6a5dd83d0993de8b777326991b0ed4}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x3d} Open\-T\-K.\-Matrix2x4d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix4x3}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_ace6a5dd83d0993de8b777326991b0ed4}
+
+
+Matrix multiplication 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix2x3d}{Matrix2x3d} which holds the result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a202a588af0e40c01035ee65696728696}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a202a588af0e40c01035ee65696728696}
+
+
+Matrix multiplication 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} which holds the result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a2edb96b1b069489cfd908c6205f7e63d}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!operator+@{operator+}}
+\index{operator+@{operator+}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix2x4d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a2edb96b1b069489cfd908c6205f7e63d}
+
+
+Matrix addition 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix2d}{Matrix2d} which holds the result of the addition
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_ae589655bca0f303ae45df32c8847d949}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix2x4d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_ae589655bca0f303ae45df32c8847d949}
+
+
+Matrix subtraction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix2x4d}{Matrix2x4d} which holds the result of the subtraction
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_afbdaa580707b2c2542e5c5ef48231e14}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!operator==@{operator==}}
+\index{operator==@{operator==}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Matrix2x4d.\-operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix2x4d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_afbdaa580707b2c2542e5c5ef48231e14}
+
+
+Compares two instances for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left equals right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_aaccf74129bbb455aad90869ddc7a4517}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Subtract (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix2x4d}}]{left, }
+\item[{ref {\bf Matrix2x4d}}]{right, }
+\item[{out {\bf Matrix2x4d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_aaccf74129bbb455aad90869ddc7a4517}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the subtraction.\\
+\hline
+{\em right} & The right operand of the subtraction.\\
+\hline
+{\em result} & A new instance that is the result of the subtraction.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a85184adf7c74c438c3bc78cce6c9de9e}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-Subtract (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{left, }
+\item[{{\bf Matrix2x4d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a85184adf7c74c438c3bc78cce6c9de9e}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the subtraction.\\
+\hline
+{\em right} & The right operand of the subtraction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the subtraction.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_aa45f5985d5c89c496cf3916aa709f4b4}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Matrix2x4d.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix2x4d_aa45f5985d5c89c496cf3916aa709f4b4}
+
+
+Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4}. 
+
+\begin{DoxyReturn}{Returns}
+The string representation of the matrix.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a9b558320a318c3cd4c8300de411d6fe8}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Transpose}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix2x4d.\-Transpose (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix2x4d}}]{mat, }
+\item[{out {\bf Matrix4x2d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a9b558320a318c3cd4c8300de411d6fe8}
+
+
+Calculate the transpose of the given matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to transpose.\\
+\hline
+{\em result} & The transpose of the given matrix.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_abbacc2294187b909b18b8660b6fc0bae}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Transpose}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4x2d} Open\-T\-K.\-Matrix2x4d.\-Transpose (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix2x4d}}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_abbacc2294187b909b18b8660b6fc0bae}
+
+
+Calculate the transpose of the given matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to transpose.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transpose of the given matrix.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a2003dc9b0f0478fc9ef05008fc493e23}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Row0@{Row0}}
+\index{Row0@{Row0}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Row0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4d} Open\-T\-K.\-Matrix2x4d.\-Row0}}\label{struct_open_t_k_1_1_matrix2x4d_a2003dc9b0f0478fc9ef05008fc493e23}
+
+
+Top row of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_ac9a7b75a51ad79898e2464d21785e0d3}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Row1@{Row1}}
+\index{Row1@{Row1}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Row1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4d} Open\-T\-K.\-Matrix2x4d.\-Row1}}\label{struct_open_t_k_1_1_matrix2x4d_ac9a7b75a51ad79898e2464d21785e0d3}
+
+
+Bottom row of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a5abb66a4114192a92a00cffceec3ebe5}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Zero@{Zero}}
+\index{Zero@{Zero}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Zero}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Matrix2x4d} Open\-T\-K.\-Matrix2x4d.\-Zero = new {\bf Matrix2x4d}(Vector4d.\-Zero, Vector4d.\-Zero)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix2x4d_a5abb66a4114192a92a00cffceec3ebe5}
+
+
+The zero matrix. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a0cfdd9379a9b38530ba1f55462bab58c}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Column0@{Column0}}
+\index{Column0@{Column0}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Column0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Matrix2x4d.\-Column0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_a0cfdd9379a9b38530ba1f55462bab58c}
+
+
+Gets or sets the first column of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_aaaf480494a8e6c10c6cdff9b780a5626}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Column1@{Column1}}
+\index{Column1@{Column1}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Column1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Matrix2x4d.\-Column1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_aaaf480494a8e6c10c6cdff9b780a5626}
+
+
+Gets or sets the second column of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_afd2f0b4b60359c0acf03fbbe617743f7}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Column2@{Column2}}
+\index{Column2@{Column2}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Column2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Matrix2x4d.\-Column2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_afd2f0b4b60359c0acf03fbbe617743f7}
+
+
+Gets or sets the third column of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a87200a84b40816d6d53a2414ef4644c4}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Column3@{Column3}}
+\index{Column3@{Column3}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Column3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Matrix2x4d.\-Column3\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_a87200a84b40816d6d53a2414ef4644c4}
+
+
+Gets or sets the fourth column of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a6af45195f3072eb873dc29721fdc1075}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Diagonal@{Diagonal}}
+\index{Diagonal@{Diagonal}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Diagonal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Matrix2x4d.\-Diagonal\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_a6af45195f3072eb873dc29721fdc1075}
+
+
+Gets or sets the values along the main diagonal of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a842d3ccd934f5b1e45fd03bde8a1766c}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!M11@{M11}}
+\index{M11@{M11}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{M11}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-M11\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_a842d3ccd934f5b1e45fd03bde8a1766c}
+
+
+Gets or sets the value at row 1, column 1 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a1741aebdbf36dd902d6b716844130980}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!M12@{M12}}
+\index{M12@{M12}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{M12}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-M12\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_a1741aebdbf36dd902d6b716844130980}
+
+
+Gets or sets the value at row 1, column 2 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_af845de5431e5c09062113b273448fe92}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!M13@{M13}}
+\index{M13@{M13}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{M13}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-M13\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_af845de5431e5c09062113b273448fe92}
+
+
+Gets or sets the value at row 1, column 3 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a2faa3e91dfd4ec4f58cb8d6941b12622}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!M14@{M14}}
+\index{M14@{M14}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{M14}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-M14\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_a2faa3e91dfd4ec4f58cb8d6941b12622}
+
+
+Gets or sets the value at row 1, column 4 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_aacd1ee880aa7955ef81828f7bf0948dc}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!M21@{M21}}
+\index{M21@{M21}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{M21}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-M21\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_aacd1ee880aa7955ef81828f7bf0948dc}
+
+
+Gets or sets the value at row 2, column 1 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_af2c85ac54d1d99635eff32e5e6d2322a}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!M22@{M22}}
+\index{M22@{M22}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{M22}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-M22\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_af2c85ac54d1d99635eff32e5e6d2322a}
+
+
+Gets or sets the value at row 2, column 2 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_ae5b70efcca57ecfb2c7da1f19aaad105}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!M23@{M23}}
+\index{M23@{M23}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{M23}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-M23\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_ae5b70efcca57ecfb2c7da1f19aaad105}
+
+
+Gets or sets the value at row 2, column 3 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a48a33c90ec140be681b04153a81e99c9}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!M24@{M24}}
+\index{M24@{M24}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{M24}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-M24\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_a48a33c90ec140be681b04153a81e99c9}
+
+
+Gets or sets the value at row 2, column 4 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a89ae4635cbac9bcce42f80f0d02d11d8}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!this\mbox{[}int row\-Index, int column\-Index\mbox{]}@{this[int row\-Index, int column\-Index]}}
+\index{this\mbox{[}int row\-Index, int column\-Index\mbox{]}@{this[int row\-Index, int column\-Index]}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{this[int row\-Index, int column\-Index]}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-this\mbox{[}int row\-Index, int column\-Index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix2x4d_a89ae4635cbac9bcce42f80f0d02d11d8}
+
+
+Gets or sets the value at a specified row and column. 
+
+\hypertarget{struct_open_t_k_1_1_matrix2x4d_a8756b543bb600eaa9e2205b5565ee09b}{\index{Open\-T\-K\-::\-Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}!Trace@{Trace}}
+\index{Trace@{Trace}!OpenTK::Matrix2x4d@{Open\-T\-K\-::\-Matrix2x4d}}
+\subsubsection[{Trace}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Matrix2x4d.\-Trace\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_matrix2x4d_a8756b543bb600eaa9e2205b5565ee09b}
+
+
+Gets the trace of the matrix, the sum of the values along the diagonal. 
+

@@ -1,0 +1,87 @@
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal}{\section{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context\-Internal Interface Reference}
+\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal}\index{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context\-Internal@{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context\-Internal}}
+}
+
+
+Provides methods to create new Graphics\-Contexts. Should only be used for extending \hyperlink{namespace_open_t_k}{Open\-T\-K}.  
+
+
+Inheritance diagram for Open\-T\-K.\-Graphics.\-I\-Graphics\-Context\-Internal\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_ac92fd883ec02b0391e3fcdbbdbd42d34}{Load\-All} ()
+\begin{DoxyCompactList}\small\item\em Loads all \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} entry points. Requires this instance to be current on the calling thread. \end{DoxyCompactList}\item 
+Int\-Ptr \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_af59790e0ad84f23c0ffe4a0b5655acca}{Get\-Address} (string function)
+\begin{DoxyCompactList}\small\item\em Gets the address of an \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} extension function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}{I\-Graphics\-Context} \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_a1827254204928b0db6085d229eefbca5}{Implementation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the internal implementation of the current instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_a39e3ed0ea9b5400bc64fd43c5b8ee9e7}{Context}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a handle to the \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} rendering context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides methods to create new Graphics\-Contexts. Should only be used for extending \hyperlink{namespace_open_t_k}{Open\-T\-K}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_af59790e0ad84f23c0ffe4a0b5655acca}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal}!Get\-Address@{Get\-Address}}
+\index{Get\-Address@{Get\-Address}!OpenTK::Graphics::IGraphicsContextInternal@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal}}
+\subsubsection[{Get\-Address}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Ptr Open\-T\-K.\-Graphics.\-I\-Graphics\-Context\-Internal.\-Get\-Address (
+\begin{DoxyParamCaption}
+\item[{string}]{function}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_af59790e0ad84f23c0ffe4a0b5655acca}
+
+
+Gets the address of an \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} extension function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & The name of the \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} function (e.\-g. \char`\"{}gl\-Get\-String\char`\"{})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the specified function or Int\-Ptr.\-Zero if the function isn't available in the current opengl context. 
+\end{DoxyReturn}
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_ac92fd883ec02b0391e3fcdbbdbd42d34}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal}!Load\-All@{Load\-All}}
+\index{Load\-All@{Load\-All}!OpenTK::Graphics::IGraphicsContextInternal@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal}}
+\subsubsection[{Load\-All}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-I\-Graphics\-Context\-Internal.\-Load\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_ac92fd883ec02b0391e3fcdbbdbd42d34}
+
+
+Loads all \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} entry points. Requires this instance to be current on the calling thread. 
+
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a21640f20db040987bd1f897f503b68a4}{Open\-T\-K.\-Graphics.\-Graphics\-Context}.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_a39e3ed0ea9b5400bc64fd43c5b8ee9e7}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal}!Context@{Context}}
+\index{Context@{Context}!OpenTK::Graphics::IGraphicsContextInternal@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal}}
+\subsubsection[{Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Context\-Handle} Open\-T\-K.\-Graphics.\-I\-Graphics\-Context\-Internal.\-Context\hspace{0.3cm}{\ttfamily [get]}}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_a39e3ed0ea9b5400bc64fd43c5b8ee9e7}
+
+
+Gets a handle to the \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} rendering context. 
+
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_a1827254204928b0db6085d229eefbca5}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal}!Implementation@{Implementation}}
+\index{Implementation@{Implementation}!OpenTK::Graphics::IGraphicsContextInternal@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context\-Internal}}
+\subsubsection[{Implementation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Graphics\-Context} Open\-T\-K.\-Graphics.\-I\-Graphics\-Context\-Internal.\-Implementation\hspace{0.3cm}{\ttfamily [get]}}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal_a1827254204928b0db6085d229eefbca5}
+
+
+Gets the internal implementation of the current instance. 
+

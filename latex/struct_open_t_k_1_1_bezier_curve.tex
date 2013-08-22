@@ -1,0 +1,286 @@
+\hypertarget{struct_open_t_k_1_1_bezier_curve}{\section{Open\-T\-K.\-Bezier\-Curve Struct Reference}
+\label{struct_open_t_k_1_1_bezier_curve}\index{Open\-T\-K.\-Bezier\-Curve@{Open\-T\-K.\-Bezier\-Curve}}
+}
+
+
+Represents a bezier curve with as many points as you want.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_bezier_curve_a9e392c383d9dadf9623ef006448ffcc7}{Bezier\-Curve} (I\-Enumerable$<$ \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} $>$ points)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve}{Bezier\-Curve}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_bezier_curve_a2b36fa455380baef82dca2391b5a6b5e}{Bezier\-Curve} (params \hyperlink{struct_open_t_k_1_1_vector2}{Vector2}\mbox{[}$\,$\mbox{]} points)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve}{Bezier\-Curve}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_bezier_curve_a9d2e84ce4f74629ed718a60325c3fb7c}{Bezier\-Curve} (float parallel, params \hyperlink{struct_open_t_k_1_1_vector2}{Vector2}\mbox{[}$\,$\mbox{]} points)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve}{Bezier\-Curve}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_bezier_curve_a1d48c667b91891dee4d437df35302b6a}{Bezier\-Curve} (float parallel, I\-Enumerable$<$ \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} $>$ points)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve}{Bezier\-Curve}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_a51852f049183eed482ccfcb5f3917ff3}{Calculate\-Point} (float t)
+\begin{DoxyCompactList}\small\item\em Calculates the point with the specified t. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_bezier_curve_afc6f7476067b003e8242af3212c093bf}{Calculate\-Length} (float precision)
+\begin{DoxyCompactList}\small\item\em Calculates the length of this bezier curve. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \hyperlink{struct_open_t_k_1_1_bezier_curve_adb71bfc6a400e1c53e7ca0e05f21c676}{Calculate\-Length} (I\-List$<$ \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} $>$ points, float precision)
+\begin{DoxyCompactList}\small\item\em Calculates the length of the specified bezier curve. \end{DoxyCompactList}\item 
+static float \hyperlink{struct_open_t_k_1_1_bezier_curve_a5dd57c1cf86e69ceaf56d12ae78b2a8a}{Calculate\-Length} (I\-List$<$ \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} $>$ points, float precision, float parallel)
+\begin{DoxyCompactList}\small\item\em Calculates the length of the specified bezier curve. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_a5fa54fd9e50e73c3669a023d4eceeeaf}{Calculate\-Point} (I\-List$<$ \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} $>$ points, float t)
+\begin{DoxyCompactList}\small\item\em Calculates the point on the given bezier curve with the specified t parameter. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_af4188ece61199d02a08d15898a3ff694}{Calculate\-Point} (I\-List$<$ \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} $>$ points, float t, float parallel)
+\begin{DoxyCompactList}\small\item\em Calculates the point on the given bezier curve with the specified t parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{struct_open_t_k_1_1_bezier_curve_a75d1e8dd00168cd35721f646f7e8ff50}{Parallel}
+\begin{DoxyCompactList}\small\item\em The parallel value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\-List$<$ \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} $>$ \hyperlink{struct_open_t_k_1_1_bezier_curve_a74bf686a5d1d90a1881fcbf0ffcb46e2}{Points}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the points of this curve. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a bezier curve with as many points as you want. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_a9e392c383d9dadf9623ef006448ffcc7}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Bezier\-Curve@{Bezier\-Curve}}
+\index{Bezier\-Curve@{Bezier\-Curve}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Bezier\-Curve}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Bezier\-Curve.\-Bezier\-Curve (
+\begin{DoxyParamCaption}
+\item[{I\-Enumerable$<$ {\bf Vector2} $>$}]{points}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_a9e392c383d9dadf9623ef006448ffcc7}
+
+
+Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve}{Bezier\-Curve}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The points.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_a2b36fa455380baef82dca2391b5a6b5e}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Bezier\-Curve@{Bezier\-Curve}}
+\index{Bezier\-Curve@{Bezier\-Curve}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Bezier\-Curve}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Bezier\-Curve.\-Bezier\-Curve (
+\begin{DoxyParamCaption}
+\item[{params {\bf Vector2}\mbox{[}$\,$\mbox{]}}]{points}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_a2b36fa455380baef82dca2391b5a6b5e}
+
+
+Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve}{Bezier\-Curve}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The points.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_a9d2e84ce4f74629ed718a60325c3fb7c}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Bezier\-Curve@{Bezier\-Curve}}
+\index{Bezier\-Curve@{Bezier\-Curve}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Bezier\-Curve}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Bezier\-Curve.\-Bezier\-Curve (
+\begin{DoxyParamCaption}
+\item[{float}]{parallel, }
+\item[{params {\bf Vector2}\mbox{[}$\,$\mbox{]}}]{points}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_a9d2e84ce4f74629ed718a60325c3fb7c}
+
+
+Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve}{Bezier\-Curve}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parallel} & The parallel value.\\
+\hline
+{\em points} & The points.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_a1d48c667b91891dee4d437df35302b6a}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Bezier\-Curve@{Bezier\-Curve}}
+\index{Bezier\-Curve@{Bezier\-Curve}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Bezier\-Curve}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Bezier\-Curve.\-Bezier\-Curve (
+\begin{DoxyParamCaption}
+\item[{float}]{parallel, }
+\item[{I\-Enumerable$<$ {\bf Vector2} $>$}]{points}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_a1d48c667b91891dee4d437df35302b6a}
+
+
+Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve}{Bezier\-Curve}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parallel} & The parallel value.\\
+\hline
+{\em points} & The points.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_afc6f7476067b003e8242af3212c093bf}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Calculate\-Length@{Calculate\-Length}}
+\index{Calculate\-Length@{Calculate\-Length}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Calculate\-Length}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Bezier\-Curve.\-Calculate\-Length (
+\begin{DoxyParamCaption}
+\item[{float}]{precision}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_afc6f7476067b003e8242af3212c093bf}
+
+
+Calculates the length of this bezier curve. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em precision} & The precision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Length of curve.
+\end{DoxyReturn}
+
+
+The precision gets better as the {\itshape precision}  value gets smaller.\hypertarget{struct_open_t_k_1_1_bezier_curve_adb71bfc6a400e1c53e7ca0e05f21c676}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Calculate\-Length@{Calculate\-Length}}
+\index{Calculate\-Length@{Calculate\-Length}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Calculate\-Length}]{\setlength{\rightskip}{0pt plus 5cm}static float Open\-T\-K.\-Bezier\-Curve.\-Calculate\-Length (
+\begin{DoxyParamCaption}
+\item[{I\-List$<$ {\bf Vector2} $>$}]{points, }
+\item[{float}]{precision}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_bezier_curve_adb71bfc6a400e1c53e7ca0e05f21c676}
+
+
+Calculates the length of the specified bezier curve. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The points.\\
+\hline
+{\em precision} & The precision value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The precision gets better as the {\itshape precision}  value gets smaller.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_a5dd57c1cf86e69ceaf56d12ae78b2a8a}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Calculate\-Length@{Calculate\-Length}}
+\index{Calculate\-Length@{Calculate\-Length}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Calculate\-Length}]{\setlength{\rightskip}{0pt plus 5cm}static float Open\-T\-K.\-Bezier\-Curve.\-Calculate\-Length (
+\begin{DoxyParamCaption}
+\item[{I\-List$<$ {\bf Vector2} $>$}]{points, }
+\item[{float}]{precision, }
+\item[{float}]{parallel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_bezier_curve_a5dd57c1cf86e69ceaf56d12ae78b2a8a}
+
+
+Calculates the length of the specified bezier curve. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The points.\\
+\hline
+{\em precision} & The precision value.\\
+\hline
+{\em parallel} & The parallel value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Length of curve.
+\end{DoxyReturn}
+
+
+The precision gets better as the {\itshape precision}  value gets smaller.
+
+The {\itshape parallel}  parameter defines whether the curve should be calculated as a parallel curve to the original bezier curve. A value of 0.\-0f represents the original curve, 5.\-0f represents a curve that has always a distance of 5.\-0f to the orignal curve.\hypertarget{struct_open_t_k_1_1_bezier_curve_a51852f049183eed482ccfcb5f3917ff3}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Calculate\-Point@{Calculate\-Point}}
+\index{Calculate\-Point@{Calculate\-Point}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Calculate\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve.\-Calculate\-Point (
+\begin{DoxyParamCaption}
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_a51852f049183eed482ccfcb5f3917ff3}
+
+
+Calculates the point with the specified t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The t value, between 0.\-0f and 1.\-0f.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting point.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_a5fa54fd9e50e73c3669a023d4eceeeaf}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Calculate\-Point@{Calculate\-Point}}
+\index{Calculate\-Point@{Calculate\-Point}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Calculate\-Point}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2} Open\-T\-K.\-Bezier\-Curve.\-Calculate\-Point (
+\begin{DoxyParamCaption}
+\item[{I\-List$<$ {\bf Vector2} $>$}]{points, }
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_bezier_curve_a5fa54fd9e50e73c3669a023d4eceeeaf}
+
+
+Calculates the point on the given bezier curve with the specified t parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The points.\\
+\hline
+{\em t} & The t parameter, a value between 0.\-0f and 1.\-0f.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting point.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_af4188ece61199d02a08d15898a3ff694}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Calculate\-Point@{Calculate\-Point}}
+\index{Calculate\-Point@{Calculate\-Point}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Calculate\-Point}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector2} Open\-T\-K.\-Bezier\-Curve.\-Calculate\-Point (
+\begin{DoxyParamCaption}
+\item[{I\-List$<$ {\bf Vector2} $>$}]{points, }
+\item[{float}]{t, }
+\item[{float}]{parallel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_bezier_curve_af4188ece61199d02a08d15898a3ff694}
+
+
+Calculates the point on the given bezier curve with the specified t parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The points.\\
+\hline
+{\em t} & The t parameter, a value between 0.\-0f and 1.\-0f.\\
+\hline
+{\em parallel} & The parallel value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting point.
+\end{DoxyReturn}
+
+
+The {\itshape parallel}  parameter defines whether the curve should be calculated as a parallel curve to the original bezier curve. A value of 0.\-0f represents the original curve, 5.\-0f represents a curve that has always a distance of 5.\-0f to the orignal curve.
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_a75d1e8dd00168cd35721f646f7e8ff50}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Parallel@{Parallel}}
+\index{Parallel@{Parallel}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Parallel}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Bezier\-Curve.\-Parallel}}\label{struct_open_t_k_1_1_bezier_curve_a75d1e8dd00168cd35721f646f7e8ff50}
+
+
+The parallel value. 
+
+This value defines whether the curve should be calculated as a parallel curve to the original bezier curve. A value of 0.\-0f represents the original curve, 5.\-0f i.\-e. stands for a curve that has always a distance of 5.\-0f to the orignal curve at any point.
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_a74bf686a5d1d90a1881fcbf0ffcb46e2}{\index{Open\-T\-K\-::\-Bezier\-Curve@{Open\-T\-K\-::\-Bezier\-Curve}!Points@{Points}}
+\index{Points@{Points}!OpenTK::BezierCurve@{Open\-T\-K\-::\-Bezier\-Curve}}
+\subsubsection[{Points}]{\setlength{\rightskip}{0pt plus 5cm}I\-List$<${\bf Vector2}$>$ Open\-T\-K.\-Bezier\-Curve.\-Points\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_bezier_curve_a74bf686a5d1d90a1881fcbf0ffcb46e2}
+
+
+Gets the points of this curve. 
+
+The first point and the last points represent the anchor points.

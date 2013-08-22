@@ -1,0 +1,987 @@
+\hypertarget{struct_open_t_k_1_1_quaterniond}{\section{Open\-T\-K.\-Quaterniond Struct Reference}
+\label{struct_open_t_k_1_1_quaterniond}\index{Open\-T\-K.\-Quaterniond@{Open\-T\-K.\-Quaterniond}}
+}
+
+
+Represents a double-\/precision \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion}.  
+
+
+
+
+Inherits I\-Equatable$<$ Quaterniond $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_quaterniond_a1ee2a28457c7e883a659acec6f5b5d47}{Quaterniond} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} v, double w)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} from vector and w components \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_quaterniond_a4953ca5777002ec5c80853e61ee80b28}{Quaterniond} (double x, double y, double z, double w)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_quaterniond_a98e59d928b8269c719d328fa14eb82ca}{To\-Axis\-Angle} (out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} axis, out double angle)
+\begin{DoxyCompactList}\small\item\em Convert the current quaternion to axis angle representation \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d} \hyperlink{struct_open_t_k_1_1_quaterniond_accfe115adc1ec4bf1f184ab9f33ad3f1}{To\-Axis\-Angle} ()
+\begin{DoxyCompactList}\small\item\em Convert this instance to an axis-\/angle representation. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a1ad44113a826afafe4664c96446a8e82}{Normalized} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of the \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} scaled to unit length. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_quaterniond_a03a329b2336cbef70733160519b085b7}{Invert} ()
+\begin{DoxyCompactList}\small\item\em Reverses the rotation angle of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a7d1148da4d01d90a65334951e8ddce54}{Inverted} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} with its rotation angle reversed. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_quaterniond_a4430185311f5a7fa97a782f9a10006b6}{Normalize} ()
+\begin{DoxyCompactList}\small\item\em Scales the \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to unit length. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_quaterniond_a9760ac06e29a3ab52d62958057cbbd5b}{Conjugate} ()
+\begin{DoxyCompactList}\small\item\em Inverts the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} component of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. \end{DoxyCompactList}\item 
+override string \hyperlink{struct_open_t_k_1_1_quaterniond_a5efa27da965ea0d68c399b47bc3b36de}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. \end{DoxyCompactList}\item 
+override bool \hyperlink{struct_open_t_k_1_1_quaterniond_afbac036863da104ad691f0bb7f08bb28}{Equals} (object other)
+\begin{DoxyCompactList}\small\item\em Compares this object instance to another object for equality. \end{DoxyCompactList}\item 
+override int \hyperlink{struct_open_t_k_1_1_quaterniond_a220b1fc82beba2b29084ada276e6d421}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Provides the hash code for this object. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_quaterniond_a65b02dfedb9ceb37b138829fa886c317}{Equals} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} other)
+\begin{DoxyCompactList}\small\item\em Compares this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} instance to another \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} for equality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a3719cc0d83970b0982e78c6ce1328b27}{Add} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right)
+\begin{DoxyCompactList}\small\item\em Add two quaternions \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaterniond_a3a71131e8b1c55fcf0d3b3c7601145de}{Add} (ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right, out \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} result)
+\begin{DoxyCompactList}\small\item\em Add two quaternions \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_ae0ef73b4870baeb922a05450d878a9a9}{Sub} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaterniond_a6a880dc13c646c5aeebc9713acd8cdf7}{Sub} (ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right, out \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} result)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_ab3a7e0269edff0aa97035d59d0064160}{Mult} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaterniond_a318fad702cef759b99e1b095b37fe6ee}{Mult} (ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right, out \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} result)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a3ee0fa11b125b3e9e02c2cfe8f1bca4c}{Multiply} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaterniond_af0a96f3005b5af22b2779312b4a8c6ae}{Multiply} (ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right, out \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} result)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaterniond_a755595d84d818b7d81206054e76bf971}{Multiply} (ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} quaternion, double scale, out \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} result)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_ac9cb66160a4fd9f729f0f57808cde218}{Multiply} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} quaternion, double scale)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a6e31ad4548580e67fd112673b047563e}{Conjugate} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} q)
+\begin{DoxyCompactList}\small\item\em Get the conjugate of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaterniond_a1dec147f14cb1847374fb87e6718e193}{Conjugate} (ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} q, out \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} result)
+\begin{DoxyCompactList}\small\item\em Get the conjugate of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a2e0b1d66188a58a10dd71676b51d2743}{Invert} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} q)
+\begin{DoxyCompactList}\small\item\em Get the inverse of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaterniond_a9b96050970ec65cd8120565bdcf956f9}{Invert} (ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} q, out \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} result)
+\begin{DoxyCompactList}\small\item\em Get the inverse of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_aba1ff89904f1e08232eaa5b24c77e231}{Normalize} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} q)
+\begin{DoxyCompactList}\small\item\em Scale the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to unit length \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaterniond_a04e8b92436006c087fa2b28eabc81d11}{Normalize} (ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} q, out \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} result)
+\begin{DoxyCompactList}\small\item\em Scale the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to unit length \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a0c99a8bc420203f591b1605dcc5631ff}{From\-Axis\-Angle} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} axis, double angle)
+\begin{DoxyCompactList}\small\item\em Build a \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} from the given axis and angle \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_ad416819a9221a7b6977757b0c020985a}{From\-Matrix} (\hyperlink{struct_open_t_k_1_1_matrix3d}{Matrix3d} matrix)
+\begin{DoxyCompactList}\small\item\em Builds a quaternion from the given rotation matrix \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaterniond_a1e62e3b50efd287bfca3a93a25e631a1}{From\-Matrix} (ref \hyperlink{struct_open_t_k_1_1_matrix3d}{Matrix3d} matrix, out \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} result)
+\begin{DoxyCompactList}\small\item\em Builds a quaternion from the given rotation matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a25a5935953cdf497cd5712ba14ea55f8}{Slerp} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} q1, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} q2, double blend)
+\begin{DoxyCompactList}\small\item\em Do Spherical linear interpolation between two quaternions \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a16578fc288f05255360d0266596d1adc}{operator+} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right)
+\begin{DoxyCompactList}\small\item\em Adds two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a94d5c0b541389c5a0782bd371b8f090d}{operator-\/} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a6b06ee7345dab7702f70237e6c77c0af}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a2bf2debad1c579562d583b23958438fc}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} quaternion, double scale)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_a572d99c01d99e0a93317c6275fe38859}{operator$\ast$} (double scale, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} quaternion)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_quaterniond_a0bed8bc84dab19ea64a98412aface866}{operator==} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for equality. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_quaterniond_ab712946b78898ef4a054d5a18891a817}{operator!=} (\hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} left, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for inequality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_open_t_k_1_1_quaterniond_a8c3288352505ef3e1aa87278d08fc129}{\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} {\bfseries xyz}}\label{struct_open_t_k_1_1_quaterniond_a8c3288352505ef3e1aa87278d08fc129}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_quaterniond_a3483a6660a55ce2def20bbe60a4da48d}{double {\bfseries w}}\label{struct_open_t_k_1_1_quaterniond_a3483a6660a55ce2def20bbe60a4da48d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} \hyperlink{struct_open_t_k_1_1_quaterniond_af8196c63aab195c3582028951e7d093a}{Identity} = new \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}(0, 0, 0, 1)
+\begin{DoxyCompactList}\small\item\em Defines the identity quaternion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_quaterniond_aaa7eee901e44e92bdeeaa260f100f3ea}{X\-Y\-Z}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the X, Y and Z components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_quaterniond_a4be7aa1af1afd9ab2f1cba872a191f70}{Xyz}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the X, Y and Z components of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_quaterniond_ad327401a2d49e95a009185f844238046}{X}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the X component of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_quaterniond_ad1e8a8564cc57374f5db3569238b2a77}{Y}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Y component of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_quaterniond_a5dfcea3ee6e2541d0539ec4947a8677c}{Z}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Z component of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_quaterniond_a6407599296d528ce64964114eb7d6745}{W}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the W component of this instance. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_quaterniond_a8759a8c86b72c93aed6739c00b076cf3}{Length}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the length (magnitude) of the \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_quaterniond_a3a3405ecb859e0bec87c04f68ea81583}{Length\-Squared}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the square of the \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} length (magnitude). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a double-\/precision \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion}. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a1ee2a28457c7e883a659acec6f5b5d47}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Quaterniond@{Quaterniond}}
+\index{Quaterniond@{Quaterniond}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Quaterniond}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Quaterniond.\-Quaterniond (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{v, }
+\item[{double}]{w}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a1ee2a28457c7e883a659acec6f5b5d47}
+
+
+Construct a new \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} from vector and w components 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector part\\
+\hline
+{\em w} & The w part\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a4953ca5777002ec5c80853e61ee80b28}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Quaterniond@{Quaterniond}}
+\index{Quaterniond@{Quaterniond}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Quaterniond}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Quaterniond.\-Quaterniond (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{z, }
+\item[{double}]{w}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a4953ca5777002ec5c80853e61ee80b28}
+
+
+Construct a new \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component\\
+\hline
+{\em y} & The y component\\
+\hline
+{\em z} & The z component\\
+\hline
+{\em w} & The w component\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a3719cc0d83970b0982e78c6ce1328b27}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{left, }
+\item[{{\bf Quaterniond}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a3719cc0d83970b0982e78c6ce1328b27}
+
+
+Add two quaternions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first operand\\
+\hline
+{\em right} & The second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the addition
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a3a71131e8b1c55fcf0d3b3c7601145de}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaterniond.\-Add (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaterniond}}]{left, }
+\item[{ref {\bf Quaterniond}}]{right, }
+\item[{out {\bf Quaterniond}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a3a71131e8b1c55fcf0d3b3c7601145de}
+
+
+Add two quaternions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first operand\\
+\hline
+{\em right} & The second operand\\
+\hline
+{\em result} & The result of the addition\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a9760ac06e29a3ab52d62958057cbbd5b}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Conjugate@{Conjugate}}
+\index{Conjugate@{Conjugate}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Conjugate}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Quaterniond.\-Conjugate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a9760ac06e29a3ab52d62958057cbbd5b}
+
+
+Inverts the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} component of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_a6e31ad4548580e67fd112673b047563e}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Conjugate@{Conjugate}}
+\index{Conjugate@{Conjugate}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Conjugate}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Conjugate (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a6e31ad4548580e67fd112673b047563e}
+
+
+Get the conjugate of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conjugate of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a1dec147f14cb1847374fb87e6718e193}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Conjugate@{Conjugate}}
+\index{Conjugate@{Conjugate}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Conjugate}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaterniond.\-Conjugate (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaterniond}}]{q, }
+\item[{out {\bf Quaterniond}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a1dec147f14cb1847374fb87e6718e193}
+
+
+Get the conjugate of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}\\
+\hline
+{\em result} & The conjugate of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_afbac036863da104ad691f0bb7f08bb28}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Quaterniond.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_afbac036863da104ad691f0bb7f08bb28}
+
+
+Compares this object instance to another object for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other object to be used in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both objects are Quaternions of equal value. Otherwise it returns false.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a65b02dfedb9ceb37b138829fa886c317}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Quaterniond.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a65b02dfedb9ceb37b138829fa886c317}
+
+
+Compares this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} instance to another \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to be used in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both instances are equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a0c99a8bc420203f591b1605dcc5631ff}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!From\-Axis\-Angle@{From\-Axis\-Angle}}
+\index{From\-Axis\-Angle@{From\-Axis\-Angle}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{From\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-From\-Axis\-Angle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{axis, }
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a0c99a8bc420203f591b1605dcc5631ff}
+
+
+Build a \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} from the given axis and angle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis to rotate about\\
+\hline
+{\em angle} & The rotation angle in radians\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_ad416819a9221a7b6977757b0c020985a}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!From\-Matrix@{From\-Matrix}}
+\index{From\-Matrix@{From\-Matrix}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{From\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-From\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix3d}}]{matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_ad416819a9221a7b6977757b0c020985a}
+
+
+Builds a quaternion from the given rotation matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & A rotation matrix\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The equivalent quaternion
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a1e62e3b50efd287bfca3a93a25e631a1}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!From\-Matrix@{From\-Matrix}}
+\index{From\-Matrix@{From\-Matrix}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{From\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaterniond.\-From\-Matrix (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix3d}}]{matrix, }
+\item[{out {\bf Quaterniond}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a1e62e3b50efd287bfca3a93a25e631a1}
+
+
+Builds a quaternion from the given rotation matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & A rotation matrix\\
+\hline
+{\em result} & The equivalent quaternion\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a220b1fc82beba2b29084ada276e6d421}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Quaterniond.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a220b1fc82beba2b29084ada276e6d421}
+
+
+Provides the hash code for this object. 
+
+\begin{DoxyReturn}{Returns}
+A hash code formed from the bitwise X\-O\-R of this objects members.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a03a329b2336cbef70733160519b085b7}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Invert@{Invert}}
+\index{Invert@{Invert}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Quaterniond.\-Invert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a03a329b2336cbef70733160519b085b7}
+
+
+Reverses the rotation angle of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_a2e0b1d66188a58a10dd71676b51d2743}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Invert@{Invert}}
+\index{Invert@{Invert}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Invert (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a2e0b1d66188a58a10dd71676b51d2743}
+
+
+Get the inverse of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to invert\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inverse of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a9b96050970ec65cd8120565bdcf956f9}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Invert@{Invert}}
+\index{Invert@{Invert}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaterniond.\-Invert (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaterniond}}]{q, }
+\item[{out {\bf Quaterniond}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a9b96050970ec65cd8120565bdcf956f9}
+
+
+Get the inverse of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to invert\\
+\hline
+{\em result} & The inverse of the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a7d1148da4d01d90a65334951e8ddce54}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Inverted@{Inverted}}
+\index{Inverted@{Inverted}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Inverted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Inverted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a7d1148da4d01d90a65334951e8ddce54}
+
+
+Returns a copy of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} with its rotation angle reversed. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_ab3a7e0269edff0aa97035d59d0064160}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{left, }
+\item[{{\bf Quaterniond}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_ab3a7e0269edff0aa97035d59d0064160}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a318fad702cef759b99e1b095b37fe6ee}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaterniond.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaterniond}}]{left, }
+\item[{ref {\bf Quaterniond}}]{right, }
+\item[{out {\bf Quaterniond}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a318fad702cef759b99e1b095b37fe6ee}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+{\em result} & A new instance containing the result of the calculation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a3ee0fa11b125b3e9e02c2cfe8f1bca4c}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{left, }
+\item[{{\bf Quaterniond}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a3ee0fa11b125b3e9e02c2cfe8f1bca4c}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_af0a96f3005b5af22b2779312b4a8c6ae}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaterniond.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaterniond}}]{left, }
+\item[{ref {\bf Quaterniond}}]{right, }
+\item[{out {\bf Quaterniond}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_af0a96f3005b5af22b2779312b4a8c6ae}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+{\em result} & A new instance containing the result of the calculation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a755595d84d818b7d81206054e76bf971}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaterniond.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaterniond}}]{quaternion, }
+\item[{double}]{scale, }
+\item[{out {\bf Quaterniond}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a755595d84d818b7d81206054e76bf971}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quaternion} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+{\em result} & A new instance containing the result of the calculation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_ac9cb66160a4fd9f729f0f57808cde218}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{quaternion, }
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_ac9cb66160a4fd9f729f0f57808cde218}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quaternion} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a4430185311f5a7fa97a782f9a10006b6}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Quaterniond.\-Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a4430185311f5a7fa97a782f9a10006b6}
+
+
+Scales the \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to unit length. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_aba1ff89904f1e08232eaa5b24c77e231}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Normalize (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_aba1ff89904f1e08232eaa5b24c77e231}
+
+
+Scale the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a04e8b92436006c087fa2b28eabc81d11}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaterniond.\-Normalize (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaterniond}}]{q, }
+\item[{out {\bf Quaterniond}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a04e8b92436006c087fa2b28eabc81d11}
+
+
+Scale the given \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} to normalize\\
+\hline
+{\em result} & The normalized \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a1ad44113a826afafe4664c96446a8e82}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Normalized}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Normalized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a1ad44113a826afafe4664c96446a8e82}
+
+
+Returns a copy of the \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} scaled to unit length. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_ab712946b78898ef4a054d5a18891a817}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Quaterniond.\-operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{left, }
+\item[{{\bf Quaterniond}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_ab712946b78898ef4a054d5a18891a817}
+
+
+Compares two instances for inequality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left does not equal right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a6b06ee7345dab7702f70237e6c77c0af}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{left, }
+\item[{{\bf Quaterniond}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a6b06ee7345dab7702f70237e6c77c0af}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a2bf2debad1c579562d583b23958438fc}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{quaternion, }
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a2bf2debad1c579562d583b23958438fc}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quaternion} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a572d99c01d99e0a93317c6275fe38859}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{scale, }
+\item[{{\bf Quaterniond}}]{quaternion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a572d99c01d99e0a93317c6275fe38859}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quaternion} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a16578fc288f05255360d0266596d1adc}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!operator+@{operator+}}
+\index{operator+@{operator+}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{left, }
+\item[{{\bf Quaterniond}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a16578fc288f05255360d0266596d1adc}
+
+
+Adds two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a94d5c0b541389c5a0782bd371b8f090d}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{left, }
+\item[{{\bf Quaterniond}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a94d5c0b541389c5a0782bd371b8f090d}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a0bed8bc84dab19ea64a98412aface866}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!operator==@{operator==}}
+\index{operator==@{operator==}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Quaterniond.\-operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{left, }
+\item[{{\bf Quaterniond}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a0bed8bc84dab19ea64a98412aface866}
+
+
+Compares two instances for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left equals right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a25a5935953cdf497cd5712ba14ea55f8}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Slerp@{Slerp}}
+\index{Slerp@{Slerp}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Slerp}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Slerp (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{q1, }
+\item[{{\bf Quaterniond}}]{q2, }
+\item[{double}]{blend}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a25a5935953cdf497cd5712ba14ea55f8}
+
+
+Do Spherical linear interpolation between two quaternions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q1} & The first \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}\\
+\hline
+{\em q2} & The second \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}\\
+\hline
+{\em blend} & The blend factor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A smooth blend between the given quaternions
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_ae0ef73b4870baeb922a05450d878a9a9}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaterniond}}]{left, }
+\item[{{\bf Quaterniond}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_ae0ef73b4870baeb922a05450d878a9a9}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left instance.\\
+\hline
+{\em right} & The right instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a6a880dc13c646c5aeebc9713acd8cdf7}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaterniond.\-Sub (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaterniond}}]{left, }
+\item[{ref {\bf Quaterniond}}]{right, }
+\item[{out {\bf Quaterniond}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_a6a880dc13c646c5aeebc9713acd8cdf7}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left instance.\\
+\hline
+{\em right} & The right instance.\\
+\hline
+{\em result} & The result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a98e59d928b8269c719d328fa14eb82ca}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!To\-Axis\-Angle@{To\-Axis\-Angle}}
+\index{To\-Axis\-Angle@{To\-Axis\-Angle}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{To\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Quaterniond.\-To\-Axis\-Angle (
+\begin{DoxyParamCaption}
+\item[{out {\bf Vector3d}}]{axis, }
+\item[{out double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a98e59d928b8269c719d328fa14eb82ca}
+
+
+Convert the current quaternion to axis angle representation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The resultant axis\\
+\hline
+{\em angle} & The resultant angle\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaterniond_accfe115adc1ec4bf1f184ab9f33ad3f1}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!To\-Axis\-Angle@{To\-Axis\-Angle}}
+\index{To\-Axis\-Angle@{To\-Axis\-Angle}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{To\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4d} Open\-T\-K.\-Quaterniond.\-To\-Axis\-Angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_accfe115adc1ec4bf1f184ab9f33ad3f1}
+
+
+Convert this instance to an axis-\/angle representation. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_open_t_k_1_1_vector4}{Vector4} that is the axis-\/angle representation of this quaternion.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a5efa27da965ea0d68c399b47bc3b36de}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Quaterniond.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaterniond_a5efa27da965ea0d68c399b47bc3b36de}
+
+
+Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_quaterniond_af8196c63aab195c3582028951e7d093a}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Identity@{Identity}}
+\index{Identity@{Identity}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Quaterniond} Open\-T\-K.\-Quaterniond.\-Identity = new {\bf Quaterniond}(0, 0, 0, 1)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaterniond_af8196c63aab195c3582028951e7d093a}
+
+
+Defines the identity quaternion. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a8759a8c86b72c93aed6739c00b076cf3}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Length@{Length}}
+\index{Length@{Length}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Quaterniond.\-Length\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_quaterniond_a8759a8c86b72c93aed6739c00b076cf3}
+
+
+Gets the length (magnitude) of the \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_open_t_k_1_1_quaterniond_a3a3405ecb859e0bec87c04f68ea81583}{Length\-Squared}
+
+
+\end{DoxySeeAlso}
+\hypertarget{struct_open_t_k_1_1_quaterniond_a3a3405ecb859e0bec87c04f68ea81583}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Length\-Squared@{Length\-Squared}}
+\index{Length\-Squared@{Length\-Squared}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Length\-Squared}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Quaterniond.\-Length\-Squared\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_quaterniond_a3a3405ecb859e0bec87c04f68ea81583}
+
+
+Gets the square of the \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} length (magnitude). 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_a6407599296d528ce64964114eb7d6745}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!W@{W}}
+\index{W@{W}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{W}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Quaterniond.\-W\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaterniond_a6407599296d528ce64964114eb7d6745}
+
+
+Gets or sets the W component of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_ad327401a2d49e95a009185f844238046}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!X@{X}}
+\index{X@{X}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Quaterniond.\-X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaterniond_ad327401a2d49e95a009185f844238046}
+
+
+Gets or sets the X component of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_aaa7eee901e44e92bdeeaa260f100f3ea}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!X\-Y\-Z@{X\-Y\-Z}}
+\index{X\-Y\-Z@{X\-Y\-Z}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{X\-Y\-Z}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3d} Open\-T\-K.\-Quaterniond.\-X\-Y\-Z\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaterniond_aaa7eee901e44e92bdeeaa260f100f3ea}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the X, Y and Z components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_a4be7aa1af1afd9ab2f1cba872a191f70}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Xyz@{Xyz}}
+\index{Xyz@{Xyz}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Xyz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3d} Open\-T\-K.\-Quaterniond.\-Xyz\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaterniond_a4be7aa1af1afd9ab2f1cba872a191f70}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the X, Y and Z components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_ad1e8a8564cc57374f5db3569238b2a77}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Y@{Y}}
+\index{Y@{Y}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Quaterniond.\-Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaterniond_ad1e8a8564cc57374f5db3569238b2a77}
+
+
+Gets or sets the Y component of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaterniond_a5dfcea3ee6e2541d0539ec4947a8677c}{\index{Open\-T\-K\-::\-Quaterniond@{Open\-T\-K\-::\-Quaterniond}!Z@{Z}}
+\index{Z@{Z}!OpenTK::Quaterniond@{Open\-T\-K\-::\-Quaterniond}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Quaterniond.\-Z\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaterniond_a5dfcea3ee6e2541d0539ec4947a8677c}
+
+
+Gets or sets the Z component of this instance. 
+

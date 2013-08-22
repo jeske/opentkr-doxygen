@@ -1,0 +1,311 @@
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state}{\section{Open\-T\-K.\-Input.\-Mouse\-State Struct Reference}
+\label{struct_open_t_k_1_1_input_1_1_mouse_state}\index{Open\-T\-K.\-Input.\-Mouse\-State@{Open\-T\-K.\-Input.\-Mouse\-State}}
+}
+
+
+Encapsulates the state of a mouse device.  
+
+
+
+
+Inherits I\-Equatable$<$ Mouse\-State $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a3114cc768382741249b11de8570b5488}{Is\-Button\-Down} (\hyperlink{namespace_open_t_k_1_1_input_a2f6f4de1a952f42570d2e06fd15b5774}{Mouse\-Button} button)
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this button is down. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a2685b2e6127f2e3353b693324deb1ad8}{Is\-Button\-Up} (\hyperlink{namespace_open_t_k_1_1_input_a2f6f4de1a952f42570d2e06fd15b5774}{Mouse\-Button} button)
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this button is up. \end{DoxyCompactList}\item 
+override bool \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_aa2de31d8c7c58233fc1c327d80afe60e}{Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Compares to an object instance for equality. \end{DoxyCompactList}\item 
+override int \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_ade133559f58f1b2b0459ae09438192de}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Generates a hashcode for the current instance. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a59eebd97ada06e39f423abcc3629783d}{Equals} (\hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} other)
+\begin{DoxyCompactList}\small\item\em Compares two \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instances. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a94be18bd8dba5aa84dea4b464de7ff60}{operator==} (\hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} left, \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} right)
+\begin{DoxyCompactList}\small\item\em Checks whether two \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instances are equal. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a5b845f3fb3507403f2270a0f8b587b26}{operator!=} (\hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} left, \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} right)
+\begin{DoxyCompactList}\small\item\em Checks whether two \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instances are not equal. \end{DoxyCompactList}\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_ae51d55198f3350ab9faa26138c446c38}{static void {\bfseries Validate\-Offset} (int offset)}\label{struct_open_t_k_1_1_input_1_1_mouse_state_ae51d55198f3350ab9faa26138c446c38}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a79f3097329f8415900c939c663a0d73e}{const int {\bfseries Int\-Size} = sizeof(int)}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a79f3097329f8415900c939c663a0d73e}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_aefd1e3045049a846615a6951be8742a5}{const int {\bfseries Num\-Ints} = ((int)Mouse\-Button.\-Last\-Button + Int\-Size -\/ 1) / Int\-Size}\label{struct_open_t_k_1_1_input_1_1_mouse_state_aefd1e3045049a846615a6951be8742a5}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a7fc4a7e96b7a8c11724e5d490111e663}{unsafe fixed int {\bfseries Buttons} \mbox{[}Num\-Ints\mbox{]}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a7fc4a7e96b7a8c11724e5d490111e663}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a1c2dc651b6cfe4e05470933213252490}{int {\bfseries x}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a1c2dc651b6cfe4e05470933213252490}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a4d42c0dd0d0d59d4e605be9decf18004}{int {\bfseries y}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a4d42c0dd0d0d59d4e605be9decf18004}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a4065e654de260c1d02ccf78f347f1869}{float {\bfseries wheel}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a4065e654de260c1d02ccf78f347f1869}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a13563f19fae99086cd7b83fadaa55045}{bool {\bfseries is\-\_\-connected}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a13563f19fae99086cd7b83fadaa55045}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_ab17d6377dee4f554214f7872f5f05b61}{this\mbox{[}\-Mouse\-Button button\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the specified \hyperlink{namespace_open_t_k_1_1_input_a2f6f4de1a952f42570d2e06fd15b5774}{Open\-T\-K.\-Input.\-Mouse\-Button} is pressed. \end{DoxyCompactList}\item 
+int \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_ab490a682925a6ddd972eb41cab4714d5}{Wheel}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the absolute wheel position in integer units. To support high-\/precision mice, it is recommended to use \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a7cccb024aeef61d35a151f97e63e9523}{Wheel\-Precise} instead. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a7cccb024aeef61d35a151f97e63e9523}{Wheel\-Precise}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the absolute wheel position in floating-\/point units. \end{DoxyCompactList}\item 
+int \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a6982bc2d2ba1de945958142d3e6cc660}{X}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the absolute x position of the pointer, in window pixel coordinates. \end{DoxyCompactList}\item 
+int \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a768bb7145134c4f4c7381e91f4b59744}{Y}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the absolute y position of the pointer, in window pixel coordinates. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_input_a115b5677e3f8372e1c952fedc964d161}{Button\-State} \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a025319a078dfbe9eb67ad930db990869}{Left\-Button}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the left mouse button is pressed. This property is intended for X\-N\-A compatibility. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_input_a115b5677e3f8372e1c952fedc964d161}{Button\-State} \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a39c01ea816a799c76cb3fe572e72fb97}{Middle\-Button}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the middle mouse button is pressed. This property is intended for X\-N\-A compatibility. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_input_a115b5677e3f8372e1c952fedc964d161}{Button\-State} \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a8b9002f3148672b78e890e99e6d8d7b7}{Right\-Button}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the right mouse button is pressed. This property is intended for X\-N\-A compatibility. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_input_a115b5677e3f8372e1c952fedc964d161}{Button\-State} \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a693612a1acde7d368593396db3f38d37}{X\-Button1}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the first extra mouse button is pressed. This property is intended for X\-N\-A compatibility. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_input_a115b5677e3f8372e1c952fedc964d161}{Button\-State} \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a8e94d54eba550aa3ecd4836b99ba1060}{X\-Button2}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the second extra mouse button is pressed. This property is intended for X\-N\-A compatibility. \end{DoxyCompactList}\item 
+int \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_acdb9186e8c68ffad1dd41729d9a215c1}{Scroll\-Wheel\-Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the absolute wheel position in integer units. This property is intended for X\-N\-A compatibility. To support high-\/precision mice, it is recommended to use \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a7cccb024aeef61d35a151f97e63e9523}{Wheel\-Precise} instead. \end{DoxyCompactList}\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a98f6240a10d48e03b61c5570a7b17a22}{bool {\bfseries Is\-Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a98f6240a10d48e03b61c5570a7b17a22}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encapsulates the state of a mouse device. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_aa2de31d8c7c58233fc1c327d80afe60e}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Input.\-Mouse\-State.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_aa2de31d8c7c58233fc1c327d80afe60e}
+
+
+Compares to an object instance for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The System.\-Object to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this instance is equal to obj; false otherwise. 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a59eebd97ada06e39f423abcc3629783d}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Mouse\-State.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\-State}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a59eebd97ada06e39f423abcc3629783d}
+
+
+Compares two \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The instance to compare two.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if both instances are equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_ade133559f58f1b2b0459ae09438192de}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Input.\-Mouse\-State.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_ade133559f58f1b2b0459ae09438192de}
+
+
+Generates a hashcode for the current instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-Int32 represting the hashcode for this instance. 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a3114cc768382741249b11de8570b5488}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Is\-Button\-Down@{Is\-Button\-Down}}
+\index{Is\-Button\-Down@{Is\-Button\-Down}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Is\-Button\-Down}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Mouse\-State.\-Is\-Button\-Down (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\-Button}}]{button}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a3114cc768382741249b11de8570b5488}
+
+
+Gets a System.\-Boolean indicating whether this button is down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The \hyperlink{namespace_open_t_k_1_1_input_a2f6f4de1a952f42570d2e06fd15b5774}{Open\-T\-K.\-Input.\-Mouse\-Button} to check.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a2685b2e6127f2e3353b693324deb1ad8}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Is\-Button\-Up@{Is\-Button\-Up}}
+\index{Is\-Button\-Up@{Is\-Button\-Up}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Is\-Button\-Up}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Mouse\-State.\-Is\-Button\-Up (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\-Button}}]{button}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a2685b2e6127f2e3353b693324deb1ad8}
+
+
+Gets a System.\-Boolean indicating whether this button is up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The \hyperlink{namespace_open_t_k_1_1_input_a2f6f4de1a952f42570d2e06fd15b5774}{Open\-T\-K.\-Input.\-Mouse\-Button} to check.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a5b845f3fb3507403f2270a0f8b587b26}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Input.\-Mouse\-State.\-operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\-State}}]{left, }
+\item[{{\bf Mouse\-State}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a5b845f3fb3507403f2270a0f8b587b26}
+
+
+Checks whether two \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instances are not equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & A \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instance. \\
+\hline
+{\em right} & A \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both left is not equal to right; false otherwise. 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a94be18bd8dba5aa84dea4b464de7ff60}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!operator==@{operator==}}
+\index{operator==@{operator==}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Input.\-Mouse\-State.\-operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\-State}}]{left, }
+\item[{{\bf Mouse\-State}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a94be18bd8dba5aa84dea4b464de7ff60}
+
+
+Checks whether two \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instances are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & A \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instance. \\
+\hline
+{\em right} & A \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state}{Mouse\-State} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both left is equal to right; false otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a025319a078dfbe9eb67ad930db990869}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Left\-Button@{Left\-Button}}
+\index{Left\-Button@{Left\-Button}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Left\-Button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Button\-State} Open\-T\-K.\-Input.\-Mouse\-State.\-Left\-Button\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a025319a078dfbe9eb67ad930db990869}
+
+
+Gets a System.\-Boolean indicating whether the left mouse button is pressed. This property is intended for X\-N\-A compatibility. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a39c01ea816a799c76cb3fe572e72fb97}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Middle\-Button@{Middle\-Button}}
+\index{Middle\-Button@{Middle\-Button}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Middle\-Button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Button\-State} Open\-T\-K.\-Input.\-Mouse\-State.\-Middle\-Button\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a39c01ea816a799c76cb3fe572e72fb97}
+
+
+Gets a System.\-Boolean indicating whether the middle mouse button is pressed. This property is intended for X\-N\-A compatibility. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a8b9002f3148672b78e890e99e6d8d7b7}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Right\-Button@{Right\-Button}}
+\index{Right\-Button@{Right\-Button}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Right\-Button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Button\-State} Open\-T\-K.\-Input.\-Mouse\-State.\-Right\-Button\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a8b9002f3148672b78e890e99e6d8d7b7}
+
+
+Gets a System.\-Boolean indicating whether the right mouse button is pressed. This property is intended for X\-N\-A compatibility. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_acdb9186e8c68ffad1dd41729d9a215c1}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Scroll\-Wheel\-Value@{Scroll\-Wheel\-Value}}
+\index{Scroll\-Wheel\-Value@{Scroll\-Wheel\-Value}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Scroll\-Wheel\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-State.\-Scroll\-Wheel\-Value\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_acdb9186e8c68ffad1dd41729d9a215c1}
+
+
+Gets the absolute wheel position in integer units. This property is intended for X\-N\-A compatibility. To support high-\/precision mice, it is recommended to use \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a7cccb024aeef61d35a151f97e63e9523}{Wheel\-Precise} instead. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_ab17d6377dee4f554214f7872f5f05b61}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!this\mbox{[}\-Mouse\-Button button\mbox{]}@{this[Mouse\-Button button]}}
+\index{this\mbox{[}\-Mouse\-Button button\mbox{]}@{this[Mouse\-Button button]}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{this[Mouse\-Button button]}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Mouse\-State.\-this\mbox{[}{\bf Mouse\-Button} button\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_ab17d6377dee4f554214f7872f5f05b61}
+
+
+Gets a System.\-Boolean indicating whether the specified \hyperlink{namespace_open_t_k_1_1_input_a2f6f4de1a952f42570d2e06fd15b5774}{Open\-T\-K.\-Input.\-Mouse\-Button} is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The \hyperlink{namespace_open_t_k_1_1_input_a2f6f4de1a952f42570d2e06fd15b5774}{Open\-T\-K.\-Input.\-Mouse\-Button} to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if key is pressed; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_ab490a682925a6ddd972eb41cab4714d5}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Wheel@{Wheel}}
+\index{Wheel@{Wheel}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Wheel}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-State.\-Wheel\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_ab490a682925a6ddd972eb41cab4714d5}
+
+
+Gets the absolute wheel position in integer units. To support high-\/precision mice, it is recommended to use \hyperlink{struct_open_t_k_1_1_input_1_1_mouse_state_a7cccb024aeef61d35a151f97e63e9523}{Wheel\-Precise} instead. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a7cccb024aeef61d35a151f97e63e9523}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Wheel\-Precise@{Wheel\-Precise}}
+\index{Wheel\-Precise@{Wheel\-Precise}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Wheel\-Precise}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Input.\-Mouse\-State.\-Wheel\-Precise\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a7cccb024aeef61d35a151f97e63e9523}
+
+
+Gets the absolute wheel position in floating-\/point units. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a6982bc2d2ba1de945958142d3e6cc660}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!X@{X}}
+\index{X@{X}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-State.\-X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a6982bc2d2ba1de945958142d3e6cc660}
+
+
+Gets an integer representing the absolute x position of the pointer, in window pixel coordinates. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a693612a1acde7d368593396db3f38d37}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!X\-Button1@{X\-Button1}}
+\index{X\-Button1@{X\-Button1}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{X\-Button1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Button\-State} Open\-T\-K.\-Input.\-Mouse\-State.\-X\-Button1\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a693612a1acde7d368593396db3f38d37}
+
+
+Gets a System.\-Boolean indicating whether the first extra mouse button is pressed. This property is intended for X\-N\-A compatibility. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a8e94d54eba550aa3ecd4836b99ba1060}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!X\-Button2@{X\-Button2}}
+\index{X\-Button2@{X\-Button2}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{X\-Button2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Button\-State} Open\-T\-K.\-Input.\-Mouse\-State.\-X\-Button2\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a8e94d54eba550aa3ecd4836b99ba1060}
+
+
+Gets a System.\-Boolean indicating whether the second extra mouse button is pressed. This property is intended for X\-N\-A compatibility. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_mouse_state_a768bb7145134c4f4c7381e91f4b59744}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-State@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}!Y@{Y}}
+\index{Y@{Y}!OpenTK::Input::MouseState@{Open\-T\-K\-::\-Input\-::\-Mouse\-State}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-State.\-Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_input_1_1_mouse_state_a768bb7145134c4f4c7381e91f4b59744}
+
+
+Gets an integer representing the absolute y position of the pointer, in window pixel coordinates. 
+

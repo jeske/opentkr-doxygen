@@ -1,0 +1,987 @@
+\hypertarget{struct_open_t_k_1_1_quaternion}{\section{Open\-T\-K.\-Quaternion Struct Reference}
+\label{struct_open_t_k_1_1_quaternion}\index{Open\-T\-K.\-Quaternion@{Open\-T\-K.\-Quaternion}}
+}
+
+
+Represents a \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion}.  
+
+
+
+
+Inherits I\-Equatable$<$ Quaternion $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_quaternion_a06f0e188f9174175b591389fc4bbf0a1}{Quaternion} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} v, float w)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} from vector and w components \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_quaternion_a903587c421dde735c08bf0bf878daf1f}{Quaternion} (float x, float y, float z, float w)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_quaternion_aefdf2ce49edd34247ee47da47ea340e5}{To\-Axis\-Angle} (out \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} axis, out float angle)
+\begin{DoxyCompactList}\small\item\em Convert the current quaternion to axis angle representation \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_quaternion_a9473c428ba8e986cbf56b28d729a8cd3}{To\-Axis\-Angle} ()
+\begin{DoxyCompactList}\small\item\em Convert this instance to an axis-\/angle representation. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_acbd0d16744065bf333d842d482460e26}{Normalized} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of the \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} scaled to unit length. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_quaternion_aa72d00779d1c9f5de9c6cbb7cc460f08}{Invert} ()
+\begin{DoxyCompactList}\small\item\em Reverses the rotation angle of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a8c595f7a501f568fbb1bc15f783847dd}{Inverted} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} with its rotation angle reversed. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_quaternion_a39c08673d20b47daeb30691cc9b887e0}{Normalize} ()
+\begin{DoxyCompactList}\small\item\em Scales the \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} to unit length. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_quaternion_ad2a8d218e87e0d7351e190f79bd9a6d3}{Conjugate} ()
+\begin{DoxyCompactList}\small\item\em Inverts the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} component of this \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion}. \end{DoxyCompactList}\item 
+override string \hyperlink{struct_open_t_k_1_1_quaternion_a234a78961f6168602932a391543bb517}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion}. \end{DoxyCompactList}\item 
+override bool \hyperlink{struct_open_t_k_1_1_quaternion_ae4258668435340a6b71613bf6e086690}{Equals} (object other)
+\begin{DoxyCompactList}\small\item\em Compares this object instance to another object for equality. \end{DoxyCompactList}\item 
+override int \hyperlink{struct_open_t_k_1_1_quaternion_a7cf9a59b36cc514ac8f4ac71ad175c4f}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Provides the hash code for this object. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_quaternion_a2537c5ba956b79ba91cade02b6f6ca71}{Equals} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} other)
+\begin{DoxyCompactList}\small\item\em Compares this \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} instance to another \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} for equality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a7de4c42bb87e78a0e6b1dfee623d8fc7}{Add} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right)
+\begin{DoxyCompactList}\small\item\em Add two quaternions \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaternion_a02cbc83e73f0daefba3e77beb45c5e5a}{Add} (ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right, out \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} result)
+\begin{DoxyCompactList}\small\item\em Add two quaternions \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_ab1ddf04d6cf86e470cf1aa75147c143a}{Sub} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaternion_ad8bf2c580b06268b9e1c45aea27b8c52}{Sub} (ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right, out \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} result)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a1f38c4a06ba31f9f862b5dc57494dd39}{Mult} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaternion_ad0e67d8b7266915adf0bfae31d6757b9}{Mult} (ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right, out \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} result)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a1fa69eacde2186a08be8eaecb818efb4}{Multiply} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaternion_ac2020c45a1c9e109c9b5667e0ed3c0bc}{Multiply} (ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right, out \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} result)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaternion_aec98462c1fa302496cc639c8d95da343}{Multiply} (ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} quaternion, float scale, out \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} result)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_aca2a12afdd23d4fc851a9db604bff627}{Multiply} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} quaternion, float scale)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a8284d69ce3125f7509a25ebb4adc8563}{Conjugate} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q)
+\begin{DoxyCompactList}\small\item\em Get the conjugate of the given quaternion \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaternion_a5a1b50899ba3ed87e585615060233f39}{Conjugate} (ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q, out \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} result)
+\begin{DoxyCompactList}\small\item\em Get the conjugate of the given quaternion \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a482789e5f1cdc692474c1465095d00c3}{Invert} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q)
+\begin{DoxyCompactList}\small\item\em Get the inverse of the given quaternion \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaternion_a2dadba34c0cdc6f578215cc78c184694}{Invert} (ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q, out \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} result)
+\begin{DoxyCompactList}\small\item\em Get the inverse of the given quaternion \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a522236c79e456951f8b1927265e8752f}{Normalize} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q)
+\begin{DoxyCompactList}\small\item\em Scale the given quaternion to unit length \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaternion_a1346d52ee04b407b038aa7e3e07ff955}{Normalize} (ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q, out \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} result)
+\begin{DoxyCompactList}\small\item\em Scale the given quaternion to unit length \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_aed64b65ba3e40a4155907038fe0e361a}{From\-Axis\-Angle} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} axis, float angle)
+\begin{DoxyCompactList}\small\item\em Build a quaternion from the given axis and angle \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a25e810d6f864d1ac1f21bfb617197072}{From\-Matrix} (\hyperlink{struct_open_t_k_1_1_matrix3}{Matrix3} matrix)
+\begin{DoxyCompactList}\small\item\em Builds a quaternion from the given rotation matrix \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_quaternion_a5fef0adb952afd3c0495ce3b3f5b95df}{From\-Matrix} (ref \hyperlink{struct_open_t_k_1_1_matrix3}{Matrix3} matrix, out \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} result)
+\begin{DoxyCompactList}\small\item\em Builds a quaternion from the given rotation matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a113ca4abddf8864c08be7e0f9b6586cd}{Slerp} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q1, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q2, float blend)
+\begin{DoxyCompactList}\small\item\em Do Spherical linear interpolation between two quaternions \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a68a96fe08097a18c698a4cbbb335372f}{operator+} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right)
+\begin{DoxyCompactList}\small\item\em Adds two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a848dc62ea8c62fba5754caa400439428}{operator-\/} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_aad1164cd81a83b59b0f769e90a4a944e}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_ad8968c9f9573910c22591929281146d0}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} quaternion, float scale)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a2d72651a42a17832233bbf907ee863b5}{operator$\ast$} (float scale, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} quaternion)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_quaternion_a6153f36272b85146421d17e5fa611425}{operator==} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for equality. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_quaternion_a9303285e5fbd0c4c329844a9e021ea29}{operator!=} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} left, \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for inequality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_open_t_k_1_1_quaternion_a507f0624584f5ff9ed6f0e45578452d0}{\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} {\bfseries xyz}}\label{struct_open_t_k_1_1_quaternion_a507f0624584f5ff9ed6f0e45578452d0}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_quaternion_a413d4be8475f8911ddee7ba3dbee3fd3}{float {\bfseries w}}\label{struct_open_t_k_1_1_quaternion_a413d4be8475f8911ddee7ba3dbee3fd3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_quaternion_a32c6811aa364dda3e3c88600baed2593}{Identity} = new \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion}(0, 0, 0, 1)
+\begin{DoxyCompactList}\small\item\em Defines the identity quaternion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} \hyperlink{struct_open_t_k_1_1_quaternion_ac93b88de0dfdbc1fc7561717b4c60195}{X\-Y\-Z}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3}{Open\-T\-K.\-Vector3} with the X, Y and Z components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} \hyperlink{struct_open_t_k_1_1_quaternion_a179592a60e7facac046589a6aabc2d41}{Xyz}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3}{Open\-T\-K.\-Vector3} with the X, Y and Z components of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_quaternion_af928c6d2c5e59f5d771223b1d9c7018b}{X}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the X component of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_quaternion_aad3fdabef1cdc7fd69a807fd043fe1d3}{Y}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Y component of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_quaternion_af184db9f0b3958e0ab8c1ef0eb0667f7}{Z}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Z component of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_quaternion_a9393e674a6d043b72c26ec8fac95a5c3}{W}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the W component of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_quaternion_a28670c4161bff2712e57f77e46570af5}{Length}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the length (magnitude) of the quaternion. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_quaternion_a356340ca64b0873a256f823228bc3c75}{Length\-Squared}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the square of the quaternion length (magnitude). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion}. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_quaternion_a06f0e188f9174175b591389fc4bbf0a1}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Quaternion.\-Quaternion (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{v, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_a06f0e188f9174175b591389fc4bbf0a1}
+
+
+Construct a new \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} from vector and w components 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector part\\
+\hline
+{\em w} & The w part\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_a903587c421dde735c08bf0bf878daf1f}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Quaternion.\-Quaternion (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_a903587c421dde735c08bf0bf878daf1f}
+
+
+Construct a new \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component\\
+\hline
+{\em y} & The y component\\
+\hline
+{\em z} & The z component\\
+\hline
+{\em w} & The w component\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_quaternion_a7de4c42bb87e78a0e6b1dfee623d8fc7}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{left, }
+\item[{{\bf Quaternion}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a7de4c42bb87e78a0e6b1dfee623d8fc7}
+
+
+Add two quaternions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first operand\\
+\hline
+{\em right} & The second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the addition
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a02cbc83e73f0daefba3e77beb45c5e5a}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaternion.\-Add (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaternion}}]{left, }
+\item[{ref {\bf Quaternion}}]{right, }
+\item[{out {\bf Quaternion}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a02cbc83e73f0daefba3e77beb45c5e5a}
+
+
+Add two quaternions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first operand\\
+\hline
+{\em right} & The second operand\\
+\hline
+{\em result} & The result of the addition\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_ad2a8d218e87e0d7351e190f79bd9a6d3}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Conjugate@{Conjugate}}
+\index{Conjugate@{Conjugate}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Conjugate}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Quaternion.\-Conjugate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_ad2a8d218e87e0d7351e190f79bd9a6d3}
+
+
+Inverts the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} component of this \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion}. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_a8284d69ce3125f7509a25ebb4adc8563}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Conjugate@{Conjugate}}
+\index{Conjugate@{Conjugate}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Conjugate}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Conjugate (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a8284d69ce3125f7509a25ebb4adc8563}
+
+
+Get the conjugate of the given quaternion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conjugate of the given quaternion
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a5a1b50899ba3ed87e585615060233f39}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Conjugate@{Conjugate}}
+\index{Conjugate@{Conjugate}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Conjugate}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaternion.\-Conjugate (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaternion}}]{q, }
+\item[{out {\bf Quaternion}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a5a1b50899ba3ed87e585615060233f39}
+
+
+Get the conjugate of the given quaternion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion\\
+\hline
+{\em result} & The conjugate of the given quaternion\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_ae4258668435340a6b71613bf6e086690}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Quaternion.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_ae4258668435340a6b71613bf6e086690}
+
+
+Compares this object instance to another object for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other object to be used in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both objects are Quaternions of equal value. Otherwise it returns false.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a2537c5ba956b79ba91cade02b6f6ca71}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Quaternion.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_a2537c5ba956b79ba91cade02b6f6ca71}
+
+
+Compares this \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} instance to another \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} to be used in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both instances are equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_aed64b65ba3e40a4155907038fe0e361a}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!From\-Axis\-Angle@{From\-Axis\-Angle}}
+\index{From\-Axis\-Angle@{From\-Axis\-Angle}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{From\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-From\-Axis\-Angle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{axis, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_aed64b65ba3e40a4155907038fe0e361a}
+
+
+Build a quaternion from the given axis and angle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis to rotate about\\
+\hline
+{\em angle} & The rotation angle in radians\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The equivalent quaternion
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a25e810d6f864d1ac1f21bfb617197072}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!From\-Matrix@{From\-Matrix}}
+\index{From\-Matrix@{From\-Matrix}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{From\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-From\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix3}}]{matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a25e810d6f864d1ac1f21bfb617197072}
+
+
+Builds a quaternion from the given rotation matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & A rotation matrix\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The equivalent quaternion
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a5fef0adb952afd3c0495ce3b3f5b95df}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!From\-Matrix@{From\-Matrix}}
+\index{From\-Matrix@{From\-Matrix}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{From\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaternion.\-From\-Matrix (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix3}}]{matrix, }
+\item[{out {\bf Quaternion}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a5fef0adb952afd3c0495ce3b3f5b95df}
+
+
+Builds a quaternion from the given rotation matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & A rotation matrix\\
+\hline
+{\em result} & The equivalent quaternion\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_a7cf9a59b36cc514ac8f4ac71ad175c4f}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Quaternion.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_a7cf9a59b36cc514ac8f4ac71ad175c4f}
+
+
+Provides the hash code for this object. 
+
+\begin{DoxyReturn}{Returns}
+A hash code formed from the bitwise X\-O\-R of this objects members.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_aa72d00779d1c9f5de9c6cbb7cc460f08}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Invert@{Invert}}
+\index{Invert@{Invert}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Quaternion.\-Invert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_aa72d00779d1c9f5de9c6cbb7cc460f08}
+
+
+Reverses the rotation angle of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond}. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_a482789e5f1cdc692474c1465095d00c3}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Invert@{Invert}}
+\index{Invert@{Invert}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Invert (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a482789e5f1cdc692474c1465095d00c3}
+
+
+Get the inverse of the given quaternion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to invert\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inverse of the given quaternion
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a2dadba34c0cdc6f578215cc78c184694}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Invert@{Invert}}
+\index{Invert@{Invert}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaternion.\-Invert (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaternion}}]{q, }
+\item[{out {\bf Quaternion}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a2dadba34c0cdc6f578215cc78c184694}
+
+
+Get the inverse of the given quaternion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to invert\\
+\hline
+{\em result} & The inverse of the given quaternion\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_a8c595f7a501f568fbb1bc15f783847dd}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Inverted@{Inverted}}
+\index{Inverted@{Inverted}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Inverted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} Open\-T\-K.\-Quaternion.\-Inverted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_a8c595f7a501f568fbb1bc15f783847dd}
+
+
+Returns a copy of this \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} with its rotation angle reversed. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_a1f38c4a06ba31f9f862b5dc57494dd39}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{left, }
+\item[{{\bf Quaternion}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a1f38c4a06ba31f9f862b5dc57494dd39}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_ad0e67d8b7266915adf0bfae31d6757b9}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaternion.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaternion}}]{left, }
+\item[{ref {\bf Quaternion}}]{right, }
+\item[{out {\bf Quaternion}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_ad0e67d8b7266915adf0bfae31d6757b9}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+{\em result} & A new instance containing the result of the calculation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_a1fa69eacde2186a08be8eaecb818efb4}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{left, }
+\item[{{\bf Quaternion}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a1fa69eacde2186a08be8eaecb818efb4}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_ac2020c45a1c9e109c9b5667e0ed3c0bc}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaternion.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaternion}}]{left, }
+\item[{ref {\bf Quaternion}}]{right, }
+\item[{out {\bf Quaternion}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_ac2020c45a1c9e109c9b5667e0ed3c0bc}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+{\em result} & A new instance containing the result of the calculation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_aec98462c1fa302496cc639c8d95da343}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaternion.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaternion}}]{quaternion, }
+\item[{float}]{scale, }
+\item[{out {\bf Quaternion}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_aec98462c1fa302496cc639c8d95da343}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quaternion} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+{\em result} & A new instance containing the result of the calculation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_aca2a12afdd23d4fc851a9db604bff627}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{quaternion, }
+\item[{float}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_aca2a12afdd23d4fc851a9db604bff627}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quaternion} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a39c08673d20b47daeb30691cc9b887e0}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Quaternion.\-Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_a39c08673d20b47daeb30691cc9b887e0}
+
+
+Scales the \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} to unit length. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_a522236c79e456951f8b1927265e8752f}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Normalize (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a522236c79e456951f8b1927265e8752f}
+
+
+Scale the given quaternion to unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized quaternion
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a1346d52ee04b407b038aa7e3e07ff955}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaternion.\-Normalize (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaternion}}]{q, }
+\item[{out {\bf Quaternion}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a1346d52ee04b407b038aa7e3e07ff955}
+
+
+Scale the given quaternion to unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to normalize\\
+\hline
+{\em result} & The normalized quaternion\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_acbd0d16744065bf333d842d482460e26}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Normalized}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} Open\-T\-K.\-Quaternion.\-Normalized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_acbd0d16744065bf333d842d482460e26}
+
+
+Returns a copy of the \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} scaled to unit length. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_a9303285e5fbd0c4c329844a9e021ea29}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Quaternion.\-operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{left, }
+\item[{{\bf Quaternion}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a9303285e5fbd0c4c329844a9e021ea29}
+
+
+Compares two instances for inequality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left does not equal right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_aad1164cd81a83b59b0f769e90a4a944e}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{left, }
+\item[{{\bf Quaternion}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_aad1164cd81a83b59b0f769e90a4a944e}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_ad8968c9f9573910c22591929281146d0}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{quaternion, }
+\item[{float}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_ad8968c9f9573910c22591929281146d0}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quaternion} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a2d72651a42a17832233bbf907ee863b5}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{scale, }
+\item[{{\bf Quaternion}}]{quaternion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a2d72651a42a17832233bbf907ee863b5}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quaternion} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance containing the result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a68a96fe08097a18c698a4cbbb335372f}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!operator+@{operator+}}
+\index{operator+@{operator+}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{left, }
+\item[{{\bf Quaternion}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a68a96fe08097a18c698a4cbbb335372f}
+
+
+Adds two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a848dc62ea8c62fba5754caa400439428}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{left, }
+\item[{{\bf Quaternion}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a848dc62ea8c62fba5754caa400439428}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a6153f36272b85146421d17e5fa611425}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!operator==@{operator==}}
+\index{operator==@{operator==}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Quaternion.\-operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{left, }
+\item[{{\bf Quaternion}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a6153f36272b85146421d17e5fa611425}
+
+
+Compares two instances for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left equals right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a113ca4abddf8864c08be7e0f9b6586cd}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Slerp@{Slerp}}
+\index{Slerp@{Slerp}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Slerp}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Slerp (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{q1, }
+\item[{{\bf Quaternion}}]{q2, }
+\item[{float}]{blend}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a113ca4abddf8864c08be7e0f9b6586cd}
+
+
+Do Spherical linear interpolation between two quaternions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q1} & The first quaternion\\
+\hline
+{\em q2} & The second quaternion\\
+\hline
+{\em blend} & The blend factor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A smooth blend between the given quaternions
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_ab1ddf04d6cf86e470cf1aa75147c143a}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{left, }
+\item[{{\bf Quaternion}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_ab1ddf04d6cf86e470cf1aa75147c143a}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left instance.\\
+\hline
+{\em right} & The right instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_ad8bf2c580b06268b9e1c45aea27b8c52}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Quaternion.\-Sub (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaternion}}]{left, }
+\item[{ref {\bf Quaternion}}]{right, }
+\item[{out {\bf Quaternion}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_ad8bf2c580b06268b9e1c45aea27b8c52}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left instance.\\
+\hline
+{\em right} & The right instance.\\
+\hline
+{\em result} & The result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_aefdf2ce49edd34247ee47da47ea340e5}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!To\-Axis\-Angle@{To\-Axis\-Angle}}
+\index{To\-Axis\-Angle@{To\-Axis\-Angle}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{To\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Quaternion.\-To\-Axis\-Angle (
+\begin{DoxyParamCaption}
+\item[{out {\bf Vector3}}]{axis, }
+\item[{out float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_aefdf2ce49edd34247ee47da47ea340e5}
+
+
+Convert the current quaternion to axis angle representation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The resultant axis\\
+\hline
+{\em angle} & The resultant angle\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_quaternion_a9473c428ba8e986cbf56b28d729a8cd3}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!To\-Axis\-Angle@{To\-Axis\-Angle}}
+\index{To\-Axis\-Angle@{To\-Axis\-Angle}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{To\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Quaternion.\-To\-Axis\-Angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_a9473c428ba8e986cbf56b28d729a8cd3}
+
+
+Convert this instance to an axis-\/angle representation. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_open_t_k_1_1_vector4}{Vector4} that is the axis-\/angle representation of this quaternion.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_quaternion_a234a78961f6168602932a391543bb517}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Quaternion.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_quaternion_a234a78961f6168602932a391543bb517}
+
+
+Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_quaternion_a32c6811aa364dda3e3c88600baed2593}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Identity@{Identity}}
+\index{Identity@{Identity}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Quaternion} Open\-T\-K.\-Quaternion.\-Identity = new {\bf Quaternion}(0, 0, 0, 1)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_quaternion_a32c6811aa364dda3e3c88600baed2593}
+
+
+Defines the identity quaternion. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_quaternion_a28670c4161bff2712e57f77e46570af5}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Length@{Length}}
+\index{Length@{Length}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Quaternion.\-Length\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_quaternion_a28670c4161bff2712e57f77e46570af5}
+
+
+Gets the length (magnitude) of the quaternion. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_open_t_k_1_1_quaternion_a356340ca64b0873a256f823228bc3c75}{Length\-Squared}
+
+
+\end{DoxySeeAlso}
+\hypertarget{struct_open_t_k_1_1_quaternion_a356340ca64b0873a256f823228bc3c75}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Length\-Squared@{Length\-Squared}}
+\index{Length\-Squared@{Length\-Squared}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Length\-Squared}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Quaternion.\-Length\-Squared\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_quaternion_a356340ca64b0873a256f823228bc3c75}
+
+
+Gets the square of the quaternion length (magnitude). 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_a9393e674a6d043b72c26ec8fac95a5c3}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!W@{W}}
+\index{W@{W}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{W}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Quaternion.\-W\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaternion_a9393e674a6d043b72c26ec8fac95a5c3}
+
+
+Gets or sets the W component of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_af928c6d2c5e59f5d771223b1d9c7018b}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!X@{X}}
+\index{X@{X}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Quaternion.\-X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaternion_af928c6d2c5e59f5d771223b1d9c7018b}
+
+
+Gets or sets the X component of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_ac93b88de0dfdbc1fc7561717b4c60195}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!X\-Y\-Z@{X\-Y\-Z}}
+\index{X\-Y\-Z@{X\-Y\-Z}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{X\-Y\-Z}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Open\-T\-K.\-Quaternion.\-X\-Y\-Z\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaternion_ac93b88de0dfdbc1fc7561717b4c60195}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3}{Open\-T\-K.\-Vector3} with the X, Y and Z components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_a179592a60e7facac046589a6aabc2d41}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Xyz@{Xyz}}
+\index{Xyz@{Xyz}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Xyz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Open\-T\-K.\-Quaternion.\-Xyz\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaternion_a179592a60e7facac046589a6aabc2d41}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3}{Open\-T\-K.\-Vector3} with the X, Y and Z components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_aad3fdabef1cdc7fd69a807fd043fe1d3}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Y@{Y}}
+\index{Y@{Y}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Quaternion.\-Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaternion_aad3fdabef1cdc7fd69a807fd043fe1d3}
+
+
+Gets or sets the Y component of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_quaternion_af184db9f0b3958e0ab8c1ef0eb0667f7}{\index{Open\-T\-K\-::\-Quaternion@{Open\-T\-K\-::\-Quaternion}!Z@{Z}}
+\index{Z@{Z}!OpenTK::Quaternion@{Open\-T\-K\-::\-Quaternion}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Quaternion.\-Z\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_quaternion_af184db9f0b3958e0ab8c1ef0eb0667f7}
+
+
+Gets or sets the Z component of this instance. 
+

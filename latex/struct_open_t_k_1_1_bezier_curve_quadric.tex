@@ -1,0 +1,159 @@
+\hypertarget{struct_open_t_k_1_1_bezier_curve_quadric}{\section{Open\-T\-K.\-Bezier\-Curve\-Quadric Struct Reference}
+\label{struct_open_t_k_1_1_bezier_curve_quadric}\index{Open\-T\-K.\-Bezier\-Curve\-Quadric@{Open\-T\-K.\-Bezier\-Curve\-Quadric}}
+}
+
+
+Represents a quadric bezier curve with two anchor and one control point.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_bezier_curve_quadric_a51b829efca523f900c2774c63b3b27e9}{Bezier\-Curve\-Quadric} (\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} start\-Anchor, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} end\-Anchor, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} control\-Point)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric}{Bezier\-Curve\-Quadric}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_bezier_curve_quadric_a43d406a48ec977a62298d41fdf6d7c69}{Bezier\-Curve\-Quadric} (float parallel, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} start\-Anchor, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} end\-Anchor, \hyperlink{struct_open_t_k_1_1_vector2}{Vector2} control\-Point)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric}{Bezier\-Curve\-Quadric}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric_a410f985157c2b164fca59516219be22c}{Calculate\-Point} (float t)
+\begin{DoxyCompactList}\small\item\em Calculates the point with the specified t. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric_a37d7348ed8738d4804fa99b7dfeb371b}{Calculate\-Length} (float precision)
+\begin{DoxyCompactList}\small\item\em Calculates the length of this bezier curve. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric_a6def7a3c3025026c39422238b0f3b721}{Start\-Anchor}
+\begin{DoxyCompactList}\small\item\em Start anchor point. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric_a176ff3e32ed4a3551ffdefdfce284cd2}{End\-Anchor}
+\begin{DoxyCompactList}\small\item\em End anchor point. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2}{Vector2} \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric_acf1d9d62b041dadefa2665f076165be9}{Control\-Point}
+\begin{DoxyCompactList}\small\item\em Control point, controls the direction of both endings of the curve. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric_af8a445547da095c74c25ac8c393eccfd}{Parallel}
+\begin{DoxyCompactList}\small\item\em The parallel value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a quadric bezier curve with two anchor and one control point. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_quadric_a51b829efca523f900c2774c63b3b27e9}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Quadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}!Bezier\-Curve\-Quadric@{Bezier\-Curve\-Quadric}}
+\index{Bezier\-Curve\-Quadric@{Bezier\-Curve\-Quadric}!OpenTK::BezierCurveQuadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}}
+\subsubsection[{Bezier\-Curve\-Quadric}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Bezier\-Curve\-Quadric.\-Bezier\-Curve\-Quadric (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{start\-Anchor, }
+\item[{{\bf Vector2}}]{end\-Anchor, }
+\item[{{\bf Vector2}}]{control\-Point}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_quadric_a51b829efca523f900c2774c63b3b27e9}
+
+
+Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric}{Bezier\-Curve\-Quadric}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\-Anchor} & The start anchor.\\
+\hline
+{\em end\-Anchor} & The end anchor.\\
+\hline
+{\em control\-Point} & The control point.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_quadric_a43d406a48ec977a62298d41fdf6d7c69}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Quadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}!Bezier\-Curve\-Quadric@{Bezier\-Curve\-Quadric}}
+\index{Bezier\-Curve\-Quadric@{Bezier\-Curve\-Quadric}!OpenTK::BezierCurveQuadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}}
+\subsubsection[{Bezier\-Curve\-Quadric}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Bezier\-Curve\-Quadric.\-Bezier\-Curve\-Quadric (
+\begin{DoxyParamCaption}
+\item[{float}]{parallel, }
+\item[{{\bf Vector2}}]{start\-Anchor, }
+\item[{{\bf Vector2}}]{end\-Anchor, }
+\item[{{\bf Vector2}}]{control\-Point}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_quadric_a43d406a48ec977a62298d41fdf6d7c69}
+
+
+Constructs a new \hyperlink{struct_open_t_k_1_1_bezier_curve_quadric}{Bezier\-Curve\-Quadric}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parallel} & The parallel value.\\
+\hline
+{\em start\-Anchor} & The start anchor.\\
+\hline
+{\em end\-Anchor} & The end anchor.\\
+\hline
+{\em control\-Point} & The control point.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_quadric_a37d7348ed8738d4804fa99b7dfeb371b}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Quadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}!Calculate\-Length@{Calculate\-Length}}
+\index{Calculate\-Length@{Calculate\-Length}!OpenTK::BezierCurveQuadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}}
+\subsubsection[{Calculate\-Length}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Bezier\-Curve\-Quadric.\-Calculate\-Length (
+\begin{DoxyParamCaption}
+\item[{float}]{precision}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_quadric_a37d7348ed8738d4804fa99b7dfeb371b}
+
+
+Calculates the length of this bezier curve. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em precision} & The precision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Length of curve.
+\end{DoxyReturn}
+
+
+The precision gets better when the {\itshape precision}  value gets smaller.\hypertarget{struct_open_t_k_1_1_bezier_curve_quadric_a410f985157c2b164fca59516219be22c}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Quadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}!Calculate\-Point@{Calculate\-Point}}
+\index{Calculate\-Point@{Calculate\-Point}!OpenTK::BezierCurveQuadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}}
+\subsubsection[{Calculate\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve\-Quadric.\-Calculate\-Point (
+\begin{DoxyParamCaption}
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_bezier_curve_quadric_a410f985157c2b164fca59516219be22c}
+
+
+Calculates the point with the specified t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The t value, between 0.\-0f and 1.\-0f.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting point.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_bezier_curve_quadric_acf1d9d62b041dadefa2665f076165be9}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Quadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}!Control\-Point@{Control\-Point}}
+\index{Control\-Point@{Control\-Point}!OpenTK::BezierCurveQuadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}}
+\subsubsection[{Control\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve\-Quadric.\-Control\-Point}}\label{struct_open_t_k_1_1_bezier_curve_quadric_acf1d9d62b041dadefa2665f076165be9}
+
+
+Control point, controls the direction of both endings of the curve. 
+
+\hypertarget{struct_open_t_k_1_1_bezier_curve_quadric_a176ff3e32ed4a3551ffdefdfce284cd2}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Quadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}!End\-Anchor@{End\-Anchor}}
+\index{End\-Anchor@{End\-Anchor}!OpenTK::BezierCurveQuadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}}
+\subsubsection[{End\-Anchor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve\-Quadric.\-End\-Anchor}}\label{struct_open_t_k_1_1_bezier_curve_quadric_a176ff3e32ed4a3551ffdefdfce284cd2}
+
+
+End anchor point. 
+
+\hypertarget{struct_open_t_k_1_1_bezier_curve_quadric_af8a445547da095c74c25ac8c393eccfd}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Quadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}!Parallel@{Parallel}}
+\index{Parallel@{Parallel}!OpenTK::BezierCurveQuadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}}
+\subsubsection[{Parallel}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Bezier\-Curve\-Quadric.\-Parallel}}\label{struct_open_t_k_1_1_bezier_curve_quadric_af8a445547da095c74c25ac8c393eccfd}
+
+
+The parallel value. 
+
+This value defines whether the curve should be calculated as a parallel curve to the original bezier curve. A value of 0.\-0f represents the original curve, 5.\-0f i.\-e. stands for a curve that has always a distance of 5.\-f to the orignal curve at any point.\hypertarget{struct_open_t_k_1_1_bezier_curve_quadric_a6def7a3c3025026c39422238b0f3b721}{\index{Open\-T\-K\-::\-Bezier\-Curve\-Quadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}!Start\-Anchor@{Start\-Anchor}}
+\index{Start\-Anchor@{Start\-Anchor}!OpenTK::BezierCurveQuadric@{Open\-T\-K\-::\-Bezier\-Curve\-Quadric}}
+\subsubsection[{Start\-Anchor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Open\-T\-K.\-Bezier\-Curve\-Quadric.\-Start\-Anchor}}\label{struct_open_t_k_1_1_bezier_curve_quadric_a6def7a3c3025026c39422238b0f3b721}
+
+
+Start anchor point. 
+

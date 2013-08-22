@@ -1,0 +1,766 @@
+\hypertarget{class_open_t_k_1_1_game_window}{\section{Open\-T\-K.\-Game\-Window Class Reference}
+\label{class_open_t_k_1_1_game_window}\index{Open\-T\-K.\-Game\-Window@{Open\-T\-K.\-Game\-Window}}
+}
+
+
+The \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} class contains cross-\/platform methods to create and render on an Open\-G\-L window, handle input and load resources.  
+
+
+Inheritance diagram for Open\-T\-K.\-Game\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_open_t_k_1_1_game_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_t_k_1_1_game_window_a03787ebe6e9bbc2cf29b17d77e757c47}{Game\-Window} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with sensible default attributes.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_game_window_a6c4be0e7db916803eef71918b388f65c}{Game\-Window} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_game_window_af7e0cb6ae69630e600844b85e1272212}{Game\-Window} (int width, int height, \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_game_window_a2b0edf27b00276920abcc97b7b05218b}{Game\-Window} (int width, int height, \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode, string title)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_game_window_a7de515a0cdf71925d6d12b5803e9c513}{Game\-Window} (int width, int height, \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode, string title, \hyperlink{namespace_open_t_k_af73dc15fc9d5b87827c81fa11b3ec6f0}{Game\-Window\-Flags} options)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_game_window_a90aa895bd34e5d602dd84aacc1a25b16}{Game\-Window} (int width, int height, \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode, string title, \hyperlink{namespace_open_t_k_af73dc15fc9d5b87827c81fa11b3ec6f0}{Game\-Window\-Flags} options, \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} device)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_game_window_a58bde9e41f887e4c1e8b46b409bdcb8e}{Game\-Window} (int width, int height, \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode, string title, \hyperlink{namespace_open_t_k_af73dc15fc9d5b87827c81fa11b3ec6f0}{Game\-Window\-Flags} options, \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} device, int major, int minor, \hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8ab}{Graphics\-Context\-Flags} flags)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_game_window_a3d7f0ea4fc9284bc967f0a42d5b084e4}{Game\-Window} (int width, int height, \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode, string title, \hyperlink{namespace_open_t_k_af73dc15fc9d5b87827c81fa11b3ec6f0}{Game\-Window\-Flags} options, \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} device, int major, int minor, \hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8ab}{Graphics\-Context\-Flags} flags, \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}{I\-Graphics\-Context} shared\-Context)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.\end{DoxyCompactList}\item 
+override void \hyperlink{class_open_t_k_1_1_game_window_acfd19fafb5563df42e2104ea38c2889a}{Dispose} ()
+\begin{DoxyCompactList}\small\item\em Disposes of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}, releasing all resources consumed by it. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_open_t_k_1_1_game_window_a67c26214c431300b56b0f4a88bbbd244}{Exit} ()
+\begin{DoxyCompactList}\small\item\em Closes the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}. Equivalent to \hyperlink{class_open_t_k_1_1_native_window_ae7dae9eca1c2298dbcdbc34a81304a61}{Native\-Window.\-Close} method. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_game_window_a84d84a7173903a8d991e6ca3d40a7a4b}{Make\-Current} ()
+\begin{DoxyCompactList}\small\item\em Makes the Graphics\-Context current on the calling thread. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_game_window_a2ead9bd94f36e26e86da79ef548e7d6b}{Run} ()
+\begin{DoxyCompactList}\small\item\em Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} using the maximum update rate. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_game_window_a0c9d2a547ee1dc8f59ad0e70c2552730}{Run} (double update\-Rate)
+\begin{DoxyCompactList}\small\item\em Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} using the specified update rate. maximum possible render frequency. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_game_window_aff16d3a5aeb78782c4a9f8e74c8d0e89}{Run} (double updates\-\_\-per\-\_\-second, double frames\-\_\-per\-\_\-second)
+\begin{DoxyCompactList}\small\item\em Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} updating and rendering at the specified frequency. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_game_window_adeaeff9283d467a5cda90e6b8579543a}{Swap\-Buffers} ()
+\begin{DoxyCompactList}\small\item\em Swaps the front and back buffer, presenting the rendered scene to the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_open_t_k_1_1_game_window_ac2bfae65b7874a59517461c72ce66663}{On\-Closing} (System.\-Component\-Model.\-Cancel\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Called when the \hyperlink{class_open_t_k_1_1_native_window}{Native\-Window} is about to close. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_open_t_k_1_1_game_window_ae4e7becd70baac5336bdc9b67f11bfec}{On\-Load} (Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Called after an Open\-G\-L context has been established, but before entering the main loop. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_open_t_k_1_1_game_window_ad993aec512d39466135f8db9185d3588}{On\-Unload} (Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Called after \hyperlink{class_open_t_k_1_1_game_window_a67c26214c431300b56b0f4a88bbbd244}{Game\-Window.\-Exit} was called, but before destroying the Open\-G\-L context. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_open_t_k_1_1_game_window_a7dd618cf51ddede98772041ddaa729db}{Dispose} (bool manual)
+\begin{DoxyCompactList}\small\item\em Override to add custom cleanup logic. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_open_t_k_1_1_game_window_abc3e3a8c21a36d226c9d899f094152a4}{On\-Render\-Frame} (\hyperlink{class_open_t_k_1_1_frame_event_args}{Frame\-Event\-Args} e)
+\begin{DoxyCompactList}\small\item\em Called when the frame is rendered. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_open_t_k_1_1_game_window_a081795ead94557090f58e83d471b0d05}{On\-Update\-Frame} (\hyperlink{class_open_t_k_1_1_frame_event_args}{Frame\-Event\-Args} e)
+\begin{DoxyCompactList}\small\item\em Called when the frame is updated. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_open_t_k_1_1_game_window_a1b6723c6415c35586b23eabf5a9e51ca}{On\-Window\-Info\-Changed} (Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Called when the Window\-Info for this \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} has changed. \end{DoxyCompactList}\item 
+override void \hyperlink{class_open_t_k_1_1_game_window_a730fe82126e7616bccba531bb2abc770}{On\-Resize} (Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Called when this window is resized. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}{I\-Graphics\-Context} \hyperlink{class_open_t_k_1_1_game_window_a5c17f9c8850e2c20c23bf855bb303cb1}{Context}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the opengl I\-Graphics\-Context associated with the current \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_game_window_a0ec80251b70858617ce91d3aa65a8174}{Is\-Exiting}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the shutdown sequence has been initiated for this window, by calling \hyperlink{class_open_t_k_1_1_game_window_a67c26214c431300b56b0f4a88bbbd244}{Game\-Window.\-Exit()} or hitting the 'close' button. If this property is true, it is no longer safe to use any \hyperlink{namespace_open_t_k_1_1_input}{Open\-T\-K.\-Input} or \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-T\-K.\-Graphics.\-Open\-G\-L} functions or properties. \end{DoxyCompactList}\item 
+I\-List$<$ \hyperlink{class_open_t_k_1_1_input_1_1_joystick_device}{Joystick\-Device} $>$ \hyperlink{class_open_t_k_1_1_game_window_a97fe86dfe28cd8c059e53dc22a20458a}{Joysticks}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a readonly I\-List containing all available Open\-T\-K.\-Input.\-Joystick\-Devices. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device} \hyperlink{class_open_t_k_1_1_game_window_a1d5ef67f9be67c7355cacbde9872e09e}{Keyboard}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the primary Keyboard device, or null if no Keyboard exists. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_input_1_1_mouse_device}{Mouse\-Device} \hyperlink{class_open_t_k_1_1_game_window_acdb499cde709b6a6b8630613954094f9}{Mouse}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the primary Mouse device, or null if no Mouse exists. \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_a6657b7cd7da85b770580c840a197f30b}{Render\-Frequency}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a double representing the actual frequency of Render\-Frame events, in hertz (i.\-e. fps or frames per second). \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_aad1395cb550c3eea673b447c84990c2c}{Render\-Period}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a double representing the period of Render\-Frame events, in seconds. \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_a1462d45526351e92b948f0b329c77d56}{Render\-Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a double representing the time spent in the Render\-Frame function, in seconds. \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_ae604e886eca5028a0d2252bf6d52434a}{Target\-Render\-Frequency}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a double representing the target render frequency, in hertz. \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_a2233cfb62a42200251dcdb1dab643a36}{Target\-Render\-Period}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a double representing the target render period, in seconds. \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_acf250353ae71ed429642335d614da7c5}{Target\-Update\-Frequency}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a double representing the target update frequency, in hertz. \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_a3fb751962cfcd5c95ad4b9fb84f40dbb}{Target\-Update\-Period}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a double representing the target update period, in seconds. \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_aeee75eb97d0c305788b802a09fac3540}{Update\-Frequency}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a double representing the frequency of Update\-Frame events, in hertz. \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_a1a44982a760d216e014c79dbf472f779}{Update\-Period}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a double representing the period of Update\-Frame events, in seconds. \end{DoxyCompactList}\item 
+double \hyperlink{class_open_t_k_1_1_game_window_a324f362ab849612bb7a82ac84de92be0}{Update\-Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a double representing the time spent in the Update\-Frame function, in seconds. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_a1c0421cc4ecbb6d5e57317906fe8b8d3}{V\-Sync\-Mode} \hyperlink{class_open_t_k_1_1_game_window_a13246c847d807cc510fd0fa8a58ae24b}{V\-Sync}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the V\-Sync\-Mode. \end{DoxyCompactList}\item 
+override \hyperlink{namespace_open_t_k_ace9268dc87bd36f48c9d9d8b939559b4}{Window\-State} \hyperlink{class_open_t_k_1_1_game_window_a2645b832f9583c904a9e0c83951ed9d4}{Window\-State}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or states the state of the \hyperlink{class_open_t_k_1_1_native_window}{Native\-Window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{class_open_t_k_1_1_game_window_a5d449a387cf4600251fc534fd49bdbc3}{Load} = delegate \{ \}
+\begin{DoxyCompactList}\small\item\em Occurs before the window is displayed for the first time. \end{DoxyCompactList}\item 
+Event\-Handler$<$ \hyperlink{class_open_t_k_1_1_frame_event_args}{Frame\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_game_window_a299211a98496fdac0a526a353dd5f25a}{Render\-Frame} = delegate \{ \}
+\begin{DoxyCompactList}\small\item\em Occurs when it is time to render a frame. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{class_open_t_k_1_1_game_window_a039f40ed67b4d0c64e292c7e9e77e80b}{Unload} = delegate \{ \}
+\begin{DoxyCompactList}\small\item\em Occurs before the window is destroyed. \end{DoxyCompactList}\item 
+Event\-Handler$<$ \hyperlink{class_open_t_k_1_1_frame_event_args}{Frame\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_game_window_af3c171dd667a38eb461df532ff6cc016}{Update\-Frame} = delegate \{ \}
+\begin{DoxyCompactList}\small\item\em Occurs when it is time to update a frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} class contains cross-\/platform methods to create and render on an Open\-G\-L window, handle input and load resources. 
+
+\hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} contains several events you can hook or override to add your custom logic\-: 
+\begin{DoxyItemize}
+\item On\-Load\-: Occurs after creating the Open\-G\-L context, but before entering the main loop. Override to load resources.  
+\item On\-Unload\-: Occurs after exiting the main loop, but before deleting the Open\-G\-L context. Override to unload resources.  
+\item On\-Resize\-: Occurs whenever \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} is resized. You should update the Open\-G\-L Viewport and Projection Matrix here.  
+\item On\-Update\-Frame\-: Occurs at the specified logic update rate. Override to add your game logic.  
+\item On\-Render\-Frame\-: Occurs at the specified frame render rate. Override to add your rendering code.  
+\end{DoxyItemize}Call the \hyperlink{class_open_t_k_1_1_game_window_a2ead9bd94f36e26e86da79ef548e7d6b}{Run()} method to start the application's main loop. \hyperlink{class_open_t_k_1_1_game_window_aff16d3a5aeb78782c4a9f8e74c8d0e89}{Run(double, double)} takes two parameters that specify the logic update rate, and the render update rate. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_t_k_1_1_game_window_a03787ebe6e9bbc2cf29b17d77e757c47}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Game\-Window@{Game\-Window}}
+\index{Game\-Window@{Game\-Window}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Game\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Game\-Window.\-Game\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a03787ebe6e9bbc2cf29b17d77e757c47}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with sensible default attributes.
+
+\hypertarget{class_open_t_k_1_1_game_window_a6c4be0e7db916803eef71918b388f65c}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Game\-Window@{Game\-Window}}
+\index{Game\-Window@{Game\-Window}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Game\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Game\-Window.\-Game\-Window (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a6c4be0e7db916803eef71918b388f65c}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em height} & The height of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_af7e0cb6ae69630e600844b85e1272212}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Game\-Window@{Game\-Window}}
+\index{Game\-Window@{Game\-Window}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Game\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Game\-Window.\-Game\-Window (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf Graphics\-Mode}}]{mode}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_af7e0cb6ae69630e600844b85e1272212}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em height} & The height of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_a2b0edf27b00276920abcc97b7b05218b}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Game\-Window@{Game\-Window}}
+\index{Game\-Window@{Game\-Window}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Game\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Game\-Window.\-Game\-Window (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf Graphics\-Mode}}]{mode, }
+\item[{string}]{title}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a2b0edf27b00276920abcc97b7b05218b}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em height} & The height of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+{\em title} & The title of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_a7de515a0cdf71925d6d12b5803e9c513}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Game\-Window@{Game\-Window}}
+\index{Game\-Window@{Game\-Window}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Game\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Game\-Window.\-Game\-Window (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf Graphics\-Mode}}]{mode, }
+\item[{string}]{title, }
+\item[{{\bf Game\-Window\-Flags}}]{options}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a7de515a0cdf71925d6d12b5803e9c513}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em height} & The height of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+{\em title} & The title of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+{\em options} & \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} options regarding window appearance and behavior.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_a90aa895bd34e5d602dd84aacc1a25b16}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Game\-Window@{Game\-Window}}
+\index{Game\-Window@{Game\-Window}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Game\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Game\-Window.\-Game\-Window (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf Graphics\-Mode}}]{mode, }
+\item[{string}]{title, }
+\item[{{\bf Game\-Window\-Flags}}]{options, }
+\item[{{\bf Display\-Device}}]{device}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a90aa895bd34e5d602dd84aacc1a25b16}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em height} & The height of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+{\em title} & The title of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+{\em options} & \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} options regarding window appearance and behavior.\\
+\hline
+{\em device} & The Open\-T\-K.\-Graphics.\-Display\-Device to construct the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_a58bde9e41f887e4c1e8b46b409bdcb8e}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Game\-Window@{Game\-Window}}
+\index{Game\-Window@{Game\-Window}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Game\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Game\-Window.\-Game\-Window (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf Graphics\-Mode}}]{mode, }
+\item[{string}]{title, }
+\item[{{\bf Game\-Window\-Flags}}]{options, }
+\item[{{\bf Display\-Device}}]{device, }
+\item[{int}]{major, }
+\item[{int}]{minor, }
+\item[{{\bf Graphics\-Context\-Flags}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a58bde9e41f887e4c1e8b46b409bdcb8e}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em height} & The height of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+{\em title} & The title of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+{\em options} & \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} options regarding window appearance and behavior.\\
+\hline
+{\em device} & The Open\-T\-K.\-Graphics.\-Display\-Device to construct the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in.\\
+\hline
+{\em major} & The major version for the Open\-G\-L Graphics\-Context.\\
+\hline
+{\em minor} & The minor version for the Open\-G\-L Graphics\-Context.\\
+\hline
+{\em flags} & The Graphics\-Context\-Flags version for the Open\-G\-L Graphics\-Context.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_a3d7f0ea4fc9284bc967f0a42d5b084e4}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Game\-Window@{Game\-Window}}
+\index{Game\-Window@{Game\-Window}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Game\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Game\-Window.\-Game\-Window (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf Graphics\-Mode}}]{mode, }
+\item[{string}]{title, }
+\item[{{\bf Game\-Window\-Flags}}]{options, }
+\item[{{\bf Display\-Device}}]{device, }
+\item[{int}]{major, }
+\item[{int}]{minor, }
+\item[{{\bf Graphics\-Context\-Flags}}]{flags, }
+\item[{{\bf I\-Graphics\-Context}}]{shared\-Context}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a3d7f0ea4fc9284bc967f0a42d5b084e4}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} with the specified attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em height} & The height of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in pixels.\\
+\hline
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+{\em title} & The title of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.\\
+\hline
+{\em options} & \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} options regarding window appearance and behavior.\\
+\hline
+{\em device} & The Open\-T\-K.\-Graphics.\-Display\-Device to construct the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} in.\\
+\hline
+{\em major} & The major version for the Open\-G\-L Graphics\-Context.\\
+\hline
+{\em minor} & The minor version for the Open\-G\-L Graphics\-Context.\\
+\hline
+{\em flags} & The Graphics\-Context\-Flags version for the Open\-G\-L Graphics\-Context.\\
+\hline
+{\em shared\-Context} & An I\-Graphics\-Context to share resources with.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_game_window_acfd19fafb5563df42e2104ea38c2889a}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}override void Open\-T\-K.\-Game\-Window.\-Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_open_t_k_1_1_game_window_acfd19fafb5563df42e2104ea38c2889a}
+
+
+Disposes of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}, releasing all resources consumed by it. 
+
+
+
+Reimplemented from \hyperlink{class_open_t_k_1_1_native_window_a1cc77f20d1c61f32d62e03896e358d20}{Open\-T\-K.\-Native\-Window}.
+
+\hypertarget{class_open_t_k_1_1_game_window_a7dd618cf51ddede98772041ddaa729db}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Open\-T\-K.\-Game\-Window.\-Dispose (
+\begin{DoxyParamCaption}
+\item[{bool}]{manual}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_open_t_k_1_1_game_window_a7dd618cf51ddede98772041ddaa729db}
+
+
+Override to add custom cleanup logic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manual} & True, if this method was called by the application; false if this was called by the finalizer thread.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_a67c26214c431300b56b0f4a88bbbd244}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Exit@{Exit}}
+\index{Exit@{Exit}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Exit}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Open\-T\-K.\-Game\-Window.\-Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_open_t_k_1_1_game_window_a67c26214c431300b56b0f4a88bbbd244}
+
+
+Closes the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}. Equivalent to \hyperlink{class_open_t_k_1_1_native_window_ae7dae9eca1c2298dbcdbc34a81304a61}{Native\-Window.\-Close} method. 
+
+Override if you are not using \hyperlink{class_open_t_k_1_1_game_window_a2ead9bd94f36e26e86da79ef548e7d6b}{Game\-Window.\-Run()}.
+
+If you override this method, place a call to base.\-Exit(), to ensure proper \hyperlink{namespace_open_t_k}{Open\-T\-K} shutdown.\hypertarget{class_open_t_k_1_1_game_window_a84d84a7173903a8d991e6ca3d40a7a4b}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Make\-Current@{Make\-Current}}
+\index{Make\-Current@{Make\-Current}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Make\-Current}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Game\-Window.\-Make\-Current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a84d84a7173903a8d991e6ca3d40a7a4b}
+
+
+Makes the Graphics\-Context current on the calling thread. 
+
+
+
+Implements \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a82429a99533b04e178b4e6b7893efb17}{Open\-T\-K.\-Platform.\-I\-Game\-Window}.
+
+\hypertarget{class_open_t_k_1_1_game_window_ac2bfae65b7874a59517461c72ce66663}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!On\-Closing@{On\-Closing}}
+\index{On\-Closing@{On\-Closing}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{On\-Closing}]{\setlength{\rightskip}{0pt plus 5cm}override void Open\-T\-K.\-Game\-Window.\-On\-Closing (
+\begin{DoxyParamCaption}
+\item[{System.\-Component\-Model.\-Cancel\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_open_t_k_1_1_game_window_ac2bfae65b7874a59517461c72ce66663}
+
+
+Called when the \hyperlink{class_open_t_k_1_1_native_window}{Native\-Window} is about to close. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The System.\-Component\-Model.\-Cancel\-Event\-Args for this event. Set e.\-Cancel to true in order to stop the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} from closing.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_ae4e7becd70baac5336bdc9b67f11bfec}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!On\-Load@{On\-Load}}
+\index{On\-Load@{On\-Load}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{On\-Load}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Open\-T\-K.\-Game\-Window.\-On\-Load (
+\begin{DoxyParamCaption}
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_open_t_k_1_1_game_window_ae4e7becd70baac5336bdc9b67f11bfec}
+
+
+Called after an Open\-G\-L context has been established, but before entering the main loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Not used.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_abc3e3a8c21a36d226c9d899f094152a4}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!On\-Render\-Frame@{On\-Render\-Frame}}
+\index{On\-Render\-Frame@{On\-Render\-Frame}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{On\-Render\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Open\-T\-K.\-Game\-Window.\-On\-Render\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Frame\-Event\-Args}}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_open_t_k_1_1_game_window_abc3e3a8c21a36d226c9d899f094152a4}
+
+
+Called when the frame is rendered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Contains information necessary for frame rendering.\\
+\hline
+\end{DoxyParams}
+
+
+Subscribe to the \hyperlink{class_open_t_k_1_1_game_window_a299211a98496fdac0a526a353dd5f25a}{Render\-Frame} event instead of overriding this method. \hypertarget{class_open_t_k_1_1_game_window_a730fe82126e7616bccba531bb2abc770}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!On\-Resize@{On\-Resize}}
+\index{On\-Resize@{On\-Resize}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{On\-Resize}]{\setlength{\rightskip}{0pt plus 5cm}override void Open\-T\-K.\-Game\-Window.\-On\-Resize (
+\begin{DoxyParamCaption}
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_open_t_k_1_1_game_window_a730fe82126e7616bccba531bb2abc770}
+
+
+Called when this window is resized. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Not used.\\
+\hline
+\end{DoxyParams}
+
+
+You will typically wish to update your viewport whenever the window is resized. See the Open\-T\-K.\-Graphics.\-Open\-G\-L.\-G\-L.\-Viewport(int, int, int, int) method. 
+
+Reimplemented from \hyperlink{class_open_t_k_1_1_native_window_a647ac43f6e6844ce93c1182579c0dbe4}{Open\-T\-K.\-Native\-Window}.
+
+\hypertarget{class_open_t_k_1_1_game_window_ad993aec512d39466135f8db9185d3588}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!On\-Unload@{On\-Unload}}
+\index{On\-Unload@{On\-Unload}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{On\-Unload}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Open\-T\-K.\-Game\-Window.\-On\-Unload (
+\begin{DoxyParamCaption}
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_open_t_k_1_1_game_window_ad993aec512d39466135f8db9185d3588}
+
+
+Called after \hyperlink{class_open_t_k_1_1_game_window_a67c26214c431300b56b0f4a88bbbd244}{Game\-Window.\-Exit} was called, but before destroying the Open\-G\-L context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Not used.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_a081795ead94557090f58e83d471b0d05}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!On\-Update\-Frame@{On\-Update\-Frame}}
+\index{On\-Update\-Frame@{On\-Update\-Frame}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{On\-Update\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Open\-T\-K.\-Game\-Window.\-On\-Update\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Frame\-Event\-Args}}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_open_t_k_1_1_game_window_a081795ead94557090f58e83d471b0d05}
+
+
+Called when the frame is updated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Contains information necessary for frame updating.\\
+\hline
+\end{DoxyParams}
+
+
+Subscribe to the \hyperlink{class_open_t_k_1_1_game_window_af3c171dd667a38eb461df532ff6cc016}{Update\-Frame} event instead of overriding this method. \hypertarget{class_open_t_k_1_1_game_window_a1b6723c6415c35586b23eabf5a9e51ca}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!On\-Window\-Info\-Changed@{On\-Window\-Info\-Changed}}
+\index{On\-Window\-Info\-Changed@{On\-Window\-Info\-Changed}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{On\-Window\-Info\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Open\-T\-K.\-Game\-Window.\-On\-Window\-Info\-Changed (
+\begin{DoxyParamCaption}
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_open_t_k_1_1_game_window_a1b6723c6415c35586b23eabf5a9e51ca}
+
+
+Called when the Window\-Info for this \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} has changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Not used.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_a2ead9bd94f36e26e86da79ef548e7d6b}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Run@{Run}}
+\index{Run@{Run}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Game\-Window.\-Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a2ead9bd94f36e26e86da79ef548e7d6b}
+
+
+Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} using the maximum update rate. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_open_t_k_1_1_game_window_a0c9d2a547ee1dc8f59ad0e70c2552730}{Run(double)}
+
+
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a07597d249869f2da75e650caafb72f94}{Open\-T\-K.\-Platform.\-I\-Game\-Window}.
+
+\hypertarget{class_open_t_k_1_1_game_window_a0c9d2a547ee1dc8f59ad0e70c2552730}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Run@{Run}}
+\index{Run@{Run}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Game\-Window.\-Run (
+\begin{DoxyParamCaption}
+\item[{double}]{update\-Rate}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_a0c9d2a547ee1dc8f59ad0e70c2552730}
+
+
+Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} using the specified update rate. maximum possible render frequency. 
+
+
+
+Implements \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a60761d038847624f5d1a8beb0b1a6ec2}{Open\-T\-K.\-Platform.\-I\-Game\-Window}.
+
+\hypertarget{class_open_t_k_1_1_game_window_aff16d3a5aeb78782c4a9f8e74c8d0e89}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Run@{Run}}
+\index{Run@{Run}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Game\-Window.\-Run (
+\begin{DoxyParamCaption}
+\item[{double}]{updates\-\_\-per\-\_\-second, }
+\item[{double}]{frames\-\_\-per\-\_\-second}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_aff16d3a5aeb78782c4a9f8e74c8d0e89}
+
+
+Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} updating and rendering at the specified frequency. 
+
+When overriding the default game loop you should call \hyperlink{class_open_t_k_1_1_native_window_a8150f2aa496459e492965c4577ec0dc9}{Process\-Events()} to ensure that your \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} responds to operating system events. 
+
+Once \hyperlink{class_open_t_k_1_1_native_window_a8150f2aa496459e492965c4577ec0dc9}{Process\-Events()} returns, it is time to call update and render the next frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em updates\-\_\-per\-\_\-second} & The frequency of Update\-Frame events.\\
+\hline
+{\em frames\-\_\-per\-\_\-second} & The frequency of Render\-Frame events.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_game_window_adeaeff9283d467a5cda90e6b8579543a}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Swap\-Buffers@{Swap\-Buffers}}
+\index{Swap\-Buffers@{Swap\-Buffers}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Swap\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Game\-Window.\-Swap\-Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_game_window_adeaeff9283d467a5cda90e6b8579543a}
+
+
+Swaps the front and back buffer, presenting the rendered scene to the user. 
+
+
+
+Implements \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a1a426b9c39d98f557b702fe4ef91c007}{Open\-T\-K.\-Platform.\-I\-Game\-Window}.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_game_window_a5c17f9c8850e2c20c23bf855bb303cb1}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Context@{Context}}
+\index{Context@{Context}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Graphics\-Context} Open\-T\-K.\-Game\-Window.\-Context\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_a5c17f9c8850e2c20c23bf855bb303cb1}
+
+
+Returns the opengl I\-Graphics\-Context associated with the current \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a0ec80251b70858617ce91d3aa65a8174}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Is\-Exiting@{Is\-Exiting}}
+\index{Is\-Exiting@{Is\-Exiting}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Is\-Exiting}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Game\-Window.\-Is\-Exiting\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_a0ec80251b70858617ce91d3aa65a8174}
+
+
+Gets a value indicating whether the shutdown sequence has been initiated for this window, by calling \hyperlink{class_open_t_k_1_1_game_window_a67c26214c431300b56b0f4a88bbbd244}{Game\-Window.\-Exit()} or hitting the 'close' button. If this property is true, it is no longer safe to use any \hyperlink{namespace_open_t_k_1_1_input}{Open\-T\-K.\-Input} or \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-T\-K.\-Graphics.\-Open\-G\-L} functions or properties. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a97fe86dfe28cd8c059e53dc22a20458a}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Joysticks@{Joysticks}}
+\index{Joysticks@{Joysticks}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Joysticks}]{\setlength{\rightskip}{0pt plus 5cm}I\-List$<${\bf Joystick\-Device}$>$ Open\-T\-K.\-Game\-Window.\-Joysticks\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_a97fe86dfe28cd8c059e53dc22a20458a}
+
+
+Gets a readonly I\-List containing all available Open\-T\-K.\-Input.\-Joystick\-Devices. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a1d5ef67f9be67c7355cacbde9872e09e}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Keyboard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Keyboard\-Device} Open\-T\-K.\-Game\-Window.\-Keyboard\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_a1d5ef67f9be67c7355cacbde9872e09e}
+
+
+Gets the primary Keyboard device, or null if no Keyboard exists. 
+
+\hypertarget{class_open_t_k_1_1_game_window_acdb499cde709b6a6b8630613954094f9}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Mouse@{Mouse}}
+\index{Mouse@{Mouse}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Mouse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mouse\-Device} Open\-T\-K.\-Game\-Window.\-Mouse\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_acdb499cde709b6a6b8630613954094f9}
+
+
+Gets the primary Mouse device, or null if no Mouse exists. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a6657b7cd7da85b770580c840a197f30b}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Render\-Frequency@{Render\-Frequency}}
+\index{Render\-Frequency@{Render\-Frequency}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Render\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Render\-Frequency\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_a6657b7cd7da85b770580c840a197f30b}
+
+
+Gets a double representing the actual frequency of Render\-Frame events, in hertz (i.\-e. fps or frames per second). 
+
+\hypertarget{class_open_t_k_1_1_game_window_aad1395cb550c3eea673b447c84990c2c}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Render\-Period@{Render\-Period}}
+\index{Render\-Period@{Render\-Period}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Render\-Period}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Render\-Period\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_aad1395cb550c3eea673b447c84990c2c}
+
+
+Gets a double representing the period of Render\-Frame events, in seconds. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a1462d45526351e92b948f0b329c77d56}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Render\-Time@{Render\-Time}}
+\index{Render\-Time@{Render\-Time}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Render\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Render\-Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_game_window_a1462d45526351e92b948f0b329c77d56}
+
+
+Gets a double representing the time spent in the Render\-Frame function, in seconds. 
+
+\hypertarget{class_open_t_k_1_1_game_window_ae604e886eca5028a0d2252bf6d52434a}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Target\-Render\-Frequency@{Target\-Render\-Frequency}}
+\index{Target\-Render\-Frequency@{Target\-Render\-Frequency}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Target\-Render\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Target\-Render\-Frequency\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_game_window_ae604e886eca5028a0d2252bf6d52434a}
+
+
+Gets or sets a double representing the target render frequency, in hertz. 
+
+A value of 0.\-0 indicates that Render\-Frame events are generated at the maximum possible frequency (i.\-e. only limited by the hardware's capabilities).
+
+Values lower than 1.\-0\-Hz are clamped to 1.\-0\-Hz. Values higher than 200.\-0\-Hz are clamped to 200.\-0\-Hz.\hypertarget{class_open_t_k_1_1_game_window_a2233cfb62a42200251dcdb1dab643a36}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Target\-Render\-Period@{Target\-Render\-Period}}
+\index{Target\-Render\-Period@{Target\-Render\-Period}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Target\-Render\-Period}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Target\-Render\-Period\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_game_window_a2233cfb62a42200251dcdb1dab643a36}
+
+
+Gets or sets a double representing the target render period, in seconds. 
+
+A value of 0.\-0 indicates that Render\-Frame events are generated at the maximum possible frequency (i.\-e. only limited by the hardware's capabilities).
+
+Values lower than 0.\-005 seconds (200\-Hz) are clamped to 0.\-0. Values higher than 1.\-0 seconds (1\-Hz) are clamped to 1.\-0.\hypertarget{class_open_t_k_1_1_game_window_acf250353ae71ed429642335d614da7c5}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Target\-Update\-Frequency@{Target\-Update\-Frequency}}
+\index{Target\-Update\-Frequency@{Target\-Update\-Frequency}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Target\-Update\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Target\-Update\-Frequency\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_game_window_acf250353ae71ed429642335d614da7c5}
+
+
+Gets or sets a double representing the target update frequency, in hertz. 
+
+A value of 0.\-0 indicates that Update\-Frame events are generated at the maximum possible frequency (i.\-e. only limited by the hardware's capabilities).
+
+Values lower than 1.\-0\-Hz are clamped to 1.\-0\-Hz. Values higher than 200.\-0\-Hz are clamped to 200.\-0\-Hz.\hypertarget{class_open_t_k_1_1_game_window_a3fb751962cfcd5c95ad4b9fb84f40dbb}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Target\-Update\-Period@{Target\-Update\-Period}}
+\index{Target\-Update\-Period@{Target\-Update\-Period}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Target\-Update\-Period}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Target\-Update\-Period\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_game_window_a3fb751962cfcd5c95ad4b9fb84f40dbb}
+
+
+Gets or sets a double representing the target update period, in seconds. 
+
+A value of 0.\-0 indicates that Update\-Frame events are generated at the maximum possible frequency (i.\-e. only limited by the hardware's capabilities).
+
+Values lower than 0.\-005 seconds (200\-Hz) are clamped to 0.\-0. Values higher than 1.\-0 seconds (1\-Hz) are clamped to 1.\-0.\hypertarget{class_open_t_k_1_1_game_window_aeee75eb97d0c305788b802a09fac3540}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Update\-Frequency@{Update\-Frequency}}
+\index{Update\-Frequency@{Update\-Frequency}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Update\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Update\-Frequency\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_aeee75eb97d0c305788b802a09fac3540}
+
+
+Gets a double representing the frequency of Update\-Frame events, in hertz. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a1a44982a760d216e014c79dbf472f779}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Update\-Period@{Update\-Period}}
+\index{Update\-Period@{Update\-Period}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Update\-Period}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Update\-Period\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_a1a44982a760d216e014c79dbf472f779}
+
+
+Gets a double representing the period of Update\-Frame events, in seconds. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a324f362ab849612bb7a82ac84de92be0}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Update\-Time@{Update\-Time}}
+\index{Update\-Time@{Update\-Time}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Update\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Game\-Window.\-Update\-Time\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_game_window_a324f362ab849612bb7a82ac84de92be0}
+
+
+Gets a double representing the time spent in the Update\-Frame function, in seconds. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a13246c847d807cc510fd0fa8a58ae24b}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!V\-Sync@{V\-Sync}}
+\index{V\-Sync@{V\-Sync}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{V\-Sync}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-Sync\-Mode} Open\-T\-K.\-Game\-Window.\-V\-Sync\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_game_window_a13246c847d807cc510fd0fa8a58ae24b}
+
+
+Gets or sets the V\-Sync\-Mode. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a2645b832f9583c904a9e0c83951ed9d4}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Window\-State@{Window\-State}}
+\index{Window\-State@{Window\-State}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Window\-State}]{\setlength{\rightskip}{0pt plus 5cm}override {\bf Window\-State} Open\-T\-K.\-Game\-Window.\-Window\-State\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_game_window_a2645b832f9583c904a9e0c83951ed9d4}
+
+
+Gets or states the state of the \hyperlink{class_open_t_k_1_1_native_window}{Native\-Window}. 
+
+
+
+\subsection{Event Documentation}
+\hypertarget{class_open_t_k_1_1_game_window_a5d449a387cf4600251fc534fd49bdbc3}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Load@{Load}}
+\index{Load@{Load}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-Game\-Window.\-Load = delegate \{ \}}}\label{class_open_t_k_1_1_game_window_a5d449a387cf4600251fc534fd49bdbc3}
+
+
+Occurs before the window is displayed for the first time. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a299211a98496fdac0a526a353dd5f25a}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Render\-Frame@{Render\-Frame}}
+\index{Render\-Frame@{Render\-Frame}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Render\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Frame\-Event\-Args}$>$ Open\-T\-K.\-Game\-Window.\-Render\-Frame = delegate \{ \}}}\label{class_open_t_k_1_1_game_window_a299211a98496fdac0a526a353dd5f25a}
+
+
+Occurs when it is time to render a frame. 
+
+\hypertarget{class_open_t_k_1_1_game_window_a039f40ed67b4d0c64e292c7e9e77e80b}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Unload@{Unload}}
+\index{Unload@{Unload}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Unload}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-Game\-Window.\-Unload = delegate \{ \}}}\label{class_open_t_k_1_1_game_window_a039f40ed67b4d0c64e292c7e9e77e80b}
+
+
+Occurs before the window is destroyed. 
+
+\hypertarget{class_open_t_k_1_1_game_window_af3c171dd667a38eb461df532ff6cc016}{\index{Open\-T\-K\-::\-Game\-Window@{Open\-T\-K\-::\-Game\-Window}!Update\-Frame@{Update\-Frame}}
+\index{Update\-Frame@{Update\-Frame}!OpenTK::GameWindow@{Open\-T\-K\-::\-Game\-Window}}
+\subsubsection[{Update\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Frame\-Event\-Args}$>$ Open\-T\-K.\-Game\-Window.\-Update\-Frame = delegate \{ \}}}\label{class_open_t_k_1_1_game_window_af3c171dd667a38eb461df532ff6cc016}
+
+
+Occurs when it is time to update a frame. 
+

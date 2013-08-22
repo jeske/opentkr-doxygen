@@ -1,0 +1,1686 @@
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension}{\section{Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension Class Reference}
+\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension}\index{Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension@{Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension}}
+}
+
+
+Provides access to the \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} effects extension.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a51dbc9c91c556f374c9760c29675aff9}{Bind\-Effect} (uint eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a224be2a7f650eba92828d53342bfbc30}{Efx\-Effect\-Type} type)
+\begin{DoxyCompactList}\small\item\em (Helper) Selects the Effect type used by this Effect handle.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a60c86618c3c17d8e6363c791ff141e3e}{Bind\-Effect} (int eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a224be2a7f650eba92828d53342bfbc30}{Efx\-Effect\-Type} type)
+\begin{DoxyCompactList}\small\item\em (Helper) Selects the Effect type used by this Effect handle.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_acea6e441f40da3cae17f60968cfb2640}{Bind\-Filter\-To\-Source} (uint source, uint filter)
+\begin{DoxyCompactList}\small\item\em (Helper) reroutes the output of a Source through a Filter.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_acceb9bfc2ded3608543a0e438cacd602}{Bind\-Filter\-To\-Source} (int source, int filter)
+\begin{DoxyCompactList}\small\item\em (Helper) reroutes the output of a Source through a Filter.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a13cde333c8c4dc323cfaeaee3313f595}{Bind\-Effect\-To\-Auxiliary\-Slot} (uint auxiliaryeffectslot, uint effect)
+\begin{DoxyCompactList}\small\item\em (Helper) Attaches an Effect to an Auxiliary Effect Slot.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac14c1c8b6abfebe99d2a32f88c584c85}{Bind\-Effect\-To\-Auxiliary\-Slot} (int auxiliaryeffectslot, int effect)
+\begin{DoxyCompactList}\small\item\em (Helper) Attaches an Effect to an Auxiliary Effect Slot.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a79643a7458e25042d781e8e31097312e}{Bind\-Source\-To\-Auxiliary\-Slot} (uint source, uint slot, int slotnumber, uint filter)
+\begin{DoxyCompactList}\small\item\em (Helper) Reroutes a Source's output into an Auxiliary Effect Slot.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad17503fb7238b5867fdd913f31656bc1}{Bind\-Source\-To\-Auxiliary\-Slot} (int source, int slot, int slotnumber, int filter)
+\begin{DoxyCompactList}\small\item\em (Helper) Reroutes a Source's output into an Auxiliary Effect Slot.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7b17c0ab357339d205be9f83e3840f31}{Gen\-Effects} (int n, out uint effects)
+\begin{DoxyCompactList}\small\item\em The Gen\-Effects function is used to create one or more Effect objects. An Effect object stores an effect type and a set of parameter values to control that Effect. In order to use an Effect it must be attached to an Auxiliary Effect Slot object\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_aafb8f1e869a412b6bc8607d08f62fa8b}{Gen\-Effects} (int n, out int effects)
+\begin{DoxyCompactList}\small\item\em The Gen\-Effects function is used to create one or more Effect objects. An Effect object stores an effect type and a set of parameter values to control that Effect. In order to use an Effect it must be attached to an Auxiliary Effect Slot object\end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a746c3add93703b718721d4ecb210c80a}{Gen\-Effects} (int n)
+\begin{DoxyCompactList}\small\item\em Generates one or more effect objects.\end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_aba577b14af247d69f95f6c859511549e}{Gen\-Effect} ()
+\begin{DoxyCompactList}\small\item\em Generates a single effect object.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a48080e822c0b3d2e41c524d4535b22dd}{Gen\-Effect} (out uint effect)
+\begin{DoxyCompactList}\small\item\em Generates a single effect object.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a25d3d56982cbd0fcab35dede97a6503f}{Delete\-Effects} (int n, ref uint effects)
+\begin{DoxyCompactList}\small\item\em The Delete\-Effects function is used to delete and free resources for Effect objects previously created with Gen\-Effects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a19699b0a2538db96da21ed41e160966a}{Delete\-Effects} (int n, ref int effects)
+\begin{DoxyCompactList}\small\item\em The Delete\-Effects function is used to delete and free resources for Effect objects previously created with Gen\-Effects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a9be846087b2d226614b94c10f41d021e}{Delete\-Effects} (int\mbox{[}$\,$\mbox{]} effects)
+\begin{DoxyCompactList}\small\item\em The Delete\-Effects function is used to delete and free resources for Effect objects previously created with Gen\-Effects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a26ae8a2e06f73c1d16c42db9aadb8b9a}{Delete\-Effects} (uint\mbox{[}$\,$\mbox{]} effects)
+\begin{DoxyCompactList}\small\item\em The Delete\-Effects function is used to delete and free resources for Effect objects previously created with Gen\-Effects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5e73e7637657e34ad587b5a4421406a1}{Delete\-Effect} (int effect)
+\begin{DoxyCompactList}\small\item\em This function deletes one Effect only.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a2e9b431a6a8ee248f15b8d5f91819612}{Delete\-Effect} (ref uint effect)
+\begin{DoxyCompactList}\small\item\em This function deletes one Effect only.\end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ab54a3c1793c8e9ae1950f25fa3bb9091}{Is\-Effect} (uint eid)
+\begin{DoxyCompactList}\small\item\em The Is\-Effect function is used to determine if an object identifier is a valid Effect object.\end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a05a58048724fb4aef1583123c82e8bdc}{Is\-Effect} (int eid)
+\begin{DoxyCompactList}\small\item\em The Is\-Effect function is used to determine if an object identifier is a valid Effect object.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8e948592b6a210d3d1fa94c05bc40def}{Effect} (uint eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a49039c1ddcb53675576ad2780fc50315}{Efx\-Effecti} param, int value)
+\begin{DoxyCompactList}\small\item\em This function is used to set integer properties on Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_abdafac8cff4580029c966016d961fc78}{Effect} (int eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a49039c1ddcb53675576ad2780fc50315}{Efx\-Effecti} param, int value)
+\begin{DoxyCompactList}\small\item\em This function is used to set integer properties on Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a977a21cccce0607687124183aae8df37}{Effect} (uint eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_aa0356299908369b4365d28572c0ec20b}{Efx\-Effectf} param, float value)
+\begin{DoxyCompactList}\small\item\em This function is used to set floating-\/point properties on Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a87d6e1b2768acd65344d00b77c388b0c}{Effect} (int eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_aa0356299908369b4365d28572c0ec20b}{Efx\-Effectf} param, float value)
+\begin{DoxyCompactList}\small\item\em This function is used to set floating-\/point properties on Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac876b068080042c1211133eddf148705}{Effect} (uint eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a1c69083823578d237ab570da681a5cfa}{Efx\-Effect3f} param, ref \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} values)
+\begin{DoxyCompactList}\small\item\em This function is used to set 3 floating-\/point properties on Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8f3d27c67dbb8a6963c28024b05707ea}{Effect} (int eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a1c69083823578d237ab570da681a5cfa}{Efx\-Effect3f} param, ref \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} values)
+\begin{DoxyCompactList}\small\item\em This function is used to set 3 floating-\/point properties on Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a9d0473c4cd888a3343093ae5e1f56add}{Get\-Effect} (uint eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a49039c1ddcb53675576ad2780fc50315}{Efx\-Effecti} pname, out int value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve integer properties from Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a487bd82b5def2d9e0d5810c8fa30f679}{Get\-Effect} (int eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a49039c1ddcb53675576ad2780fc50315}{Efx\-Effecti} pname, out int value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve integer properties from Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac845a4e2f1dc6d042257de118cc0097a}{Get\-Effect} (uint eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_aa0356299908369b4365d28572c0ec20b}{Efx\-Effectf} pname, out float value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve floating-\/point properties from Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0536002e3d38c36910e3a54a21eece9d}{Get\-Effect} (int eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_aa0356299908369b4365d28572c0ec20b}{Efx\-Effectf} pname, out float value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve floating-\/point properties from Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7ad13f496f7ad1cd9cb18d2eef43dcc2}{Get\-Effect} (uint eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a1c69083823578d237ab570da681a5cfa}{Efx\-Effect3f} param, out \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} values)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve 3 floating-\/point properties from Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_af7fb4cfff41744c887c8d51e54a67701}{Get\-Effect} (int eid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a1c69083823578d237ab570da681a5cfa}{Efx\-Effect3f} param, out \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} values)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve 3 floating-\/point properties from Effect objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8832b714b9376a7fe999a8afc589da40}{Gen\-Filters} (int n, out uint filters)
+\begin{DoxyCompactList}\small\item\em The Gen\-Filters function is used to create one or more Filter objects. A Filter object stores a filter type and a set of parameter values to control that Filter. Filter objects can be attached to Sources as Direct Filters or Auxiliary Send Filters.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_aded82d26f8ff57e712c6b7b068ae1e4f}{Gen\-Filters} (int n, out int filters)
+\begin{DoxyCompactList}\small\item\em The Gen\-Filters function is used to create one or more Filter objects. A Filter object stores a filter type and a set of parameter values to control that Filter. Filter objects can be attached to Sources as Direct Filters or Auxiliary Send Filters.\end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a2b3c9e2f60f937096dc8c85d4e6e5e43}{Gen\-Filters} (int n)
+\begin{DoxyCompactList}\small\item\em The Gen\-Filters function is used to create one or more Filter objects. A Filter object stores a filter type and a set of parameter values to control that Filter. Filter objects can be attached to Sources as Direct Filters or Auxiliary Send Filters.\end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5c3fc6ea5916498d8590a5db9f3f85d9}{Gen\-Filter} ()
+\begin{DoxyCompactList}\small\item\em This function generates only one Filter.\end{DoxyCompactList}\item 
+unsafe void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a82b70f934c938398c417419b9982fe7b}{Gen\-Filter} (out uint filter)
+\begin{DoxyCompactList}\small\item\em This function generates only one Filter.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad4e48a24fe5c4f31895114bb04dd5d0b}{Delete\-Filters} (int n, ref uint filters)
+\begin{DoxyCompactList}\small\item\em The Delete\-Filters function is used to delete and free resources for Filter objects previously created with Gen\-Filters.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a24505350970276bc214dfc089ca6b7d3}{Delete\-Filters} (int n, ref int filters)
+\begin{DoxyCompactList}\small\item\em The Delete\-Filters function is used to delete and free resources for Filter objects previously created with Gen\-Filters.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a60a4a879c356dab286f6325dc2084729}{Delete\-Filters} (uint\mbox{[}$\,$\mbox{]} filters)
+\begin{DoxyCompactList}\small\item\em This function deletes one Filter only.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a6e64ebb2c6fd75b4acfde4653ea9528b}{Delete\-Filters} (int\mbox{[}$\,$\mbox{]} filters)
+\begin{DoxyCompactList}\small\item\em This function deletes one Filter only.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_afcbbe986b53d7b60fe2c7815dd0d1797}{Delete\-Filter} (int filter)
+\begin{DoxyCompactList}\small\item\em This function deletes one Filter only.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_adcfd0f6ed1749a83543a067510dd3b7f}{Delete\-Filter} (ref uint filter)
+\begin{DoxyCompactList}\small\item\em This function deletes one Filter only.\end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5e672010e215b7cef6ccf2a23a3d51a6}{Is\-Filter} (uint fid)
+\begin{DoxyCompactList}\small\item\em The Is\-Filter function is used to determine if an object identifier is a valid Filter object.\end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0e7a55945fd9094fc149d73100ff46bb}{Is\-Filter} (int fid)
+\begin{DoxyCompactList}\small\item\em The Is\-Filter function is used to determine if an object identifier is a valid Filter object.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7b6cd1c3578195469ec829566afc104f}{Filter} (uint fid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a071c0527689a9645ced24caee8e0f542}{Efx\-Filteri} param, int value)
+\begin{DoxyCompactList}\small\item\em This function is used to set integer properties on Filter objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a399ccfd829426685d54adfe12a2e1def}{Filter} (int fid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a071c0527689a9645ced24caee8e0f542}{Efx\-Filteri} param, int value)
+\begin{DoxyCompactList}\small\item\em This function is used to set integer properties on Filter objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac925fabeba566c7497ba28b8db5c86ac}{Filter} (uint fid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a6a389aa5e465025fe4eb3fba1603fd6b}{Efx\-Filterf} param, float value)
+\begin{DoxyCompactList}\small\item\em This function is used to set floating-\/point properties on Filter objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad3386bcd4e31173f058b44c73a08ae99}{Filter} (int fid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a6a389aa5e465025fe4eb3fba1603fd6b}{Efx\-Filterf} param, float value)
+\begin{DoxyCompactList}\small\item\em This function is used to set floating-\/point properties on Filter objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a35d8cc9ccd8b34f5cf52a74203456fdb}{Get\-Filter} (uint fid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a071c0527689a9645ced24caee8e0f542}{Efx\-Filteri} pname, out int value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve integer properties from Filter objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5a91a48507abf811dcf3b3c8ce7b45bc}{Get\-Filter} (int fid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a071c0527689a9645ced24caee8e0f542}{Efx\-Filteri} pname, out int value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve integer properties from Filter objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_af07e454cc706218448e219c90529b659}{Get\-Filter} (uint fid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a6a389aa5e465025fe4eb3fba1603fd6b}{Efx\-Filterf} pname, out float value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve floating-\/point properties from Filter objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5ef9cded2ef47728599dd2e748a81c67}{Get\-Filter} (int fid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a6a389aa5e465025fe4eb3fba1603fd6b}{Efx\-Filterf} pname, out float value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve floating-\/point properties from Filter objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_af443312a2d154ede7f865e8cd765d797}{Gen\-Auxiliary\-Effect\-Slots} (int n, out uint slots)
+\begin{DoxyCompactList}\small\item\em The Gen\-Auxiliary\-Effect\-Slots function is used to create one or more Auxiliary Effect Slots. The number of slots that can be created will be dependant upon the Open A\-L device used.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5d2ee7f74d4228bbf10c92f61c97f869}{Gen\-Auxiliary\-Effect\-Slots} (int n, out int slots)
+\begin{DoxyCompactList}\small\item\em The Gen\-Auxiliary\-Effect\-Slots function is used to create one or more Auxiliary Effect Slots. The number of slots that can be created will be dependant upon the Open A\-L device used.\end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0ec3a249a109ba80461d8fb71072de71}{Gen\-Auxiliary\-Effect\-Slots} (int n)
+\begin{DoxyCompactList}\small\item\em The Gen\-Auxiliary\-Effect\-Slots function is used to create one or more Auxiliary Effect Slots. The number of slots that can be created will be dependant upon the Open A\-L device used.\end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_afbbb3f2126518c17bc067ee922021245}{Gen\-Auxiliary\-Effect\-Slot} ()
+\begin{DoxyCompactList}\small\item\em This function generates only one Auxiliary Effect Slot.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a24c835355ade23ba84783d3635692657}{Gen\-Auxiliary\-Effect\-Slot} (out uint slot)
+\begin{DoxyCompactList}\small\item\em This function generates only one Auxiliary Effect Slot.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0d1cd18f9849786ed616c1e5d6b5f9d1}{Delete\-Auxiliary\-Effect\-Slots} (int n, ref uint slots)
+\begin{DoxyCompactList}\small\item\em The Delete\-Auxiliary\-Effect\-Slots function is used to delete and free resources for Auxiliary Effect Slots previously created with Gen\-Auxiliary\-Effect\-Slots.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a95e2e236996c0bba5ec3ba121a86fb96}{Delete\-Auxiliary\-Effect\-Slots} (int n, ref int slots)
+\begin{DoxyCompactList}\small\item\em The Delete\-Auxiliary\-Effect\-Slots function is used to delete and free resources for Auxiliary Effect Slots previously created with Gen\-Auxiliary\-Effect\-Slots.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a3e5c95d28a8e1b9d6f41e7338a9d9c20}{Delete\-Auxiliary\-Effect\-Slots} (int\mbox{[}$\,$\mbox{]} slots)
+\begin{DoxyCompactList}\small\item\em The Delete\-Auxiliary\-Effect\-Slots function is used to delete and free resources for Auxiliary Effect Slots previously created with Gen\-Auxiliary\-Effect\-Slots.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a32eada847b7327635c6811f398550678}{Delete\-Auxiliary\-Effect\-Slots} (uint\mbox{[}$\,$\mbox{]} slots)
+\begin{DoxyCompactList}\small\item\em This function deletes one Auxiliary\-Effect\-Slot only.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a186a9280ce62e17b093268c3ee63553d}{Delete\-Auxiliary\-Effect\-Slot} (int slot)
+\begin{DoxyCompactList}\small\item\em This function deletes one Auxiliary\-Effect\-Slot only.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5abbcc03f381d5af6d8c0efc0eaec7d7}{Delete\-Auxiliary\-Effect\-Slot} (ref uint slot)
+\begin{DoxyCompactList}\small\item\em This function deletes one Auxiliary\-Effect\-Slot only.\end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8682814f4f44ada674cb33a708a7020b}{Is\-Auxiliary\-Effect\-Slot} (uint slot)
+\begin{DoxyCompactList}\small\item\em The Is\-Auxiliary\-Effect\-Slot function is used to determine if an object identifier is a valid Auxiliary Effect Slot object.\end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ab15f348b6c2d0b171608a43849dddc24}{Is\-Auxiliary\-Effect\-Slot} (int slot)
+\begin{DoxyCompactList}\small\item\em The Is\-Auxiliary\-Effect\-Slot function is used to determine if an object identifier is a valid Auxiliary Effect Slot object.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a3776963058c5c8e9dbaf29a7ded228ac}{Auxiliary\-Effect\-Slot} (uint asid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a94243a598006983d92449b374a5b60cc}{Efx\-Auxiliaryi} param, int value)
+\begin{DoxyCompactList}\small\item\em This function is used to set integer properties on Auxiliary Effect Slot objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a02f757a149bd9e8ee56087ad884d2b12}{Auxiliary\-Effect\-Slot} (int asid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a94243a598006983d92449b374a5b60cc}{Efx\-Auxiliaryi} param, int value)
+\begin{DoxyCompactList}\small\item\em This function is used to set integer properties on Auxiliary Effect Slot objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_acb92406a943db3db93148e5473838d1c}{Auxiliary\-Effect\-Slot} (uint asid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_ad4eb76e6214aa11619cd342b8ab6acbd}{Efx\-Auxiliaryf} param, float value)
+\begin{DoxyCompactList}\small\item\em This function is used to set floating-\/point properties on Auxiliary Effect Slot objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad5a5e5a6157209de8bed4682de7fd9a2}{Auxiliary\-Effect\-Slot} (int asid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_ad4eb76e6214aa11619cd342b8ab6acbd}{Efx\-Auxiliaryf} param, float value)
+\begin{DoxyCompactList}\small\item\em This function is used to set floating-\/point properties on Auxiliary Effect Slot objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ab2a55e2efd22acdee604fdc52fc36ff9}{Get\-Auxiliary\-Effect\-Slot} (uint asid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a94243a598006983d92449b374a5b60cc}{Efx\-Auxiliaryi} pname, out int value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve integer properties on Auxiliary Effect Slot objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0689a310d5097e82e4cb368c73d255e3}{Get\-Auxiliary\-Effect\-Slot} (int asid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a94243a598006983d92449b374a5b60cc}{Efx\-Auxiliaryi} pname, out int value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve integer properties on Auxiliary Effect Slot objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a79da0470f0f7b2bf6eaaea3619c0f41c}{Get\-Auxiliary\-Effect\-Slot} (uint asid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_ad4eb76e6214aa11619cd342b8ab6acbd}{Efx\-Auxiliaryf} pname, out float value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve floating properties on Auxiliary Effect Slot objects.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5f6f92274a592df0ea8ab4dfd3780c37}{Get\-Auxiliary\-Effect\-Slot} (int asid, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_ad4eb76e6214aa11619cd342b8ab6acbd}{Efx\-Auxiliaryf} pname, out float value)
+\begin{DoxyCompactList}\small\item\em This function is used to retrieve floating properties on Auxiliary Effect Slot objects.\end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a1923f40f555058b0e102711601559731}{Effects\-Extension} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension}{Effects\-Extension} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0b335b4f0da12f920bf9cdd6f17a3df5}{static void {\bfseries Get\-Eax\-From\-Efx\-Eax} (ref Eax\-Reverb input, out Efx\-Eax\-Reverb output)}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0b335b4f0da12f920bf9cdd6f17a3df5}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a760975f853f917b2e4bcec05ffa73cca}{Is\-Initialized}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns True if the E\-F\-X Extension has been found and could be initialized.\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides access to the \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} effects extension. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a1923f40f555058b0e102711601559731}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Effects\-Extension@{Effects\-Extension}}
+\index{Effects\-Extension@{Effects\-Extension}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Effects\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Effects\-Extension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a1923f40f555058b0e102711601559731}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension}{Effects\-Extension} instance. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a3776963058c5c8e9dbaf29a7ded228ac}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Auxiliary\-Effect\-Slot@{Auxiliary\-Effect\-Slot}}
+\index{Auxiliary\-Effect\-Slot@{Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{uint}]{asid, }
+\item[{{\bf Efx\-Auxiliaryi}}]{param, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a3776963058c5c8e9dbaf29a7ded228ac}
+
+
+This function is used to set integer properties on Auxiliary Effect Slot objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asid} & Auxiliary Effect Slot object identifier.\\
+\hline
+{\em param} & Auxiliary Effect Slot property to set.\\
+\hline
+{\em value} & Integer value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a02f757a149bd9e8ee56087ad884d2b12}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Auxiliary\-Effect\-Slot@{Auxiliary\-Effect\-Slot}}
+\index{Auxiliary\-Effect\-Slot@{Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{int}]{asid, }
+\item[{{\bf Efx\-Auxiliaryi}}]{param, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a02f757a149bd9e8ee56087ad884d2b12}
+
+
+This function is used to set integer properties on Auxiliary Effect Slot objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asid} & Auxiliary Effect Slot object identifier.\\
+\hline
+{\em param} & Auxiliary Effect Slot property to set.\\
+\hline
+{\em value} & Integer value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_acb92406a943db3db93148e5473838d1c}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Auxiliary\-Effect\-Slot@{Auxiliary\-Effect\-Slot}}
+\index{Auxiliary\-Effect\-Slot@{Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{uint}]{asid, }
+\item[{{\bf Efx\-Auxiliaryf}}]{param, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_acb92406a943db3db93148e5473838d1c}
+
+
+This function is used to set floating-\/point properties on Auxiliary Effect Slot objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asid} & Auxiliary Effect Slot object identifier.\\
+\hline
+{\em param} & Auxiliary Effect Slot property to set.\\
+\hline
+{\em value} & Floating-\/point value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad5a5e5a6157209de8bed4682de7fd9a2}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Auxiliary\-Effect\-Slot@{Auxiliary\-Effect\-Slot}}
+\index{Auxiliary\-Effect\-Slot@{Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{int}]{asid, }
+\item[{{\bf Efx\-Auxiliaryf}}]{param, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad5a5e5a6157209de8bed4682de7fd9a2}
+
+
+This function is used to set floating-\/point properties on Auxiliary Effect Slot objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asid} & Auxiliary Effect Slot object identifier.\\
+\hline
+{\em param} & Auxiliary Effect Slot property to set.\\
+\hline
+{\em value} & Floating-\/point value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a51dbc9c91c556f374c9760c29675aff9}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Bind\-Effect@{Bind\-Effect}}
+\index{Bind\-Effect@{Bind\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Bind\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Bind\-Effect (
+\begin{DoxyParamCaption}
+\item[{uint}]{eid, }
+\item[{{\bf Efx\-Effect\-Type}}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a51dbc9c91c556f374c9760c29675aff9}
+
+
+(Helper) Selects the Effect type used by this Effect handle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect id returned from a successful call to Gen\-Effects.\\
+\hline
+{\em type} & Effect type.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a60c86618c3c17d8e6363c791ff141e3e}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Bind\-Effect@{Bind\-Effect}}
+\index{Bind\-Effect@{Bind\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Bind\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Bind\-Effect (
+\begin{DoxyParamCaption}
+\item[{int}]{eid, }
+\item[{{\bf Efx\-Effect\-Type}}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a60c86618c3c17d8e6363c791ff141e3e}
+
+
+(Helper) Selects the Effect type used by this Effect handle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect id returned from a successful call to Gen\-Effects.\\
+\hline
+{\em type} & Effect type.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a13cde333c8c4dc323cfaeaee3313f595}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Bind\-Effect\-To\-Auxiliary\-Slot@{Bind\-Effect\-To\-Auxiliary\-Slot}}
+\index{Bind\-Effect\-To\-Auxiliary\-Slot@{Bind\-Effect\-To\-Auxiliary\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Bind\-Effect\-To\-Auxiliary\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Bind\-Effect\-To\-Auxiliary\-Slot (
+\begin{DoxyParamCaption}
+\item[{uint}]{auxiliaryeffectslot, }
+\item[{uint}]{effect}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a13cde333c8c4dc323cfaeaee3313f595}
+
+
+(Helper) Attaches an Effect to an Auxiliary Effect Slot.
+
+
+\begin{DoxyParams}{Parameters}
+{\em auxiliaryeffectslot} & The slot handle to attach the Effect to.\\
+\hline
+{\em effect} & The Effect handle that is being attached.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac14c1c8b6abfebe99d2a32f88c584c85}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Bind\-Effect\-To\-Auxiliary\-Slot@{Bind\-Effect\-To\-Auxiliary\-Slot}}
+\index{Bind\-Effect\-To\-Auxiliary\-Slot@{Bind\-Effect\-To\-Auxiliary\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Bind\-Effect\-To\-Auxiliary\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Bind\-Effect\-To\-Auxiliary\-Slot (
+\begin{DoxyParamCaption}
+\item[{int}]{auxiliaryeffectslot, }
+\item[{int}]{effect}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac14c1c8b6abfebe99d2a32f88c584c85}
+
+
+(Helper) Attaches an Effect to an Auxiliary Effect Slot.
+
+
+\begin{DoxyParams}{Parameters}
+{\em auxiliaryeffectslot} & The slot handle to attach the Effect to.\\
+\hline
+{\em effect} & The Effect handle that is being attached.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_acea6e441f40da3cae17f60968cfb2640}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Bind\-Filter\-To\-Source@{Bind\-Filter\-To\-Source}}
+\index{Bind\-Filter\-To\-Source@{Bind\-Filter\-To\-Source}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Bind\-Filter\-To\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Bind\-Filter\-To\-Source (
+\begin{DoxyParamCaption}
+\item[{uint}]{source, }
+\item[{uint}]{filter}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_acea6e441f40da3cae17f60968cfb2640}
+
+
+(Helper) reroutes the output of a Source through a Filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A valid Source handle.\\
+\hline
+{\em filter} & A valid Filter handle.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_acceb9bfc2ded3608543a0e438cacd602}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Bind\-Filter\-To\-Source@{Bind\-Filter\-To\-Source}}
+\index{Bind\-Filter\-To\-Source@{Bind\-Filter\-To\-Source}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Bind\-Filter\-To\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Bind\-Filter\-To\-Source (
+\begin{DoxyParamCaption}
+\item[{int}]{source, }
+\item[{int}]{filter}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_acceb9bfc2ded3608543a0e438cacd602}
+
+
+(Helper) reroutes the output of a Source through a Filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A valid Source handle.\\
+\hline
+{\em filter} & A valid Filter handle.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a79643a7458e25042d781e8e31097312e}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Bind\-Source\-To\-Auxiliary\-Slot@{Bind\-Source\-To\-Auxiliary\-Slot}}
+\index{Bind\-Source\-To\-Auxiliary\-Slot@{Bind\-Source\-To\-Auxiliary\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Bind\-Source\-To\-Auxiliary\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Bind\-Source\-To\-Auxiliary\-Slot (
+\begin{DoxyParamCaption}
+\item[{uint}]{source, }
+\item[{uint}]{slot, }
+\item[{int}]{slotnumber, }
+\item[{uint}]{filter}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a79643a7458e25042d781e8e31097312e}
+
+
+(Helper) Reroutes a Source's output into an Auxiliary Effect Slot.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The Source handle who's output is forwarded.\\
+\hline
+{\em slot} & The Auxiliary Effect Slot handle that receives input from the Source.\\
+\hline
+{\em slotnumber} & Every Source has only a limited number of slots it can feed buffer to. The number must stay below Alc\-Context\-Attributes.\-Efx\-Max\-Auxiliary\-Sends\\
+\hline
+{\em filter} & Filter handle to be attached between Source ouput and Auxiliary Slot input. Use 0 or Efx\-Filter\-Type.\-Filter\-Null for no filter. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad17503fb7238b5867fdd913f31656bc1}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Bind\-Source\-To\-Auxiliary\-Slot@{Bind\-Source\-To\-Auxiliary\-Slot}}
+\index{Bind\-Source\-To\-Auxiliary\-Slot@{Bind\-Source\-To\-Auxiliary\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Bind\-Source\-To\-Auxiliary\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Bind\-Source\-To\-Auxiliary\-Slot (
+\begin{DoxyParamCaption}
+\item[{int}]{source, }
+\item[{int}]{slot, }
+\item[{int}]{slotnumber, }
+\item[{int}]{filter}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad17503fb7238b5867fdd913f31656bc1}
+
+
+(Helper) Reroutes a Source's output into an Auxiliary Effect Slot.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The Source handle who's output is forwarded.\\
+\hline
+{\em slot} & The Auxiliary Effect Slot handle that receives input from the Source.\\
+\hline
+{\em slotnumber} & Every Source has only a limited number of slots it can feed buffer to. The number must stay below Alc\-Context\-Attributes.\-Efx\-Max\-Auxiliary\-Sends\\
+\hline
+{\em filter} & Filter handle to be attached between Source ouput and Auxiliary Slot input. Use 0 or Efx\-Filter\-Type.\-Filter\-Null for no filter. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a186a9280ce62e17b093268c3ee63553d}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Auxiliary\-Effect\-Slot@{Delete\-Auxiliary\-Effect\-Slot}}
+\index{Delete\-Auxiliary\-Effect\-Slot@{Delete\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{int}]{slot}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a186a9280ce62e17b093268c3ee63553d}
+
+
+This function deletes one Auxiliary\-Effect\-Slot only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & Pointer to an auxiliary effect slot name/handle identifying the Auxiliary Effect Slot Object to be deleted.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5abbcc03f381d5af6d8c0efc0eaec7d7}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Auxiliary\-Effect\-Slot@{Delete\-Auxiliary\-Effect\-Slot}}
+\index{Delete\-Auxiliary\-Effect\-Slot@{Delete\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{ref uint}]{slot}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5abbcc03f381d5af6d8c0efc0eaec7d7}
+
+
+This function deletes one Auxiliary\-Effect\-Slot only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & Pointer to an auxiliary effect slot name/handle identifying the Auxiliary Effect Slot Object to be deleted.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0d1cd18f9849786ed616c1e5d6b5f9d1}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Auxiliary\-Effect\-Slots@{Delete\-Auxiliary\-Effect\-Slots}}
+\index{Delete\-Auxiliary\-Effect\-Slots@{Delete\-Auxiliary\-Effect\-Slots}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Auxiliary\-Effect\-Slots}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Auxiliary\-Effect\-Slots (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{ref uint}]{slots}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0d1cd18f9849786ed616c1e5d6b5f9d1}
+
+
+The Delete\-Auxiliary\-Effect\-Slots function is used to delete and free resources for Auxiliary Effect Slots previously created with Gen\-Auxiliary\-Effect\-Slots.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Auxiliary Effect Slots to be deleted.\\
+\hline
+{\em slots} & Pointer to n Effect Slot object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a95e2e236996c0bba5ec3ba121a86fb96}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Auxiliary\-Effect\-Slots@{Delete\-Auxiliary\-Effect\-Slots}}
+\index{Delete\-Auxiliary\-Effect\-Slots@{Delete\-Auxiliary\-Effect\-Slots}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Auxiliary\-Effect\-Slots}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Auxiliary\-Effect\-Slots (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{ref int}]{slots}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a95e2e236996c0bba5ec3ba121a86fb96}
+
+
+The Delete\-Auxiliary\-Effect\-Slots function is used to delete and free resources for Auxiliary Effect Slots previously created with Gen\-Auxiliary\-Effect\-Slots.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Auxiliary Effect Slots to be deleted.\\
+\hline
+{\em slots} & Pointer to n Effect Slot object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a3e5c95d28a8e1b9d6f41e7338a9d9c20}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Auxiliary\-Effect\-Slots@{Delete\-Auxiliary\-Effect\-Slots}}
+\index{Delete\-Auxiliary\-Effect\-Slots@{Delete\-Auxiliary\-Effect\-Slots}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Auxiliary\-Effect\-Slots}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Auxiliary\-Effect\-Slots (
+\begin{DoxyParamCaption}
+\item[{int\mbox{[}$\,$\mbox{]}}]{slots}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a3e5c95d28a8e1b9d6f41e7338a9d9c20}
+
+
+The Delete\-Auxiliary\-Effect\-Slots function is used to delete and free resources for Auxiliary Effect Slots previously created with Gen\-Auxiliary\-Effect\-Slots.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slots} & Pointer to n Effect Slot object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a32eada847b7327635c6811f398550678}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Auxiliary\-Effect\-Slots@{Delete\-Auxiliary\-Effect\-Slots}}
+\index{Delete\-Auxiliary\-Effect\-Slots@{Delete\-Auxiliary\-Effect\-Slots}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Auxiliary\-Effect\-Slots}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Auxiliary\-Effect\-Slots (
+\begin{DoxyParamCaption}
+\item[{uint\mbox{[}$\,$\mbox{]}}]{slots}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a32eada847b7327635c6811f398550678}
+
+
+This function deletes one Auxiliary\-Effect\-Slot only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slots} & Pointer to an auxiliary effect slot name/handle identifying the Auxiliary Effect Slot Object to be deleted.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5e73e7637657e34ad587b5a4421406a1}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Effect@{Delete\-Effect}}
+\index{Delete\-Effect@{Delete\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Effect (
+\begin{DoxyParamCaption}
+\item[{int}]{effect}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5e73e7637657e34ad587b5a4421406a1}
+
+
+This function deletes one Effect only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em effect} & Pointer to an effect name/handle identifying the Effect Object to be deleted.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a2e9b431a6a8ee248f15b8d5f91819612}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Effect@{Delete\-Effect}}
+\index{Delete\-Effect@{Delete\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Effect (
+\begin{DoxyParamCaption}
+\item[{ref uint}]{effect}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a2e9b431a6a8ee248f15b8d5f91819612}
+
+
+This function deletes one Effect only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em effect} & Pointer to an effect name/handle identifying the Effect Object to be deleted.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a25d3d56982cbd0fcab35dede97a6503f}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Effects@{Delete\-Effects}}
+\index{Delete\-Effects@{Delete\-Effects}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Effects}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Effects (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{ref uint}]{effects}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a25d3d56982cbd0fcab35dede97a6503f}
+
+
+The Delete\-Effects function is used to delete and free resources for Effect objects previously created with Gen\-Effects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Effects to be deleted.\\
+\hline
+{\em effects} & Pointer to n Effect object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a19699b0a2538db96da21ed41e160966a}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Effects@{Delete\-Effects}}
+\index{Delete\-Effects@{Delete\-Effects}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Effects}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Effects (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{ref int}]{effects}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a19699b0a2538db96da21ed41e160966a}
+
+
+The Delete\-Effects function is used to delete and free resources for Effect objects previously created with Gen\-Effects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Effects to be deleted.\\
+\hline
+{\em effects} & Pointer to n Effect object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a9be846087b2d226614b94c10f41d021e}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Effects@{Delete\-Effects}}
+\index{Delete\-Effects@{Delete\-Effects}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Effects}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Effects (
+\begin{DoxyParamCaption}
+\item[{int\mbox{[}$\,$\mbox{]}}]{effects}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a9be846087b2d226614b94c10f41d021e}
+
+
+The Delete\-Effects function is used to delete and free resources for Effect objects previously created with Gen\-Effects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em effects} & Pointer to n Effect object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a26ae8a2e06f73c1d16c42db9aadb8b9a}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Effects@{Delete\-Effects}}
+\index{Delete\-Effects@{Delete\-Effects}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Effects}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Effects (
+\begin{DoxyParamCaption}
+\item[{uint\mbox{[}$\,$\mbox{]}}]{effects}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a26ae8a2e06f73c1d16c42db9aadb8b9a}
+
+
+The Delete\-Effects function is used to delete and free resources for Effect objects previously created with Gen\-Effects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em effects} & Pointer to n Effect object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_afcbbe986b53d7b60fe2c7815dd0d1797}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Filter@{Delete\-Filter}}
+\index{Delete\-Filter@{Delete\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{filter}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_afcbbe986b53d7b60fe2c7815dd0d1797}
+
+
+This function deletes one Filter only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter} & Pointer to an filter name/handle identifying the Filter Object to be deleted.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_adcfd0f6ed1749a83543a067510dd3b7f}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Filter@{Delete\-Filter}}
+\index{Delete\-Filter@{Delete\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Filter (
+\begin{DoxyParamCaption}
+\item[{ref uint}]{filter}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_adcfd0f6ed1749a83543a067510dd3b7f}
+
+
+This function deletes one Filter only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter} & Pointer to an filter name/handle identifying the Filter Object to be deleted.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad4e48a24fe5c4f31895114bb04dd5d0b}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Filters@{Delete\-Filters}}
+\index{Delete\-Filters@{Delete\-Filters}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Filters}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Filters (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{ref uint}]{filters}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad4e48a24fe5c4f31895114bb04dd5d0b}
+
+
+The Delete\-Filters function is used to delete and free resources for Filter objects previously created with Gen\-Filters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Filters to be deleted.\\
+\hline
+{\em filters} & Pointer to n Filter object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a24505350970276bc214dfc089ca6b7d3}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Filters@{Delete\-Filters}}
+\index{Delete\-Filters@{Delete\-Filters}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Filters}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Filters (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{ref int}]{filters}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a24505350970276bc214dfc089ca6b7d3}
+
+
+The Delete\-Filters function is used to delete and free resources for Filter objects previously created with Gen\-Filters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Filters to be deleted.\\
+\hline
+{\em filters} & Pointer to n Filter object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a60a4a879c356dab286f6325dc2084729}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Filters@{Delete\-Filters}}
+\index{Delete\-Filters@{Delete\-Filters}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Filters}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Filters (
+\begin{DoxyParamCaption}
+\item[{uint\mbox{[}$\,$\mbox{]}}]{filters}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a60a4a879c356dab286f6325dc2084729}
+
+
+This function deletes one Filter only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filters} & Pointer to an filter name/handle identifying the Filter Object to be deleted.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a6e64ebb2c6fd75b4acfde4653ea9528b}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Delete\-Filters@{Delete\-Filters}}
+\index{Delete\-Filters@{Delete\-Filters}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Delete\-Filters}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Delete\-Filters (
+\begin{DoxyParamCaption}
+\item[{int\mbox{[}$\,$\mbox{]}}]{filters}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a6e64ebb2c6fd75b4acfde4653ea9528b}
+
+
+This function deletes one Filter only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filters} & Pointer to an filter name/handle identifying the Filter Object to be deleted.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8e948592b6a210d3d1fa94c05bc40def}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Effect@{Effect}}
+\index{Effect@{Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Effect (
+\begin{DoxyParamCaption}
+\item[{uint}]{eid, }
+\item[{{\bf Efx\-Effecti}}]{param, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8e948592b6a210d3d1fa94c05bc40def}
+
+
+This function is used to set integer properties on Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em value} & Integer value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_abdafac8cff4580029c966016d961fc78}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Effect@{Effect}}
+\index{Effect@{Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Effect (
+\begin{DoxyParamCaption}
+\item[{int}]{eid, }
+\item[{{\bf Efx\-Effecti}}]{param, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_abdafac8cff4580029c966016d961fc78}
+
+
+This function is used to set integer properties on Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em value} & Integer value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a977a21cccce0607687124183aae8df37}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Effect@{Effect}}
+\index{Effect@{Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Effect (
+\begin{DoxyParamCaption}
+\item[{uint}]{eid, }
+\item[{{\bf Efx\-Effectf}}]{param, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a977a21cccce0607687124183aae8df37}
+
+
+This function is used to set floating-\/point properties on Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em value} & Floating-\/point value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a87d6e1b2768acd65344d00b77c388b0c}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Effect@{Effect}}
+\index{Effect@{Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Effect (
+\begin{DoxyParamCaption}
+\item[{int}]{eid, }
+\item[{{\bf Efx\-Effectf}}]{param, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a87d6e1b2768acd65344d00b77c388b0c}
+
+
+This function is used to set floating-\/point properties on Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em value} & Floating-\/point value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac876b068080042c1211133eddf148705}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Effect@{Effect}}
+\index{Effect@{Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Effect (
+\begin{DoxyParamCaption}
+\item[{uint}]{eid, }
+\item[{{\bf Efx\-Effect3f}}]{param, }
+\item[{ref {\bf Vector3}}]{values}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac876b068080042c1211133eddf148705}
+
+
+This function is used to set 3 floating-\/point properties on Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em values} & Pointer to Math.\-Vector3.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8f3d27c67dbb8a6963c28024b05707ea}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Effect@{Effect}}
+\index{Effect@{Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Effect (
+\begin{DoxyParamCaption}
+\item[{int}]{eid, }
+\item[{{\bf Efx\-Effect3f}}]{param, }
+\item[{ref {\bf Vector3}}]{values}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8f3d27c67dbb8a6963c28024b05707ea}
+
+
+This function is used to set 3 floating-\/point properties on Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em values} & Pointer to Math.\-Vector3.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7b6cd1c3578195469ec829566afc104f}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Filter@{Filter}}
+\index{Filter@{Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Filter (
+\begin{DoxyParamCaption}
+\item[{uint}]{fid, }
+\item[{{\bf Efx\-Filteri}}]{param, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7b6cd1c3578195469ec829566afc104f}
+
+
+This function is used to set integer properties on Filter objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Filter object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em value} & Integer value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a399ccfd829426685d54adfe12a2e1def}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Filter@{Filter}}
+\index{Filter@{Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{fid, }
+\item[{{\bf Efx\-Filteri}}]{param, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a399ccfd829426685d54adfe12a2e1def}
+
+
+This function is used to set integer properties on Filter objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Filter object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em value} & Integer value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac925fabeba566c7497ba28b8db5c86ac}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Filter@{Filter}}
+\index{Filter@{Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Filter (
+\begin{DoxyParamCaption}
+\item[{uint}]{fid, }
+\item[{{\bf Efx\-Filterf}}]{param, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac925fabeba566c7497ba28b8db5c86ac}
+
+
+This function is used to set floating-\/point properties on Filter objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Filter object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em value} & Floating-\/point value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad3386bcd4e31173f058b44c73a08ae99}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Filter@{Filter}}
+\index{Filter@{Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{fid, }
+\item[{{\bf Efx\-Filterf}}]{param, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ad3386bcd4e31173f058b44c73a08ae99}
+
+
+This function is used to set floating-\/point properties on Filter objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Filter object identifier.\\
+\hline
+{\em param} & Effect property to set.\\
+\hline
+{\em value} & Floating-\/point value.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_afbbb3f2126518c17bc067ee922021245}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Auxiliary\-Effect\-Slot@{Gen\-Auxiliary\-Effect\-Slot}}
+\index{Gen\-Auxiliary\-Effect\-Slot@{Gen\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_afbbb3f2126518c17bc067ee922021245}
+
+
+This function generates only one Auxiliary Effect Slot.
+
+\begin{DoxyReturn}{Returns}
+Storage Int32 for the new auxiliary effect slot name/handle.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a24c835355ade23ba84783d3635692657}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Auxiliary\-Effect\-Slot@{Gen\-Auxiliary\-Effect\-Slot}}
+\index{Gen\-Auxiliary\-Effect\-Slot@{Gen\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{out uint}]{slot}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a24c835355ade23ba84783d3635692657}
+
+
+This function generates only one Auxiliary Effect Slot.
+
+\begin{DoxyReturn}{Returns}
+Storage U\-Int32 for the new auxiliary effect slot name/handle.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_af443312a2d154ede7f865e8cd765d797}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Auxiliary\-Effect\-Slots@{Gen\-Auxiliary\-Effect\-Slots}}
+\index{Gen\-Auxiliary\-Effect\-Slots@{Gen\-Auxiliary\-Effect\-Slots}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Auxiliary\-Effect\-Slots}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Auxiliary\-Effect\-Slots (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{out uint}]{slots}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_af443312a2d154ede7f865e8cd765d797}
+
+
+The Gen\-Auxiliary\-Effect\-Slots function is used to create one or more Auxiliary Effect Slots. The number of slots that can be created will be dependant upon the Open A\-L device used.
+
+An application should check the \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} error state after making this call to determine if the Effect Slot was successfully created. If the function call fails then none of the requested Effect Slots are created. A good strategy for creating any \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} object is to use a for-\/loop and generate one object each loop iteration and then check for an error condition. If an error is set then the loop can be broken and the application can determine if sufficient resources are available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Auxiliary Effect Slots to be created.\\
+\hline
+{\em slots} & Pointer addressing sufficient memory to store n Effect Slot object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5d2ee7f74d4228bbf10c92f61c97f869}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Auxiliary\-Effect\-Slots@{Gen\-Auxiliary\-Effect\-Slots}}
+\index{Gen\-Auxiliary\-Effect\-Slots@{Gen\-Auxiliary\-Effect\-Slots}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Auxiliary\-Effect\-Slots}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Auxiliary\-Effect\-Slots (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{out int}]{slots}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5d2ee7f74d4228bbf10c92f61c97f869}
+
+
+The Gen\-Auxiliary\-Effect\-Slots function is used to create one or more Auxiliary Effect Slots. The number of slots that can be created will be dependant upon the Open A\-L device used.
+
+An application should check the \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} error state after making this call to determine if the Effect Slot was successfully created. If the function call fails then none of the requested Effect Slots are created. A good strategy for creating any \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} object is to use a for-\/loop and generate one object each loop iteration and then check for an error condition. If an error is set then the loop can be broken and the application can determine if sufficient resources are available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Auxiliary Effect Slots to be created.\\
+\hline
+{\em slots} & Pointer addressing sufficient memory to store n Effect Slot object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0ec3a249a109ba80461d8fb71072de71}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Auxiliary\-Effect\-Slots@{Gen\-Auxiliary\-Effect\-Slots}}
+\index{Gen\-Auxiliary\-Effect\-Slots@{Gen\-Auxiliary\-Effect\-Slots}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Auxiliary\-Effect\-Slots}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]} Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Auxiliary\-Effect\-Slots (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0ec3a249a109ba80461d8fb71072de71}
+
+
+The Gen\-Auxiliary\-Effect\-Slots function is used to create one or more Auxiliary Effect Slots. The number of slots that can be created will be dependant upon the Open A\-L device used.
+
+An application should check the \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} error state after making this call to determine if the Effect Slot was successfully created. If the function call fails then none of the requested Effect Slots are created. A good strategy for creating any \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L} object is to use a for-\/loop and generate one object each loop iteration and then check for an error condition. If an error is set then the loop can be broken and the application can determine if sufficient resources are available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Auxiliary Effect Slots to be created.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer addressing sufficient memory to store n Effect Slot object identifiers.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_aba577b14af247d69f95f6c859511549e}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Effect@{Gen\-Effect}}
+\index{Gen\-Effect@{Gen\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_aba577b14af247d69f95f6c859511549e}
+
+
+Generates a single effect object.
+
+\begin{DoxyReturn}{Returns}
+A handle to the generated effect object.
+\end{DoxyReturn}
+
+
+The Gen\-Effects function is used to create one or more Effect objects. An Effect object stores an effect type and a set of parameter values to control that Effect. In order to use an Effect it must be attached to an Auxiliary Effect Slot object.
+
+After creation an Effect has no type (Efx\-Effect\-Type.\-Null), so before it can be used to store a set of parameters, the application must specify what type of effect should be stored in the object, using \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8e948592b6a210d3d1fa94c05bc40def}{Effect()} with Efx\-Effecti.\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a48080e822c0b3d2e41c524d4535b22dd}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Effect@{Gen\-Effect}}
+\index{Gen\-Effect@{Gen\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Effect (
+\begin{DoxyParamCaption}
+\item[{out uint}]{effect}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a48080e822c0b3d2e41c524d4535b22dd}
+
+
+Generates a single effect object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em effect} & A handle to the generated effect object.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7b17c0ab357339d205be9f83e3840f31}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Effects@{Gen\-Effects}}
+\index{Gen\-Effects@{Gen\-Effects}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Effects}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Effects (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{out uint}]{effects}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7b17c0ab357339d205be9f83e3840f31}
+
+
+The Gen\-Effects function is used to create one or more Effect objects. An Effect object stores an effect type and a set of parameter values to control that Effect. In order to use an Effect it must be attached to an Auxiliary Effect Slot object
+
+After creation an Effect has no type (Efx\-Effect\-Type.\-Null), so before it can be used to store a set of parameters, the application must specify what type of effect should be stored in the object, using \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8e948592b6a210d3d1fa94c05bc40def}{Effect()} with Efx\-Effecti.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Effects to be created.\\
+\hline
+{\em effects} & Pointer addressing sufficient memory to store n Effect object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_aafb8f1e869a412b6bc8607d08f62fa8b}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Effects@{Gen\-Effects}}
+\index{Gen\-Effects@{Gen\-Effects}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Effects}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Effects (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{out int}]{effects}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_aafb8f1e869a412b6bc8607d08f62fa8b}
+
+
+The Gen\-Effects function is used to create one or more Effect objects. An Effect object stores an effect type and a set of parameter values to control that Effect. In order to use an Effect it must be attached to an Auxiliary Effect Slot object
+
+After creation an Effect has no type (Efx\-Effect\-Type.\-Null), so before it can be used to store a set of parameters, the application must specify what type of effect should be stored in the object, using \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8e948592b6a210d3d1fa94c05bc40def}{Effect()} with Efx\-Effecti.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Effects to be created.\\
+\hline
+{\em effects} & Pointer addressing sufficient memory to store n Effect object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a746c3add93703b718721d4ecb210c80a}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Effects@{Gen\-Effects}}
+\index{Gen\-Effects@{Gen\-Effects}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Effects}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]} Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Effects (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a746c3add93703b718721d4ecb210c80a}
+
+
+Generates one or more effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Effect object identifiers to generate.\\
+\hline
+\end{DoxyParams}
+
+
+The Gen\-Effects function is used to create one or more Effect objects. An Effect object stores an effect type and a set of parameter values to control that Effect. In order to use an Effect it must be attached to an Auxiliary Effect Slot object.
+
+After creation an Effect has no type (Efx\-Effect\-Type.\-Null), so before it can be used to store a set of parameters, the application must specify what type of effect should be stored in the object, using \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8e948592b6a210d3d1fa94c05bc40def}{Effect()} with Efx\-Effecti.\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5c3fc6ea5916498d8590a5db9f3f85d9}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Filter@{Gen\-Filter}}
+\index{Gen\-Filter@{Gen\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5c3fc6ea5916498d8590a5db9f3f85d9}
+
+
+This function generates only one Filter.
+
+\begin{DoxyReturn}{Returns}
+Storage Int32 for the new filter name/handle.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a82b70f934c938398c417419b9982fe7b}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Filter@{Gen\-Filter}}
+\index{Gen\-Filter@{Gen\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}unsafe void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Filter (
+\begin{DoxyParamCaption}
+\item[{out uint}]{filter}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a82b70f934c938398c417419b9982fe7b}
+
+
+This function generates only one Filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter} & Storage U\-Int32 for the new filter name/handle.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8832b714b9376a7fe999a8afc589da40}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Filters@{Gen\-Filters}}
+\index{Gen\-Filters@{Gen\-Filters}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Filters}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Filters (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{out uint}]{filters}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8832b714b9376a7fe999a8afc589da40}
+
+
+The Gen\-Filters function is used to create one or more Filter objects. A Filter object stores a filter type and a set of parameter values to control that Filter. Filter objects can be attached to Sources as Direct Filters or Auxiliary Send Filters.
+
+After creation a Filter has no type (Efx\-Filter\-Type.\-Null), so before it can be used to store a set of parameters, the application must specify what type of filter should be stored in the object, using \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7b6cd1c3578195469ec829566afc104f}{Filter()} with Efx\-Filteri.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Filters to be created.\\
+\hline
+{\em filters} & Pointer addressing sufficient memory to store n Filter object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_aded82d26f8ff57e712c6b7b068ae1e4f}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Filters@{Gen\-Filters}}
+\index{Gen\-Filters@{Gen\-Filters}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Filters}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Filters (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{out int}]{filters}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_aded82d26f8ff57e712c6b7b068ae1e4f}
+
+
+The Gen\-Filters function is used to create one or more Filter objects. A Filter object stores a filter type and a set of parameter values to control that Filter. Filter objects can be attached to Sources as Direct Filters or Auxiliary Send Filters.
+
+After creation a Filter has no type (Efx\-Filter\-Type.\-Null), so before it can be used to store a set of parameters, the application must specify what type of filter should be stored in the object, using \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7b6cd1c3578195469ec829566afc104f}{Filter()} with Efx\-Filteri.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Filters to be created.\\
+\hline
+{\em filters} & Pointer addressing sufficient memory to store n Filter object identifiers.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a2b3c9e2f60f937096dc8c85d4e6e5e43}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Gen\-Filters@{Gen\-Filters}}
+\index{Gen\-Filters@{Gen\-Filters}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Gen\-Filters}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]} Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Gen\-Filters (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a2b3c9e2f60f937096dc8c85d4e6e5e43}
+
+
+The Gen\-Filters function is used to create one or more Filter objects. A Filter object stores a filter type and a set of parameter values to control that Filter. Filter objects can be attached to Sources as Direct Filters or Auxiliary Send Filters.
+
+After creation a Filter has no type (Efx\-Filter\-Type.\-Null), so before it can be used to store a set of parameters, the application must specify what type of filter should be stored in the object, using \hyperlink{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7b6cd1c3578195469ec829566afc104f}{Filter()} with Efx\-Filteri.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of Filters to be created.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer addressing sufficient memory to store n Filter object identifiers.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ab2a55e2efd22acdee604fdc52fc36ff9}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Auxiliary\-Effect\-Slot@{Get\-Auxiliary\-Effect\-Slot}}
+\index{Get\-Auxiliary\-Effect\-Slot@{Get\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{uint}]{asid, }
+\item[{{\bf Efx\-Auxiliaryi}}]{pname, }
+\item[{out int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ab2a55e2efd22acdee604fdc52fc36ff9}
+
+
+This function is used to retrieve integer properties on Auxiliary Effect Slot objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asid} & Auxiliary Effect Slot object identifier.\\
+\hline
+{\em pname} & Auxiliary Effect Slot property to retrieve.\\
+\hline
+{\em value} & Address where integer value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0689a310d5097e82e4cb368c73d255e3}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Auxiliary\-Effect\-Slot@{Get\-Auxiliary\-Effect\-Slot}}
+\index{Get\-Auxiliary\-Effect\-Slot@{Get\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{int}]{asid, }
+\item[{{\bf Efx\-Auxiliaryi}}]{pname, }
+\item[{out int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0689a310d5097e82e4cb368c73d255e3}
+
+
+This function is used to retrieve integer properties on Auxiliary Effect Slot objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asid} & Auxiliary Effect Slot object identifier.\\
+\hline
+{\em pname} & Auxiliary Effect Slot property to retrieve.\\
+\hline
+{\em value} & Address where integer value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a79da0470f0f7b2bf6eaaea3619c0f41c}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Auxiliary\-Effect\-Slot@{Get\-Auxiliary\-Effect\-Slot}}
+\index{Get\-Auxiliary\-Effect\-Slot@{Get\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{uint}]{asid, }
+\item[{{\bf Efx\-Auxiliaryf}}]{pname, }
+\item[{out float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a79da0470f0f7b2bf6eaaea3619c0f41c}
+
+
+This function is used to retrieve floating properties on Auxiliary Effect Slot objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asid} & Auxiliary Effect Slot object identifier.\\
+\hline
+{\em pname} & Auxiliary Effect Slot property to retrieve.\\
+\hline
+{\em value} & Address where floating-\/point value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5f6f92274a592df0ea8ab4dfd3780c37}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Auxiliary\-Effect\-Slot@{Get\-Auxiliary\-Effect\-Slot}}
+\index{Get\-Auxiliary\-Effect\-Slot@{Get\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{int}]{asid, }
+\item[{{\bf Efx\-Auxiliaryf}}]{pname, }
+\item[{out float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5f6f92274a592df0ea8ab4dfd3780c37}
+
+
+This function is used to retrieve floating properties on Auxiliary Effect Slot objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asid} & Auxiliary Effect Slot object identifier.\\
+\hline
+{\em pname} & Auxiliary Effect Slot property to retrieve.\\
+\hline
+{\em value} & Address where floating-\/point value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a9d0473c4cd888a3343093ae5e1f56add}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Effect@{Get\-Effect}}
+\index{Get\-Effect@{Get\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Effect (
+\begin{DoxyParamCaption}
+\item[{uint}]{eid, }
+\item[{{\bf Efx\-Effecti}}]{pname, }
+\item[{out int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a9d0473c4cd888a3343093ae5e1f56add}
+
+
+This function is used to retrieve integer properties from Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em pname} & Effect property to retrieve.\\
+\hline
+{\em value} & Address where integer value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a487bd82b5def2d9e0d5810c8fa30f679}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Effect@{Get\-Effect}}
+\index{Get\-Effect@{Get\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Effect (
+\begin{DoxyParamCaption}
+\item[{int}]{eid, }
+\item[{{\bf Efx\-Effecti}}]{pname, }
+\item[{out int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a487bd82b5def2d9e0d5810c8fa30f679}
+
+
+This function is used to retrieve integer properties from Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em pname} & Effect property to retrieve.\\
+\hline
+{\em value} & Address where integer value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac845a4e2f1dc6d042257de118cc0097a}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Effect@{Get\-Effect}}
+\index{Get\-Effect@{Get\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Effect (
+\begin{DoxyParamCaption}
+\item[{uint}]{eid, }
+\item[{{\bf Efx\-Effectf}}]{pname, }
+\item[{out float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ac845a4e2f1dc6d042257de118cc0097a}
+
+
+This function is used to retrieve floating-\/point properties from Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em pname} & Effect property to retrieve.\\
+\hline
+{\em value} & Address where floating-\/point value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0536002e3d38c36910e3a54a21eece9d}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Effect@{Get\-Effect}}
+\index{Get\-Effect@{Get\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Effect (
+\begin{DoxyParamCaption}
+\item[{int}]{eid, }
+\item[{{\bf Efx\-Effectf}}]{pname, }
+\item[{out float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0536002e3d38c36910e3a54a21eece9d}
+
+
+This function is used to retrieve floating-\/point properties from Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em pname} & Effect property to retrieve.\\
+\hline
+{\em value} & Address where floating-\/point value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7ad13f496f7ad1cd9cb18d2eef43dcc2}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Effect@{Get\-Effect}}
+\index{Get\-Effect@{Get\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Effect (
+\begin{DoxyParamCaption}
+\item[{uint}]{eid, }
+\item[{{\bf Efx\-Effect3f}}]{param, }
+\item[{out {\bf Vector3}}]{values}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a7ad13f496f7ad1cd9cb18d2eef43dcc2}
+
+
+This function is used to retrieve 3 floating-\/point properties from Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em param} & Effect property to retrieve.\\
+\hline
+{\em values} & A Math.\-Vector3 to hold the values.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_af7fb4cfff41744c887c8d51e54a67701}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Effect@{Get\-Effect}}
+\index{Get\-Effect@{Get\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Effect (
+\begin{DoxyParamCaption}
+\item[{int}]{eid, }
+\item[{{\bf Efx\-Effect3f}}]{param, }
+\item[{out {\bf Vector3}}]{values}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_af7fb4cfff41744c887c8d51e54a67701}
+
+
+This function is used to retrieve 3 floating-\/point properties from Effect objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect object identifier.\\
+\hline
+{\em param} & Effect property to retrieve.\\
+\hline
+{\em values} & A Math.\-Vector3 to hold the values.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a35d8cc9ccd8b34f5cf52a74203456fdb}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Filter@{Get\-Filter}}
+\index{Get\-Filter@{Get\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Filter (
+\begin{DoxyParamCaption}
+\item[{uint}]{fid, }
+\item[{{\bf Efx\-Filteri}}]{pname, }
+\item[{out int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a35d8cc9ccd8b34f5cf52a74203456fdb}
+
+
+This function is used to retrieve integer properties from Filter objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Filter object identifier.\\
+\hline
+{\em pname} & Effect property to retrieve.\\
+\hline
+{\em value} & Address where integer value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5a91a48507abf811dcf3b3c8ce7b45bc}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Filter@{Get\-Filter}}
+\index{Get\-Filter@{Get\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{fid, }
+\item[{{\bf Efx\-Filteri}}]{pname, }
+\item[{out int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5a91a48507abf811dcf3b3c8ce7b45bc}
+
+
+This function is used to retrieve integer properties from Filter objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Filter object identifier.\\
+\hline
+{\em pname} & Effect property to retrieve.\\
+\hline
+{\em value} & Address where integer value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_af07e454cc706218448e219c90529b659}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Filter@{Get\-Filter}}
+\index{Get\-Filter@{Get\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Filter (
+\begin{DoxyParamCaption}
+\item[{uint}]{fid, }
+\item[{{\bf Efx\-Filterf}}]{pname, }
+\item[{out float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_af07e454cc706218448e219c90529b659}
+
+
+This function is used to retrieve floating-\/point properties from Filter objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Filter object identifier.\\
+\hline
+{\em pname} & Effect property to retrieve.\\
+\hline
+{\em value} & Address where floating-\/point value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5ef9cded2ef47728599dd2e748a81c67}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Get\-Filter@{Get\-Filter}}
+\index{Get\-Filter@{Get\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Get\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Get\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{fid, }
+\item[{{\bf Efx\-Filterf}}]{pname, }
+\item[{out float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5ef9cded2ef47728599dd2e748a81c67}
+
+
+This function is used to retrieve floating-\/point properties from Filter objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Filter object identifier.\\
+\hline
+{\em pname} & Effect property to retrieve.\\
+\hline
+{\em value} & Address where floating-\/point value will be stored.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8682814f4f44ada674cb33a708a7020b}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Is\-Auxiliary\-Effect\-Slot@{Is\-Auxiliary\-Effect\-Slot}}
+\index{Is\-Auxiliary\-Effect\-Slot@{Is\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Is\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Is\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{uint}]{slot}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a8682814f4f44ada674cb33a708a7020b}
+
+
+The Is\-Auxiliary\-Effect\-Slot function is used to determine if an object identifier is a valid Auxiliary Effect Slot object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & Effect Slot object identifier to validate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the identifier is a valid Auxiliary Effect Slot, False otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ab15f348b6c2d0b171608a43849dddc24}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Is\-Auxiliary\-Effect\-Slot@{Is\-Auxiliary\-Effect\-Slot}}
+\index{Is\-Auxiliary\-Effect\-Slot@{Is\-Auxiliary\-Effect\-Slot}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Is\-Auxiliary\-Effect\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Is\-Auxiliary\-Effect\-Slot (
+\begin{DoxyParamCaption}
+\item[{int}]{slot}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ab15f348b6c2d0b171608a43849dddc24}
+
+
+The Is\-Auxiliary\-Effect\-Slot function is used to determine if an object identifier is a valid Auxiliary Effect Slot object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & Effect Slot object identifier to validate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the identifier is a valid Auxiliary Effect Slot, False otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ab54a3c1793c8e9ae1950f25fa3bb9091}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Is\-Effect@{Is\-Effect}}
+\index{Is\-Effect@{Is\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Is\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Is\-Effect (
+\begin{DoxyParamCaption}
+\item[{uint}]{eid}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_ab54a3c1793c8e9ae1950f25fa3bb9091}
+
+
+The Is\-Effect function is used to determine if an object identifier is a valid Effect object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect identifier to validate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the identifier is a valid Effect, False otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a05a58048724fb4aef1583123c82e8bdc}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Is\-Effect@{Is\-Effect}}
+\index{Is\-Effect@{Is\-Effect}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Is\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Is\-Effect (
+\begin{DoxyParamCaption}
+\item[{int}]{eid}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a05a58048724fb4aef1583123c82e8bdc}
+
+
+The Is\-Effect function is used to determine if an object identifier is a valid Effect object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eid} & Effect identifier to validate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the identifier is a valid Effect, False otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5e672010e215b7cef6ccf2a23a3d51a6}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Is\-Filter@{Is\-Filter}}
+\index{Is\-Filter@{Is\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Is\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Is\-Filter (
+\begin{DoxyParamCaption}
+\item[{uint}]{fid}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a5e672010e215b7cef6ccf2a23a3d51a6}
+
+
+The Is\-Filter function is used to determine if an object identifier is a valid Filter object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Effect identifier to validate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the identifier is a valid Filter, False otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0e7a55945fd9094fc149d73100ff46bb}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Is\-Filter@{Is\-Filter}}
+\index{Is\-Filter@{Is\-Filter}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Is\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Is\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{fid}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a0e7a55945fd9094fc149d73100ff46bb}
+
+
+The Is\-Filter function is used to determine if an object identifier is a valid Filter object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & Effect identifier to validate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the identifier is a valid Filter, False otherwise.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a760975f853f917b2e4bcec05ffa73cca}{\index{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}!Is\-Initialized@{Is\-Initialized}}
+\index{Is\-Initialized@{Is\-Initialized}!OpenTK::Audio::OpenAL::EffectsExtension@{Open\-T\-K\-::\-Audio\-::\-Open\-A\-L\-::\-Effects\-Extension}}
+\subsubsection[{Is\-Initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Open\-A\-L.\-Effects\-Extension.\-Is\-Initialized\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_open_a_l_1_1_effects_extension_a760975f853f917b2e4bcec05ffa73cca}
+
+
+Returns True if the E\-F\-X Extension has been found and could be initialized.
+

@@ -1,0 +1,169 @@
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}{\section{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context Interface Reference}
+\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}\index{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context@{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context}}
+}
+
+
+Provides methods for creating and interacting with an \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} context.  
+
+
+Inheritance diagram for Open\-T\-K.\-Graphics.\-I\-Graphics\-Context\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad7d516da745576542161f1baa5f20129}{Swap\-Buffers} ()
+\begin{DoxyCompactList}\small\item\em Swaps buffers, presenting the rendered scene to the user.\end{DoxyCompactList}\item 
+void \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a73a3ca64b49a682800e636d0135887ed}{Make\-Current} (\hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} window)
+\begin{DoxyCompactList}\small\item\em Makes the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} current in the calling thread.\end{DoxyCompactList}\item 
+void \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a4bf57e48815f169c133eb15ccda2d146}{Update} (\hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} window)
+\begin{DoxyCompactList}\small\item\em Updates the graphics context. This must be called when the region the graphics context is drawn to is resized. \end{DoxyCompactList}\item 
+void \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a8f8df276eeac50ba850cb21fa5a4e676}{Load\-All} ()
+\begin{DoxyCompactList}\small\item\em Loads all \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} entry points. Requires this instance to be current on the calling thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a1bf131a712f2a08f5f35e1542dccfb33}{Is\-Current}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this instance is current in the calling thread. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_af844efa5b99505bb659a892ec6200486}{Is\-Disposed}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this instance has been disposed. It is an error to access any instance methods if this property returns true. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad02e5a60e13f6ed668b8075ead268cb6}{V\-Sync}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether V\-Sync is enabled. When V\-Sync is enabled, \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad7d516da745576542161f1baa5f20129}{Swap\-Buffers()} calls will be synced to the refresh rate of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} that contains improving visual quality and reducing C\-P\-U usage. However, systems that cannot maintain the requested rendering rate will suffer from large jumps in performance. This can be counteracted by increasing the \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_acdd6cc5339e7d0d428f4aa59b560940f}{Swap\-Interval} value. \end{DoxyCompactList}\item 
+int \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_acdd6cc5339e7d0d428f4aa59b560940f}{Swap\-Interval}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a positive integer in the range \mbox{[}1, n), indicating the number of \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} refreshes between consecutive \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad7d516da745576542161f1baa5f20129}{Swap\-Buffers()} calls. The maximum value for n is implementation-\/dependent. The default value is 1. This value will only affect instances where \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad02e5a60e13f6ed668b8075ead268cb6}{V\-Sync} is enabled. Invalid values will be clamped to the valid range. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a225502437befccb70af6444801d0654e}{Graphics\-Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} of this instance.\end{DoxyCompactList}\item 
+bool \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ada0d1b90245fbb8eba94ef25072fe49c}{Error\-Checking}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Boolean, indicating whether automatic error checking should be performed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides methods for creating and interacting with an \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} context. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a8f8df276eeac50ba850cb21fa5a4e676}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!Load\-All@{Load\-All}}
+\index{Load\-All@{Load\-All}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{Load\-All}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-Load\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a8f8df276eeac50ba850cb21fa5a4e676}
+
+
+Loads all \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} entry points. Requires this instance to be current on the calling thread. 
+
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a21640f20db040987bd1f897f503b68a4}{Open\-T\-K.\-Graphics.\-Graphics\-Context}.
+
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a73a3ca64b49a682800e636d0135887ed}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!Make\-Current@{Make\-Current}}
+\index{Make\-Current@{Make\-Current}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{Make\-Current}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-Make\-Current (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-Window\-Info}}]{window}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a73a3ca64b49a682800e636d0135887ed}
+
+
+Makes the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} current in the calling thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & An \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{Open\-T\-K.\-Platform.\-I\-Window\-Info} structure that points to a valid window.\\
+\hline
+\end{DoxyParams}
+
+
+\hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} commands in one thread, affect the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} which is current in that thread.
+
+It is an error to issue an \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} command in a thread without a current \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}.
+
+Implemented in \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a4b9b3b0f98fc1dc9f49f8abdb5ff076b}{Open\-T\-K.\-Graphics.\-Graphics\-Context}.
+
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad7d516da745576542161f1baa5f20129}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!Swap\-Buffers@{Swap\-Buffers}}
+\index{Swap\-Buffers@{Swap\-Buffers}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{Swap\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-Swap\-Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad7d516da745576542161f1baa5f20129}
+
+
+Swaps buffers, presenting the rendered scene to the user.
+
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_ab73c61bea26369cf76dff2165f5084cf}{Open\-T\-K.\-Graphics.\-Graphics\-Context}.
+
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a4bf57e48815f169c133eb15ccda2d146}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!Update@{Update}}
+\index{Update@{Update}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-Window\-Info}}]{window}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a4bf57e48815f169c133eb15ccda2d146}
+
+
+Updates the graphics context. This must be called when the region the graphics context is drawn to is resized. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a09fa035789147f9b9cfe2a5f09abe927}{Open\-T\-K.\-Graphics.\-Graphics\-Context}.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ada0d1b90245fbb8eba94ef25072fe49c}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!Error\-Checking@{Error\-Checking}}
+\index{Error\-Checking@{Error\-Checking}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{Error\-Checking}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-Error\-Checking\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ada0d1b90245fbb8eba94ef25072fe49c}
+
+
+Gets or sets a System.\-Boolean, indicating whether automatic error checking should be performed. 
+
+It is an error to enable error checking inside a Begin()-\/\-End() region.
+
+This method only affects the debug version of Open\-T\-K.\-dll.\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a225502437befccb70af6444801d0654e}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!Graphics\-Mode@{Graphics\-Mode}}
+\index{Graphics\-Mode@{Graphics\-Mode}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{Graphics\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graphics\-Mode} Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-Graphics\-Mode\hspace{0.3cm}{\ttfamily [get]}}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a225502437befccb70af6444801d0654e}
+
+
+Gets the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} of this instance.
+
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a1bf131a712f2a08f5f35e1542dccfb33}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!Is\-Current@{Is\-Current}}
+\index{Is\-Current@{Is\-Current}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{Is\-Current}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-Is\-Current\hspace{0.3cm}{\ttfamily [get]}}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a1bf131a712f2a08f5f35e1542dccfb33}
+
+
+Gets a System.\-Boolean indicating whether this instance is current in the calling thread. 
+
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_af844efa5b99505bb659a892ec6200486}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!Is\-Disposed@{Is\-Disposed}}
+\index{Is\-Disposed@{Is\-Disposed}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{Is\-Disposed}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-Is\-Disposed\hspace{0.3cm}{\ttfamily [get]}}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_af844efa5b99505bb659a892ec6200486}
+
+
+Gets a System.\-Boolean indicating whether this instance has been disposed. It is an error to access any instance methods if this property returns true. 
+
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_acdd6cc5339e7d0d428f4aa59b560940f}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!Swap\-Interval@{Swap\-Interval}}
+\index{Swap\-Interval@{Swap\-Interval}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{Swap\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-Swap\-Interval\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_acdd6cc5339e7d0d428f4aa59b560940f}
+
+
+Gets or sets a positive integer in the range \mbox{[}1, n), indicating the number of \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} refreshes between consecutive \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad7d516da745576542161f1baa5f20129}{Swap\-Buffers()} calls. The maximum value for n is implementation-\/dependent. The default value is 1. This value will only affect instances where \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad02e5a60e13f6ed668b8075ead268cb6}{V\-Sync} is enabled. Invalid values will be clamped to the valid range. 
+
+\hypertarget{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad02e5a60e13f6ed668b8075ead268cb6}{\index{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}!V\-Sync@{V\-Sync}}
+\index{V\-Sync@{V\-Sync}!OpenTK::Graphics::IGraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-I\-Graphics\-Context}}
+\subsubsection[{V\-Sync}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-I\-Graphics\-Context.\-V\-Sync\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad02e5a60e13f6ed668b8075ead268cb6}
+
+
+Gets or sets a value indicating whether V\-Sync is enabled. When V\-Sync is enabled, \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad7d516da745576542161f1baa5f20129}{Swap\-Buffers()} calls will be synced to the refresh rate of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} that contains improving visual quality and reducing C\-P\-U usage. However, systems that cannot maintain the requested rendering rate will suffer from large jumps in performance. This can be counteracted by increasing the \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_acdd6cc5339e7d0d428f4aa59b560940f}{Swap\-Interval} value. 
+

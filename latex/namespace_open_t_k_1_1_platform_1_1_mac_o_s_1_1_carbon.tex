@@ -1,0 +1,189 @@
+\hypertarget{namespace_open_t_k_1_1_platform_1_1_mac_o_s_1_1_carbon}{\section{Package Open\-T\-K.\-Platform.\-Mac\-O\-S.\-Carbon}
+\label{namespace_open_t_k_1_1_platform_1_1_mac_o_s_1_1_carbon}\index{Open\-T\-K.\-Platform.\-Mac\-O\-S.\-Carbon@{Open\-T\-K.\-Platform.\-Mac\-O\-S.\-Carbon}}
+}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_open_t_k_1_1_platform_1_1_mac_o_s_1_1_carbon_a62fbd86809b36a4e19583c10a4a5e54e}{using {\bfseries C\-F\-Run\-Loop} = System.\-Int\-Ptr}\label{namespace_open_t_k_1_1_platform_1_1_mac_o_s_1_1_carbon_a62fbd86809b36a4e19583c10a4a5e54e}
+
+\item 
+\hypertarget{namespace_open_t_k_1_1_platform_1_1_mac_o_s_1_1_carbon_a097cc174d0d5a5f3da0c6174518aca4f}{using {\bfseries C\-G\-Direct\-Display\-I\-D} = System.\-Int\-Ptr}\label{namespace_open_t_k_1_1_platform_1_1_mac_o_s_1_1_carbon_a097cc174d0d5a5f3da0c6174518aca4f}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Event\-Attributes} \-: uint \{ {\bfseries k\-Event\-Attribute\-None} = 0, 
+{\bfseries k\-Event\-Attribute\-User\-Event} = (1 $<$$<$ 0), 
+{\bfseries k\-Event\-Attribute\-Monitored} = 1 $<$$<$ 3
+ \}
+\item 
+enum {\bfseries Apple\-Event\-Kind} \-: int \{ {\bfseries Apple\-Event} = 1
+ \}
+\item 
+enum {\bfseries Process\-Application\-Transform\-State} \-: int \{ {\bfseries k\-Process\-Transform\-To\-Foreground\-Application} = 1
+ \}
+\item 
+enum {\bfseries H\-I\-Coordinate\-Space} \{ {\bfseries \-\_\-72\-D\-P\-I\-Global} = 1, 
+{\bfseries Screen\-Pixel} = 2, 
+{\bfseries Window} = 3, 
+{\bfseries View} = 4
+ \}
+\item 
+enum {\bfseries Mac\-O\-S\-Key\-Code} \{ \\*
+{\bfseries A} = 0, 
+{\bfseries B} = 11, 
+{\bfseries C} = 8, 
+{\bfseries D} = 2, 
+\\*
+{\bfseries E} = 14, 
+{\bfseries F} = 3, 
+{\bfseries G} = 5, 
+{\bfseries H} = 4, 
+\\*
+{\bfseries I} = 34, 
+{\bfseries J} = 38, 
+{\bfseries K} = 40, 
+{\bfseries L} = 37, 
+\\*
+{\bfseries M} = 46, 
+{\bfseries N} = 45, 
+{\bfseries O} = 31, 
+{\bfseries P} = 35, 
+\\*
+{\bfseries Q} = 12, 
+{\bfseries R} = 15, 
+{\bfseries S} = 1, 
+{\bfseries T} = 17, 
+\\*
+{\bfseries U} = 32, 
+{\bfseries V} = 9, 
+{\bfseries W} = 13, 
+{\bfseries X} = 7, 
+\\*
+{\bfseries Y} = 16, 
+{\bfseries Z} = 6, 
+{\bfseries Key\-\_\-1} = 18, 
+{\bfseries Key\-\_\-2} = 19, 
+\\*
+{\bfseries Key\-\_\-3} = 20, 
+{\bfseries Key\-\_\-4} = 21, 
+{\bfseries Key\-\_\-5} = 23, 
+{\bfseries Key\-\_\-6} = 22, 
+\\*
+{\bfseries Key\-\_\-7} = 26, 
+{\bfseries Key\-\_\-8} = 28, 
+{\bfseries Key\-\_\-9} = 25, 
+{\bfseries Key\-\_\-0} = 29, 
+\\*
+{\bfseries Space} = 49, 
+{\bfseries Tilde} = 50, 
+{\bfseries Minus} = 27, 
+{\bfseries Equals} = 24, 
+\\*
+{\bfseries Bracket\-Left} = 33, 
+{\bfseries Bracket\-Right} = 30, 
+{\bfseries Backslash} = 42, 
+{\bfseries Semicolon} = 41, 
+\\*
+{\bfseries Quote} = 39, 
+{\bfseries Comma} = 43, 
+{\bfseries Period} = 47, 
+{\bfseries Slash} = 44, 
+\\*
+{\bfseries Enter} = 36, 
+{\bfseries Tab} = 48, 
+{\bfseries Backspace} = 51, 
+{\bfseries Return} = 52, 
+\\*
+{\bfseries Esc} = 53, 
+{\bfseries Command} = 55, 
+{\bfseries Shift} = 56, 
+{\bfseries Caps\-Lock} = 57, 
+\\*
+{\bfseries Option\-Alt} = 58, 
+{\bfseries Control} = 59, 
+{\bfseries Key\-Pad\-\_\-\-Decimal} = 65, 
+{\bfseries Key\-Pad\-\_\-\-Multiply} = 67, 
+\\*
+{\bfseries Key\-Pad\-\_\-\-Add} = 69, 
+{\bfseries Key\-Pad\-\_\-\-Divide} = 75, 
+{\bfseries Key\-Pad\-\_\-\-Enter} = 76, 
+{\bfseries Key\-Pad\-\_\-\-Subtract} = 78, 
+\\*
+{\bfseries Key\-Pad\-\_\-\-Equal} = 81, 
+{\bfseries Key\-Pad\-\_\-0} = 82, 
+{\bfseries Key\-Pad\-\_\-1} = 83, 
+{\bfseries Key\-Pad\-\_\-2} = 84, 
+\\*
+{\bfseries Key\-Pad\-\_\-3} = 85, 
+{\bfseries Key\-Pad\-\_\-4} = 86, 
+{\bfseries Key\-Pad\-\_\-5} = 87, 
+{\bfseries Key\-Pad\-\_\-6} = 88, 
+\\*
+{\bfseries Key\-Pad\-\_\-7} = 89, 
+{\bfseries Key\-Pad\-\_\-8} = 91, 
+{\bfseries Key\-Pad\-\_\-9} = 92, 
+{\bfseries F1} = 122, 
+\\*
+{\bfseries F2} = 120, 
+{\bfseries F3} = 99, 
+{\bfseries F4} = 118, 
+{\bfseries F5} = 96, 
+\\*
+{\bfseries F6} = 97, 
+{\bfseries F7} = 98, 
+{\bfseries F8} = 100, 
+{\bfseries F9} = 101, 
+\\*
+{\bfseries F10} = 109, 
+{\bfseries F11} = 103, 
+{\bfseries F12} = 111, 
+{\bfseries F13} = 105, 
+\\*
+{\bfseries F14} = 107, 
+{\bfseries F15} = 113, 
+{\bfseries Menu} = 110, 
+{\bfseries Insert} = 114, 
+\\*
+{\bfseries Home} = 115, 
+{\bfseries Pageup} = 116, 
+{\bfseries Del} = 117, 
+{\bfseries End} = 119, 
+\\*
+{\bfseries Pagedown} = 121, 
+{\bfseries Up} = 126, 
+{\bfseries Down} = 125, 
+{\bfseries Left} = 123, 
+\\*
+{\bfseries Right} = 124
+ \}
+\item 
+enum {\bfseries Mac\-O\-S\-Key\-Modifiers} \{ \\*
+{\bfseries None} = 0, 
+{\bfseries Shift} = 0x0200, 
+{\bfseries Caps\-Lock} = 0x0400, 
+{\bfseries Control} = 0x1000, 
+\\*
+{\bfseries Command} = 0x0100, 
+{\bfseries Option} = 0x0800
+ \}
+\item 
+enum {\bfseries C\-G\-Display\-Err} 
+\item 
+enum {\bfseries C\-G\-Error} \{ \\*
+{\bfseries Success} = 0, 
+{\bfseries Failure} = 1000, 
+{\bfseries Illegal\-Argument} = 1001, 
+{\bfseries Invalid\-Connection} = 1002, 
+\\*
+{\bfseries Invalid\-Context} = 1003, 
+{\bfseries Cannot\-Complete} = 1004, 
+{\bfseries Not\-Implemented} = 1006, 
+{\bfseries Range\-Check} = 1007, 
+\\*
+{\bfseries Type\-Check} = 1008, 
+{\bfseries Invalid\-Operation} = 1010, 
+{\bfseries None\-Available} = 1011
+ \}
+\end{DoxyCompactItemize}

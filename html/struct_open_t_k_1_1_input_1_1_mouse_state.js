@@ -1,0 +1,27 @@
+var struct_open_t_k_1_1_input_1_1_mouse_state =
+[
+    [ "Equals", "struct_open_t_k_1_1_input_1_1_mouse_state.html#aa2de31d8c7c58233fc1c327d80afe60e", null ],
+    [ "Equals", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a59eebd97ada06e39f423abcc3629783d", null ],
+    [ "GetHashCode", "struct_open_t_k_1_1_input_1_1_mouse_state.html#ade133559f58f1b2b0459ae09438192de", null ],
+    [ "IsButtonDown", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a3114cc768382741249b11de8570b5488", null ],
+    [ "IsButtonUp", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a2685b2e6127f2e3353b693324deb1ad8", null ],
+    [ "Buttons", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a7fc4a7e96b7a8c11724e5d490111e663", null ],
+    [ "IntSize", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a79f3097329f8415900c939c663a0d73e", null ],
+    [ "is_connected", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a13563f19fae99086cd7b83fadaa55045", null ],
+    [ "NumInts", "struct_open_t_k_1_1_input_1_1_mouse_state.html#aefd1e3045049a846615a6951be8742a5", null ],
+    [ "wheel", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a4065e654de260c1d02ccf78f347f1869", null ],
+    [ "x", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a1c2dc651b6cfe4e05470933213252490", null ],
+    [ "y", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a4d42c0dd0d0d59d4e605be9decf18004", null ],
+    [ "IsConnected", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a98f6240a10d48e03b61c5570a7b17a22", null ],
+    [ "LeftButton", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a025319a078dfbe9eb67ad930db990869", null ],
+    [ "MiddleButton", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a39c01ea816a799c76cb3fe572e72fb97", null ],
+    [ "RightButton", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a8b9002f3148672b78e890e99e6d8d7b7", null ],
+    [ "ScrollWheelValue", "struct_open_t_k_1_1_input_1_1_mouse_state.html#acdb9186e8c68ffad1dd41729d9a215c1", null ],
+    [ "this[MouseButton button]", "struct_open_t_k_1_1_input_1_1_mouse_state.html#ab17d6377dee4f554214f7872f5f05b61", null ],
+    [ "Wheel", "struct_open_t_k_1_1_input_1_1_mouse_state.html#ab490a682925a6ddd972eb41cab4714d5", null ],
+    [ "WheelPrecise", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a7cccb024aeef61d35a151f97e63e9523", null ],
+    [ "X", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a6982bc2d2ba1de945958142d3e6cc660", null ],
+    [ "XButton1", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a693612a1acde7d368593396db3f38d37", null ],
+    [ "XButton2", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a8e94d54eba550aa3ecd4836b99ba1060", null ],
+    [ "Y", "struct_open_t_k_1_1_input_1_1_mouse_state.html#a768bb7145134c4f4c7381e91f4b59744", null ]
+];

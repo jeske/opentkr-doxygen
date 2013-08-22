@@ -1,0 +1,125 @@
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{\section{Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args Class Reference}
+\label{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}\index{Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args@{Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args}}
+}
+
+
+Defines the event data for \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a4bee8a35ae92c6d4f74868934a5c2475}{Mouse\-Device.\-Wheel\-Changed} events.  
+
+
+Inheritance diagram for Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a96d3e646646fe55565c21e9303ac7435}{Mouse\-Wheel\-Event\-Args} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{Mouse\-Wheel\-Event\-Args} instance. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a7cf42d4bbf1d1aed7433847f92afb364}{Mouse\-Wheel\-Event\-Args} (int x, int y, int value, int delta)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{Mouse\-Wheel\-Event\-Args} instance. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_ad74fd8fbe8f92977fe4a65efed81930f}{Mouse\-Wheel\-Event\-Args} (\hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{Mouse\-Wheel\-Event\-Args} args)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{Mouse\-Wheel\-Event\-Args} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a34daefff9cfbd400ac5d6af00a8118c3}{Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the value of the wheel in integer units. To support high-\/precision mice, it is recommended to use \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a924698cde619be6ceb51cd318a990b55}{Value\-Precise} instead. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_aef5f641060a53167289fec501ac8f458}{Delta}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the change in value of the wheel for this event in integer units. To support high-\/precision mice, it is recommended to use \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a9ba689417b32b99c1971aa541d8765e2}{Delta\-Precise} instead. \end{DoxyCompactList}\item 
+float \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a924698cde619be6ceb51cd318a990b55}{Value\-Precise}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the precise value of the wheel in floating-\/point units. \end{DoxyCompactList}\item 
+float \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a9ba689417b32b99c1971aa541d8765e2}{Delta\-Precise}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the precise change in value of the wheel for this event in floating-\/point units. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the event data for \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a4bee8a35ae92c6d4f74868934a5c2475}{Mouse\-Device.\-Wheel\-Changed} events. 
+
+Do not cache instances of this type outside their event handler. If necessary, you can clone an instance using the \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_ad74fd8fbe8f92977fe4a65efed81930f}{Mouse\-Wheel\-Event\-Args(\-Mouse\-Wheel\-Event\-Args)} constructor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a96d3e646646fe55565c21e9303ac7435}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}!Mouse\-Wheel\-Event\-Args@{Mouse\-Wheel\-Event\-Args}}
+\index{Mouse\-Wheel\-Event\-Args@{Mouse\-Wheel\-Event\-Args}!OpenTK::Input::MouseWheelEventArgs@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}}
+\subsubsection[{Mouse\-Wheel\-Event\-Args}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args.\-Mouse\-Wheel\-Event\-Args (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a96d3e646646fe55565c21e9303ac7435}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{Mouse\-Wheel\-Event\-Args} instance. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a7cf42d4bbf1d1aed7433847f92afb364}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}!Mouse\-Wheel\-Event\-Args@{Mouse\-Wheel\-Event\-Args}}
+\index{Mouse\-Wheel\-Event\-Args@{Mouse\-Wheel\-Event\-Args}!OpenTK::Input::MouseWheelEventArgs@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}}
+\subsubsection[{Mouse\-Wheel\-Event\-Args}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args.\-Mouse\-Wheel\-Event\-Args (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{value, }
+\item[{int}]{delta}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a7cf42d4bbf1d1aed7433847f92afb364}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{Mouse\-Wheel\-Event\-Args} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The X position.\\
+\hline
+{\em y} & The Y position.\\
+\hline
+{\em value} & The value of the wheel.\\
+\hline
+{\em delta} & The change in value of the wheel for this event.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_ad74fd8fbe8f92977fe4a65efed81930f}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}!Mouse\-Wheel\-Event\-Args@{Mouse\-Wheel\-Event\-Args}}
+\index{Mouse\-Wheel\-Event\-Args@{Mouse\-Wheel\-Event\-Args}!OpenTK::Input::MouseWheelEventArgs@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}}
+\subsubsection[{Mouse\-Wheel\-Event\-Args}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args.\-Mouse\-Wheel\-Event\-Args (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\-Wheel\-Event\-Args}}]{args}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_ad74fd8fbe8f92977fe4a65efed81930f}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{Mouse\-Wheel\-Event\-Args} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{Mouse\-Wheel\-Event\-Args} instance to clone.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_aef5f641060a53167289fec501ac8f458}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}!Delta@{Delta}}
+\index{Delta@{Delta}!OpenTK::Input::MouseWheelEventArgs@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}}
+\subsubsection[{Delta}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args.\-Delta\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_aef5f641060a53167289fec501ac8f458}
+
+
+Gets the change in value of the wheel for this event in integer units. To support high-\/precision mice, it is recommended to use \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a9ba689417b32b99c1971aa541d8765e2}{Delta\-Precise} instead. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a9ba689417b32b99c1971aa541d8765e2}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}!Delta\-Precise@{Delta\-Precise}}
+\index{Delta\-Precise@{Delta\-Precise}!OpenTK::Input::MouseWheelEventArgs@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}}
+\subsubsection[{Delta\-Precise}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args.\-Delta\-Precise\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a9ba689417b32b99c1971aa541d8765e2}
+
+
+Gets the precise change in value of the wheel for this event in floating-\/point units. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a34daefff9cfbd400ac5d6af00a8118c3}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}!Value@{Value}}
+\index{Value@{Value}!OpenTK::Input::MouseWheelEventArgs@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}}
+\subsubsection[{Value}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args.\-Value\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a34daefff9cfbd400ac5d6af00a8118c3}
+
+
+Gets the value of the wheel in integer units. To support high-\/precision mice, it is recommended to use \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a924698cde619be6ceb51cd318a990b55}{Value\-Precise} instead. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a924698cde619be6ceb51cd318a990b55}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}!Value\-Precise@{Value\-Precise}}
+\index{Value\-Precise@{Value\-Precise}!OpenTK::Input::MouseWheelEventArgs@{Open\-T\-K\-::\-Input\-::\-Mouse\-Wheel\-Event\-Args}}
+\subsubsection[{Value\-Precise}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Input.\-Mouse\-Wheel\-Event\-Args.\-Value\-Precise\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args_a924698cde619be6ceb51cd318a990b55}
+
+
+Gets the precise value of the wheel in floating-\/point units. 
+

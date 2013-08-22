@@ -1,0 +1,438 @@
+\hypertarget{interface_open_t_k_1_1_i_native_window}{\section{Open\-T\-K.\-I\-Native\-Window Interface Reference}
+\label{interface_open_t_k_1_1_i_native_window}\index{Open\-T\-K.\-I\-Native\-Window@{Open\-T\-K.\-I\-Native\-Window}}
+}
+
+
+Defines the interface for a native window.  
+
+
+Inheritance diagram for Open\-T\-K.\-I\-Native\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_open_t_k_1_1_i_native_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_open_t_k_1_1_i_native_window_a1ccc061d19e83d00f29b50f27263fcfe}{Close} ()
+\begin{DoxyCompactList}\small\item\em Closes this window. \end{DoxyCompactList}\item 
+void \hyperlink{interface_open_t_k_1_1_i_native_window_a23e81e7f8c02cc874c3e23f957909171}{Process\-Events} ()
+\begin{DoxyCompactList}\small\item\em Processes pending window events. \end{DoxyCompactList}\item 
+Point \hyperlink{interface_open_t_k_1_1_i_native_window_ae3d487a830389a57f8732d4de101a063}{Point\-To\-Client} (Point point)
+\begin{DoxyCompactList}\small\item\em Transforms the specified point from screen to client coordinates. \end{DoxyCompactList}\item 
+Point \hyperlink{interface_open_t_k_1_1_i_native_window_a24ec247d43eab609220b1b581dbad519}{Point\-To\-Screen} (Point point)
+\begin{DoxyCompactList}\small\item\em Transforms the specified point from client to screen coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Icon \hyperlink{interface_open_t_k_1_1_i_native_window_a16cffc51a5dd62c9d9dbf9a089620754}{Icon}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the System.\-Drawing.\-Icon of the window. \end{DoxyCompactList}\item 
+string \hyperlink{interface_open_t_k_1_1_i_native_window_acc6e79eb06f9e7d725f6eac5ac1df71d}{Title}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the title of the window. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_open_t_k_1_1_i_native_window_aaa2ef631c8bd4bcbef3374dfaeb50299}{Focused}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean that indicates whether this window has input focus. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_open_t_k_1_1_i_native_window_ac455c50c69983d4a26e7ed61336290d8}{Visible}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Boolean that indicates whether the window is visible. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_open_t_k_1_1_i_native_window_af207962d0e6a21f4a280e66844cc3805}{Exists}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean that indicates whether the window has been created and has not been destroyed. \end{DoxyCompactList}\item 
+\hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} \hyperlink{interface_open_t_k_1_1_i_native_window_a3e00033ca7bda60905c346fc2335e1b8}{Window\-Info}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{Open\-T\-K.\-Platform.\-I\-Window\-Info} for this window. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_ace9268dc87bd36f48c9d9d8b939559b4}{Window\-State} \hyperlink{interface_open_t_k_1_1_i_native_window_a228db8bdb7282c03e98c103bc6ea9904}{Window\-State}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the \hyperlink{namespace_open_t_k_ace9268dc87bd36f48c9d9d8b939559b4}{Open\-T\-K.\-Window\-State} for this window. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_a20f46792b5471ff32362bd0a29fa5f1c}{Window\-Border} \hyperlink{interface_open_t_k_1_1_i_native_window_afb974cc1ffb686860725736bd07c2211}{Window\-Border}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the \hyperlink{namespace_open_t_k_a20f46792b5471ff32362bd0a29fa5f1c}{Open\-T\-K.\-Window\-Border} for this window. \end{DoxyCompactList}\item 
+Rectangle \hyperlink{interface_open_t_k_1_1_i_native_window_a0cf4d0391cff1166a3f15fbdb1b4d8ab}{Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Drawing.\-Rectangle structure the contains the external bounds of this window, in screen coordinates. External bounds include the title bar, borders and drawing area of the window. \end{DoxyCompactList}\item 
+Point \hyperlink{interface_open_t_k_1_1_i_native_window_adb40bbbb862af25e3f05dd6bc20ae0c2}{Location}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Drawing.\-Point structure that contains the location of this window on the desktop. \end{DoxyCompactList}\item 
+Size \hyperlink{interface_open_t_k_1_1_i_native_window_a987289178e2f63ce7eaf58d9cbe72ed5}{Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Drawing.\-Size structure that contains the external size of this window. \end{DoxyCompactList}\item 
+int \hyperlink{interface_open_t_k_1_1_i_native_window_acf29eb685cc2fb7f6e4fd0fa11e7f147}{X}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the horizontal location of this window on the desktop. \end{DoxyCompactList}\item 
+int \hyperlink{interface_open_t_k_1_1_i_native_window_a7e5b77aadb970f82daabf0adedeb2b16}{Y}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the vertical location of this window on the desktop. \end{DoxyCompactList}\item 
+int \hyperlink{interface_open_t_k_1_1_i_native_window_a67659bdb41b907f0bbe9592e9a82d63f}{Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the external width of this window. \end{DoxyCompactList}\item 
+int \hyperlink{interface_open_t_k_1_1_i_native_window_a717a701ae1d8a942f55825f9372bd41f}{Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the external height of this window. \end{DoxyCompactList}\item 
+Rectangle \hyperlink{interface_open_t_k_1_1_i_native_window_a3031c1f6c7096ca84bc65d2b3baea88d}{Client\-Rectangle}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Drawing.\-Rectangle structure that contains the internal bounds of this window, in client coordinates. The internal bounds include the drawing area of the window, but exclude the titlebar and window borders. \end{DoxyCompactList}\item 
+\hyperlink{interface_open_t_k_1_1_i_native_window_a987289178e2f63ce7eaf58d9cbe72ed5}{Size} \hyperlink{interface_open_t_k_1_1_i_native_window_a3944c60601079d09e524f455a993d6cf}{Client\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Drawing.\-Size structure that contains the internal size this window. \end{DoxyCompactList}\item 
+\hyperlink{interface_open_t_k_1_1_input_1_1_i_input_driver}{Open\-T\-K.\-Input.\-I\-Input\-Driver} \hyperlink{interface_open_t_k_1_1_i_native_window_aca0d227f0b84dd93ba5135cc9f51ce56}{Input\-Driver}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This property is deprecated and should not be used. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_open_t_k_1_1_i_native_window_a584d510ec285e8aadd8c523389a447ff}{Cursor\-Visible}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value, indicating whether the mouse cursor is visible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_aa2a9b872e56a47dc3f11dcd0078e1ced}{Move}
+\begin{DoxyCompactList}\small\item\em Occurs whenever the window is moved. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_afd40870500a57eda076033f4c401ec4c}{Resize}
+\begin{DoxyCompactList}\small\item\em Occurs whenever the window is resized. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Cancel\-Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_a8404d9d6adb118c52c1e329e8a331d52}{Closing}
+\begin{DoxyCompactList}\small\item\em Occurs when the window is about to close. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_a2ecfca5308b3f11c83ef15011f4a96de}{Closed}
+\begin{DoxyCompactList}\small\item\em Occurs after the window has closed. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_a7e983e4b600c3e3805a693957f4b8a75}{Disposed}
+\begin{DoxyCompactList}\small\item\em Occurs when the window is disposed. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_a968bcf8310e87cee07e85eb9629da874}{Icon\-Changed}
+\begin{DoxyCompactList}\small\item\em Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_a16cffc51a5dd62c9d9dbf9a089620754}{Icon} property of the window changes. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_acf92dea76cdae1958f4d899f6ebf2ff4}{Title\-Changed}
+\begin{DoxyCompactList}\small\item\em Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_acc6e79eb06f9e7d725f6eac5ac1df71d}{Title} property of the window changes. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_a848de842c644e1c4066e87e16dca3555}{Visible\-Changed}
+\begin{DoxyCompactList}\small\item\em Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_ac455c50c69983d4a26e7ed61336290d8}{Visible} property of the window changes. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_ae0a2b1803d348c1a23cddcf384ee4008}{Focused\-Changed}
+\begin{DoxyCompactList}\small\item\em Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_aaa2ef631c8bd4bcbef3374dfaeb50299}{Focused} property of the window changes. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_a31bb2ed82c8646aee97bda920ef92aae}{Window\-Border\-Changed}
+\begin{DoxyCompactList}\small\item\em Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_afb974cc1ffb686860725736bd07c2211}{Window\-Border} property of the window changes. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_ae13b78b7d872ee1a62950a8b6b5983b8}{Window\-State\-Changed}
+\begin{DoxyCompactList}\small\item\em Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_a228db8bdb7282c03e98c103bc6ea9904}{Window\-State} property of the window changes. \end{DoxyCompactList}\item 
+Event\-Handler\\*
+$<$ \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_key_event_args}{Open\-T\-K.\-Input.\-Keyboard\-Key\-Event\-Args} $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_a85cebd106b9852b2c6566ef026b55962}{Key\-Down}
+\begin{DoxyCompactList}\small\item\em Occurs whenever a keybord key is pressed. \end{DoxyCompactList}\item 
+Event\-Handler$<$ \hyperlink{class_open_t_k_1_1_key_press_event_args}{Key\-Press\-Event\-Args} $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_ade20fbd09d4d714240faa4ca4617cf3f}{Key\-Press}
+\begin{DoxyCompactList}\small\item\em Occurs whenever a character is typed. \end{DoxyCompactList}\item 
+Event\-Handler\\*
+$<$ \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_key_event_args}{Open\-T\-K.\-Input.\-Keyboard\-Key\-Event\-Args} $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_ab835df3fcdda59e03027d1f2b200d8b8}{Key\-Up}
+\begin{DoxyCompactList}\small\item\em Occurs whenever a keyboard key is released. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_a217050d279f6678319ab32bccba0de40}{Mouse\-Leave}
+\begin{DoxyCompactList}\small\item\em Occurs whenever the mouse cursor leaves the window \hyperlink{interface_open_t_k_1_1_i_native_window_a0cf4d0391cff1166a3f15fbdb1b4d8ab}{Bounds}. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_i_native_window_a4334f6f15abee869953af0845bd4dd41}{Mouse\-Enter}
+\begin{DoxyCompactList}\small\item\em Occurs whenever the mouse cursor enters the window \hyperlink{interface_open_t_k_1_1_i_native_window_a0cf4d0391cff1166a3f15fbdb1b4d8ab}{Bounds}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the interface for a native window. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_open_t_k_1_1_i_native_window_a1ccc061d19e83d00f29b50f27263fcfe}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Close@{Close}}
+\index{Close@{Close}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-I\-Native\-Window.\-Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_i_native_window_a1ccc061d19e83d00f29b50f27263fcfe}
+
+
+Closes this window. 
+
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_native_window_ae7dae9eca1c2298dbcdbc34a81304a61}{Open\-T\-K.\-Native\-Window}.
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_ae3d487a830389a57f8732d4de101a063}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Point\-To\-Client@{Point\-To\-Client}}
+\index{Point\-To\-Client@{Point\-To\-Client}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Point\-To\-Client}]{\setlength{\rightskip}{0pt plus 5cm}Point Open\-T\-K.\-I\-Native\-Window.\-Point\-To\-Client (
+\begin{DoxyParamCaption}
+\item[{Point}]{point}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_i_native_window_ae3d487a830389a57f8732d4de101a063}
+
+
+Transforms the specified point from screen to client coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & A System.\-Drawing.\-Point to transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The point transformed to client coordinates. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_native_window_a4807376063a7cc130ca6b6dfb4b4a24f}{Open\-T\-K.\-Native\-Window}.
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a24ec247d43eab609220b1b581dbad519}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Point\-To\-Screen@{Point\-To\-Screen}}
+\index{Point\-To\-Screen@{Point\-To\-Screen}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Point\-To\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}Point Open\-T\-K.\-I\-Native\-Window.\-Point\-To\-Screen (
+\begin{DoxyParamCaption}
+\item[{Point}]{point}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_i_native_window_a24ec247d43eab609220b1b581dbad519}
+
+
+Transforms the specified point from client to screen coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & A System.\-Drawing.\-Point to transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The point transformed to screen coordinates. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_native_window_a631e83f783213650f854a7c953a4f34d}{Open\-T\-K.\-Native\-Window}.
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a23e81e7f8c02cc874c3e23f957909171}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Process\-Events@{Process\-Events}}
+\index{Process\-Events@{Process\-Events}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Process\-Events}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-I\-Native\-Window.\-Process\-Events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_i_native_window_a23e81e7f8c02cc874c3e23f957909171}
+
+
+Processes pending window events. 
+
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_native_window_a8150f2aa496459e492965c4577ec0dc9}{Open\-T\-K.\-Native\-Window}.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_open_t_k_1_1_i_native_window_a0cf4d0391cff1166a3f15fbdb1b4d8ab}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Bounds@{Bounds}}
+\index{Bounds@{Bounds}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Bounds}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle Open\-T\-K.\-I\-Native\-Window.\-Bounds\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a0cf4d0391cff1166a3f15fbdb1b4d8ab}
+
+
+Gets or sets a System.\-Drawing.\-Rectangle structure the contains the external bounds of this window, in screen coordinates. External bounds include the title bar, borders and drawing area of the window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a3031c1f6c7096ca84bc65d2b3baea88d}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Client\-Rectangle@{Client\-Rectangle}}
+\index{Client\-Rectangle@{Client\-Rectangle}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Client\-Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle Open\-T\-K.\-I\-Native\-Window.\-Client\-Rectangle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a3031c1f6c7096ca84bc65d2b3baea88d}
+
+
+Gets or sets a System.\-Drawing.\-Rectangle structure that contains the internal bounds of this window, in client coordinates. The internal bounds include the drawing area of the window, but exclude the titlebar and window borders. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a3944c60601079d09e524f455a993d6cf}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Client\-Size@{Client\-Size}}
+\index{Client\-Size@{Client\-Size}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Client\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Size} Open\-T\-K.\-I\-Native\-Window.\-Client\-Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a3944c60601079d09e524f455a993d6cf}
+
+
+Gets or sets a System.\-Drawing.\-Size structure that contains the internal size this window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a584d510ec285e8aadd8c523389a447ff}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Cursor\-Visible@{Cursor\-Visible}}
+\index{Cursor\-Visible@{Cursor\-Visible}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Cursor\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-I\-Native\-Window.\-Cursor\-Visible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a584d510ec285e8aadd8c523389a447ff}
+
+
+Gets or sets a value, indicating whether the mouse cursor is visible. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_af207962d0e6a21f4a280e66844cc3805}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Exists@{Exists}}
+\index{Exists@{Exists}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-I\-Native\-Window.\-Exists\hspace{0.3cm}{\ttfamily [get]}}}\label{interface_open_t_k_1_1_i_native_window_af207962d0e6a21f4a280e66844cc3805}
+
+
+Gets a System.\-Boolean that indicates whether the window has been created and has not been destroyed. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_aaa2ef631c8bd4bcbef3374dfaeb50299}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Focused@{Focused}}
+\index{Focused@{Focused}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Focused}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-I\-Native\-Window.\-Focused\hspace{0.3cm}{\ttfamily [get]}}}\label{interface_open_t_k_1_1_i_native_window_aaa2ef631c8bd4bcbef3374dfaeb50299}
+
+
+Gets a System.\-Boolean that indicates whether this window has input focus. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a717a701ae1d8a942f55825f9372bd41f}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Height@{Height}}
+\index{Height@{Height}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Height}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-I\-Native\-Window.\-Height\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a717a701ae1d8a942f55825f9372bd41f}
+
+
+Gets or sets the external height of this window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a16cffc51a5dd62c9d9dbf9a089620754}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Icon@{Icon}}
+\index{Icon@{Icon}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Icon}]{\setlength{\rightskip}{0pt plus 5cm}Icon Open\-T\-K.\-I\-Native\-Window.\-Icon\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a16cffc51a5dd62c9d9dbf9a089620754}
+
+
+Gets or sets the System.\-Drawing.\-Icon of the window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_aca0d227f0b84dd93ba5135cc9f51ce56}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Input\-Driver@{Input\-Driver}}
+\index{Input\-Driver@{Input\-Driver}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Input\-Driver}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Open\-T\-K.\-Input.\-I\-Input\-Driver} Open\-T\-K.\-I\-Native\-Window.\-Input\-Driver\hspace{0.3cm}{\ttfamily [get]}}}\label{interface_open_t_k_1_1_i_native_window_aca0d227f0b84dd93ba5135cc9f51ce56}
+
+
+This property is deprecated and should not be used. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_adb40bbbb862af25e3f05dd6bc20ae0c2}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Location@{Location}}
+\index{Location@{Location}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Location}]{\setlength{\rightskip}{0pt plus 5cm}Point Open\-T\-K.\-I\-Native\-Window.\-Location\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_adb40bbbb862af25e3f05dd6bc20ae0c2}
+
+
+Gets or sets a System.\-Drawing.\-Point structure that contains the location of this window on the desktop. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a987289178e2f63ce7eaf58d9cbe72ed5}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Size@{Size}}
+\index{Size@{Size}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}Size Open\-T\-K.\-I\-Native\-Window.\-Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a987289178e2f63ce7eaf58d9cbe72ed5}
+
+
+Gets or sets a System.\-Drawing.\-Size structure that contains the external size of this window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_acc6e79eb06f9e7d725f6eac5ac1df71d}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Title@{Title}}
+\index{Title@{Title}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Title}]{\setlength{\rightskip}{0pt plus 5cm}string Open\-T\-K.\-I\-Native\-Window.\-Title\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_acc6e79eb06f9e7d725f6eac5ac1df71d}
+
+
+Gets or sets the title of the window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_ac455c50c69983d4a26e7ed61336290d8}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Visible@{Visible}}
+\index{Visible@{Visible}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-I\-Native\-Window.\-Visible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_ac455c50c69983d4a26e7ed61336290d8}
+
+
+Gets or sets a System.\-Boolean that indicates whether the window is visible. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a67659bdb41b907f0bbe9592e9a82d63f}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Width@{Width}}
+\index{Width@{Width}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Width}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-I\-Native\-Window.\-Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a67659bdb41b907f0bbe9592e9a82d63f}
+
+
+Gets or sets the external width of this window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_afb974cc1ffb686860725736bd07c2211}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Window\-Border@{Window\-Border}}
+\index{Window\-Border@{Window\-Border}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Window\-Border}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window\-Border} Open\-T\-K.\-I\-Native\-Window.\-Window\-Border\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_afb974cc1ffb686860725736bd07c2211}
+
+
+Gets or sets the \hyperlink{namespace_open_t_k_a20f46792b5471ff32362bd0a29fa5f1c}{Open\-T\-K.\-Window\-Border} for this window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a3e00033ca7bda60905c346fc2335e1b8}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Window\-Info@{Window\-Info}}
+\index{Window\-Info@{Window\-Info}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Window\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Window\-Info} Open\-T\-K.\-I\-Native\-Window.\-Window\-Info\hspace{0.3cm}{\ttfamily [get]}}}\label{interface_open_t_k_1_1_i_native_window_a3e00033ca7bda60905c346fc2335e1b8}
+
+
+Gets the \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{Open\-T\-K.\-Platform.\-I\-Window\-Info} for this window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a228db8bdb7282c03e98c103bc6ea9904}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Window\-State@{Window\-State}}
+\index{Window\-State@{Window\-State}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Window\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window\-State} Open\-T\-K.\-I\-Native\-Window.\-Window\-State\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a228db8bdb7282c03e98c103bc6ea9904}
+
+
+Gets or sets the \hyperlink{namespace_open_t_k_ace9268dc87bd36f48c9d9d8b939559b4}{Open\-T\-K.\-Window\-State} for this window. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_acf29eb685cc2fb7f6e4fd0fa11e7f147}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!X@{X}}
+\index{X@{X}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-I\-Native\-Window.\-X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_acf29eb685cc2fb7f6e4fd0fa11e7f147}
+
+
+Gets or sets the horizontal location of this window on the desktop. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a7e5b77aadb970f82daabf0adedeb2b16}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Y@{Y}}
+\index{Y@{Y}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-I\-Native\-Window.\-Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{interface_open_t_k_1_1_i_native_window_a7e5b77aadb970f82daabf0adedeb2b16}
+
+
+Gets or sets the vertical location of this window on the desktop. 
+
+
+
+\subsection{Event Documentation}
+\hypertarget{interface_open_t_k_1_1_i_native_window_a2ecfca5308b3f11c83ef15011f4a96de}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Closed@{Closed}}
+\index{Closed@{Closed}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Closed}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Closed}}\label{interface_open_t_k_1_1_i_native_window_a2ecfca5308b3f11c83ef15011f4a96de}
+
+
+Occurs after the window has closed. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a8404d9d6adb118c52c1e329e8a331d52}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Closing@{Closing}}
+\index{Closing@{Closing}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Closing}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Cancel\-Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Closing}}\label{interface_open_t_k_1_1_i_native_window_a8404d9d6adb118c52c1e329e8a331d52}
+
+
+Occurs when the window is about to close. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a7e983e4b600c3e3805a693957f4b8a75}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Disposed@{Disposed}}
+\index{Disposed@{Disposed}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Disposed}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Disposed}}\label{interface_open_t_k_1_1_i_native_window_a7e983e4b600c3e3805a693957f4b8a75}
+
+
+Occurs when the window is disposed. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_ae0a2b1803d348c1a23cddcf384ee4008}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Focused\-Changed@{Focused\-Changed}}
+\index{Focused\-Changed@{Focused\-Changed}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Focused\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Focused\-Changed}}\label{interface_open_t_k_1_1_i_native_window_ae0a2b1803d348c1a23cddcf384ee4008}
+
+
+Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_aaa2ef631c8bd4bcbef3374dfaeb50299}{Focused} property of the window changes. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a968bcf8310e87cee07e85eb9629da874}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Icon\-Changed@{Icon\-Changed}}
+\index{Icon\-Changed@{Icon\-Changed}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Icon\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Icon\-Changed}}\label{interface_open_t_k_1_1_i_native_window_a968bcf8310e87cee07e85eb9629da874}
+
+
+Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_a16cffc51a5dd62c9d9dbf9a089620754}{Icon} property of the window changes. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a85cebd106b9852b2c6566ef026b55962}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Key\-Down@{Key\-Down}}
+\index{Key\-Down@{Key\-Down}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Key\-Down}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Open\-T\-K.\-Input.\-Keyboard\-Key\-Event\-Args}$>$ Open\-T\-K.\-I\-Native\-Window.\-Key\-Down}}\label{interface_open_t_k_1_1_i_native_window_a85cebd106b9852b2c6566ef026b55962}
+
+
+Occurs whenever a keybord key is pressed. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_ade20fbd09d4d714240faa4ca4617cf3f}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Key\-Press@{Key\-Press}}
+\index{Key\-Press@{Key\-Press}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Key\-Press}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Key\-Press\-Event\-Args}$>$ Open\-T\-K.\-I\-Native\-Window.\-Key\-Press}}\label{interface_open_t_k_1_1_i_native_window_ade20fbd09d4d714240faa4ca4617cf3f}
+
+
+Occurs whenever a character is typed. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_ab835df3fcdda59e03027d1f2b200d8b8}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Key\-Up@{Key\-Up}}
+\index{Key\-Up@{Key\-Up}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Key\-Up}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Open\-T\-K.\-Input.\-Keyboard\-Key\-Event\-Args}$>$ Open\-T\-K.\-I\-Native\-Window.\-Key\-Up}}\label{interface_open_t_k_1_1_i_native_window_ab835df3fcdda59e03027d1f2b200d8b8}
+
+
+Occurs whenever a keyboard key is released. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a4334f6f15abee869953af0845bd4dd41}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Mouse\-Enter@{Mouse\-Enter}}
+\index{Mouse\-Enter@{Mouse\-Enter}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Mouse\-Enter}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Mouse\-Enter}}\label{interface_open_t_k_1_1_i_native_window_a4334f6f15abee869953af0845bd4dd41}
+
+
+Occurs whenever the mouse cursor enters the window \hyperlink{interface_open_t_k_1_1_i_native_window_a0cf4d0391cff1166a3f15fbdb1b4d8ab}{Bounds}. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a217050d279f6678319ab32bccba0de40}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Mouse\-Leave@{Mouse\-Leave}}
+\index{Mouse\-Leave@{Mouse\-Leave}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Mouse\-Leave}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Mouse\-Leave}}\label{interface_open_t_k_1_1_i_native_window_a217050d279f6678319ab32bccba0de40}
+
+
+Occurs whenever the mouse cursor leaves the window \hyperlink{interface_open_t_k_1_1_i_native_window_a0cf4d0391cff1166a3f15fbdb1b4d8ab}{Bounds}. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_aa2a9b872e56a47dc3f11dcd0078e1ced}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Move@{Move}}
+\index{Move@{Move}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Move}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Move}}\label{interface_open_t_k_1_1_i_native_window_aa2a9b872e56a47dc3f11dcd0078e1ced}
+
+
+Occurs whenever the window is moved. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_afd40870500a57eda076033f4c401ec4c}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Resize@{Resize}}
+\index{Resize@{Resize}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Resize}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Resize}}\label{interface_open_t_k_1_1_i_native_window_afd40870500a57eda076033f4c401ec4c}
+
+
+Occurs whenever the window is resized. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_acf92dea76cdae1958f4d899f6ebf2ff4}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Title\-Changed@{Title\-Changed}}
+\index{Title\-Changed@{Title\-Changed}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Title\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Title\-Changed}}\label{interface_open_t_k_1_1_i_native_window_acf92dea76cdae1958f4d899f6ebf2ff4}
+
+
+Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_acc6e79eb06f9e7d725f6eac5ac1df71d}{Title} property of the window changes. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a848de842c644e1c4066e87e16dca3555}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Visible\-Changed@{Visible\-Changed}}
+\index{Visible\-Changed@{Visible\-Changed}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Visible\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Visible\-Changed}}\label{interface_open_t_k_1_1_i_native_window_a848de842c644e1c4066e87e16dca3555}
+
+
+Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_ac455c50c69983d4a26e7ed61336290d8}{Visible} property of the window changes. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_a31bb2ed82c8646aee97bda920ef92aae}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Window\-Border\-Changed@{Window\-Border\-Changed}}
+\index{Window\-Border\-Changed@{Window\-Border\-Changed}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Window\-Border\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Window\-Border\-Changed}}\label{interface_open_t_k_1_1_i_native_window_a31bb2ed82c8646aee97bda920ef92aae}
+
+
+Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_afb974cc1ffb686860725736bd07c2211}{Window\-Border} property of the window changes. 
+
+\hypertarget{interface_open_t_k_1_1_i_native_window_ae13b78b7d872ee1a62950a8b6b5983b8}{\index{Open\-T\-K\-::\-I\-Native\-Window@{Open\-T\-K\-::\-I\-Native\-Window}!Window\-State\-Changed@{Window\-State\-Changed}}
+\index{Window\-State\-Changed@{Window\-State\-Changed}!OpenTK::INativeWindow@{Open\-T\-K\-::\-I\-Native\-Window}}
+\subsubsection[{Window\-State\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-I\-Native\-Window.\-Window\-State\-Changed}}\label{interface_open_t_k_1_1_i_native_window_ae13b78b7d872ee1a62950a8b6b5983b8}
+
+
+Occurs when the \hyperlink{interface_open_t_k_1_1_i_native_window_a228db8bdb7282c03e98c103bc6ea9904}{Window\-State} property of the window changes. 
+

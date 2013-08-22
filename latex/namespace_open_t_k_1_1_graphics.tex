@@ -1,0 +1,73 @@
+\hypertarget{namespace_open_t_k_1_1_graphics}{\section{Package Open\-T\-K.\-Graphics}
+\label{namespace_open_t_k_1_1_graphics}\index{Open\-T\-K.\-Graphics@{Open\-T\-K.\-Graphics}}
+}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+package \hyperlink{namespace_open_t_k_1_1_graphics_1_1_e_s10}{E\-S10}
+\item 
+package \hyperlink{namespace_open_t_k_1_1_graphics_1_1_e_s11}{E\-S11}
+\item 
+package \hyperlink{namespace_open_t_k_1_1_graphics_1_1_e_s20}{E\-S20}
+\item 
+package \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_open_t_k_1_1_graphics_1_1_color4}{Color4}
+\begin{DoxyCompactList}\small\item\em Represents a color with 4 floating-\/point components (R, G, B, A). \end{DoxyCompactList}\item 
+struct \hyperlink{struct_open_t_k_1_1_graphics_1_1_color_format}{Color\-Format}
+\begin{DoxyCompactList}\small\item\em Defines the \hyperlink{struct_open_t_k_1_1_graphics_1_1_color_format}{Color\-Format} component of a \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode}.\end{DoxyCompactList}\item 
+class \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_bindings_base}{Graphics\-Bindings\-Base}
+\begin{DoxyCompactList}\small\item\em Implements \hyperlink{class_open_t_k_1_1_bindings_base}{Bindings\-Base} for the \hyperlink{namespace_open_t_k_1_1_graphics}{Open\-T\-K.\-Graphics} namespace (\hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} and Open\-G\-L$|$\-E\-S). \end{DoxyCompactList}\item 
+class \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}
+\begin{DoxyCompactList}\small\item\em Represents and provides methods to manipulate an \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} render context. \end{DoxyCompactList}\item 
+class \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_exception}{Graphics\-Context\-Exception}
+\begin{DoxyCompactList}\small\item\em Represents errors related to a \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}. \end{DoxyCompactList}\item 
+class \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_missing_exception}{Graphics\-Context\-Missing\-Exception}
+\begin{DoxyCompactList}\small\item\em Thrown when an operation that required \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} is performed, when no \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} is current in the calling thread. \end{DoxyCompactList}\item 
+class \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_version}{Graphics\-Context\-Version}
+\begin{DoxyCompactList}\small\item\em Defines the version information of a \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}. \end{DoxyCompactList}\item 
+class \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_error_exception}{Graphics\-Error\-Exception}
+\begin{DoxyCompactList}\small\item\em Identifies a specific \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} or Open\-G\-L$|$\-E\-S error. Such exceptions are only thrown when \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} or Open\-G\-L$|$\-E\-S automatic error checking is enabled -\/ \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a8ad06302403c5503b6ba954676523d90}{Graphics\-Context.\-Error\-Checking} property. Important\-: Do {\itshape not} catch this exception. Rather, fix the underlying issue that caused the error. \end{DoxyCompactList}\item 
+class \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode}
+\begin{DoxyCompactList}\small\item\em Defines the format for graphics operations.\end{DoxyCompactList}\item 
+class \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode_exception}{Graphics\-Mode\-Exception}
+\begin{DoxyCompactList}\small\item\em Represents errors related to unavailable graphics parameters. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}{I\-Graphics\-Context}
+\begin{DoxyCompactList}\small\item\em Provides methods for creating and interacting with an \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} context. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_internal}{I\-Graphics\-Context\-Internal}
+\begin{DoxyCompactList}\small\item\em Provides methods to create new Graphics\-Contexts. Should only be used for extending \hyperlink{namespace_open_t_k}{Open\-T\-K}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8ab}{Graphics\-Context\-Flags} \{ \hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8aba7a1920d61156abc05a60135aefe8bc67}{Graphics\-Context\-Flags.\-Default} = 0x0000, 
+\hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8abaa603905470e2a5b8c13e96b579ef0dba}{Graphics\-Context\-Flags.\-Debug} = 0x0001, 
+\hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8aba90b21fdee9b0f1e07fec562556052bab}{Graphics\-Context\-Flags.\-Forward\-Compatible} = 0x0002, 
+\hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8aba069e7821d3b4c0bbf437147263eb4d0e}{Graphics\-Context\-Flags.\-Embedded} = 0x0004
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates various flags that affect the creation of new Graphics\-Contexts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8ab}{\index{Open\-T\-K\-::\-Graphics@{Open\-T\-K\-::\-Graphics}!Graphics\-Context\-Flags@{Graphics\-Context\-Flags}}
+\index{Graphics\-Context\-Flags@{Graphics\-Context\-Flags}!OpenTK::Graphics@{Open\-T\-K\-::\-Graphics}}
+\subsubsection[{Graphics\-Context\-Flags}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Open\-T\-K.\-Graphics.\-Graphics\-Context\-Flags}}}\label{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8ab}
+
+
+Enumerates various flags that affect the creation of new Graphics\-Contexts. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Default@{Default}!Open\-T\-K\-::\-Graphics@{Open\-T\-K\-::\-Graphics}}\index{Open\-T\-K\-::\-Graphics@{Open\-T\-K\-::\-Graphics}!Default@{Default}}\item[{\em 
+\hypertarget{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8aba7a1920d61156abc05a60135aefe8bc67}{Default}\label{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8aba7a1920d61156abc05a60135aefe8bc67}
+}]The default value of the Graphics\-Context\-Flags enumeration. \index{Debug@{Debug}!Open\-T\-K\-::\-Graphics@{Open\-T\-K\-::\-Graphics}}\index{Open\-T\-K\-::\-Graphics@{Open\-T\-K\-::\-Graphics}!Debug@{Debug}}\item[{\em 
+\hypertarget{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8abaa603905470e2a5b8c13e96b579ef0dba}{Debug}\label{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8abaa603905470e2a5b8c13e96b579ef0dba}
+}]Indicates that this is a debug \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}. Debug contexts may provide additional debugging information at the cost of performance. \index{Forward\-Compatible@{Forward\-Compatible}!Open\-T\-K\-::\-Graphics@{Open\-T\-K\-::\-Graphics}}\index{Open\-T\-K\-::\-Graphics@{Open\-T\-K\-::\-Graphics}!Forward\-Compatible@{Forward\-Compatible}}\item[{\em 
+\hypertarget{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8aba90b21fdee9b0f1e07fec562556052bab}{Forward\-Compatible}\label{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8aba90b21fdee9b0f1e07fec562556052bab}
+}]Indicates that this is a forward compatible \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}. Forward-\/compatible contexts do not support functionality marked as deprecated in the current \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_version}{Graphics\-Context\-Version}. Forward-\/compatible contexts are defined only for \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} versions 3.\-0 and later.\index{Embedded@{Embedded}!Open\-T\-K\-::\-Graphics@{Open\-T\-K\-::\-Graphics}}\index{Open\-T\-K\-::\-Graphics@{Open\-T\-K\-::\-Graphics}!Embedded@{Embedded}}\item[{\em 
+\hypertarget{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8aba069e7821d3b4c0bbf437147263eb4d0e}{Embedded}\label{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8aba069e7821d3b4c0bbf437147263eb4d0e}
+}]Indicates that this \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} is targeting Open\-G\-L$|$\-E\-S. \end{description}
+\end{Desc}

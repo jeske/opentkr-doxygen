@@ -1,0 +1,190 @@
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device}{\section{Open\-T\-K.\-Input.\-Keyboard\-Device Class Reference}
+\label{class_open_t_k_1_1_input_1_1_keyboard_device}\index{Open\-T\-K.\-Input.\-Keyboard\-Device@{Open\-T\-K.\-Input.\-Keyboard\-Device}}
+}
+
+
+Represents a keyboard device and provides methods to query its status.  
+
+
+Inheritance diagram for Open\-T\-K.\-Input.\-Keyboard\-Device\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_open_t_k_1_1_input_1_1_keyboard_device}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override int \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_ac6151bee0c67b22b61c9b18232b861ca}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Returns the hash code for this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}.\end{DoxyCompactList}\item 
+override string \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_abe5081c8f817eb2a52f3ae1d681038db}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String representing this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_a3ae0bcae2f72d9e593a1abd58f3510a4}{this\mbox{[}\-Key key\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating the status of the specified Key. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_aa352ed059cb4a2b3127bf307bcdc72ce}{this\mbox{[}uint scancode\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating the status of the specified Key. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_a8cdb6aa74d46585a6eac945d9460ebb8}{Number\-Of\-Keys}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the number of keys on this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_ac00e15c29e8b700cf8ec409c24ecc15f}{Number\-Of\-Function\-Keys}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the number of function keys (F-\/keys) on this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_a72f5d5169869c62419219ddbb4ae0077}{Number\-Of\-Leds}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating the number of led indicators on this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}. \end{DoxyCompactList}\item 
+Int\-Ptr \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_a797379213362e109ae766992cb79b2ee}{Device\-I\-D}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an Int\-Ptr representing a device dependent I\-D. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_a5a2f02e17370e6ed57f78249cc4b7fde}{Key\-Repeat}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Boolean indicating key repeat status. \end{DoxyCompactList}\item 
+string \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_a5985a861383790bf012d1c1351890e5c}{Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-String which describes this instance. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_input_a1d147c6256b0adaa5288eec90ed93270}{Input\-Device\-Type} \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_a35ba052b764e6b488b6799f839f81848}{Device\-Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{namespace_open_t_k_1_1_input_a1d147c6256b0adaa5288eec90ed93270}{Input\-Device\-Type} for this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\-Handler\\*
+$<$ \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_key_event_args}{Keyboard\-Key\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_a6149deb628a69ffafd9616ec88403827}{Key\-Down}
+\begin{DoxyCompactList}\small\item\em Occurs when a key is pressed. \end{DoxyCompactList}\item 
+Event\-Handler\\*
+$<$ \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_key_event_args}{Keyboard\-Key\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device_a43137321dca3a4056c8475d483714744}{Key\-Up}
+\begin{DoxyCompactList}\small\item\em Occurs when a key is released. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a keyboard device and provides methods to query its status. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_ac6151bee0c67b22b61c9b18232b861ca}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Input.\-Keyboard\-Device.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_ac6151bee0c67b22b61c9b18232b861ca}
+
+
+Returns the hash code for this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}.
+
+\begin{DoxyReturn}{Returns}
+A 32-\/bit signed integer hash code.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_abe5081c8f817eb2a52f3ae1d681038db}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Input.\-Keyboard\-Device.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_abe5081c8f817eb2a52f3ae1d681038db}
+
+
+Returns a System.\-String representing this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-String representing this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_a5985a861383790bf012d1c1351890e5c}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Description@{Description}}
+\index{Description@{Description}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Description}]{\setlength{\rightskip}{0pt plus 5cm}string Open\-T\-K.\-Input.\-Keyboard\-Device.\-Description\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_a5985a861383790bf012d1c1351890e5c}
+
+
+Gets a System.\-String which describes this instance. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_a797379213362e109ae766992cb79b2ee}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Device\-I\-D@{Device\-I\-D}}
+\index{Device\-I\-D@{Device\-I\-D}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Device\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Ptr Open\-T\-K.\-Input.\-Keyboard\-Device.\-Device\-I\-D\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_a797379213362e109ae766992cb79b2ee}
+
+
+Gets an Int\-Ptr representing a device dependent I\-D. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_a35ba052b764e6b488b6799f839f81848}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Device\-Type@{Device\-Type}}
+\index{Device\-Type@{Device\-Type}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Device\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input\-Device\-Type} Open\-T\-K.\-Input.\-Keyboard\-Device.\-Device\-Type\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_a35ba052b764e6b488b6799f839f81848}
+
+
+Gets the \hyperlink{namespace_open_t_k_1_1_input_a1d147c6256b0adaa5288eec90ed93270}{Input\-Device\-Type} for this instance. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_a5a2f02e17370e6ed57f78249cc4b7fde}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Key\-Repeat@{Key\-Repeat}}
+\index{Key\-Repeat@{Key\-Repeat}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Key\-Repeat}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-Device.\-Key\-Repeat\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_a5a2f02e17370e6ed57f78249cc4b7fde}
+
+
+Gets or sets a System.\-Boolean indicating key repeat status. 
+
+If Key\-Repeat is true, multiple Key\-Down events will be generated while a key is being held. Otherwise only one Key\-Down event will be reported. 
+
+The rate of the generated Key\-Down events is controlled by the Operating System. Usually, one Key\-Down event will be reported, followed by a small (250-\/1000ms) pause and several more Key\-Down events (6-\/30 events per second). 
+
+Set to true to handle text input (where keyboard repeat is desirable), but set to false for game input. \hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_ac00e15c29e8b700cf8ec409c24ecc15f}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Number\-Of\-Function\-Keys@{Number\-Of\-Function\-Keys}}
+\index{Number\-Of\-Function\-Keys@{Number\-Of\-Function\-Keys}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Number\-Of\-Function\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Keyboard\-Device.\-Number\-Of\-Function\-Keys\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_ac00e15c29e8b700cf8ec409c24ecc15f}
+
+
+Gets an integer representing the number of function keys (F-\/keys) on this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_a8cdb6aa74d46585a6eac945d9460ebb8}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Number\-Of\-Keys@{Number\-Of\-Keys}}
+\index{Number\-Of\-Keys@{Number\-Of\-Keys}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Number\-Of\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Keyboard\-Device.\-Number\-Of\-Keys\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_a8cdb6aa74d46585a6eac945d9460ebb8}
+
+
+Gets an integer representing the number of keys on this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_a72f5d5169869c62419219ddbb4ae0077}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Number\-Of\-Leds@{Number\-Of\-Leds}}
+\index{Number\-Of\-Leds@{Number\-Of\-Leds}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Number\-Of\-Leds}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Keyboard\-Device.\-Number\-Of\-Leds\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_a72f5d5169869c62419219ddbb4ae0077}
+
+
+Gets a value indicating the number of led indicators on this \hyperlink{class_open_t_k_1_1_input_1_1_keyboard_device}{Keyboard\-Device}. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_a3ae0bcae2f72d9e593a1abd58f3510a4}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!this\mbox{[}\-Key key\mbox{]}@{this[Key key]}}
+\index{this\mbox{[}\-Key key\mbox{]}@{this[Key key]}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{this[Key key]}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-Device.\-this\mbox{[}{\bf Key} key\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_a3ae0bcae2f72d9e593a1abd58f3510a4}
+
+
+Gets a value indicating the status of the specified Key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The Key to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the Key is pressed, false otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_aa352ed059cb4a2b3127bf307bcdc72ce}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!this\mbox{[}uint scancode\mbox{]}@{this[uint scancode]}}
+\index{this\mbox{[}uint scancode\mbox{]}@{this[uint scancode]}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{this[uint scancode]}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-Device.\-this\mbox{[}uint scancode\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_aa352ed059cb4a2b3127bf307bcdc72ce}
+
+
+Gets a value indicating the status of the specified Key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the scancode is pressed, false otherwise.
+\end{DoxyReturn}
+
+
+\subsection{Event Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_a6149deb628a69ffafd9616ec88403827}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Key\-Down@{Key\-Down}}
+\index{Key\-Down@{Key\-Down}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Key\-Down}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Keyboard\-Key\-Event\-Args}$>$ Open\-T\-K.\-Input.\-Keyboard\-Device.\-Key\-Down}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_a6149deb628a69ffafd9616ec88403827}
+
+
+Occurs when a key is pressed. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_keyboard_device_a43137321dca3a4056c8475d483714744}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}!Key\-Up@{Key\-Up}}
+\index{Key\-Up@{Key\-Up}!OpenTK::Input::KeyboardDevice@{Open\-T\-K\-::\-Input\-::\-Keyboard\-Device}}
+\subsubsection[{Key\-Up}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Keyboard\-Key\-Event\-Args}$>$ Open\-T\-K.\-Input.\-Keyboard\-Device.\-Key\-Up}}\label{class_open_t_k_1_1_input_1_1_keyboard_device_a43137321dca3a4056c8475d483714744}
+
+
+Occurs when a key is released. 
+

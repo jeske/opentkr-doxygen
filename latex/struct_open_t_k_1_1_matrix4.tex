@@ -1,0 +1,2205 @@
+\hypertarget{struct_open_t_k_1_1_matrix4}{\section{Open\-T\-K.\-Matrix4 Struct Reference}
+\label{struct_open_t_k_1_1_matrix4}\index{Open\-T\-K.\-Matrix4@{Open\-T\-K.\-Matrix4}}
+}
+
+
+Represents a 4x4 matrix containing 3\-D rotation, scale, transform, and projection.  
+
+
+
+
+Inherits I\-Equatable$<$ Matrix4 $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_matrix4_a49b9829498b26bc8f6201a443a7d2b14}{Matrix4} (\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} row0, \hyperlink{struct_open_t_k_1_1_vector4}{Vector4} row1, \hyperlink{struct_open_t_k_1_1_vector4}{Vector4} row2, \hyperlink{struct_open_t_k_1_1_vector4}{Vector4} row3)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_matrix4_a2a4340045fcdb95abd2554f236696bc0}{Matrix4} (float m00, float m01, float m02, float m03, float m10, float m11, float m12, float m13, float m20, float m21, float m22, float m23, float m30, float m31, float m32, float m33)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_matrix4_a8ea1070e8b49605a0fad0a5b557b6f0d}{Invert} ()
+\begin{DoxyCompactList}\small\item\em Converts this instance into its inverse. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_matrix4_a28595e56298b6ca8c2c7268e0e8ba160}{Transpose} ()
+\begin{DoxyCompactList}\small\item\em Converts this instance into its transpose. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a6b52de6274d0c869fb409085fa44ab55}{Normalized} ()
+\begin{DoxyCompactList}\small\item\em Returns a normalised copy of this instance. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_matrix4_ada3becff78e8e572d2b07016d9f9c5a6}{Normalize} ()
+\begin{DoxyCompactList}\small\item\em Divides each element in the Matrix by the \hyperlink{struct_open_t_k_1_1_matrix4_a2763231a75e342ff722346ac609ac5f7}{Determinant}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a74360f6f2c126528a283c3fb3e1dd6e0}{Inverted} ()
+\begin{DoxyCompactList}\small\item\em Returns an inverted copy of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_adc888f16267650085ee63bf48a764af1}{Clear\-Translation} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of this \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} without translation. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a51c911305cbc74593c8fd6607e617f63}{Clear\-Scale} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of this \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} without scale. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a5d3ff58473d6728771572e4a883c0c55}{Clear\-Rotation} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of this \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} without rotation. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_aa4f049710b2372cfe2fd8e6b2f7a0bfb}{Clear\-Projection} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of this \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} without projection. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} \hyperlink{struct_open_t_k_1_1_matrix4_ab68e3fc8b52392d7eb069b86eb086355}{Extract\-Translation} ()
+\begin{DoxyCompactList}\small\item\em Returns the translation component of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} \hyperlink{struct_open_t_k_1_1_matrix4_ac7f04f8f1cb009aba1a16cbf88a7bf6a}{Extract\-Scale} ()
+\begin{DoxyCompactList}\small\item\em Returns the scale component of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} \hyperlink{struct_open_t_k_1_1_matrix4_aee168366ed34711c3f041d1a681124f0}{Extract\-Rotation} (bool row\-\_\-normalise=true)
+\begin{DoxyCompactList}\small\item\em Returns the rotation component of this instance. Quite slow. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_a1ad1b927dfc9833afe2041d0f0ff2068}{Extract\-Projection} ()
+\begin{DoxyCompactList}\small\item\em Returns the projection component of this instance. \end{DoxyCompactList}\item 
+override string \hyperlink{struct_open_t_k_1_1_matrix4_af08979c6b008e81d168ec721749b6ae1}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4}. \end{DoxyCompactList}\item 
+override int \hyperlink{struct_open_t_k_1_1_matrix4_a860f4a26f8d6e4995d2d95600a575ccd}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Returns the hashcode for this instance. \end{DoxyCompactList}\item 
+override bool \hyperlink{struct_open_t_k_1_1_matrix4_ab1c8b1f7324f8d14a29c343502b5b38c}{Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Indicates whether this instance and a specified object are equal. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_matrix4_aae83514ae5997a0917eaa72bb36f5c2c}{Equals} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} other)
+\begin{DoxyCompactList}\small\item\em Indicates whether the current matrix is equal to another matrix.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a319f627e55e08a459c41dd3915c7e8a4}{Create\-From\-Axis\-Angle} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} axis, float angle, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Build a rotation matrix from the specified axis/angle rotation. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ab8d8dac78759db89a53d23d3fff5b699}{Create\-From\-Axis\-Angle} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} axis, float angle)
+\begin{DoxyCompactList}\small\item\em Build a rotation matrix from the specified axis/angle rotation. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a3dca5241b1140ba2e7b208d418400eff}{Create\-From\-Quaternion} (ref \hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix from a quaternion. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a6370103adfbda8af7b85ac9311dd6b2d}{Create\-From\-Quaternion} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix from a quaternion. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a5a2844395cee08584523a50c2d18510f}{Create\-Rotation\-X} (float angle, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix for a rotation around the x-\/axis. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_adaf85e0d85e19232443488b420218691}{Create\-Rotation\-X} (float angle)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix for a rotation around the x-\/axis. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a1d9e19fb035840436efee575a60d652b}{Create\-Rotation\-Y} (float angle, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix for a rotation around the y-\/axis. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_afd2e6c5a4334ca387b26df8e7508741e}{Create\-Rotation\-Y} (float angle)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix for a rotation around the y-\/axis. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a4e315fd9139ce8d3c4bebb18f42a39a7}{Create\-Rotation\-Z} (float angle, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix for a rotation around the z-\/axis. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a175b1c322b20077f1d5ee26b10736a2d}{Create\-Rotation\-Z} (float angle)
+\begin{DoxyCompactList}\small\item\em Builds a rotation matrix for a rotation around the z-\/axis. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a2f34dc7c103f9a96bd7fb14db7fcf895}{Create\-Translation} (float x, float y, float z, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a72d99fa97940c82a7eaf08915f728aff}{Create\-Translation} (ref \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} vector, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a5dcdcb49c17295ad658eef1e57cc7127}{Create\-Translation} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a4244bc21b239d97d94d330c4745ef8f7}{Create\-Translation} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} vector)
+\begin{DoxyCompactList}\small\item\em Creates a translation matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a59c3798f8d7be02760823573578348c9}{Create\-Scale} (float scale)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a43e525a66387c705344e4ee45947a08d}{Create\-Scale} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} scale)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a6004e281fa3b7247f510fc9047196861}{Create\-Scale} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a3e656c06521033c642682a0d7702c22b}{Create\-Scale} (float scale, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_aad8a0fc7a76382e3c58a86edd618e81b}{Create\-Scale} (ref \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} scale, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_adfc677db6aa3282addf2e6ecb6cb2c61}{Create\-Scale} (float x, float y, float z, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Creates a scale matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_ad12e94e37a35272b019493ec5d3a035a}{Create\-Orthographic} (float width, float height, float z\-Near, float z\-Far, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Creates an orthographic projection matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_af047746614a81976f5a7200a06600725}{Create\-Orthographic} (float width, float height, float z\-Near, float z\-Far)
+\begin{DoxyCompactList}\small\item\em Creates an orthographic projection matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a731152de7d4b472612451f8f36d3719f}{Create\-Orthographic\-Off\-Center} (float left, float right, float bottom, float top, float z\-Near, float z\-Far, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Creates an orthographic projection matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a54e0e0e066f022cb2274d644778bc306}{Create\-Orthographic\-Off\-Center} (float left, float right, float bottom, float top, float z\-Near, float z\-Far)
+\begin{DoxyCompactList}\small\item\em Creates an orthographic projection matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a8a2e29e1e9c51fd05b1a629d439b8fd9}{Create\-Perspective\-Field\-Of\-View} (float fovy, float aspect, float z\-Near, float z\-Far, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Creates a perspective projection matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ae5e37b458cc2c39d9c0effa6acb1f387}{Create\-Perspective\-Field\-Of\-View} (float fovy, float aspect, float z\-Near, float z\-Far)
+\begin{DoxyCompactList}\small\item\em Creates a perspective projection matrix. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_ae2705c0073d0d6c74d7103976c682749}{Create\-Perspective\-Off\-Center} (float left, float right, float bottom, float top, float z\-Near, float z\-Far, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Creates an perspective projection matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a54cf77e18237ee646991451f043caf0b}{Create\-Perspective\-Off\-Center} (float left, float right, float bottom, float top, float z\-Near, float z\-Far)
+\begin{DoxyCompactList}\small\item\em Creates an perspective projection matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a92deb0e3f5a109937f1214bcd292b3d8}{Translation} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} trans)
+\begin{DoxyCompactList}\small\item\em Builds a translation matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a2145c45977b80c99311be5c6b19750d0}{Translation} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Build a translation matrix with the given translation \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ac5bf042c260d6b0e2abdfe212e65c6af}{Rotate\-X} (float angle)
+\begin{DoxyCompactList}\small\item\em Build a rotation matrix that rotates about the x-\/axis \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ac20cab216c2115975c17bb5a3940bdb9}{Rotate\-Y} (float angle)
+\begin{DoxyCompactList}\small\item\em Build a rotation matrix that rotates about the y-\/axis \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ae9868e1bd3b8aa411abd848e107a55af}{Rotate\-Z} (float angle)
+\begin{DoxyCompactList}\small\item\em Build a rotation matrix that rotates about the z-\/axis \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a78fe44e18bbd3ba4abf372ef128c3dda}{Rotate} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} axis, float angle)
+\begin{DoxyCompactList}\small\item\em Build a rotation matrix to rotate about the given axis \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ab3f3d04d37bf34516f2ace0ea8af7f47}{Rotate} (\hyperlink{struct_open_t_k_1_1_quaternion}{Quaternion} q)
+\begin{DoxyCompactList}\small\item\em Build a rotation matrix from a quaternion \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a9ed149b8e6433262b9bad481f20bc92f}{Scale} (float scale)
+\begin{DoxyCompactList}\small\item\em Build a scaling matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_af737c5258598885a21e4061503b88b18}{Scale} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} scale)
+\begin{DoxyCompactList}\small\item\em Build a scaling matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ae4e10621781c31a829b844bd9dd36717}{Scale} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Build a scaling matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ad39000b80d53e4c3b571bb0dbf3defaf}{Frustum} (float left, float right, float bottom, float top, float near, float far)
+\begin{DoxyCompactList}\small\item\em Build a projection matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a83cf01c11a58da7c2a3df2bc7098ca13}{Perspective} (float fovy, float aspect, float near, float far)
+\begin{DoxyCompactList}\small\item\em Build a projection matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a87e3d4f4c7db7d876d3856d30b1dd4b2}{Look\-At} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} eye, \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} target, \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} up)
+\begin{DoxyCompactList}\small\item\em Build a world space to camera space matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_af34d6b9a60fdeeb9b2324a720c954162}{Look\-At} (float eye\-X, float eye\-Y, float eye\-Z, float target\-X, float target\-Y, float target\-Z, float up\-X, float up\-Y, float up\-Z)
+\begin{DoxyCompactList}\small\item\em Build a world space to camera space matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_aebe1447b4092723aaf6ff75aa547cc61}{Add} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Adds two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_ada6c12bead9854fe53fcf0ba6dc6eb31}{Add} (ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Adds two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ae93d59e9897a688ff81dc0d132600f67}{Subtract} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Subtracts one instance from another. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a074be83f6c2ca23aa31740cebf52ece7}{Subtract} (ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Subtracts one instance from another. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_aa1c9d1ad57f29ee6d4283c9443619599}{Mult} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a61f937b8f1944f375f73b7dcc0d94e52}{Mult} (ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Multiplies two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a85f4f72693fc856fbde7e3e5236c3d50}{Mult} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, float right)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_aea5096ba8a9ee0b35d9c37c29faf8637}{Mult} (ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, float right, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_a56a031039ffc581dcb48c8a71102ac21}{Invert} (ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} mat, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Calculate the inverse of the given matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a50b8d53e584fa4b41621ed03889dc47c}{Invert} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} mat)
+\begin{DoxyCompactList}\small\item\em Calculate the inverse of the given matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a6b208b99928f429451c687b8a2e7fe2a}{Transpose} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} mat)
+\begin{DoxyCompactList}\small\item\em Calculate the transpose of the given matrix \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_matrix4_abc37cdd96af73a324d6a05fe48477246}{Transpose} (ref \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} mat, out \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} result)
+\begin{DoxyCompactList}\small\item\em Calculate the transpose of the given matrix \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a213d1b0df28b91d6f2b5d6b4a8c2a719}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Matrix multiplication \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_ac9116cceade296e536631fd86d0c48d3}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, float right)
+\begin{DoxyCompactList}\small\item\em Matrix-\/scalar multiplication \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_aec9fd33994b3a16146e9ea4f9d29b0f3}{operator+} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Matrix addition \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a50ef7db5d3733084cb67ba58677f70bb}{operator-\/} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Matrix subtraction \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_matrix4_aad4f598f135e44f6cd851c860577ac98}{operator==} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for equality. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_matrix4_af9af6d65d9fbe574073da3d8a6fa817a}{operator!=} (\hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} left, \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for inequality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_a3fd8b28b615b179bcc0e4fde42113b1d}{Row0}
+\begin{DoxyCompactList}\small\item\em Top row of the matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_a41a0aa349da51a65d6cf730c8045752e}{Row1}
+\begin{DoxyCompactList}\small\item\em 2nd row of the matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_a8efc78c75943f100dc9381de44c451d9}{Row2}
+\begin{DoxyCompactList}\small\item\em 3rd row of the matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_a4fac10569a36cd69f508ba6b4ea15cb5}{Row3}
+\begin{DoxyCompactList}\small\item\em Bottom row of the matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a6f7b2f68ab7b7bce17ef850f6b2be3fb}{Identity} = new \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4}(\hyperlink{struct_open_t_k_1_1_vector4_ad3b78911d7b6438c95ec666d49698487}{Vector4.\-Unit\-X}, \hyperlink{struct_open_t_k_1_1_vector4_a1396b403dd251cb508210d93751494e5}{Vector4.\-Unit\-Y}, \hyperlink{struct_open_t_k_1_1_vector4_ad269575f7cc9936e91f79f89c3fb1b48}{Vector4.\-Unit\-Z}, \hyperlink{struct_open_t_k_1_1_vector4_ac56f2979d015c23002983614a97b3226}{Vector4.\-Unit\-W})
+\begin{DoxyCompactList}\small\item\em The identity matrix. \end{DoxyCompactList}\item 
+static readonly \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} \hyperlink{struct_open_t_k_1_1_matrix4_a412c6bab3385cf1c7f84587cb413a7cf}{Zero} = new \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4}(Vector4.\-Zero, Vector4.\-Zero, Vector4.\-Zero, Vector4.\-Zero)
+\begin{DoxyCompactList}\small\item\em The zero matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a2763231a75e342ff722346ac609ac5f7}{Determinant}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the determinant of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_a98cd484a752138482978b3695af0ea97}{Column0}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the first column of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_aa71936442a2e4d016158f6562457f8aa}{Column1}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the second column of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_a8ceb934eacdadb27bc25e1dad87aa19d}{Column2}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the third column of this matrix. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_af8797da77258a8d900f2bfa09f216136}{Column3}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the fourth column of this matrix. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_aa259786339c04177b6d5718d48a56017}{M11}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 1, column 1 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a6e50271d00973f34189215067b99cc59}{M12}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 1, column 2 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_ab22fd3db4c2335a90ff02f00d4215c79}{M13}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 1, column 3 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a375c77b6bb356e904b4177543049f566}{M14}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 1, column 4 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a8f67e786091e1e1c3bb2de5526f200e2}{M21}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 2, column 1 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a0e052302d09a03c29a0acd5062be45de}{M22}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 2, column 2 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a833d47673ced755298c9be945e198d63}{M23}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 2, column 3 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a10cd1d863df4b0e82713451981b10cb3}{M24}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 2, column 4 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_ad246a5c283910c4c0d449bbda48ce9f4}{M31}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 3, column 1 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_af6e28741c160512d08a715bb26b704cf}{M32}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 3, column 2 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a1ae9d90f8241dd5bc8223409256bf782}{M33}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 3, column 3 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a23fec879bedcd2af4439b5f6193be2df}{M34}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 3, column 4 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_aa19e3083cee4c445d63a4b72f8b71011}{M41}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 4, column 1 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a2cf2cf88603879c9c92d43241b313959}{M42}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 4, column 2 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a3ffbf71f8cc86369e904314993f1ce12}{M43}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 4, column 3 of this instance. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_aa6fe6e3bada9edc1cae56372a92bf7ea}{M44}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at row 4, column 4 of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector4}{Vector4} \hyperlink{struct_open_t_k_1_1_matrix4_ae8e762c4a2c8536e12e67380abf3083a}{Diagonal}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the values along the main diagonal of the matrix. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_a0e8edded0f0459923d3943e43a5e72b2}{Trace}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the trace of the matrix, the sum of the values along the diagonal. \end{DoxyCompactList}\item 
+float \hyperlink{struct_open_t_k_1_1_matrix4_ae970446c132947e10f286d178faff5e4}{this\mbox{[}int row\-Index, int column\-Index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at a specified row and column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a 4x4 matrix containing 3\-D rotation, scale, transform, and projection. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d}
+
+
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_matrix4_a49b9829498b26bc8f6201a443a7d2b14}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Matrix4}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Matrix4.\-Matrix4 (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector4}}]{row0, }
+\item[{{\bf Vector4}}]{row1, }
+\item[{{\bf Vector4}}]{row2, }
+\item[{{\bf Vector4}}]{row3}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a49b9829498b26bc8f6201a443a7d2b14}
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row0} & Top row of the matrix.\\
+\hline
+{\em row1} & Second row of the matrix.\\
+\hline
+{\em row2} & Third row of the matrix.\\
+\hline
+{\em row3} & Bottom row of the matrix.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_a2a4340045fcdb95abd2554f236696bc0}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Matrix4}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Matrix4.\-Matrix4 (
+\begin{DoxyParamCaption}
+\item[{float}]{m00, }
+\item[{float}]{m01, }
+\item[{float}]{m02, }
+\item[{float}]{m03, }
+\item[{float}]{m10, }
+\item[{float}]{m11, }
+\item[{float}]{m12, }
+\item[{float}]{m13, }
+\item[{float}]{m20, }
+\item[{float}]{m21, }
+\item[{float}]{m22, }
+\item[{float}]{m23, }
+\item[{float}]{m30, }
+\item[{float}]{m31, }
+\item[{float}]{m32, }
+\item[{float}]{m33}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a2a4340045fcdb95abd2554f236696bc0}
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m00} & First item of the first row of the matrix.\\
+\hline
+{\em m01} & Second item of the first row of the matrix.\\
+\hline
+{\em m02} & Third item of the first row of the matrix.\\
+\hline
+{\em m03} & Fourth item of the first row of the matrix.\\
+\hline
+{\em m10} & First item of the second row of the matrix.\\
+\hline
+{\em m11} & Second item of the second row of the matrix.\\
+\hline
+{\em m12} & Third item of the second row of the matrix.\\
+\hline
+{\em m13} & Fourth item of the second row of the matrix.\\
+\hline
+{\em m20} & First item of the third row of the matrix.\\
+\hline
+{\em m21} & Second item of the third row of the matrix.\\
+\hline
+{\em m22} & Third item of the third row of the matrix.\\
+\hline
+{\em m23} & First item of the third row of the matrix.\\
+\hline
+{\em m30} & Fourth item of the fourth row of the matrix.\\
+\hline
+{\em m31} & Second item of the fourth row of the matrix.\\
+\hline
+{\em m32} & Third item of the fourth row of the matrix.\\
+\hline
+{\em m33} & Fourth item of the fourth row of the matrix.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_matrix4_aebe1447b4092723aaf6ff75aa547cc61}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_aebe1447b4092723aaf6ff75aa547cc61}
+
+
+Adds two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the addition.\\
+\hline
+{\em right} & The right operand of the addition.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the addition.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ada6c12bead9854fe53fcf0ba6dc6eb31}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Add (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix4}}]{left, }
+\item[{ref {\bf Matrix4}}]{right, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ada6c12bead9854fe53fcf0ba6dc6eb31}
+
+
+Adds two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the addition.\\
+\hline
+{\em right} & The right operand of the addition.\\
+\hline
+{\em result} & A new instance that is the result of the addition.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_aa4f049710b2372cfe2fd8e6b2f7a0bfb}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Clear\-Projection@{Clear\-Projection}}
+\index{Clear\-Projection@{Clear\-Projection}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Clear\-Projection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} Open\-T\-K.\-Matrix4.\-Clear\-Projection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_aa4f049710b2372cfe2fd8e6b2f7a0bfb}
+
+
+Returns a copy of this \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} without projection. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a5d3ff58473d6728771572e4a883c0c55}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Clear\-Rotation@{Clear\-Rotation}}
+\index{Clear\-Rotation@{Clear\-Rotation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Clear\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} Open\-T\-K.\-Matrix4.\-Clear\-Rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a5d3ff58473d6728771572e4a883c0c55}
+
+
+Returns a copy of this \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} without rotation. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a51c911305cbc74593c8fd6607e617f63}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Clear\-Scale@{Clear\-Scale}}
+\index{Clear\-Scale@{Clear\-Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Clear\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} Open\-T\-K.\-Matrix4.\-Clear\-Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a51c911305cbc74593c8fd6607e617f63}
+
+
+Returns a copy of this \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} without scale. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_adc888f16267650085ee63bf48a764af1}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Clear\-Translation@{Clear\-Translation}}
+\index{Clear\-Translation@{Clear\-Translation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Clear\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} Open\-T\-K.\-Matrix4.\-Clear\-Translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_adc888f16267650085ee63bf48a764af1}
+
+
+Returns a copy of this \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} without translation. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a319f627e55e08a459c41dd3915c7e8a4}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-From\-Axis\-Angle@{Create\-From\-Axis\-Angle}}
+\index{Create\-From\-Axis\-Angle@{Create\-From\-Axis\-Angle}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-From\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-From\-Axis\-Angle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{axis, }
+\item[{float}]{angle, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a319f627e55e08a459c41dd3915c7e8a4}
+
+
+Build a rotation matrix from the specified axis/angle rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis to rotate about.\\
+\hline
+{\em angle} & Angle in radians to rotate counter-\/clockwise (looking in the direction of the given axis).\\
+\hline
+{\em result} & A matrix instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_ab8d8dac78759db89a53d23d3fff5b699}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-From\-Axis\-Angle@{Create\-From\-Axis\-Angle}}
+\index{Create\-From\-Axis\-Angle@{Create\-From\-Axis\-Angle}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-From\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-From\-Axis\-Angle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{axis, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ab8d8dac78759db89a53d23d3fff5b699}
+
+
+Build a rotation matrix from the specified axis/angle rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis to rotate about.\\
+\hline
+{\em angle} & Angle in radians to rotate counter-\/clockwise (looking in the direction of the given axis).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A matrix instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a3dca5241b1140ba2e7b208d418400eff}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-From\-Quaternion@{Create\-From\-Quaternion}}
+\index{Create\-From\-Quaternion@{Create\-From\-Quaternion}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-From\-Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-From\-Quaternion (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Quaternion}}]{q, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a3dca5241b1140ba2e7b208d418400eff}
+
+
+Builds a rotation matrix from a quaternion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to rotate by.\\
+\hline
+{\em result} & A matrix instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_a6370103adfbda8af7b85ac9311dd6b2d}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-From\-Quaternion@{Create\-From\-Quaternion}}
+\index{Create\-From\-Quaternion@{Create\-From\-Quaternion}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-From\-Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-From\-Quaternion (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a6370103adfbda8af7b85ac9311dd6b2d}
+
+
+Builds a rotation matrix from a quaternion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to rotate by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A matrix instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ad12e94e37a35272b019493ec5d3a035a}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Orthographic@{Create\-Orthographic}}
+\index{Create\-Orthographic@{Create\-Orthographic}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Orthographic}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Orthographic (
+\begin{DoxyParamCaption}
+\item[{float}]{width, }
+\item[{float}]{height, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ad12e94e37a35272b019493ec5d3a035a}
+
+
+Creates an orthographic projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the projection volume.\\
+\hline
+{\em height} & The height of the projection volume.\\
+\hline
+{\em z\-Near} & The near edge of the projection volume.\\
+\hline
+{\em z\-Far} & The far edge of the projection volume.\\
+\hline
+{\em result} & The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_af047746614a81976f5a7200a06600725}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Orthographic@{Create\-Orthographic}}
+\index{Create\-Orthographic@{Create\-Orthographic}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Orthographic}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Orthographic (
+\begin{DoxyParamCaption}
+\item[{float}]{width, }
+\item[{float}]{height, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_af047746614a81976f5a7200a06600725}
+
+
+Creates an orthographic projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the projection volume.\\
+\hline
+{\em height} & The height of the projection volume.\\
+\hline
+{\em z\-Near} & The near edge of the projection volume.\\
+\hline
+{\em z\-Far} & The far edge of the projection volume.\\
+\hline
+\end{DoxyParams}
+$<$rereturns$>$The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.$<$/rereturns$>$ \hypertarget{struct_open_t_k_1_1_matrix4_a731152de7d4b472612451f8f36d3719f}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Orthographic\-Off\-Center@{Create\-Orthographic\-Off\-Center}}
+\index{Create\-Orthographic\-Off\-Center@{Create\-Orthographic\-Off\-Center}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Orthographic\-Off\-Center}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Orthographic\-Off\-Center (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a731152de7d4b472612451f8f36d3719f}
+
+
+Creates an orthographic projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left edge of the projection volume.\\
+\hline
+{\em right} & The right edge of the projection volume.\\
+\hline
+{\em bottom} & The bottom edge of the projection volume.\\
+\hline
+{\em top} & The top edge of the projection volume.\\
+\hline
+{\em z\-Near} & The near edge of the projection volume.\\
+\hline
+{\em z\-Far} & The far edge of the projection volume.\\
+\hline
+{\em result} & The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_a54e0e0e066f022cb2274d644778bc306}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Orthographic\-Off\-Center@{Create\-Orthographic\-Off\-Center}}
+\index{Create\-Orthographic\-Off\-Center@{Create\-Orthographic\-Off\-Center}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Orthographic\-Off\-Center}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Orthographic\-Off\-Center (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a54e0e0e066f022cb2274d644778bc306}
+
+
+Creates an orthographic projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left edge of the projection volume.\\
+\hline
+{\em right} & The right edge of the projection volume.\\
+\hline
+{\em bottom} & The bottom edge of the projection volume.\\
+\hline
+{\em top} & The top edge of the projection volume.\\
+\hline
+{\em z\-Near} & The near edge of the projection volume.\\
+\hline
+{\em z\-Far} & The far edge of the projection volume.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a8a2e29e1e9c51fd05b1a629d439b8fd9}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Perspective\-Field\-Of\-View@{Create\-Perspective\-Field\-Of\-View}}
+\index{Create\-Perspective\-Field\-Of\-View@{Create\-Perspective\-Field\-Of\-View}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Perspective\-Field\-Of\-View}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Perspective\-Field\-Of\-View (
+\begin{DoxyParamCaption}
+\item[{float}]{fovy, }
+\item[{float}]{aspect, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a8a2e29e1e9c51fd05b1a629d439b8fd9}
+
+
+Creates a perspective projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fovy} & Angle of the field of view in the y direction (in radians)\\
+\hline
+{\em aspect} & Aspect ratio of the view (width / height)\\
+\hline
+{\em z\-Near} & Distance to the near clip plane\\
+\hline
+{\em z\-Far} & Distance to the far clip plane\\
+\hline
+{\em result} & A projection matrix that transforms camera space to raster space\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\-Argument\-Out\-Of\-Range\-Exception} & Thrown under the following conditions\-: 
+\begin{DoxyItemize}
+\item fovy is zero, less than zero or larger than Math.\-P\-I 
+\item aspect is negative or zero 
+\item z\-Near is negative or zero 
+\item z\-Far is negative or zero 
+\item z\-Near is larger than z\-Far 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{struct_open_t_k_1_1_matrix4_ae5e37b458cc2c39d9c0effa6acb1f387}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Perspective\-Field\-Of\-View@{Create\-Perspective\-Field\-Of\-View}}
+\index{Create\-Perspective\-Field\-Of\-View@{Create\-Perspective\-Field\-Of\-View}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Perspective\-Field\-Of\-View}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Perspective\-Field\-Of\-View (
+\begin{DoxyParamCaption}
+\item[{float}]{fovy, }
+\item[{float}]{aspect, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ae5e37b458cc2c39d9c0effa6acb1f387}
+
+
+Creates a perspective projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fovy} & Angle of the field of view in the y direction (in radians)\\
+\hline
+{\em aspect} & Aspect ratio of the view (width / height)\\
+\hline
+{\em z\-Near} & Distance to the near clip plane\\
+\hline
+{\em z\-Far} & Distance to the far clip plane\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A projection matrix that transforms camera space to raster space
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\-Argument\-Out\-Of\-Range\-Exception} & Thrown under the following conditions\-: 
+\begin{DoxyItemize}
+\item fovy is zero, less than zero or larger than Math.\-P\-I 
+\item aspect is negative or zero 
+\item z\-Near is negative or zero 
+\item z\-Far is negative or zero 
+\item z\-Near is larger than z\-Far 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{struct_open_t_k_1_1_matrix4_ae2705c0073d0d6c74d7103976c682749}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Perspective\-Off\-Center@{Create\-Perspective\-Off\-Center}}
+\index{Create\-Perspective\-Off\-Center@{Create\-Perspective\-Off\-Center}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Perspective\-Off\-Center}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Perspective\-Off\-Center (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ae2705c0073d0d6c74d7103976c682749}
+
+
+Creates an perspective projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left edge of the view frustum\\
+\hline
+{\em right} & Right edge of the view frustum\\
+\hline
+{\em bottom} & Bottom edge of the view frustum\\
+\hline
+{\em top} & Top edge of the view frustum\\
+\hline
+{\em z\-Near} & Distance to the near clip plane\\
+\hline
+{\em z\-Far} & Distance to the far clip plane\\
+\hline
+{\em result} & A projection matrix that transforms camera space to raster space\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\-Argument\-Out\-Of\-Range\-Exception} & Thrown under the following conditions\-: 
+\begin{DoxyItemize}
+\item z\-Near is negative or zero 
+\item z\-Far is negative or zero 
+\item z\-Near is larger than z\-Far 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{struct_open_t_k_1_1_matrix4_a54cf77e18237ee646991451f043caf0b}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Perspective\-Off\-Center@{Create\-Perspective\-Off\-Center}}
+\index{Create\-Perspective\-Off\-Center@{Create\-Perspective\-Off\-Center}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Perspective\-Off\-Center}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Perspective\-Off\-Center (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a54cf77e18237ee646991451f043caf0b}
+
+
+Creates an perspective projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left edge of the view frustum\\
+\hline
+{\em right} & Right edge of the view frustum\\
+\hline
+{\em bottom} & Bottom edge of the view frustum\\
+\hline
+{\em top} & Top edge of the view frustum\\
+\hline
+{\em z\-Near} & Distance to the near clip plane\\
+\hline
+{\em z\-Far} & Distance to the far clip plane\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A projection matrix that transforms camera space to raster space
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\-Argument\-Out\-Of\-Range\-Exception} & Thrown under the following conditions\-: 
+\begin{DoxyItemize}
+\item z\-Near is negative or zero 
+\item z\-Far is negative or zero 
+\item z\-Near is larger than z\-Far 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{struct_open_t_k_1_1_matrix4_a5a2844395cee08584523a50c2d18510f}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Rotation\-X@{Create\-Rotation\-X}}
+\index{Create\-Rotation\-X@{Create\-Rotation\-X}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Rotation\-X}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Rotation\-X (
+\begin{DoxyParamCaption}
+\item[{float}]{angle, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a5a2844395cee08584523a50c2d18510f}
+
+
+Builds a rotation matrix for a rotation around the x-\/axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The counter-\/clockwise angle in radians.\\
+\hline
+{\em result} & The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_adaf85e0d85e19232443488b420218691}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Rotation\-X@{Create\-Rotation\-X}}
+\index{Create\-Rotation\-X@{Create\-Rotation\-X}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Rotation\-X}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Rotation\-X (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_adaf85e0d85e19232443488b420218691}
+
+
+Builds a rotation matrix for a rotation around the x-\/axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The counter-\/clockwise angle in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a1d9e19fb035840436efee575a60d652b}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Rotation\-Y@{Create\-Rotation\-Y}}
+\index{Create\-Rotation\-Y@{Create\-Rotation\-Y}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Rotation\-Y}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Rotation\-Y (
+\begin{DoxyParamCaption}
+\item[{float}]{angle, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a1d9e19fb035840436efee575a60d652b}
+
+
+Builds a rotation matrix for a rotation around the y-\/axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The counter-\/clockwise angle in radians.\\
+\hline
+{\em result} & The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_afd2e6c5a4334ca387b26df8e7508741e}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Rotation\-Y@{Create\-Rotation\-Y}}
+\index{Create\-Rotation\-Y@{Create\-Rotation\-Y}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Rotation\-Y}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Rotation\-Y (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_afd2e6c5a4334ca387b26df8e7508741e}
+
+
+Builds a rotation matrix for a rotation around the y-\/axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The counter-\/clockwise angle in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a4e315fd9139ce8d3c4bebb18f42a39a7}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Rotation\-Z@{Create\-Rotation\-Z}}
+\index{Create\-Rotation\-Z@{Create\-Rotation\-Z}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Rotation\-Z}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Rotation\-Z (
+\begin{DoxyParamCaption}
+\item[{float}]{angle, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a4e315fd9139ce8d3c4bebb18f42a39a7}
+
+
+Builds a rotation matrix for a rotation around the z-\/axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The counter-\/clockwise angle in radians.\\
+\hline
+{\em result} & The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_a175b1c322b20077f1d5ee26b10736a2d}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Rotation\-Z@{Create\-Rotation\-Z}}
+\index{Create\-Rotation\-Z@{Create\-Rotation\-Z}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Rotation\-Z}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Rotation\-Z (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a175b1c322b20077f1d5ee26b10736a2d}
+
+
+Builds a rotation matrix for a rotation around the z-\/axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The counter-\/clockwise angle in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a59c3798f8d7be02760823573578348c9}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a59c3798f8d7be02760823573578348c9}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Single scale factor for the x, y, and z axes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A scale matrix.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a43e525a66387c705344e4ee45947a08d}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a43e525a66387c705344e4ee45947a08d}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Scale factors for the x, y, and z axes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A scale matrix.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a6004e281fa3b7247f510fc9047196861}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a6004e281fa3b7247f510fc9047196861}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Scale factor for the x axis.\\
+\hline
+{\em y} & Scale factor for the y axis.\\
+\hline
+{\em z} & Scale factor for the z axis.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A scale matrix.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a3e656c06521033c642682a0d7702c22b}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{scale, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a3e656c06521033c642682a0d7702c22b}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Single scale factor for the x, y, and z axes.\\
+\hline
+{\em result} & A scale matrix.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_aad8a0fc7a76382e3c58a86edd618e81b}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3}}]{scale, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_aad8a0fc7a76382e3c58a86edd618e81b}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Scale factors for the x, y, and z axes.\\
+\hline
+{\em result} & A scale matrix.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_adfc677db6aa3282addf2e6ecb6cb2c61}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Scale@{Create\-Scale}}
+\index{Create\-Scale@{Create\-Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_adfc677db6aa3282addf2e6ecb6cb2c61}
+
+
+Creates a scale matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Scale factor for the x axis.\\
+\hline
+{\em y} & Scale factor for the y axis.\\
+\hline
+{\em z} & Scale factor for the z axis.\\
+\hline
+{\em result} & A scale matrix.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_a2f34dc7c103f9a96bd7fb14db7fcf895}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Translation@{Create\-Translation}}
+\index{Create\-Translation@{Create\-Translation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Translation (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a2f34dc7c103f9a96bd7fb14db7fcf895}
+
+
+Creates a translation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X translation.\\
+\hline
+{\em y} & Y translation.\\
+\hline
+{\em z} & Z translation.\\
+\hline
+{\em result} & The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_a72d99fa97940c82a7eaf08915f728aff}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Translation@{Create\-Translation}}
+\index{Create\-Translation@{Create\-Translation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Create\-Translation (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3}}]{vector, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a72d99fa97940c82a7eaf08915f728aff}
+
+
+Creates a translation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The translation vector.\\
+\hline
+{\em result} & The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_a5dcdcb49c17295ad658eef1e57cc7127}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Translation@{Create\-Translation}}
+\index{Create\-Translation@{Create\-Translation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Translation (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a5dcdcb49c17295ad658eef1e57cc7127}
+
+
+Creates a translation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X translation.\\
+\hline
+{\em y} & Y translation.\\
+\hline
+{\em z} & Z translation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a4244bc21b239d97d94d330c4745ef8f7}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Create\-Translation@{Create\-Translation}}
+\index{Create\-Translation@{Create\-Translation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Create\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Create\-Translation (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a4244bc21b239d97d94d330c4745ef8f7}
+
+
+Creates a translation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The translation vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ab1c8b1f7324f8d14a29c343502b5b38c}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Matrix4.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_ab1c8b1f7324f8d14a29c343502b5b38c}
+
+
+Indicates whether this instance and a specified object are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to compare tresult.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instances are equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_aae83514ae5997a0917eaa72bb36f5c2c}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Matrix4.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_aae83514ae5997a0917eaa72bb36f5c2c}
+
+
+Indicates whether the current matrix is equal to another matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & An matrix to compare with this matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the current matrix is equal to the matrix parameter; otherwise, false.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a1ad1b927dfc9833afe2041d0f0ff2068}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Extract\-Projection@{Extract\-Projection}}
+\index{Extract\-Projection@{Extract\-Projection}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Extract\-Projection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Extract\-Projection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a1ad1b927dfc9833afe2041d0f0ff2068}
+
+
+Returns the projection component of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_aee168366ed34711c3f041d1a681124f0}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Extract\-Rotation@{Extract\-Rotation}}
+\index{Extract\-Rotation@{Extract\-Rotation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Extract\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} Open\-T\-K.\-Matrix4.\-Extract\-Rotation (
+\begin{DoxyParamCaption}
+\item[{bool}]{row\-\_\-normalise = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_aee168366ed34711c3f041d1a681124f0}
+
+
+Returns the rotation component of this instance. Quite slow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\-\_\-normalise} & Whether the method should row-\/normalise (i.\-e. remove scale from) the Matrix. Pass false if you know it's already normalised.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_ac7f04f8f1cb009aba1a16cbf88a7bf6a}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Extract\-Scale@{Extract\-Scale}}
+\index{Extract\-Scale@{Extract\-Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Extract\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Open\-T\-K.\-Matrix4.\-Extract\-Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_ac7f04f8f1cb009aba1a16cbf88a7bf6a}
+
+
+Returns the scale component of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_ab68e3fc8b52392d7eb069b86eb086355}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Extract\-Translation@{Extract\-Translation}}
+\index{Extract\-Translation@{Extract\-Translation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Extract\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Open\-T\-K.\-Matrix4.\-Extract\-Translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_ab68e3fc8b52392d7eb069b86eb086355}
+
+
+Returns the translation component of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_ad39000b80d53e4c3b571bb0dbf3defaf}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Frustum@{Frustum}}
+\index{Frustum@{Frustum}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Frustum}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Frustum (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{near, }
+\item[{float}]{far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ad39000b80d53e4c3b571bb0dbf3defaf}
+
+
+Build a projection matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left edge of the view frustum\\
+\hline
+{\em right} & Right edge of the view frustum\\
+\hline
+{\em bottom} & Bottom edge of the view frustum\\
+\hline
+{\em top} & Top edge of the view frustum\\
+\hline
+{\em near} & Distance to the near clip plane\\
+\hline
+{\em far} & Distance to the far clip plane\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A projection matrix that transforms camera space to raster space
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a860f4a26f8d6e4995d2d95600a575ccd}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Matrix4.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a860f4a26f8d6e4995d2d95600a575ccd}
+
+
+Returns the hashcode for this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-Int32 containing the unique hashcode for this instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a8ea1070e8b49605a0fad0a5b557b6f0d}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Invert@{Invert}}
+\index{Invert@{Invert}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Matrix4.\-Invert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a8ea1070e8b49605a0fad0a5b557b6f0d}
+
+
+Converts this instance into its inverse. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a56a031039ffc581dcb48c8a71102ac21}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Invert@{Invert}}
+\index{Invert@{Invert}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Invert (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix4}}]{mat, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a56a031039ffc581dcb48c8a71102ac21}
+
+
+Calculate the inverse of the given matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to invert\\
+\hline
+{\em result} & The inverse of the given matrix if it has one, or the input if it is singular\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\-Operation\-Exception} & Thrown if the \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} is singular.\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{struct_open_t_k_1_1_matrix4_a50b8d53e584fa4b41621ed03889dc47c}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Invert@{Invert}}
+\index{Invert@{Invert}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Invert (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a50b8d53e584fa4b41621ed03889dc47c}
+
+
+Calculate the inverse of the given matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to invert\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inverse of the given matrix if it has one, or the input if it is singular
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\-Operation\-Exception} & Thrown if the \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} is singular.\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{struct_open_t_k_1_1_matrix4_a74360f6f2c126528a283c3fb3e1dd6e0}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Inverted@{Inverted}}
+\index{Inverted@{Inverted}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Inverted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} Open\-T\-K.\-Matrix4.\-Inverted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a74360f6f2c126528a283c3fb3e1dd6e0}
+
+
+Returns an inverted copy of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a87e3d4f4c7db7d876d3856d30b1dd4b2}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Look\-At@{Look\-At}}
+\index{Look\-At@{Look\-At}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Look\-At}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Look\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{eye, }
+\item[{{\bf Vector3}}]{target, }
+\item[{{\bf Vector3}}]{up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a87e3d4f4c7db7d876d3856d30b1dd4b2}
+
+
+Build a world space to camera space matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em eye} & Eye (camera) position in world space\\
+\hline
+{\em target} & Target position in world space\\
+\hline
+{\em up} & Up vector in world space (should not be parallel to the camera direction, that is target -\/ eye)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} that transforms world space to camera space
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_af34d6b9a60fdeeb9b2324a720c954162}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Look\-At@{Look\-At}}
+\index{Look\-At@{Look\-At}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Look\-At}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Look\-At (
+\begin{DoxyParamCaption}
+\item[{float}]{eye\-X, }
+\item[{float}]{eye\-Y, }
+\item[{float}]{eye\-Z, }
+\item[{float}]{target\-X, }
+\item[{float}]{target\-Y, }
+\item[{float}]{target\-Z, }
+\item[{float}]{up\-X, }
+\item[{float}]{up\-Y, }
+\item[{float}]{up\-Z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_af34d6b9a60fdeeb9b2324a720c954162}
+
+
+Build a world space to camera space matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em eye\-X} & Eye (camera) position in world space\\
+\hline
+{\em eye\-Y} & Eye (camera) position in world space\\
+\hline
+{\em eye\-Z} & Eye (camera) position in world space\\
+\hline
+{\em target\-X} & Target position in world space\\
+\hline
+{\em target\-Y} & Target position in world space\\
+\hline
+{\em target\-Z} & Target position in world space\\
+\hline
+{\em up\-X} & Up vector in world space (should not be parallel to the camera direction, that is target -\/ eye)\\
+\hline
+{\em up\-Y} & Up vector in world space (should not be parallel to the camera direction, that is target -\/ eye)\\
+\hline
+{\em up\-Z} & Up vector in world space (should not be parallel to the camera direction, that is target -\/ eye)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} that transforms world space to camera space
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_aa1c9d1ad57f29ee6d4283c9443619599}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_aa1c9d1ad57f29ee6d4283c9443619599}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the multiplication.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a61f937b8f1944f375f73b7dcc0d94e52}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix4}}]{left, }
+\item[{ref {\bf Matrix4}}]{right, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a61f937b8f1944f375f73b7dcc0d94e52}
+
+
+Multiplies two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+{\em result} & A new instance that is the result of the multiplication.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_a85f4f72693fc856fbde7e3e5236c3d50}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{float}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a85f4f72693fc856fbde7e3e5236c3d50}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_aea5096ba8a9ee0b35d9c37c29faf8637}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix4}}]{left, }
+\item[{float}]{right, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_aea5096ba8a9ee0b35d9c37c29faf8637}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the multiplication.\\
+\hline
+{\em right} & The right operand of the multiplication.\\
+\hline
+{\em result} & A new instance that is the result of the multiplication\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_ada3becff78e8e572d2b07016d9f9c5a6}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Matrix4.\-Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_ada3becff78e8e572d2b07016d9f9c5a6}
+
+
+Divides each element in the Matrix by the \hyperlink{struct_open_t_k_1_1_matrix4_a2763231a75e342ff722346ac609ac5f7}{Determinant}. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a6b52de6274d0c869fb409085fa44ab55}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Normalized}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} Open\-T\-K.\-Matrix4.\-Normalized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a6b52de6274d0c869fb409085fa44ab55}
+
+
+Returns a normalised copy of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_af9af6d65d9fbe574073da3d8a6fa817a}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Matrix4.\-operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_af9af6d65d9fbe574073da3d8a6fa817a}
+
+
+Compares two instances for inequality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left does not equal right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a213d1b0df28b91d6f2b5d6b4a8c2a719}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a213d1b0df28b91d6f2b5d6b4a8c2a719}
+
+
+Matrix multiplication 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} which holds the result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ac9116cceade296e536631fd86d0c48d3}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{float}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ac9116cceade296e536631fd86d0c48d3}
+
+
+Matrix-\/scalar multiplication 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} which holds the result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_aec9fd33994b3a16146e9ea4f9d29b0f3}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!operator+@{operator+}}
+\index{operator+@{operator+}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_aec9fd33994b3a16146e9ea4f9d29b0f3}
+
+
+Matrix addition 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} which holds the result of the addition
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a50ef7db5d3733084cb67ba58677f70bb}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a50ef7db5d3733084cb67ba58677f70bb}
+
+
+Matrix subtraction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & left-\/hand operand\\
+\hline
+{\em right} & right-\/hand operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} which holds the result of the subtraction
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_aad4f598f135e44f6cd851c860577ac98}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!operator==@{operator==}}
+\index{operator==@{operator==}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Matrix4.\-operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_aad4f598f135e44f6cd851c860577ac98}
+
+
+Compares two instances for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left equals right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a83cf01c11a58da7c2a3df2bc7098ca13}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Perspective@{Perspective}}
+\index{Perspective@{Perspective}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Perspective}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Perspective (
+\begin{DoxyParamCaption}
+\item[{float}]{fovy, }
+\item[{float}]{aspect, }
+\item[{float}]{near, }
+\item[{float}]{far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a83cf01c11a58da7c2a3df2bc7098ca13}
+
+
+Build a projection matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fovy} & Angle of the field of view in the y direction (in radians)\\
+\hline
+{\em aspect} & Aspect ratio of the view (width / height)\\
+\hline
+{\em near} & Distance to the near clip plane\\
+\hline
+{\em far} & Distance to the far clip plane\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A projection matrix that transforms camera space to raster space
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a78fe44e18bbd3ba4abf372ef128c3dda}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Rotate}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Rotate (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{axis, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a78fe44e18bbd3ba4abf372ef128c3dda}
+
+
+Build a rotation matrix to rotate about the given axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & the axis to rotate about\\
+\hline
+{\em angle} & angle in radians to rotate counter-\/clockwise (looking in the direction of the given axis)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A rotation matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ab3f3d04d37bf34516f2ace0ea8af7f47}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Rotate}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Rotate (
+\begin{DoxyParamCaption}
+\item[{{\bf Quaternion}}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ab3f3d04d37bf34516f2ace0ea8af7f47}
+
+
+Build a rotation matrix from a quaternion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & the quaternion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A rotation matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ac5bf042c260d6b0e2abdfe212e65c6af}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Rotate\-X@{Rotate\-X}}
+\index{Rotate\-X@{Rotate\-X}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Rotate\-X}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Rotate\-X (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ac5bf042c260d6b0e2abdfe212e65c6af}
+
+
+Build a rotation matrix that rotates about the x-\/axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & angle in radians to rotate counter-\/clockwise around the x-\/axis\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A rotation matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ac20cab216c2115975c17bb5a3940bdb9}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Rotate\-Y@{Rotate\-Y}}
+\index{Rotate\-Y@{Rotate\-Y}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Rotate\-Y}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Rotate\-Y (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ac20cab216c2115975c17bb5a3940bdb9}
+
+
+Build a rotation matrix that rotates about the y-\/axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & angle in radians to rotate counter-\/clockwise around the y-\/axis\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A rotation matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ae9868e1bd3b8aa411abd848e107a55af}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Rotate\-Z@{Rotate\-Z}}
+\index{Rotate\-Z@{Rotate\-Z}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Rotate\-Z}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Rotate\-Z (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ae9868e1bd3b8aa411abd848e107a55af}
+
+
+Build a rotation matrix that rotates about the z-\/axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & angle in radians to rotate counter-\/clockwise around the z-\/axis\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A rotation matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a9ed149b8e6433262b9bad481f20bc92f}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Scale@{Scale}}
+\index{Scale@{Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a9ed149b8e6433262b9bad481f20bc92f}
+
+
+Build a scaling matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Single scale factor for x,y and z axes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A scaling matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_af737c5258598885a21e4061503b88b18}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Scale@{Scale}}
+\index{Scale@{Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Scale (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_af737c5258598885a21e4061503b88b18}
+
+
+Build a scaling matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Scale factors for x,y and z axes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A scaling matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ae4e10621781c31a829b844bd9dd36717}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Scale@{Scale}}
+\index{Scale@{Scale}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ae4e10621781c31a829b844bd9dd36717}
+
+
+Build a scaling matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Scale factor for x-\/axis\\
+\hline
+{\em y} & Scale factor for y-\/axis\\
+\hline
+{\em z} & Scale factor for z-\/axis\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A scaling matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_ae93d59e9897a688ff81dc0d132600f67}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Subtract (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{left, }
+\item[{{\bf Matrix4}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_ae93d59e9897a688ff81dc0d132600f67}
+
+
+Subtracts one instance from another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the subraction.\\
+\hline
+{\em right} & The right operand of the subraction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance that is the result of the subraction.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a074be83f6c2ca23aa31740cebf52ece7}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Subtract (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix4}}]{left, }
+\item[{ref {\bf Matrix4}}]{right, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a074be83f6c2ca23aa31740cebf52ece7}
+
+
+Subtracts one instance from another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left operand of the subraction.\\
+\hline
+{\em right} & The right operand of the subraction.\\
+\hline
+{\em result} & A new instance that is the result of the subraction.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_matrix4_af08979c6b008e81d168ec721749b6ae1}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Matrix4.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_af08979c6b008e81d168ec721749b6ae1}
+
+
+Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4}. 
+
+\begin{DoxyReturn}{Returns}
+The string representation of the matrix.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a92deb0e3f5a109937f1214bcd292b3d8}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Translation@{Translation}}
+\index{Translation@{Translation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Translation}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Translation (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{trans}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a92deb0e3f5a109937f1214bcd292b3d8}
+
+
+Builds a translation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trans} & The translation vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_matrix4}{Matrix4} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a2145c45977b80c99311be5c6b19750d0}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Translation@{Translation}}
+\index{Translation@{Translation}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Translation}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Translation (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a2145c45977b80c99311be5c6b19750d0}
+
+
+Build a translation matrix with the given translation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X translation\\
+\hline
+{\em y} & Y translation\\
+\hline
+{\em z} & Z translation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Translation matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_a28595e56298b6ca8c2c7268e0e8ba160}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Transpose}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Matrix4.\-Transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_matrix4_a28595e56298b6ca8c2c7268e0e8ba160}
+
+
+Converts this instance into its transpose. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a6b208b99928f429451c687b8a2e7fe2a}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Transpose}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Transpose (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4}}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a6b208b99928f429451c687b8a2e7fe2a}
+
+
+Calculate the transpose of the given matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to transpose\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transpose of the given matrix
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_matrix4_abc37cdd96af73a324d6a05fe48477246}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Transpose}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Matrix4.\-Transpose (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Matrix4}}]{mat, }
+\item[{out {\bf Matrix4}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_abc37cdd96af73a324d6a05fe48477246}
+
+
+Calculate the transpose of the given matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to transpose\\
+\hline
+{\em result} & The result of the calculation\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_matrix4_a6f7b2f68ab7b7bce17ef850f6b2be3fb}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Identity@{Identity}}
+\index{Identity@{Identity}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Identity = new {\bf Matrix4}({\bf Vector4.\-Unit\-X}, {\bf Vector4.\-Unit\-Y}, {\bf Vector4.\-Unit\-Z}, {\bf Vector4.\-Unit\-W})\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a6f7b2f68ab7b7bce17ef850f6b2be3fb}
+
+
+The identity matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a3fd8b28b615b179bcc0e4fde42113b1d}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Row0@{Row0}}
+\index{Row0@{Row0}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Row0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Row0}}\label{struct_open_t_k_1_1_matrix4_a3fd8b28b615b179bcc0e4fde42113b1d}
+
+
+Top row of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a41a0aa349da51a65d6cf730c8045752e}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Row1@{Row1}}
+\index{Row1@{Row1}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Row1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Row1}}\label{struct_open_t_k_1_1_matrix4_a41a0aa349da51a65d6cf730c8045752e}
+
+
+2nd row of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a8efc78c75943f100dc9381de44c451d9}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Row2@{Row2}}
+\index{Row2@{Row2}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Row2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Row2}}\label{struct_open_t_k_1_1_matrix4_a8efc78c75943f100dc9381de44c451d9}
+
+
+3rd row of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a4fac10569a36cd69f508ba6b4ea15cb5}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Row3@{Row3}}
+\index{Row3@{Row3}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Row3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Row3}}\label{struct_open_t_k_1_1_matrix4_a4fac10569a36cd69f508ba6b4ea15cb5}
+
+
+Bottom row of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a412c6bab3385cf1c7f84587cb413a7cf}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Zero@{Zero}}
+\index{Zero@{Zero}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Zero}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Matrix4} Open\-T\-K.\-Matrix4.\-Zero = new {\bf Matrix4}(Vector4.\-Zero, Vector4.\-Zero, Vector4.\-Zero, Vector4.\-Zero)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_matrix4_a412c6bab3385cf1c7f84587cb413a7cf}
+
+
+The zero matrix. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_matrix4_a98cd484a752138482978b3695af0ea97}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Column0@{Column0}}
+\index{Column0@{Column0}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Column0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Column0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a98cd484a752138482978b3695af0ea97}
+
+
+Gets the first column of this matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_aa71936442a2e4d016158f6562457f8aa}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Column1@{Column1}}
+\index{Column1@{Column1}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Column1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Column1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_aa71936442a2e4d016158f6562457f8aa}
+
+
+Gets the second column of this matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a8ceb934eacdadb27bc25e1dad87aa19d}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Column2@{Column2}}
+\index{Column2@{Column2}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Column2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Column2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a8ceb934eacdadb27bc25e1dad87aa19d}
+
+
+Gets the third column of this matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_af8797da77258a8d900f2bfa09f216136}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Column3@{Column3}}
+\index{Column3@{Column3}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Column3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Column3\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_af8797da77258a8d900f2bfa09f216136}
+
+
+Gets the fourth column of this matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a2763231a75e342ff722346ac609ac5f7}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Determinant@{Determinant}}
+\index{Determinant@{Determinant}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Determinant}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-Determinant\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_matrix4_a2763231a75e342ff722346ac609ac5f7}
+
+
+Gets the determinant of this matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_ae8e762c4a2c8536e12e67380abf3083a}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Diagonal@{Diagonal}}
+\index{Diagonal@{Diagonal}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Diagonal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} Open\-T\-K.\-Matrix4.\-Diagonal\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_ae8e762c4a2c8536e12e67380abf3083a}
+
+
+Gets or sets the values along the main diagonal of the matrix. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_aa259786339c04177b6d5718d48a56017}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M11@{M11}}
+\index{M11@{M11}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M11}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M11\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_aa259786339c04177b6d5718d48a56017}
+
+
+Gets or sets the value at row 1, column 1 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a6e50271d00973f34189215067b99cc59}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M12@{M12}}
+\index{M12@{M12}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M12}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M12\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a6e50271d00973f34189215067b99cc59}
+
+
+Gets or sets the value at row 1, column 2 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_ab22fd3db4c2335a90ff02f00d4215c79}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M13@{M13}}
+\index{M13@{M13}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M13}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M13\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_ab22fd3db4c2335a90ff02f00d4215c79}
+
+
+Gets or sets the value at row 1, column 3 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a375c77b6bb356e904b4177543049f566}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M14@{M14}}
+\index{M14@{M14}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M14}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M14\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a375c77b6bb356e904b4177543049f566}
+
+
+Gets or sets the value at row 1, column 4 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a8f67e786091e1e1c3bb2de5526f200e2}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M21@{M21}}
+\index{M21@{M21}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M21}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M21\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a8f67e786091e1e1c3bb2de5526f200e2}
+
+
+Gets or sets the value at row 2, column 1 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a0e052302d09a03c29a0acd5062be45de}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M22@{M22}}
+\index{M22@{M22}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M22}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M22\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a0e052302d09a03c29a0acd5062be45de}
+
+
+Gets or sets the value at row 2, column 2 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a833d47673ced755298c9be945e198d63}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M23@{M23}}
+\index{M23@{M23}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M23}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M23\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a833d47673ced755298c9be945e198d63}
+
+
+Gets or sets the value at row 2, column 3 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a10cd1d863df4b0e82713451981b10cb3}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M24@{M24}}
+\index{M24@{M24}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M24}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M24\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a10cd1d863df4b0e82713451981b10cb3}
+
+
+Gets or sets the value at row 2, column 4 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_ad246a5c283910c4c0d449bbda48ce9f4}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M31@{M31}}
+\index{M31@{M31}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M31}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M31\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_ad246a5c283910c4c0d449bbda48ce9f4}
+
+
+Gets or sets the value at row 3, column 1 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_af6e28741c160512d08a715bb26b704cf}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M32@{M32}}
+\index{M32@{M32}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M32}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M32\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_af6e28741c160512d08a715bb26b704cf}
+
+
+Gets or sets the value at row 3, column 2 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a1ae9d90f8241dd5bc8223409256bf782}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M33@{M33}}
+\index{M33@{M33}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M33}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M33\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a1ae9d90f8241dd5bc8223409256bf782}
+
+
+Gets or sets the value at row 3, column 3 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a23fec879bedcd2af4439b5f6193be2df}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M34@{M34}}
+\index{M34@{M34}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M34}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M34\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a23fec879bedcd2af4439b5f6193be2df}
+
+
+Gets or sets the value at row 3, column 4 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_aa19e3083cee4c445d63a4b72f8b71011}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M41@{M41}}
+\index{M41@{M41}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M41}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M41\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_aa19e3083cee4c445d63a4b72f8b71011}
+
+
+Gets or sets the value at row 4, column 1 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a2cf2cf88603879c9c92d43241b313959}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M42@{M42}}
+\index{M42@{M42}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M42}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M42\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a2cf2cf88603879c9c92d43241b313959}
+
+
+Gets or sets the value at row 4, column 2 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a3ffbf71f8cc86369e904314993f1ce12}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M43@{M43}}
+\index{M43@{M43}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M43}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M43\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_a3ffbf71f8cc86369e904314993f1ce12}
+
+
+Gets or sets the value at row 4, column 3 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_aa6fe6e3bada9edc1cae56372a92bf7ea}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!M44@{M44}}
+\index{M44@{M44}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{M44}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-M44\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_aa6fe6e3bada9edc1cae56372a92bf7ea}
+
+
+Gets or sets the value at row 4, column 4 of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_ae970446c132947e10f286d178faff5e4}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!this\mbox{[}int row\-Index, int column\-Index\mbox{]}@{this[int row\-Index, int column\-Index]}}
+\index{this\mbox{[}int row\-Index, int column\-Index\mbox{]}@{this[int row\-Index, int column\-Index]}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{this[int row\-Index, int column\-Index]}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-this\mbox{[}int row\-Index, int column\-Index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_matrix4_ae970446c132947e10f286d178faff5e4}
+
+
+Gets or sets the value at a specified row and column. 
+
+\hypertarget{struct_open_t_k_1_1_matrix4_a0e8edded0f0459923d3943e43a5e72b2}{\index{Open\-T\-K\-::\-Matrix4@{Open\-T\-K\-::\-Matrix4}!Trace@{Trace}}
+\index{Trace@{Trace}!OpenTK::Matrix4@{Open\-T\-K\-::\-Matrix4}}
+\subsubsection[{Trace}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Matrix4.\-Trace\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_matrix4_a0e8edded0f0459923d3943e43a5e72b2}
+
+
+Gets the trace of the matrix, the sum of the values along the diagonal. 
+

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['saddlebrown',['SaddleBrown',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a33687f7cc71c2a6f4e2b40cdad224f58',1,'OpenTK::Graphics::Color4']]],
+  ['salmon',['Salmon',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a1bf4bea58618a3839a457cf15c4c5856',1,'OpenTK::Graphics::Color4']]],
+  ['sampleformat',['SampleFormat',['../class_open_t_k_1_1_audio_1_1_audio_capture.html#a5931e82f4c05af8ae4f4b3ad20893c40',1,'OpenTK::Audio::AudioCapture']]],
+  ['samplefrequency',['SampleFrequency',['../class_open_t_k_1_1_audio_1_1_audio_capture.html#a226fcc963c5e78fdf94046086f546990',1,'OpenTK::Audio::AudioCapture']]],
+  ['samples',['Samples',['../class_open_t_k_1_1_graphics_1_1_graphics_mode.html#a3e7936c43e4aa0c05645bbd5270b5365',1,'OpenTK::Graphics::GraphicsMode']]],
+  ['sandybrown',['SandyBrown',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a9d74b6be14388c375a57e2c7af55b016',1,'OpenTK::Graphics::Color4']]],
+  ['scancode',['ScanCode',['../class_open_t_k_1_1_input_1_1_keyboard_key_event_args.html#a6c078617c6c29f76bc1c771ece1d9604',1,'OpenTK::Input::KeyboardKeyEventArgs']]],
+  ['scrollwheelvalue',['ScrollWheelValue',['../struct_open_t_k_1_1_input_1_1_mouse_state.html#acdb9186e8c68ffad1dd41729d9a215c1',1,'OpenTK::Input::MouseState']]],
+  ['seagreen',['SeaGreen',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a325f9f125ad6b954aa03a3d828d3ec34',1,'OpenTK::Graphics::Color4']]],
+  ['seashell',['SeaShell',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a379276906d30abe656c1b68679fbe7ef',1,'OpenTK::Graphics::Color4']]],
+  ['sharecontexts',['ShareContexts',['../class_open_t_k_1_1_graphics_1_1_graphics_context.html#a83e5259c2dd10556b3c485f2e8a00494',1,'OpenTK::Graphics::GraphicsContext']]],
+  ['sienna',['Sienna',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a9824cec7208b40f90c8e9826bef33c32',1,'OpenTK::Graphics::Color4']]],
+  ['silver',['Silver',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a5d234ac7486cf582beba1c0dc06b7655',1,'OpenTK::Graphics::Color4']]],
+  ['size',['Size',['../interface_open_t_k_1_1_i_native_window.html#a987289178e2f63ce7eaf58d9cbe72ed5',1,'OpenTK.INativeWindow.Size()'],['../class_open_t_k_1_1_native_window.html#a956be027bb7ba880507909d919b2ad6a',1,'OpenTK.NativeWindow.Size()']]],
+  ['skyblue',['SkyBlue',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a28948dcbffbf068441050a57616a9ef3',1,'OpenTK::Graphics::Color4']]],
+  ['slateblue',['SlateBlue',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a7960df3427d00c48be53d56356da9e40',1,'OpenTK::Graphics::Color4']]],
+  ['slategray',['SlateGray',['../struct_open_t_k_1_1_graphics_1_1_color4.html#ad1e3354b2aed0e0a3f44b18f1d60166e',1,'OpenTK::Graphics::Color4']]],
+  ['snow',['Snow',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a17de74a9267edab7002c95990e572d38',1,'OpenTK::Graphics::Color4']]],
+  ['springgreen',['SpringGreen',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a7b799bd01f53756825dde720d0169bdf',1,'OpenTK::Graphics::Color4']]],
+  ['steelblue',['SteelBlue',['../struct_open_t_k_1_1_graphics_1_1_color4.html#a7caf84fc357707b6d4ef01f5f79b1add',1,'OpenTK::Graphics::Color4']]],
+  ['stencil',['Stencil',['../class_open_t_k_1_1_graphics_1_1_graphics_mode.html#a962610eb764cb1f680149d17584606e1',1,'OpenTK::Graphics::GraphicsMode']]],
+  ['stereo',['Stereo',['../class_open_t_k_1_1_graphics_1_1_graphics_mode.html#a3e966d924fdbc2939fb02139456d7bd1',1,'OpenTK::Graphics::GraphicsMode']]],
+  ['swapinterval',['SwapInterval',['../class_open_t_k_1_1_graphics_1_1_graphics_context.html#a860ca9db2d767d969b0b5a6c9b7b0f46',1,'OpenTK.Graphics.GraphicsContext.SwapInterval()'],['../interface_open_t_k_1_1_graphics_1_1_i_graphics_context.html#acdd6cc5339e7d0d428f4aa59b560940f',1,'OpenTK.Graphics.IGraphicsContext.SwapInterval()']]],
+  ['syncroot',['SyncRoot',['../class_open_t_k_1_1_bindings_base.html#a0063e041acf286bac5b0518ae2c93bda',1,'OpenTK.BindingsBase.SyncRoot()'],['../class_open_t_k_1_1_graphics_1_1_e_s10_1_1_g_l.html#a96a1a2fa150951082651b492c29e5aba',1,'OpenTK.Graphics.ES10.GL.SyncRoot()'],['../class_open_t_k_1_1_graphics_1_1_e_s11_1_1_g_l.html#a3e9dec98d8cd98534b030c049c29420d',1,'OpenTK.Graphics.ES11.GL.SyncRoot()'],['../class_open_t_k_1_1_graphics_1_1_e_s20_1_1_g_l.html#a8321c9b006d1424999b3d3a7f54c1cec',1,'OpenTK.Graphics.ES20.GL.SyncRoot()'],['../class_open_t_k_1_1_graphics_1_1_open_g_l_1_1_g_l.html#ae3c33d55566c6c60145fa2a91482fcf8',1,'OpenTK.Graphics.OpenGL.GL.SyncRoot()']]]
+];

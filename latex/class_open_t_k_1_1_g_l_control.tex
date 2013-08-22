@@ -1,0 +1,302 @@
+\hypertarget{class_open_t_k_1_1_g_l_control}{\section{Open\-T\-K.\-G\-L\-Control Class Reference}
+\label{class_open_t_k_1_1_g_l_control}\index{Open\-T\-K.\-G\-L\-Control@{Open\-T\-K.\-G\-L\-Control}}
+}
+
+
+Open\-G\-L-\/aware Win\-Forms control. The Win\-Forms designer will always call the default constructor. Inherit from this class and call one of its specialized constructors to enable antialiasing or custom \hyperlink{class_open_t_k_1_1_g_l_control_a09e08e21b3fd710f8b2b310441e414d4}{Graphics\-Mode}s.  
+
+
+
+
+Inherits User\-Control.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_t_k_1_1_g_l_control_a3c8a3c8ce52ed0ba89d0dc3daea3f383}{G\-L\-Control} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_g_l_control_a2382a1304dc1971b3570eb88bbb8ac5c}{G\-L\-Control} (\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance with the specified Graphics\-Mode. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_g_l_control_a42d57de7e13a9555885988bd6c03fdc5}{G\-L\-Control} (\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode, int major, int minor, \hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8ab}{Graphics\-Context\-Flags} flags)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance with the specified Graphics\-Mode. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_g_l_control_a81c23208d1aad50a1a2dc802ac2994e7}{Swap\-Buffers} ()
+\begin{DoxyCompactList}\small\item\em Swaps the front and back buffers, presenting the rendered scene to the screen. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_g_l_control_a1dfec39a3af930c07d2096ad44e3981b}{Make\-Current} ()
+\begin{DoxyCompactList}\small\item\em Makes the underlying this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control} current in the calling thread. All Open\-G\-L commands issued are hereafter interpreted by this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. \end{DoxyCompactList}\item 
+Bitmap \hyperlink{class_open_t_k_1_1_g_l_control_a30a284cdfb9157eafb3dad53809f4121}{Grab\-Screenshot} ()
+\begin{DoxyCompactList}\small\item\em Grabs a screenshot of the frontbuffer contents.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_open_t_k_1_1_g_l_control_ac30882f431ab6a71aeacf518af9d1bf2}{On\-Handle\-Created} (Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Raises the Handle\-Created event.\end{DoxyCompactList}\item 
+override void \hyperlink{class_open_t_k_1_1_g_l_control_a6cd12f797a002754dcf4b499fc5d815c}{On\-Handle\-Destroyed} (Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Raises the Handle\-Destroyed event.\end{DoxyCompactList}\item 
+override void \hyperlink{class_open_t_k_1_1_g_l_control_af06219a3bad044edb6a2727bde3d68bd}{On\-Paint} (Paint\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Raises the System.\-Windows.\-Forms.\-Control.\-Paint event. \end{DoxyCompactList}\item 
+override void \hyperlink{class_open_t_k_1_1_g_l_control_a388a7837200e75a11d014870e279b9f7}{On\-Resize} (Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Raises the Resize event. Note\-: this method may be called before the Open\-G\-L context is ready. Check that Is\-Handle\-Created is true before using any Open\-G\-L methods. \end{DoxyCompactList}\item 
+override void \hyperlink{class_open_t_k_1_1_g_l_control_a264f947e2033bb0cc8cb16a91678f1ff}{On\-Parent\-Changed} (Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Raises the Parent\-Changed event. \end{DoxyCompactList}\item 
+override void \hyperlink{class_open_t_k_1_1_g_l_control_aaf00c16561f4de2544c8c53a837e16f0}{Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_open_t_k_1_1_g_l_control_a2d5bb8757e5df92cdd364693b0cc98bc}{Is\-Idle}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the current thread contains pending system messages. \end{DoxyCompactList}\item 
+\hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}{I\-Graphics\-Context} \hyperlink{class_open_t_k_1_1_g_l_control_acae65017a5c203cbdc90a65e6ffb2a48}{Context}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an interface to the underlying Graphics\-Context used by this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. \end{DoxyCompactList}\item 
+float \hyperlink{class_open_t_k_1_1_g_l_control_a1218e6bc4761c69fb2ebf9519830160f}{Aspect\-Ratio}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the aspect ratio of this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_g_l_control_a3dfbcb3e59d3644025432a73ee11f204}{V\-Sync}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether vsync is active for this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} \hyperlink{class_open_t_k_1_1_g_l_control_a09e08e21b3fd710f8b2b310441e414d4}{Graphics\-Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Graphics\-Mode of the Graphics\-Context attached to this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. \end{DoxyCompactList}\item 
+\hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} \hyperlink{class_open_t_k_1_1_g_l_control_afe6750096b5f441f8a6453dbcfccab9b}{Window\-Info}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{Open\-T\-K.\-Platform.\-I\-Window\-Info} for this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Open\-G\-L-\/aware Win\-Forms control. The Win\-Forms designer will always call the default constructor. Inherit from this class and call one of its specialized constructors to enable antialiasing or custom \hyperlink{class_open_t_k_1_1_g_l_control_a09e08e21b3fd710f8b2b310441e414d4}{Graphics\-Mode}s. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_t_k_1_1_g_l_control_a3c8a3c8ce52ed0ba89d0dc3daea3f383}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!G\-L\-Control@{G\-L\-Control}}
+\index{G\-L\-Control@{G\-L\-Control}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{G\-L\-Control}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-G\-L\-Control.\-G\-L\-Control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_g_l_control_a3c8a3c8ce52ed0ba89d0dc3daea3f383}
+
+
+Constructs a new instance. 
+
+\hypertarget{class_open_t_k_1_1_g_l_control_a2382a1304dc1971b3570eb88bbb8ac5c}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!G\-L\-Control@{G\-L\-Control}}
+\index{G\-L\-Control@{G\-L\-Control}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{G\-L\-Control}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-G\-L\-Control.\-G\-L\-Control (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics\-Mode}}]{mode}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_g_l_control_a2382a1304dc1971b3570eb88bbb8ac5c}
+
+
+Constructs a new instance with the specified Graphics\-Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the control.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_g_l_control_a42d57de7e13a9555885988bd6c03fdc5}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!G\-L\-Control@{G\-L\-Control}}
+\index{G\-L\-Control@{G\-L\-Control}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{G\-L\-Control}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-G\-L\-Control.\-G\-L\-Control (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics\-Mode}}]{mode, }
+\item[{int}]{major, }
+\item[{int}]{minor, }
+\item[{{\bf Graphics\-Context\-Flags}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_g_l_control_a42d57de7e13a9555885988bd6c03fdc5}
+
+
+Constructs a new instance with the specified Graphics\-Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the control.\\
+\hline
+{\em major} & The major version for the Open\-G\-L Graphics\-Context.\\
+\hline
+{\em minor} & The minor version for the Open\-G\-L Graphics\-Context.\\
+\hline
+{\em flags} & The Graphics\-Context\-Flags for the Open\-G\-L Graphics\-Context.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_g_l_control_aaf00c16561f4de2544c8c53a837e16f0}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}override void Open\-T\-K.\-G\-L\-Control.\-Dispose (
+\begin{DoxyParamCaption}
+\item[{bool}]{disposing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_open_t_k_1_1_g_l_control_aaf00c16561f4de2544c8c53a837e16f0}
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_g_l_control_a30a284cdfb9157eafb3dad53809f4121}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!Grab\-Screenshot@{Grab\-Screenshot}}
+\index{Grab\-Screenshot@{Grab\-Screenshot}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{Grab\-Screenshot}]{\setlength{\rightskip}{0pt plus 5cm}Bitmap Open\-T\-K.\-G\-L\-Control.\-Grab\-Screenshot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_g_l_control_a30a284cdfb9157eafb3dad53809f4121}
+
+
+Grabs a screenshot of the frontbuffer contents.
+
+\begin{DoxyReturn}{Returns}
+A System.\-Drawing.\-Bitmap, containing the contents of the frontbuffer.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_exception}{Open\-T\-K.\-Graphics.\-Graphics\-Context\-Exception}} & Occurs when no \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Open\-T\-K.\-Graphics.\-Graphics\-Context} is current in the calling thread. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_open_t_k_1_1_g_l_control_a1dfec39a3af930c07d2096ad44e3981b}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!Make\-Current@{Make\-Current}}
+\index{Make\-Current@{Make\-Current}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{Make\-Current}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-G\-L\-Control.\-Make\-Current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_g_l_control_a1dfec39a3af930c07d2096ad44e3981b}
+
+
+Makes the underlying this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control} current in the calling thread. All Open\-G\-L commands issued are hereafter interpreted by this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. 
+
+\hypertarget{class_open_t_k_1_1_g_l_control_ac30882f431ab6a71aeacf518af9d1bf2}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!On\-Handle\-Created@{On\-Handle\-Created}}
+\index{On\-Handle\-Created@{On\-Handle\-Created}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{On\-Handle\-Created}]{\setlength{\rightskip}{0pt plus 5cm}override void Open\-T\-K.\-G\-L\-Control.\-On\-Handle\-Created (
+\begin{DoxyParamCaption}
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_open_t_k_1_1_g_l_control_ac30882f431ab6a71aeacf518af9d1bf2}
+
+
+Raises the Handle\-Created event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Not used.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_g_l_control_a6cd12f797a002754dcf4b499fc5d815c}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!On\-Handle\-Destroyed@{On\-Handle\-Destroyed}}
+\index{On\-Handle\-Destroyed@{On\-Handle\-Destroyed}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{On\-Handle\-Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}override void Open\-T\-K.\-G\-L\-Control.\-On\-Handle\-Destroyed (
+\begin{DoxyParamCaption}
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_open_t_k_1_1_g_l_control_a6cd12f797a002754dcf4b499fc5d815c}
+
+
+Raises the Handle\-Destroyed event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Not used.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_g_l_control_af06219a3bad044edb6a2727bde3d68bd}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!On\-Paint@{On\-Paint}}
+\index{On\-Paint@{On\-Paint}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{On\-Paint}]{\setlength{\rightskip}{0pt plus 5cm}override void Open\-T\-K.\-G\-L\-Control.\-On\-Paint (
+\begin{DoxyParamCaption}
+\item[{Paint\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_open_t_k_1_1_g_l_control_af06219a3bad044edb6a2727bde3d68bd}
+
+
+Raises the System.\-Windows.\-Forms.\-Control.\-Paint event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & A System.\-Windows.\-Forms.\-Paint\-Event\-Args that contains the event data.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_g_l_control_a264f947e2033bb0cc8cb16a91678f1ff}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!On\-Parent\-Changed@{On\-Parent\-Changed}}
+\index{On\-Parent\-Changed@{On\-Parent\-Changed}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{On\-Parent\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}override void Open\-T\-K.\-G\-L\-Control.\-On\-Parent\-Changed (
+\begin{DoxyParamCaption}
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_open_t_k_1_1_g_l_control_a264f947e2033bb0cc8cb16a91678f1ff}
+
+
+Raises the Parent\-Changed event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & A System.\-Event\-Args that contains the event data.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_g_l_control_a388a7837200e75a11d014870e279b9f7}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!On\-Resize@{On\-Resize}}
+\index{On\-Resize@{On\-Resize}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{On\-Resize}]{\setlength{\rightskip}{0pt plus 5cm}override void Open\-T\-K.\-G\-L\-Control.\-On\-Resize (
+\begin{DoxyParamCaption}
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_open_t_k_1_1_g_l_control_a388a7837200e75a11d014870e279b9f7}
+
+
+Raises the Resize event. Note\-: this method may be called before the Open\-G\-L context is ready. Check that Is\-Handle\-Created is true before using any Open\-G\-L methods. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & A System.\-Event\-Args that contains the event data.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_g_l_control_a81c23208d1aad50a1a2dc802ac2994e7}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!Swap\-Buffers@{Swap\-Buffers}}
+\index{Swap\-Buffers@{Swap\-Buffers}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{Swap\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-G\-L\-Control.\-Swap\-Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_g_l_control_a81c23208d1aad50a1a2dc802ac2994e7}
+
+
+Swaps the front and back buffers, presenting the rendered scene to the screen. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_g_l_control_a1218e6bc4761c69fb2ebf9519830160f}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!Aspect\-Ratio@{Aspect\-Ratio}}
+\index{Aspect\-Ratio@{Aspect\-Ratio}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{Aspect\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-G\-L\-Control.\-Aspect\-Ratio\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_g_l_control_a1218e6bc4761c69fb2ebf9519830160f}
+
+
+Gets the aspect ratio of this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. 
+
+\hypertarget{class_open_t_k_1_1_g_l_control_acae65017a5c203cbdc90a65e6ffb2a48}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!Context@{Context}}
+\index{Context@{Context}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Graphics\-Context} Open\-T\-K.\-G\-L\-Control.\-Context\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_g_l_control_acae65017a5c203cbdc90a65e6ffb2a48}
+
+
+Gets an interface to the underlying Graphics\-Context used by this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. 
+
+\hypertarget{class_open_t_k_1_1_g_l_control_a09e08e21b3fd710f8b2b310441e414d4}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!Graphics\-Mode@{Graphics\-Mode}}
+\index{Graphics\-Mode@{Graphics\-Mode}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{Graphics\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graphics\-Mode} Open\-T\-K.\-G\-L\-Control.\-Graphics\-Mode\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_g_l_control_a09e08e21b3fd710f8b2b310441e414d4}
+
+
+Gets the Graphics\-Mode of the Graphics\-Context attached to this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. 
+
+To change the Graphics\-Mode, you must destroy and recreate the \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. \hypertarget{class_open_t_k_1_1_g_l_control_a2d5bb8757e5df92cdd364693b0cc98bc}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!Is\-Idle@{Is\-Idle}}
+\index{Is\-Idle@{Is\-Idle}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{Is\-Idle}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-G\-L\-Control.\-Is\-Idle\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_g_l_control_a2d5bb8757e5df92cdd364693b0cc98bc}
+
+
+Gets a value indicating whether the current thread contains pending system messages. 
+
+\hypertarget{class_open_t_k_1_1_g_l_control_a3dfbcb3e59d3644025432a73ee11f204}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!V\-Sync@{V\-Sync}}
+\index{V\-Sync@{V\-Sync}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{V\-Sync}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-G\-L\-Control.\-V\-Sync\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_g_l_control_a3dfbcb3e59d3644025432a73ee11f204}
+
+
+Gets or sets a value indicating whether vsync is active for this \hyperlink{class_open_t_k_1_1_g_l_control}{G\-L\-Control}. 
+
+\hypertarget{class_open_t_k_1_1_g_l_control_afe6750096b5f441f8a6453dbcfccab9b}{\index{Open\-T\-K\-::\-G\-L\-Control@{Open\-T\-K\-::\-G\-L\-Control}!Window\-Info@{Window\-Info}}
+\index{Window\-Info@{Window\-Info}!OpenTK::GLControl@{Open\-T\-K\-::\-G\-L\-Control}}
+\subsubsection[{Window\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Window\-Info} Open\-T\-K.\-G\-L\-Control.\-Window\-Info\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_g_l_control_afe6750096b5f441f8a6453dbcfccab9b}
+
+
+Gets the \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{Open\-T\-K.\-Platform.\-I\-Window\-Info} for this instance. 
+

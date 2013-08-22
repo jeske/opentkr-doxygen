@@ -1,0 +1,260 @@
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture}{\section{Open\-T\-K.\-Audio.\-Audio\-Capture Class Reference}
+\label{class_open_t_k_1_1_audio_1_1_audio_capture}\index{Open\-T\-K.\-Audio.\-Audio\-Capture@{Open\-T\-K.\-Audio.\-Audio\-Capture}}
+}
+
+
+Provides methods to instantiate, use and destroy an audio device for recording. Static methods are provided to list available devices known by the driver.  
+
+
+
+
+Inherits I\-Disposable.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a719993b2da0506a1f977847865751023}{Audio\-Capture} ()
+\begin{DoxyCompactList}\small\item\em Opens the default device for audio recording. Implicitly set parameters are\-: 22050\-Hz, 16\-Bit Mono, 4096 samples ringbuffer. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a042d3f5c08d029221bdf8da8a77a04e8}{Audio\-Capture} (string device\-Name, int frequency, \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a4223e02452abfb5070f9b9bf1d426ffc}{A\-L\-Format} sample\-Format, int buffer\-Size)
+\begin{DoxyCompactList}\small\item\em Opens a device for audio recording.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a5e6e107b6cb6db8b984659ca02cc23f9}{Check\-Errors} ()
+\begin{DoxyCompactList}\small\item\em Checks for A\-L\-C error conditions. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a8865bdca65eaaae4a362ae1bceea5d96}{Start} ()
+\begin{DoxyCompactList}\small\item\em Start recording samples. The number of available samples can be obtained through the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a762b64b2992d6d3f4ba2273bf66fbe41}{Available\-Samples} property. The data can be queried with any \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_ab883e5df4b82fce382af12713a59b5ec}{Read\-Samples(\-Int\-Ptr, int)} method. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a231cbcf12c758e7e08988c578f62b44c}{Stop} ()
+\begin{DoxyCompactList}\small\item\em Stop recording samples. This will not clear previously recorded samples.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_ab883e5df4b82fce382af12713a59b5ec}{Read\-Samples} (Int\-Ptr buffer, int sample\-Count)
+\begin{DoxyCompactList}\small\item\em Fills the specified buffer with samples from the internal capture ring-\/buffer. This method does not block\-: it is an error to specify a sample\-Count larger than Available\-Samples.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_ae219ea5d980e0cb9713c22336bd1083f}{Read\-Samples$<$ T\-Buffer $>$} (T\-Buffer\mbox{[}$\,$\mbox{]} buffer, int sample\-Count)
+\begin{DoxyCompactList}\small\item\em Fills the specified buffer with samples from the internal capture ring-\/buffer. This method does not block\-: it is an error to specify a sample\-Count larger than Available\-Samples.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a019cd03b08a0195262a83647c9228baf}{Dispose} ()
+\begin{DoxyCompactList}\small\item\em Closes the device and disposes the instance.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_ae5998b54c75f78acd25d86c2cdb5e068}{Current\-Device}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of the device associated with this instance. \end{DoxyCompactList}\item 
+static I\-List$<$ string $>$ \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_ad7c36a085e0c750f4d81f5a3c5eb23d4}{Available\-Devices}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a list of strings containing all known recording devices. \end{DoxyCompactList}\item 
+static string \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a1d06f49a2c734c2ade40630f54b16d6a}{Default\-Device}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the name of the device that will be used as recording default. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a2684b7587fe0457a0203cacbdace7bc5}{Alc\-Error} \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_aa96bb3494c76ff42f3025955a54a9fa3}{Current\-Error}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the A\-L\-C error code for this device.\end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a762b64b2992d6d3f4ba2273bf66fbe41}{Available\-Samples}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the number of available samples for capture.\end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l_a4223e02452abfb5070f9b9bf1d426ffc}{A\-L\-Format} \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a5931e82f4c05af8ae4f4b3ad20893c40}{Sample\-Format}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Open\-T\-K.\-Audio.\-A\-L\-Format for this instance. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a226fcc963c5e78fdf94046086f546990}{Sample\-Frequency}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the sampling rate for this instance. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a8a4a985fb46b345289b40b1ee9702770}{Is\-Running}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this instance is currently capturing samples. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides methods to instantiate, use and destroy an audio device for recording. Static methods are provided to list available devices known by the driver. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a719993b2da0506a1f977847865751023}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Audio\-Capture@{Audio\-Capture}}
+\index{Audio\-Capture@{Audio\-Capture}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Audio\-Capture}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Audio\-Capture.\-Audio\-Capture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a719993b2da0506a1f977847865751023}
+
+
+Opens the default device for audio recording. Implicitly set parameters are\-: 22050\-Hz, 16\-Bit Mono, 4096 samples ringbuffer. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a042d3f5c08d029221bdf8da8a77a04e8}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Audio\-Capture@{Audio\-Capture}}
+\index{Audio\-Capture@{Audio\-Capture}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Audio\-Capture}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Audio.\-Audio\-Capture.\-Audio\-Capture (
+\begin{DoxyParamCaption}
+\item[{string}]{device\-Name, }
+\item[{int}]{frequency, }
+\item[{{\bf A\-L\-Format}}]{sample\-Format, }
+\item[{int}]{buffer\-Size}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a042d3f5c08d029221bdf8da8a77a04e8}
+
+
+Opens a device for audio recording.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\-Name} & The device name.\\
+\hline
+{\em frequency} & The frequency that the data should be captured at.\\
+\hline
+{\em sample\-Format} & The requested capture buffer format.\\
+\hline
+{\em buffer\-Size} & The size of \hyperlink{namespace_open_t_k_1_1_audio_1_1_open_a_l}{Open\-A\-L}'s capture internal ring-\/buffer. This value expects number of samples, not bytes.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a5e6e107b6cb6db8b984659ca02cc23f9}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Check\-Errors@{Check\-Errors}}
+\index{Check\-Errors@{Check\-Errors}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Check\-Errors}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Capture.\-Check\-Errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a5e6e107b6cb6db8b984659ca02cc23f9}
+
+
+Checks for A\-L\-C error conditions. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Out\-Of\-Memory\-Exception} & Raised when an out of memory error is detected.\\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_value_exception}{Audio\-Value\-Exception}} & Raised when an invalid value is detected.\\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_device_exception}{Audio\-Device\-Exception}} & Raised when an invalid device is detected.\\
+\hline
+{\em \hyperlink{class_open_t_k_1_1_audio_1_1_audio_context_exception}{Audio\-Context\-Exception}} & Raised when an invalid context is detected.\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a019cd03b08a0195262a83647c9228baf}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Capture.\-Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a019cd03b08a0195262a83647c9228baf}
+
+
+Closes the device and disposes the instance.
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_ab883e5df4b82fce382af12713a59b5ec}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Read\-Samples@{Read\-Samples}}
+\index{Read\-Samples@{Read\-Samples}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Read\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Capture.\-Read\-Samples (
+\begin{DoxyParamCaption}
+\item[{Int\-Ptr}]{buffer, }
+\item[{int}]{sample\-Count}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_ab883e5df4b82fce382af12713a59b5ec}
+
+
+Fills the specified buffer with samples from the internal capture ring-\/buffer. This method does not block\-: it is an error to specify a sample\-Count larger than Available\-Samples.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & A pointer to a previously initialized and pinned array.\\
+\hline
+{\em sample\-Count} & The number of samples to be written to the buffer.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_ae219ea5d980e0cb9713c22336bd1083f}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Read\-Samples$<$ T\-Buffer $>$@{Read\-Samples$<$ T\-Buffer $>$}}
+\index{Read\-Samples$<$ T\-Buffer $>$@{Read\-Samples$<$ T\-Buffer $>$}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Read\-Samples$<$ T\-Buffer $>$}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Open\-T\-K.\-Audio.\-Audio\-Capture.\-Read\-Samples}$<$ T\-Buffer $>$ (
+\begin{DoxyParamCaption}
+\item[{T\-Buffer\mbox{[}$\,$\mbox{]}}]{buffer, }
+\item[{int}]{sample\-Count}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_ae219ea5d980e0cb9713c22336bd1083f}
+
+
+Fills the specified buffer with samples from the internal capture ring-\/buffer. This method does not block\-: it is an error to specify a sample\-Count larger than Available\-Samples.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer to fill.\\
+\hline
+{\em sample\-Count} & The number of samples to be written to the buffer.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\-Argument\-Null\-Exception} & Raised when buffer is null.\\
+\hline
+{\em System.\-Argument\-Out\-Of\-Range\-Exception} & Raised when sample\-Count is larger than the buffer.\\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T\-Buffer} : {\em struct}]\end{description}
+\end{Desc}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a8865bdca65eaaae4a362ae1bceea5d96}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Start@{Start}}
+\index{Start@{Start}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Capture.\-Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a8865bdca65eaaae4a362ae1bceea5d96}
+
+
+Start recording samples. The number of available samples can be obtained through the \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_a762b64b2992d6d3f4ba2273bf66fbe41}{Available\-Samples} property. The data can be queried with any \hyperlink{class_open_t_k_1_1_audio_1_1_audio_capture_ab883e5df4b82fce382af12713a59b5ec}{Read\-Samples(\-Int\-Ptr, int)} method. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a231cbcf12c758e7e08988c578f62b44c}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Stop@{Stop}}
+\index{Stop@{Stop}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Audio.\-Audio\-Capture.\-Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a231cbcf12c758e7e08988c578f62b44c}
+
+
+Stop recording samples. This will not clear previously recorded samples.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_ad7c36a085e0c750f4d81f5a3c5eb23d4}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Available\-Devices@{Available\-Devices}}
+\index{Available\-Devices@{Available\-Devices}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Available\-Devices}]{\setlength{\rightskip}{0pt plus 5cm}I\-List$<$string$>$ Open\-T\-K.\-Audio.\-Audio\-Capture.\-Available\-Devices\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_ad7c36a085e0c750f4d81f5a3c5eb23d4}
+
+
+Returns a list of strings containing all known recording devices. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a762b64b2992d6d3f4ba2273bf66fbe41}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Available\-Samples@{Available\-Samples}}
+\index{Available\-Samples@{Available\-Samples}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Available\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Audio.\-Audio\-Capture.\-Available\-Samples\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a762b64b2992d6d3f4ba2273bf66fbe41}
+
+
+Returns the number of available samples for capture.
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_ae5998b54c75f78acd25d86c2cdb5e068}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Current\-Device@{Current\-Device}}
+\index{Current\-Device@{Current\-Device}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Current\-Device}]{\setlength{\rightskip}{0pt plus 5cm}string Open\-T\-K.\-Audio.\-Audio\-Capture.\-Current\-Device\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_ae5998b54c75f78acd25d86c2cdb5e068}
+
+
+The name of the device associated with this instance. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_aa96bb3494c76ff42f3025955a54a9fa3}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Current\-Error@{Current\-Error}}
+\index{Current\-Error@{Current\-Error}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Current\-Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alc\-Error} Open\-T\-K.\-Audio.\-Audio\-Capture.\-Current\-Error\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_aa96bb3494c76ff42f3025955a54a9fa3}
+
+
+Returns the A\-L\-C error code for this device.
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a1d06f49a2c734c2ade40630f54b16d6a}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Default\-Device@{Default\-Device}}
+\index{Default\-Device@{Default\-Device}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Default\-Device}]{\setlength{\rightskip}{0pt plus 5cm}string Open\-T\-K.\-Audio.\-Audio\-Capture.\-Default\-Device\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a1d06f49a2c734c2ade40630f54b16d6a}
+
+
+Returns the name of the device that will be used as recording default. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a8a4a985fb46b345289b40b1ee9702770}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Is\-Running@{Is\-Running}}
+\index{Is\-Running@{Is\-Running}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Is\-Running}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Audio.\-Audio\-Capture.\-Is\-Running\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a8a4a985fb46b345289b40b1ee9702770}
+
+
+Gets a value indicating whether this instance is currently capturing samples. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a5931e82f4c05af8ae4f4b3ad20893c40}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Sample\-Format@{Sample\-Format}}
+\index{Sample\-Format@{Sample\-Format}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Sample\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-L\-Format} Open\-T\-K.\-Audio.\-Audio\-Capture.\-Sample\-Format\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a5931e82f4c05af8ae4f4b3ad20893c40}
+
+
+Gets the Open\-T\-K.\-Audio.\-A\-L\-Format for this instance. 
+
+\hypertarget{class_open_t_k_1_1_audio_1_1_audio_capture_a226fcc963c5e78fdf94046086f546990}{\index{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}!Sample\-Frequency@{Sample\-Frequency}}
+\index{Sample\-Frequency@{Sample\-Frequency}!OpenTK::Audio::AudioCapture@{Open\-T\-K\-::\-Audio\-::\-Audio\-Capture}}
+\subsubsection[{Sample\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Audio.\-Audio\-Capture.\-Sample\-Frequency\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_audio_1_1_audio_capture_a226fcc963c5e78fdf94046086f546990}
+
+
+Gets the sampling rate for this instance. 
+

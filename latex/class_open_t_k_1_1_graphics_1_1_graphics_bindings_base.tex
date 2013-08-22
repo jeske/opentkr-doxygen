@@ -1,0 +1,53 @@
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_bindings_base}{\section{Open\-T\-K.\-Graphics.\-Graphics\-Bindings\-Base Class Reference}
+\label{class_open_t_k_1_1_graphics_1_1_graphics_bindings_base}\index{Open\-T\-K.\-Graphics.\-Graphics\-Bindings\-Base@{Open\-T\-K.\-Graphics.\-Graphics\-Bindings\-Base}}
+}
+
+
+Implements \hyperlink{class_open_t_k_1_1_bindings_base}{Bindings\-Base} for the \hyperlink{namespace_open_t_k_1_1_graphics}{Open\-T\-K.\-Graphics} namespace (\hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} and Open\-G\-L$|$\-E\-S).  
+
+
+Inheritance diagram for Open\-T\-K.\-Graphics.\-Graphics\-Bindings\-Base\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.666667cm]{class_open_t_k_1_1_graphics_1_1_graphics_bindings_base}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override Int\-Ptr \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_bindings_base_aeb37d851aee841ad85ef90242456d652}{Get\-Address} (string funcname)
+\begin{DoxyCompactList}\small\item\em Retrieves an unmanaged function pointer to the specified function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implements \hyperlink{class_open_t_k_1_1_bindings_base}{Bindings\-Base} for the \hyperlink{namespace_open_t_k_1_1_graphics}{Open\-T\-K.\-Graphics} namespace (\hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} and Open\-G\-L$|$\-E\-S). 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_bindings_base_aeb37d851aee841ad85ef90242456d652}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Bindings\-Base@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Bindings\-Base}!Get\-Address@{Get\-Address}}
+\index{Get\-Address@{Get\-Address}!OpenTK::Graphics::GraphicsBindingsBase@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Bindings\-Base}}
+\subsubsection[{Get\-Address}]{\setlength{\rightskip}{0pt plus 5cm}override Int\-Ptr Open\-T\-K.\-Graphics.\-Graphics\-Bindings\-Base.\-Get\-Address (
+\begin{DoxyParamCaption}
+\item[{string}]{funcname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_bindings_base_aeb37d851aee841ad85ef90242456d652}
+
+
+Retrieves an unmanaged function pointer to the specified function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em funcname} & A System.\-String that defines the name of the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Int\-Ptr that contains the address of funcname or Int\-Ptr.\-Zero, if the function is not supported by the drivers. 
+\end{DoxyReturn}
+
+
+Note\-: some drivers are known to return non-\/zero values for unsupported functions. Typical values include 1 and 2 -\/ inheritors are advised to check for and ignore these values. 
+
+Implements \hyperlink{class_open_t_k_1_1_bindings_base_a1eaa8a8b7a6a86051468535d38fca81c}{Open\-T\-K.\-Bindings\-Base}.
+

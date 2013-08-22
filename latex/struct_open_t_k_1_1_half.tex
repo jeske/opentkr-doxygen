@@ -1,0 +1,622 @@
+\hypertarget{struct_open_t_k_1_1_half}{\section{Open\-T\-K.\-Half Struct Reference}
+\label{struct_open_t_k_1_1_half}\index{Open\-T\-K.\-Half@{Open\-T\-K.\-Half}}
+}
+
+
+The name \hyperlink{struct_open_t_k_1_1_half}{Half} is derived from half-\/precision floating-\/point number. It occupies only 16 bits, which are split into 1 Sign bit, 5 Exponent bits and 10 Mantissa bits.  
+
+
+
+
+Inherits I\-Serializable, I\-Comparable$<$ Half $>$, I\-Formattable, and I\-Equatable$<$ Half $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_half_aa17fec8711c6b77969fdf435aaeec5d7}{Half} (Single f)
+\begin{DoxyCompactList}\small\item\em The new \hyperlink{struct_open_t_k_1_1_half}{Half} instance will convert the parameter into 16-\/bit half-\/precision floating-\/point. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_half_a4301c75f075d2e1cb1f5462e82cb0176}{Half} (Single f, bool throw\-On\-Error)
+\begin{DoxyCompactList}\small\item\em The new \hyperlink{struct_open_t_k_1_1_half}{Half} instance will convert the parameter into 16-\/bit half-\/precision floating-\/point. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_half_aaa413e6314d445002990c1c44acc8fc4}{Half} (Double d)
+\begin{DoxyCompactList}\small\item\em The new \hyperlink{struct_open_t_k_1_1_half}{Half} instance will convert the parameter into 16-\/bit half-\/precision floating-\/point. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_half_ac3687a82ee851cb0a9878c9f3177c377}{Half} (Double d, bool throw\-On\-Error)
+\begin{DoxyCompactList}\small\item\em The new \hyperlink{struct_open_t_k_1_1_half}{Half} instance will convert the parameter into 16-\/bit half-\/precision floating-\/point. \end{DoxyCompactList}\item 
+Single \hyperlink{struct_open_t_k_1_1_half_ad3447d0a7cdbd8a76afee7ae923aef2f}{To\-Single} ()
+\begin{DoxyCompactList}\small\item\em Converts the 16-\/bit half to 32-\/bit floating-\/point.\end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_half_a44a3570c428b6ba6049968545a90d971}{Half} (Serialization\-Info info, Streaming\-Context context)
+\begin{DoxyCompactList}\small\item\em Constructor used by I\-Serializable to deserialize the object.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_half_a94663b59e8098e475c0a3b0b9bc8f5a4}{Get\-Object\-Data} (Serialization\-Info info, Streaming\-Context context)
+\begin{DoxyCompactList}\small\item\em Used by I\-Serialize to serialize the object.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_half_af7d15c9bfab9590a8363ae1524cdc1c9}{From\-Binary\-Stream} (Binary\-Reader bin)
+\begin{DoxyCompactList}\small\item\em Updates the \hyperlink{struct_open_t_k_1_1_half}{Half} by reading from a Stream.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_half_a18561108983fc9989c05467009143e7c}{To\-Binary\-Stream} (Binary\-Writer bin)
+\begin{DoxyCompactList}\small\item\em Writes the \hyperlink{struct_open_t_k_1_1_half}{Half} into a Stream.\end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_half_adc727f01fd20b0c0e771f9792effa74a}{Equals} (\hyperlink{struct_open_t_k_1_1_half}{Half} other)
+\begin{DoxyCompactList}\small\item\em Returns a value indicating whether this instance is equal to a specified \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half} value. \end{DoxyCompactList}\item 
+int \hyperlink{struct_open_t_k_1_1_half_a1afb59496dff653e567c5a0bc45b8da9}{Compare\-To} (\hyperlink{struct_open_t_k_1_1_half}{Half} other)
+\begin{DoxyCompactList}\small\item\em Compares this instance to a specified half-\/precision floating-\/point number and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the value of the specified half-\/precision floating-\/point number. \end{DoxyCompactList}\item 
+override string \hyperlink{struct_open_t_k_1_1_half_a5153a96aaf848da185f5d1b169c595c2}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Converts this \hyperlink{struct_open_t_k_1_1_half}{Half} into a human-\/legible string representation.\end{DoxyCompactList}\item 
+string \hyperlink{struct_open_t_k_1_1_half_a376ec7e36a73d0f7c947c7fa9a6bba94}{To\-String} (string format, I\-Format\-Provider format\-Provider)
+\begin{DoxyCompactList}\small\item\em Converts this \hyperlink{struct_open_t_k_1_1_half}{Half} into a human-\/legible string representation.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_open_t_k_1_1_half_ab20fd9bb592e416910677c30a7692e1f}{operator Half} (float f)
+\begin{DoxyCompactList}\small\item\em Converts a System.\-Single to a \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half}. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_half_a0adddbbc87aebdd985a1b5edcd007774}{operator Half} (double d)
+\begin{DoxyCompactList}\small\item\em Converts a System.\-Double to a \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half}. \end{DoxyCompactList}\item 
+static implicit \hyperlink{struct_open_t_k_1_1_half_a7f11c593114c947e81db6a0ba23636b3}{operator float} (\hyperlink{struct_open_t_k_1_1_half}{Half} h)
+\begin{DoxyCompactList}\small\item\em Converts a \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half} to a System.\-Single. \end{DoxyCompactList}\item 
+static implicit \hyperlink{struct_open_t_k_1_1_half_a74cea29f9d511639d8d8da315c58db44}{operator double} (\hyperlink{struct_open_t_k_1_1_half}{Half} h)
+\begin{DoxyCompactList}\small\item\em Converts a \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half} to a System.\-Double. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_half}{Half} \hyperlink{struct_open_t_k_1_1_half_a1710507d8370e593608fe6120474280a}{Parse} (string s)
+\begin{DoxyCompactList}\small\item\em Converts the string representation of a number to a half-\/precision floating-\/point equivalent.\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_half}{Half} \hyperlink{struct_open_t_k_1_1_half_abf624a13c5967007843c7597d283c5aa}{Parse} (string s, System.\-Globalization.\-Number\-Styles style, I\-Format\-Provider provider)
+\begin{DoxyCompactList}\small\item\em Converts the string representation of a number to a half-\/precision floating-\/point equivalent.\end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_half_a3602fb09ee286dfb240ac561ecbc5296}{Try\-Parse} (string s, out \hyperlink{struct_open_t_k_1_1_half}{Half} result)
+\begin{DoxyCompactList}\small\item\em Converts the string representation of a number to a half-\/precision floating-\/point equivalent. Returns success.\end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_half_a0d3c83a6d7571e6b0ca124b4d7a2b766}{Try\-Parse} (string s, System.\-Globalization.\-Number\-Styles style, I\-Format\-Provider provider, out \hyperlink{struct_open_t_k_1_1_half}{Half} result)
+\begin{DoxyCompactList}\small\item\em Converts the string representation of a number to a half-\/precision floating-\/point equivalent. Returns success.\end{DoxyCompactList}\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{struct_open_t_k_1_1_half_a3468a68a355d4134b65401debecc56fe}{Get\-Bytes} (\hyperlink{struct_open_t_k_1_1_half}{Half} h)
+\begin{DoxyCompactList}\small\item\em Returns the \hyperlink{struct_open_t_k_1_1_half}{Half} as an array of bytes.\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_half}{Half} \hyperlink{struct_open_t_k_1_1_half_a27d9efd7c019881959288cece98c8395}{From\-Bytes} (byte\mbox{[}$\,$\mbox{]} value, int start\-Index)
+\begin{DoxyCompactList}\small\item\em Converts an array of bytes into \hyperlink{struct_open_t_k_1_1_half}{Half}.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_open_t_k_1_1_half_a76e1575f9d67ee2f72597f62e3f1bbab}{U\-Int16 {\bfseries bits}}\label{struct_open_t_k_1_1_half_a76e1575f9d67ee2f72597f62e3f1bbab}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_half_a8ffd6b056f319f537d7aceed4ecebf4f}{const int {\bfseries max\-Ulps} = 1}\label{struct_open_t_k_1_1_half_a8ffd6b056f319f537d7aceed4ecebf4f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Int32 \hyperlink{struct_open_t_k_1_1_half_abe15fc6db4ae97079233802277b8bcad}{Size\-In\-Bytes} = 2
+\begin{DoxyCompactList}\small\item\em The size in bytes for an instance of the \hyperlink{struct_open_t_k_1_1_half}{Half} struct.\end{DoxyCompactList}\item 
+static readonly Single \hyperlink{struct_open_t_k_1_1_half_afb6cea32ac0dd56fe8455d730d8fbde1}{Min\-Value} = 5.\-96046448e-\/08f
+\begin{DoxyCompactList}\small\item\em Smallest positive half\end{DoxyCompactList}\item 
+static readonly Single \hyperlink{struct_open_t_k_1_1_half_abda2208f9300afdd617d8d4ac320d21f}{Min\-Normalized\-Value} = 6.\-10351562e-\/05f
+\begin{DoxyCompactList}\small\item\em Smallest positive normalized half\end{DoxyCompactList}\item 
+static readonly Single \hyperlink{struct_open_t_k_1_1_half_a09fed5fc5cbc255618c752289932f25b}{Max\-Value} = 65504.\-0f
+\begin{DoxyCompactList}\small\item\em Largest positive half\end{DoxyCompactList}\item 
+static readonly Single \hyperlink{struct_open_t_k_1_1_half_a7f118e0313f8be004885fb7d536ecbf6}{Epsilon} = 0.\-00097656f
+\begin{DoxyCompactList}\small\item\em Smallest positive e for which half (1.\-0 + e) != half (1.\-0)\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{struct_open_t_k_1_1_half_a48aeed7e4540b66deb01af091941a660}{Is\-Zero}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if the \hyperlink{struct_open_t_k_1_1_half}{Half} is zero.\end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_half_a929c5a6b04acc0e21e106e35b0d296c2}{Is\-Na\-N}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if the \hyperlink{struct_open_t_k_1_1_half}{Half} represents Not A Number (Na\-N)\end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_half_a080c67842958aca474f5aa85f2d7c658}{Is\-Positive\-Infinity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if the \hyperlink{struct_open_t_k_1_1_half}{Half} represents positive infinity.\end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_half_a89f7b3c1de64f30ffd030f63a868ddb3}{Is\-Negative\-Infinity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if the \hyperlink{struct_open_t_k_1_1_half}{Half} represents negative infinity.\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The name \hyperlink{struct_open_t_k_1_1_half}{Half} is derived from half-\/precision floating-\/point number. It occupies only 16 bits, which are split into 1 Sign bit, 5 Exponent bits and 10 Mantissa bits. 
+
+Quote from A\-R\-B\-\_\-half\-\_\-float\-\_\-pixel specification\-: Any representable 16-\/bit floating-\/point value is legal as input to a G\-L command that accepts 16-\/bit floating-\/point data. The result of providing a value that is not a floating-\/point number (such as infinity or Na\-N) to such a command is unspecified, but must not lead to G\-L interruption or termination. Providing a denormalized number or negative zero to G\-L must yield predictable results. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_half_aa17fec8711c6b77969fdf435aaeec5d7}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Half@{Half}}
+\index{Half@{Half}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Half}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Half.\-Half (
+\begin{DoxyParamCaption}
+\item[{Single}]{f}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_aa17fec8711c6b77969fdf435aaeec5d7}
+
+
+The new \hyperlink{struct_open_t_k_1_1_half}{Half} instance will convert the parameter into 16-\/bit half-\/precision floating-\/point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & 32-\/bit single-\/precision floating-\/point number.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_half_a4301c75f075d2e1cb1f5462e82cb0176}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Half@{Half}}
+\index{Half@{Half}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Half}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Half.\-Half (
+\begin{DoxyParamCaption}
+\item[{Single}]{f, }
+\item[{bool}]{throw\-On\-Error}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_a4301c75f075d2e1cb1f5462e82cb0176}
+
+
+The new \hyperlink{struct_open_t_k_1_1_half}{Half} instance will convert the parameter into 16-\/bit half-\/precision floating-\/point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & 32-\/bit single-\/precision floating-\/point number.\\
+\hline
+{\em throw\-On\-Error} & Enable checks that will throw if the conversion result is not meaningful.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_half_aaa413e6314d445002990c1c44acc8fc4}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Half@{Half}}
+\index{Half@{Half}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Half}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Half.\-Half (
+\begin{DoxyParamCaption}
+\item[{Double}]{d}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_aaa413e6314d445002990c1c44acc8fc4}
+
+
+The new \hyperlink{struct_open_t_k_1_1_half}{Half} instance will convert the parameter into 16-\/bit half-\/precision floating-\/point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & 64-\/bit double-\/precision floating-\/point number.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_half_ac3687a82ee851cb0a9878c9f3177c377}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Half@{Half}}
+\index{Half@{Half}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Half}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Half.\-Half (
+\begin{DoxyParamCaption}
+\item[{Double}]{d, }
+\item[{bool}]{throw\-On\-Error}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_ac3687a82ee851cb0a9878c9f3177c377}
+
+
+The new \hyperlink{struct_open_t_k_1_1_half}{Half} instance will convert the parameter into 16-\/bit half-\/precision floating-\/point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & 64-\/bit double-\/precision floating-\/point number.\\
+\hline
+{\em throw\-On\-Error} & Enable checks that will throw if the conversion result is not meaningful.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_half_a44a3570c428b6ba6049968545a90d971}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Half@{Half}}
+\index{Half@{Half}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Half}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Half.\-Half (
+\begin{DoxyParamCaption}
+\item[{Serialization\-Info}]{info, }
+\item[{Streaming\-Context}]{context}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_a44a3570c428b6ba6049968545a90d971}
+
+
+Constructor used by I\-Serializable to deserialize the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & \\
+\hline
+{\em context} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_half_a1afb59496dff653e567c5a0bc45b8da9}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Compare\-To@{Compare\-To}}
+\index{Compare\-To@{Compare\-To}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Compare\-To}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Half.\-Compare\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Half}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_a1afb59496dff653e567c5a0bc45b8da9}
+
+
+Compares this instance to a specified half-\/precision floating-\/point number and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the value of the specified half-\/precision floating-\/point number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A half-\/precision floating-\/point number to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A signed number indicating the relative values of this instance and value. If the number is\-: 
+
+Less than zero, then this instance is less than other, or this instance is not a number (Open\-T\-K.\-Half.\-Na\-N) and other is a number.
+\end{DoxyReturn}
+
+
+Zero\-: this instance is equal to value, or both this instance and other are not a number (Open\-T\-K.\-Half.\-Na\-N), Open\-T\-K.\-Half.\-Positive\-Infinity, or Open\-T\-K.\-Half.\-Negative\-Infinity.
+
+Greater than zero\-: this instance is greater than othrs, or this instance is a number and other is not a number (Open\-T\-K.\-Half.\-Na\-N).\hypertarget{struct_open_t_k_1_1_half_adc727f01fd20b0c0e771f9792effa74a}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Half.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Half}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_adc727f01fd20b0c0e771f9792effa74a}
+
+
+Returns a value indicating whether this instance is equal to a specified \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half} value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half} object to compare to this instance..\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if other is equal to this instance; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_af7d15c9bfab9590a8363ae1524cdc1c9}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!From\-Binary\-Stream@{From\-Binary\-Stream}}
+\index{From\-Binary\-Stream@{From\-Binary\-Stream}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{From\-Binary\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Half.\-From\-Binary\-Stream (
+\begin{DoxyParamCaption}
+\item[{Binary\-Reader}]{bin}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_af7d15c9bfab9590a8363ae1524cdc1c9}
+
+
+Updates the \hyperlink{struct_open_t_k_1_1_half}{Half} by reading from a Stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin} & A Binary\-Reader instance associated with an open Stream.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_half_a27d9efd7c019881959288cece98c8395}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!From\-Bytes@{From\-Bytes}}
+\index{From\-Bytes@{From\-Bytes}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{From\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Half} Open\-T\-K.\-Half.\-From\-Bytes (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{value, }
+\item[{int}]{start\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a27d9efd7c019881959288cece98c8395}
+
+
+Converts an array of bytes into \hyperlink{struct_open_t_k_1_1_half}{Half}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A \hyperlink{struct_open_t_k_1_1_half}{Half} in it's byte\mbox{[}\mbox{]} representation.\\
+\hline
+{\em start\-Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_half}{Half} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a3468a68a355d4134b65401debecc56fe}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Get\-Bytes@{Get\-Bytes}}
+\index{Get\-Bytes@{Get\-Bytes}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Get\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} Open\-T\-K.\-Half.\-Get\-Bytes (
+\begin{DoxyParamCaption}
+\item[{{\bf Half}}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a3468a68a355d4134b65401debecc56fe}
+
+
+Returns the \hyperlink{struct_open_t_k_1_1_half}{Half} as an array of bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & The \hyperlink{struct_open_t_k_1_1_half}{Half} to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input as byte array.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a94663b59e8098e475c0a3b0b9bc8f5a4}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Get\-Object\-Data@{Get\-Object\-Data}}
+\index{Get\-Object\-Data@{Get\-Object\-Data}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Get\-Object\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Half.\-Get\-Object\-Data (
+\begin{DoxyParamCaption}
+\item[{Serialization\-Info}]{info, }
+\item[{Streaming\-Context}]{context}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_a94663b59e8098e475c0a3b0b9bc8f5a4}
+
+
+Used by I\-Serialize to serialize the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & \\
+\hline
+{\em context} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_half_a74cea29f9d511639d8d8da315c58db44}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!operator double@{operator double}}
+\index{operator double@{operator double}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{operator double}]{\setlength{\rightskip}{0pt plus 5cm}static implicit Open\-T\-K.\-Half.\-operator double (
+\begin{DoxyParamCaption}
+\item[{{\bf Half}}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a74cea29f9d511639d8d8da315c58db44}
+
+
+Converts a \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half} to a System.\-Double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & The value to convert. A \hyperlink{struct_open_t_k_1_1_half}{Half} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the conversion. A System.\-Double 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a7f11c593114c947e81db6a0ba23636b3}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!operator float@{operator float}}
+\index{operator float@{operator float}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{operator float}]{\setlength{\rightskip}{0pt plus 5cm}static implicit Open\-T\-K.\-Half.\-operator float (
+\begin{DoxyParamCaption}
+\item[{{\bf Half}}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a7f11c593114c947e81db6a0ba23636b3}
+
+
+Converts a \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half} to a System.\-Single. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & The value to convert. A \hyperlink{struct_open_t_k_1_1_half}{Half} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the conversion. A System.\-Single 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_ab20fd9bb592e416910677c30a7692e1f}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!operator Half@{operator Half}}
+\index{operator Half@{operator Half}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{operator Half}]{\setlength{\rightskip}{0pt plus 5cm}static Open\-T\-K.\-Half.\-operator {\bf Half} (
+\begin{DoxyParamCaption}
+\item[{float}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_ab20fd9bb592e416910677c30a7692e1f}
+
+
+Converts a System.\-Single to a \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The value to convert. A System.\-Single \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the conversion. A \hyperlink{struct_open_t_k_1_1_half}{Half} 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a0adddbbc87aebdd985a1b5edcd007774}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!operator Half@{operator Half}}
+\index{operator Half@{operator Half}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{operator Half}]{\setlength{\rightskip}{0pt plus 5cm}static Open\-T\-K.\-Half.\-operator {\bf Half} (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a0adddbbc87aebdd985a1b5edcd007774}
+
+
+Converts a System.\-Double to a \hyperlink{struct_open_t_k_1_1_half}{Open\-T\-K.\-Half}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The value to convert. A System.\-Double \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the conversion. A \hyperlink{struct_open_t_k_1_1_half}{Half} 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a1710507d8370e593608fe6120474280a}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Parse@{Parse}}
+\index{Parse@{Parse}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Half} Open\-T\-K.\-Half.\-Parse (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a1710507d8370e593608fe6120474280a}
+
+
+Converts the string representation of a number to a half-\/precision floating-\/point equivalent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & String representation of the number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_half}{Half} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_abf624a13c5967007843c7597d283c5aa}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Parse@{Parse}}
+\index{Parse@{Parse}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Half} Open\-T\-K.\-Half.\-Parse (
+\begin{DoxyParamCaption}
+\item[{string}]{s, }
+\item[{System.\-Globalization.\-Number\-Styles}]{style, }
+\item[{I\-Format\-Provider}]{provider}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_abf624a13c5967007843c7597d283c5aa}
+
+
+Converts the string representation of a number to a half-\/precision floating-\/point equivalent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & String representation of the number to convert.\\
+\hline
+{\em style} & Specifies the format of s.\\
+\hline
+{\em provider} & Culture-\/specific formatting information.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{struct_open_t_k_1_1_half}{Half} instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a18561108983fc9989c05467009143e7c}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!To\-Binary\-Stream@{To\-Binary\-Stream}}
+\index{To\-Binary\-Stream@{To\-Binary\-Stream}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{To\-Binary\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Half.\-To\-Binary\-Stream (
+\begin{DoxyParamCaption}
+\item[{Binary\-Writer}]{bin}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_a18561108983fc9989c05467009143e7c}
+
+
+Writes the \hyperlink{struct_open_t_k_1_1_half}{Half} into a Stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin} & A Binary\-Writer instance associated with an open Stream.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_half_ad3447d0a7cdbd8a76afee7ae923aef2f}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!To\-Single@{To\-Single}}
+\index{To\-Single@{To\-Single}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{To\-Single}]{\setlength{\rightskip}{0pt plus 5cm}Single Open\-T\-K.\-Half.\-To\-Single (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_ad3447d0a7cdbd8a76afee7ae923aef2f}
+
+
+Converts the 16-\/bit half to 32-\/bit floating-\/point.
+
+\begin{DoxyReturn}{Returns}
+A single-\/precision floating-\/point number.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a5153a96aaf848da185f5d1b169c595c2}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Half.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_a5153a96aaf848da185f5d1b169c595c2}
+
+
+Converts this \hyperlink{struct_open_t_k_1_1_half}{Half} into a human-\/legible string representation.
+
+\begin{DoxyReturn}{Returns}
+The string representation of this instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a376ec7e36a73d0f7c947c7fa9a6bba94}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}string Open\-T\-K.\-Half.\-To\-String (
+\begin{DoxyParamCaption}
+\item[{string}]{format, }
+\item[{I\-Format\-Provider}]{format\-Provider}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_half_a376ec7e36a73d0f7c947c7fa9a6bba94}
+
+
+Converts this \hyperlink{struct_open_t_k_1_1_half}{Half} into a human-\/legible string representation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & Formatting for the output string.\\
+\hline
+{\em format\-Provider} & Culture-\/specific formatting information.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string representation of this instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a3602fb09ee286dfb240ac561ecbc5296}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Try\-Parse@{Try\-Parse}}
+\index{Try\-Parse@{Try\-Parse}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Try\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Half.\-Try\-Parse (
+\begin{DoxyParamCaption}
+\item[{string}]{s, }
+\item[{out {\bf Half}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a3602fb09ee286dfb240ac561ecbc5296}
+
+
+Converts the string representation of a number to a half-\/precision floating-\/point equivalent. Returns success.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & String representation of the number to convert.\\
+\hline
+{\em result} & The \hyperlink{struct_open_t_k_1_1_half}{Half} instance to write to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_half_a0d3c83a6d7571e6b0ca124b4d7a2b766}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Try\-Parse@{Try\-Parse}}
+\index{Try\-Parse@{Try\-Parse}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Try\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Half.\-Try\-Parse (
+\begin{DoxyParamCaption}
+\item[{string}]{s, }
+\item[{System.\-Globalization.\-Number\-Styles}]{style, }
+\item[{I\-Format\-Provider}]{provider, }
+\item[{out {\bf Half}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a0d3c83a6d7571e6b0ca124b4d7a2b766}
+
+
+Converts the string representation of a number to a half-\/precision floating-\/point equivalent. Returns success.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & String representation of the number to convert.\\
+\hline
+{\em style} & Specifies the format of s.\\
+\hline
+{\em provider} & Culture-\/specific formatting information.\\
+\hline
+{\em result} & The \hyperlink{struct_open_t_k_1_1_half}{Half} instance to write to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_half_a7f118e0313f8be004885fb7d536ecbf6}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Epsilon@{Epsilon}}
+\index{Epsilon@{Epsilon}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Epsilon}]{\setlength{\rightskip}{0pt plus 5cm}readonly Single Open\-T\-K.\-Half.\-Epsilon = 0.\-00097656f\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a7f118e0313f8be004885fb7d536ecbf6}
+
+
+Smallest positive e for which half (1.\-0 + e) != half (1.\-0)
+
+\hypertarget{struct_open_t_k_1_1_half_a09fed5fc5cbc255618c752289932f25b}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Max\-Value@{Max\-Value}}
+\index{Max\-Value@{Max\-Value}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Max\-Value}]{\setlength{\rightskip}{0pt plus 5cm}readonly Single Open\-T\-K.\-Half.\-Max\-Value = 65504.\-0f\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_a09fed5fc5cbc255618c752289932f25b}
+
+
+Largest positive half
+
+\hypertarget{struct_open_t_k_1_1_half_abda2208f9300afdd617d8d4ac320d21f}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Min\-Normalized\-Value@{Min\-Normalized\-Value}}
+\index{Min\-Normalized\-Value@{Min\-Normalized\-Value}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Min\-Normalized\-Value}]{\setlength{\rightskip}{0pt plus 5cm}readonly Single Open\-T\-K.\-Half.\-Min\-Normalized\-Value = 6.\-10351562e-\/05f\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_abda2208f9300afdd617d8d4ac320d21f}
+
+
+Smallest positive normalized half
+
+\hypertarget{struct_open_t_k_1_1_half_afb6cea32ac0dd56fe8455d730d8fbde1}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Min\-Value@{Min\-Value}}
+\index{Min\-Value@{Min\-Value}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Min\-Value}]{\setlength{\rightskip}{0pt plus 5cm}readonly Single Open\-T\-K.\-Half.\-Min\-Value = 5.\-96046448e-\/08f\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_afb6cea32ac0dd56fe8455d730d8fbde1}
+
+
+Smallest positive half
+
+\hypertarget{struct_open_t_k_1_1_half_abe15fc6db4ae97079233802277b8bcad}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Size\-In\-Bytes@{Size\-In\-Bytes}}
+\index{Size\-In\-Bytes@{Size\-In\-Bytes}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Size\-In\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}readonly Int32 Open\-T\-K.\-Half.\-Size\-In\-Bytes = 2\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_half_abe15fc6db4ae97079233802277b8bcad}
+
+
+The size in bytes for an instance of the \hyperlink{struct_open_t_k_1_1_half}{Half} struct.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_half_a929c5a6b04acc0e21e106e35b0d296c2}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Is\-Na\-N@{Is\-Na\-N}}
+\index{Is\-Na\-N@{Is\-Na\-N}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Is\-Na\-N}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Half.\-Is\-Na\-N\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_half_a929c5a6b04acc0e21e106e35b0d296c2}
+
+
+Returns true if the \hyperlink{struct_open_t_k_1_1_half}{Half} represents Not A Number (Na\-N)
+
+\hypertarget{struct_open_t_k_1_1_half_a89f7b3c1de64f30ffd030f63a868ddb3}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Is\-Negative\-Infinity@{Is\-Negative\-Infinity}}
+\index{Is\-Negative\-Infinity@{Is\-Negative\-Infinity}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Is\-Negative\-Infinity}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Half.\-Is\-Negative\-Infinity\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_half_a89f7b3c1de64f30ffd030f63a868ddb3}
+
+
+Returns true if the \hyperlink{struct_open_t_k_1_1_half}{Half} represents negative infinity.
+
+\hypertarget{struct_open_t_k_1_1_half_a080c67842958aca474f5aa85f2d7c658}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Is\-Positive\-Infinity@{Is\-Positive\-Infinity}}
+\index{Is\-Positive\-Infinity@{Is\-Positive\-Infinity}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Is\-Positive\-Infinity}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Half.\-Is\-Positive\-Infinity\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_half_a080c67842958aca474f5aa85f2d7c658}
+
+
+Returns true if the \hyperlink{struct_open_t_k_1_1_half}{Half} represents positive infinity.
+
+\hypertarget{struct_open_t_k_1_1_half_a48aeed7e4540b66deb01af091941a660}{\index{Open\-T\-K\-::\-Half@{Open\-T\-K\-::\-Half}!Is\-Zero@{Is\-Zero}}
+\index{Is\-Zero@{Is\-Zero}!OpenTK::Half@{Open\-T\-K\-::\-Half}}
+\subsubsection[{Is\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Half.\-Is\-Zero\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_half_a48aeed7e4540b66deb01af091941a660}
+
+
+Returns true if the \hyperlink{struct_open_t_k_1_1_half}{Half} is zero.
+

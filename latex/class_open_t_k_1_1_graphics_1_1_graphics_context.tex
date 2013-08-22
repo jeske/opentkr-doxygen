@@ -1,0 +1,453 @@
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context}{\section{Open\-T\-K.\-Graphics.\-Graphics\-Context Class Reference}
+\label{class_open_t_k_1_1_graphics_1_1_graphics_context}\index{Open\-T\-K.\-Graphics.\-Graphics\-Context@{Open\-T\-K.\-Graphics.\-Graphics\-Context}}
+}
+
+
+Represents and provides methods to manipulate an \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} render context.  
+
+
+Inheritance diagram for Open\-T\-K.\-Graphics.\-Graphics\-Context\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_open_t_k_1_1_graphics_1_1_graphics_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a7954c5ce8c3bce5a0273f3ff22068186}{Graphics\-Context} (\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode, \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} window)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} with the specified \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} and attaches it to the specified window. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_aaeb217a1cc05317ad1798c941aeee99d}{Graphics\-Context} (\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} mode, \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} window, int major, int minor, \hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8ab}{Graphics\-Context\-Flags} flags)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} with the specified \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode}, version and flags, and attaches it to the specified window. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a0232374e017976be588e2fe7f069d9b4}{Graphics\-Context} (\hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} handle, \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} window)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} from a pre-\/existing context created outside of \hyperlink{namespace_open_t_k}{Open\-T\-K}. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a3362b0338dccd8e180c8605fbf47b699}{Graphics\-Context} (\hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} handle, \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} window, \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}{I\-Graphics\-Context} share\-Context, int major, int minor, \hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8ab}{Graphics\-Context\-Flags} flags)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} from a pre-\/existing context created outside of \hyperlink{namespace_open_t_k}{Open\-T\-K}. \end{DoxyCompactList}\item 
+override string \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a66b97498dd4493a57f96268e432b9bec}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String representing this instance. \end{DoxyCompactList}\item 
+override int \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a2d1fad8ad4a48dd77ec171083b3fe9a0}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Returns the hash code for this instance. \end{DoxyCompactList}\item 
+override bool \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_ade7fe9534a1b711a0a0411ca371b07c5}{Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Compares two instances. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_ab73c61bea26369cf76dff2165f5084cf}{Swap\-Buffers} ()
+\begin{DoxyCompactList}\small\item\em Swaps buffers on a context. This presents the rendered scene to the user. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a4b9b3b0f98fc1dc9f49f8abdb5ff076b}{Make\-Current} (\hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} window)
+\begin{DoxyCompactList}\small\item\em Makes the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} the current rendering target. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a09fa035789147f9b9cfe2a5f09abe927}{Update} (\hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{I\-Window\-Info} window)
+\begin{DoxyCompactList}\small\item\em Updates the graphics context. This must be called when the render target is resized for proper behavior on Mac O\-S X. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a21640f20db040987bd1f897f503b68a4}{Load\-All} ()
+\begin{DoxyCompactList}\small\item\em Loads all \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} entry points. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a10e5f7c2e87670fd7400d8e4259fc602}{Dispose} ()
+\begin{DoxyCompactList}\small\item\em Disposes of the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a5b6eadf39c00310bb0663d4eef883539}{Create\-Dummy\-Context} ()
+\begin{DoxyCompactList}\small\item\em Creates a dummy \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} to allow \hyperlink{namespace_open_t_k}{Open\-T\-K} to work with contexts created by external libraries. \end{DoxyCompactList}\item 
+static \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a36d9c29904cf9308b326da32b9d5cc8b}{Create\-Dummy\-Context} (\hyperlink{struct_open_t_k_1_1_context_handle}{Context\-Handle} handle)
+\begin{DoxyCompactList}\small\item\em Creates a dummy \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} to allow \hyperlink{namespace_open_t_k}{Open\-T\-K} to work with contexts created by external libraries. \end{DoxyCompactList}\item 
+static void \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_ae30eee17232c683f9c6151dfff6d804c}{Assert} ()
+\begin{DoxyCompactList}\small\item\em Checks if a \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} exists in the calling thread and throws a \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_missing_exception}{Graphics\-Context\-Missing\-Exception} if it doesn't. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context}{I\-Graphics\-Context} \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_aa6b95167a8733355270dbb5d7c319986}{Current\-Context}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} that is current in the calling thread. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a83e5259c2dd10556b3c485f2e8a00494}{Share\-Contexts}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Boolean, indicating whether \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} resources are shared\end{DoxyCompactList}\item 
+static bool \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a2c0431903a5da942e015be0847f070bb}{Direct\-Rendering}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Boolean, indicating whether Graphics\-Contexts will perform direct rendering.\end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a8ad06302403c5503b6ba954676523d90}{Error\-Checking}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a System.\-Boolean, indicating whether automatic error checking should be performed. Influences the debug version of Open\-T\-K.\-dll, only. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a7cbde7e3ab34ace4c087db96a72f6134}{Is\-Current}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this instance is current in the calling thread. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_ade92f0f31700dbb2a64eed7336bca89d}{Is\-Disposed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this instance has been disposed. It is an error to access any instance methods if this property returns true. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a502b2543a983bba6ceba9762212e290b}{V\-Sync}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}obsolete\mbox{]} Use Swap\-Interval property instead. Gets or sets a value indicating whether V\-Sync is enabled. When V\-Sync is enabled, \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_ab73c61bea26369cf76dff2165f5084cf}{Swap\-Buffers()} calls will be synced to the refresh rate of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} that contains improving visual quality and reducing C\-P\-U usage. However, systems that cannot maintain the requested rendering rate will suffer from large jumps in performance. This can be counteracted by increasing the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a860ca9db2d767d969b0b5a6c9b7b0f46}{Swap\-Interval} value. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a860ca9db2d767d969b0b5a6c9b7b0f46}{Swap\-Interval}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a positive integer in the range \mbox{[}1, n), indicating the number of \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} refreshes between consecutive \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_ab73c61bea26369cf76dff2165f5084cf}{Swap\-Buffers()} calls. The maximum value for n is implementation-\/dependent. The default value is 1. This value will only affect instances where \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a502b2543a983bba6ceba9762212e290b}{V\-Sync} is enabled. Invalid values will be clamped to the valid range. \end{DoxyCompactList}\item 
+\hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a5317c00e6a4db8f9b7f20c63791efd01}{Graphics\-Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} of the context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents and provides methods to manipulate an \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} render context. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a7954c5ce8c3bce5a0273f3ff22068186}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Graphics\-Context@{Graphics\-Context}}
+\index{Graphics\-Context@{Graphics\-Context}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Graphics\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Graphics\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics\-Mode}}]{mode, }
+\item[{{\bf I\-Window\-Info}}]{window}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a7954c5ce8c3bce5a0273f3ff22068186}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} with the specified \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} and attaches it to the specified window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}.\\
+\hline
+{\em window} & The \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{Open\-T\-K.\-Platform.\-I\-Window\-Info} to attach the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} to.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_aaeb217a1cc05317ad1798c941aeee99d}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Graphics\-Context@{Graphics\-Context}}
+\index{Graphics\-Context@{Graphics\-Context}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Graphics\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Graphics\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics\-Mode}}]{mode, }
+\item[{{\bf I\-Window\-Info}}]{window, }
+\item[{int}]{major, }
+\item[{int}]{minor, }
+\item[{{\bf Graphics\-Context\-Flags}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_aaeb217a1cc05317ad1798c941aeee99d}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} with the specified \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode}, version and flags, and attaches it to the specified window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Open\-T\-K.\-Graphics.\-Graphics\-Mode} of the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}.\\
+\hline
+{\em window} & The \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{Open\-T\-K.\-Platform.\-I\-Window\-Info} to attach the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} to.\\
+\hline
+{\em major} & The major version of the new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}.\\
+\hline
+{\em minor} & The minor version of the new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}.\\
+\hline
+{\em flags} & The Graphics\-Context\-Flags for the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}.\\
+\hline
+\end{DoxyParams}
+
+
+Different hardware supports different flags, major and minor versions. Invalid parameters will be silently ignored. \hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a0232374e017976be588e2fe7f069d9b4}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Graphics\-Context@{Graphics\-Context}}
+\index{Graphics\-Context@{Graphics\-Context}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Graphics\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Graphics\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\-Handle}}]{handle, }
+\item[{{\bf I\-Window\-Info}}]{window}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a0232374e017976be588e2fe7f069d9b4}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} from a pre-\/existing context created outside of \hyperlink{namespace_open_t_k}{Open\-T\-K}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The handle of the existing context. This must be a valid, unique handle that is not known to \hyperlink{namespace_open_t_k}{Open\-T\-K}.\\
+\hline
+{\em window} & The window this context is bound to. This must be a valid window obtained through Utilities.\-Create\-Window\-Info.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_exception}{Graphics\-Context\-Exception}} & Occurs if handle is identical to a context already registered with \hyperlink{namespace_open_t_k}{Open\-T\-K}.\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a3362b0338dccd8e180c8605fbf47b699}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Graphics\-Context@{Graphics\-Context}}
+\index{Graphics\-Context@{Graphics\-Context}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Graphics\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Graphics\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\-Handle}}]{handle, }
+\item[{{\bf I\-Window\-Info}}]{window, }
+\item[{{\bf I\-Graphics\-Context}}]{share\-Context, }
+\item[{int}]{major, }
+\item[{int}]{minor, }
+\item[{{\bf Graphics\-Context\-Flags}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a3362b0338dccd8e180c8605fbf47b699}
+
+
+Constructs a new \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} from a pre-\/existing context created outside of \hyperlink{namespace_open_t_k}{Open\-T\-K}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The handle of the existing context. This must be a valid, unique handle that is not known to \hyperlink{namespace_open_t_k}{Open\-T\-K}.\\
+\hline
+{\em window} & The window this context is bound to. This must be a valid window obtained through Utilities.\-Create\-Window\-Info.\\
+\hline
+{\em share\-Context} & A different context that shares resources with this instance, if any. Pass null if the context is not shared or if this is the first \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} instruct you construct.\\
+\hline
+{\em major} & The major version of the context (e.\-g. \char`\"{}2\char`\"{} for \char`\"{}2.\-1\char`\"{}).\\
+\hline
+{\em minor} & The minor version of the context (e.\-g. \char`\"{}1\char`\"{} for \char`\"{}2.\-1\char`\"{}).\\
+\hline
+{\em flags} & A bitwise combination of \hyperlink{namespace_open_t_k_1_1_graphics_a518f77952bc406a013160356981ea8ab}{Graphics\-Context\-Flags} that describe this context.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_exception}{Graphics\-Context\-Exception}} & Occurs if handle is identical to a context already registered with \hyperlink{namespace_open_t_k}{Open\-T\-K}.\\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_ae30eee17232c683f9c6151dfff6d804c}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Assert@{Assert}}
+\index{Assert@{Assert}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Assert}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Assert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_ae30eee17232c683f9c6151dfff6d804c}
+
+
+Checks if a \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} exists in the calling thread and throws a \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_missing_exception}{Graphics\-Context\-Missing\-Exception} if it doesn't. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_missing_exception}{Graphics\-Context\-Missing\-Exception}} & Generated when no \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} is current in the calling thread.\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a5b6eadf39c00310bb0663d4eef883539}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Create\-Dummy\-Context@{Create\-Dummy\-Context}}
+\index{Create\-Dummy\-Context@{Create\-Dummy\-Context}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Create\-Dummy\-Context}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Graphics\-Context} Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Create\-Dummy\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a5b6eadf39c00310bb0663d4eef883539}
+
+
+Creates a dummy \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} to allow \hyperlink{namespace_open_t_k}{Open\-T\-K} to work with contexts created by external libraries. 
+
+\begin{DoxyReturn}{Returns}
+A new, dummy \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} instance.
+\end{DoxyReturn}
+
+
+Instances created by this method will not be functional. Instance methods will have no effect.
+
+This method requires that a context is current on the calling thread.\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a36d9c29904cf9308b326da32b9d5cc8b}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Create\-Dummy\-Context@{Create\-Dummy\-Context}}
+\index{Create\-Dummy\-Context@{Create\-Dummy\-Context}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Create\-Dummy\-Context}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Graphics\-Context} Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Create\-Dummy\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\-Handle}}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a36d9c29904cf9308b326da32b9d5cc8b}
+
+
+Creates a dummy \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} to allow \hyperlink{namespace_open_t_k}{Open\-T\-K} to work with contexts created by external libraries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The handle of a context.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new, dummy \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} instance.
+\end{DoxyReturn}
+
+
+Instances created by this method will not be functional. Instance methods will have no effect.\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a10e5f7c2e87670fd7400d8e4259fc602}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a10e5f7c2e87670fd7400d8e4259fc602}
+
+
+Disposes of the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context}. 
+
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_ade7fe9534a1b711a0a0411ca371b07c5}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_ade7fe9534a1b711a0a0411ca371b07c5}
+
+
+Compares two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The instance to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if obj is equal to this instance; false otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a2d1fad8ad4a48dd77ec171083b3fe9a0}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a2d1fad8ad4a48dd77ec171083b3fe9a0}
+
+
+Returns the hash code for this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-Int32 with the hash code of this instance.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a21640f20db040987bd1f897f503b68a4}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Load\-All@{Load\-All}}
+\index{Load\-All@{Load\-All}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Load\-All}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Load\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a21640f20db040987bd1f897f503b68a4}
+
+
+Loads all \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} entry points. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_exception}{Open\-T\-K.\-Graphics.\-Graphics\-Context\-Exception}} & Occurs when this instance is not current on the calling thread. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a8f8df276eeac50ba850cb21fa5a4e676}{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context}.
+
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a4b9b3b0f98fc1dc9f49f8abdb5ff076b}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Make\-Current@{Make\-Current}}
+\index{Make\-Current@{Make\-Current}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Make\-Current}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Make\-Current (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-Window\-Info}}]{window}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a4b9b3b0f98fc1dc9f49f8abdb5ff076b}
+
+
+Makes the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} the current rendering target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & A valid \hyperlink{interface_open_t_k_1_1_platform_1_1_i_window_info}{Open\-T\-K.\-Platform.\-I\-Window\-Info} structure.\\
+\hline
+\end{DoxyParams}
+
+
+You can use this method to bind the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} to a different window than the one it was created from. 
+
+Implements \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a73a3ca64b49a682800e636d0135887ed}{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context}.
+
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_ab73c61bea26369cf76dff2165f5084cf}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Swap\-Buffers@{Swap\-Buffers}}
+\index{Swap\-Buffers@{Swap\-Buffers}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Swap\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Swap\-Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_ab73c61bea26369cf76dff2165f5084cf}
+
+
+Swaps buffers on a context. This presents the rendered scene to the user. 
+
+
+
+Implements \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_ad7d516da745576542161f1baa5f20129}{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context}.
+
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a66b97498dd4493a57f96268e432b9bec}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Graphics.\-Graphics\-Context.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a66b97498dd4493a57f96268e432b9bec}
+
+
+Returns a System.\-String representing this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-String that contains a string representation of this instance.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a09fa035789147f9b9cfe2a5f09abe927}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Update@{Update}}
+\index{Update@{Update}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-Window\-Info}}]{window}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a09fa035789147f9b9cfe2a5f09abe927}
+
+
+Updates the graphics context. This must be called when the render target is resized for proper behavior on Mac O\-S X. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_open_t_k_1_1_graphics_1_1_i_graphics_context_a4bf57e48815f169c133eb15ccda2d146}{Open\-T\-K.\-Graphics.\-I\-Graphics\-Context}.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_aa6b95167a8733355270dbb5d7c319986}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Current\-Context@{Current\-Context}}
+\index{Current\-Context@{Current\-Context}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Current\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Graphics\-Context} Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Current\-Context\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_aa6b95167a8733355270dbb5d7c319986}
+
+
+Gets the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} that is current in the calling thread. 
+
+Note\-: this property will not function correctly when both desktop and E\-G\-L contexts are available in the same process. This scenario is very unlikely to appear in practice. \hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a2c0431903a5da942e015be0847f070bb}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Direct\-Rendering@{Direct\-Rendering}}
+\index{Direct\-Rendering@{Direct\-Rendering}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Direct\-Rendering}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Direct\-Rendering\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a2c0431903a5da942e015be0847f070bb}
+
+
+Gets or sets a System.\-Boolean, indicating whether Graphics\-Contexts will perform direct rendering.
+
+If Direct\-Rendering is true, new contexts will be constructed with direct rendering capabilities, if possible. If Direct\-Rendering is false, new contexts will be constructed with indirect rendering capabilities. 
+
+This property does not affect existing Graphics\-Contexts, unless they are recreated.
+
+This property is ignored on Operating Systems without support for indirect rendering, like Windows and O\-S X. \hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a8ad06302403c5503b6ba954676523d90}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Error\-Checking@{Error\-Checking}}
+\index{Error\-Checking@{Error\-Checking}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Error\-Checking}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Error\-Checking\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a8ad06302403c5503b6ba954676523d90}
+
+
+Gets or sets a System.\-Boolean, indicating whether automatic error checking should be performed. Influences the debug version of Open\-T\-K.\-dll, only. 
+
+Automatic error checking will clear the \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} error state. Set Check\-Errors to false if you use the \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} error state in your code flow (e.\-g. for checking supported texture formats).\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a5317c00e6a4db8f9b7f20c63791efd01}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Graphics\-Mode@{Graphics\-Mode}}
+\index{Graphics\-Mode@{Graphics\-Mode}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Graphics\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graphics\-Mode} Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Graphics\-Mode\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a5317c00e6a4db8f9b7f20c63791efd01}
+
+
+Gets the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode}{Graphics\-Mode} of the context. 
+
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a7cbde7e3ab34ace4c087db96a72f6134}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Is\-Current@{Is\-Current}}
+\index{Is\-Current@{Is\-Current}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Is\-Current}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Is\-Current\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a7cbde7e3ab34ace4c087db96a72f6134}
+
+
+Gets a System.\-Boolean indicating whether this instance is current in the calling thread. 
+
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_ade92f0f31700dbb2a64eed7336bca89d}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Is\-Disposed@{Is\-Disposed}}
+\index{Is\-Disposed@{Is\-Disposed}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Is\-Disposed}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Is\-Disposed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_ade92f0f31700dbb2a64eed7336bca89d}
+
+
+Gets a System.\-Boolean indicating whether this instance has been disposed. It is an error to access any instance methods if this property returns true. 
+
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a83e5259c2dd10556b3c485f2e8a00494}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Share\-Contexts@{Share\-Contexts}}
+\index{Share\-Contexts@{Share\-Contexts}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Share\-Contexts}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Share\-Contexts\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a83e5259c2dd10556b3c485f2e8a00494}
+
+
+Gets or sets a System.\-Boolean, indicating whether \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context}{Graphics\-Context} resources are shared
+
+If Share\-Contexts is true, new G\-L\-Contexts will share resources. If this value is false, new G\-L\-Contexts will not share resources.
+
+Changing this value will not affect already created G\-L\-Contexts.\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a860ca9db2d767d969b0b5a6c9b7b0f46}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!Swap\-Interval@{Swap\-Interval}}
+\index{Swap\-Interval@{Swap\-Interval}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{Swap\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Graphics.\-Graphics\-Context.\-Swap\-Interval\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a860ca9db2d767d969b0b5a6c9b7b0f46}
+
+
+Gets or sets a positive integer in the range \mbox{[}1, n), indicating the number of \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} refreshes between consecutive \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_ab73c61bea26369cf76dff2165f5084cf}{Swap\-Buffers()} calls. The maximum value for n is implementation-\/dependent. The default value is 1. This value will only affect instances where \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a502b2543a983bba6ceba9762212e290b}{V\-Sync} is enabled. Invalid values will be clamped to the valid range. 
+
+\hypertarget{class_open_t_k_1_1_graphics_1_1_graphics_context_a502b2543a983bba6ceba9762212e290b}{\index{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}!V\-Sync@{V\-Sync}}
+\index{V\-Sync@{V\-Sync}!OpenTK::Graphics::GraphicsContext@{Open\-T\-K\-::\-Graphics\-::\-Graphics\-Context}}
+\subsubsection[{V\-Sync}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Graphics.\-Graphics\-Context.\-V\-Sync\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_graphics_1_1_graphics_context_a502b2543a983bba6ceba9762212e290b}
+
+
+\mbox{[}obsolete\mbox{]} Use Swap\-Interval property instead. Gets or sets a value indicating whether V\-Sync is enabled. When V\-Sync is enabled, \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_ab73c61bea26369cf76dff2165f5084cf}{Swap\-Buffers()} calls will be synced to the refresh rate of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} that contains improving visual quality and reducing C\-P\-U usage. However, systems that cannot maintain the requested rendering rate will suffer from large jumps in performance. This can be counteracted by increasing the \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_context_a860ca9db2d767d969b0b5a6c9b7b0f46}{Swap\-Interval} value. 
+

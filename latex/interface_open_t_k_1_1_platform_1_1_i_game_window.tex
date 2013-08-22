@@ -1,0 +1,141 @@
+\hypertarget{interface_open_t_k_1_1_platform_1_1_i_game_window}{\section{Open\-T\-K.\-Platform.\-I\-Game\-Window Interface Reference}
+\label{interface_open_t_k_1_1_platform_1_1_i_game_window}\index{Open\-T\-K.\-Platform.\-I\-Game\-Window@{Open\-T\-K.\-Platform.\-I\-Game\-Window}}
+}
+
+
+Defines the interface for a \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}.  
+
+
+Inheritance diagram for Open\-T\-K.\-Platform.\-I\-Game\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_open_t_k_1_1_platform_1_1_i_game_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a07597d249869f2da75e650caafb72f94}{Run} ()
+\begin{DoxyCompactList}\small\item\em Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} using the maximum update rate. \end{DoxyCompactList}\item 
+void \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a60761d038847624f5d1a8beb0b1a6ec2}{Run} (double update\-Rate)
+\begin{DoxyCompactList}\small\item\em Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} using the specified update rate. \end{DoxyCompactList}\item 
+void \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a82429a99533b04e178b4e6b7893efb17}{Make\-Current} ()
+\begin{DoxyCompactList}\small\item\em Makes the Graphics\-Context current on the calling thread. \end{DoxyCompactList}\item 
+void \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a1a426b9c39d98f557b702fe4ef91c007}{Swap\-Buffers} ()
+\begin{DoxyCompactList}\small\item\em Swaps the front and back buffers of the current Graphics\-Context, presenting the rendered scene to the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a59759b2288998cda597bcd28f72994da}{Load}
+\begin{DoxyCompactList}\small\item\em Occurs before the window is displayed for the first time. \end{DoxyCompactList}\item 
+Event\-Handler$<$ Event\-Args $>$ \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a493b559f07695d05b9a62a4fb7f8addb}{Unload}
+\begin{DoxyCompactList}\small\item\em Occurs before the window is destroyed. \end{DoxyCompactList}\item 
+Event\-Handler$<$ \hyperlink{class_open_t_k_1_1_frame_event_args}{Frame\-Event\-Args} $>$ \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_adb51747b40dcd20623f79ab492e28cd7}{Update\-Frame}
+\begin{DoxyCompactList}\small\item\em Occurs when it is time to update a frame. \end{DoxyCompactList}\item 
+Event\-Handler$<$ \hyperlink{class_open_t_k_1_1_frame_event_args}{Frame\-Event\-Args} $>$ \hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a93a6ae6565e74397cb44c57e99f55867}{Render\-Frame}
+\begin{DoxyCompactList}\small\item\em Occurs when it is time to render a frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Defines the interface for a \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_open_t_k_1_1_platform_1_1_i_game_window_a82429a99533b04e178b4e6b7893efb17}{\index{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}!Make\-Current@{Make\-Current}}
+\index{Make\-Current@{Make\-Current}!OpenTK::Platform::IGameWindow@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}}
+\subsubsection[{Make\-Current}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Platform.\-I\-Game\-Window.\-Make\-Current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_platform_1_1_i_game_window_a82429a99533b04e178b4e6b7893efb17}
+
+
+Makes the Graphics\-Context current on the calling thread. 
+
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_game_window_a84d84a7173903a8d991e6ca3d40a7a4b}{Open\-T\-K.\-Game\-Window}.
+
+\hypertarget{interface_open_t_k_1_1_platform_1_1_i_game_window_a07597d249869f2da75e650caafb72f94}{\index{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}!Run@{Run}}
+\index{Run@{Run}!OpenTK::Platform::IGameWindow@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Platform.\-I\-Game\-Window.\-Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_platform_1_1_i_game_window_a07597d249869f2da75e650caafb72f94}
+
+
+Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} using the maximum update rate. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{interface_open_t_k_1_1_platform_1_1_i_game_window_a60761d038847624f5d1a8beb0b1a6ec2}{Run(double)}
+
+
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_game_window_a2ead9bd94f36e26e86da79ef548e7d6b}{Open\-T\-K.\-Game\-Window}.
+
+\hypertarget{interface_open_t_k_1_1_platform_1_1_i_game_window_a60761d038847624f5d1a8beb0b1a6ec2}{\index{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}!Run@{Run}}
+\index{Run@{Run}!OpenTK::Platform::IGameWindow@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Platform.\-I\-Game\-Window.\-Run (
+\begin{DoxyParamCaption}
+\item[{double}]{update\-Rate}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_platform_1_1_i_game_window_a60761d038847624f5d1a8beb0b1a6ec2}
+
+
+Enters the game loop of the \hyperlink{class_open_t_k_1_1_game_window}{Game\-Window} using the specified update rate. 
+
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_game_window_a0c9d2a547ee1dc8f59ad0e70c2552730}{Open\-T\-K.\-Game\-Window}.
+
+\hypertarget{interface_open_t_k_1_1_platform_1_1_i_game_window_a1a426b9c39d98f557b702fe4ef91c007}{\index{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}!Swap\-Buffers@{Swap\-Buffers}}
+\index{Swap\-Buffers@{Swap\-Buffers}!OpenTK::Platform::IGameWindow@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}}
+\subsubsection[{Swap\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Platform.\-I\-Game\-Window.\-Swap\-Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interface_open_t_k_1_1_platform_1_1_i_game_window_a1a426b9c39d98f557b702fe4ef91c007}
+
+
+Swaps the front and back buffers of the current Graphics\-Context, presenting the rendered scene to the user. 
+
+
+
+Implemented in \hyperlink{class_open_t_k_1_1_game_window_adeaeff9283d467a5cda90e6b8579543a}{Open\-T\-K.\-Game\-Window}.
+
+
+
+\subsection{Event Documentation}
+\hypertarget{interface_open_t_k_1_1_platform_1_1_i_game_window_a59759b2288998cda597bcd28f72994da}{\index{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}!Load@{Load}}
+\index{Load@{Load}!OpenTK::Platform::IGameWindow@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-Platform.\-I\-Game\-Window.\-Load}}\label{interface_open_t_k_1_1_platform_1_1_i_game_window_a59759b2288998cda597bcd28f72994da}
+
+
+Occurs before the window is displayed for the first time. 
+
+\hypertarget{interface_open_t_k_1_1_platform_1_1_i_game_window_a93a6ae6565e74397cb44c57e99f55867}{\index{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}!Render\-Frame@{Render\-Frame}}
+\index{Render\-Frame@{Render\-Frame}!OpenTK::Platform::IGameWindow@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}}
+\subsubsection[{Render\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Frame\-Event\-Args}$>$ Open\-T\-K.\-Platform.\-I\-Game\-Window.\-Render\-Frame}}\label{interface_open_t_k_1_1_platform_1_1_i_game_window_a93a6ae6565e74397cb44c57e99f55867}
+
+
+Occurs when it is time to render a frame. 
+
+\hypertarget{interface_open_t_k_1_1_platform_1_1_i_game_window_a493b559f07695d05b9a62a4fb7f8addb}{\index{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}!Unload@{Unload}}
+\index{Unload@{Unload}!OpenTK::Platform::IGameWindow@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}}
+\subsubsection[{Unload}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<$Event\-Args$>$ Open\-T\-K.\-Platform.\-I\-Game\-Window.\-Unload}}\label{interface_open_t_k_1_1_platform_1_1_i_game_window_a493b559f07695d05b9a62a4fb7f8addb}
+
+
+Occurs before the window is destroyed. 
+
+\hypertarget{interface_open_t_k_1_1_platform_1_1_i_game_window_adb51747b40dcd20623f79ab492e28cd7}{\index{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}!Update\-Frame@{Update\-Frame}}
+\index{Update\-Frame@{Update\-Frame}!OpenTK::Platform::IGameWindow@{Open\-T\-K\-::\-Platform\-::\-I\-Game\-Window}}
+\subsubsection[{Update\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Frame\-Event\-Args}$>$ Open\-T\-K.\-Platform.\-I\-Game\-Window.\-Update\-Frame}}\label{interface_open_t_k_1_1_platform_1_1_i_game_window_adb51747b40dcd20623f79ab492e28cd7}
+
+
+Occurs when it is time to update a frame. 
+

@@ -1,0 +1,232 @@
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device}{\section{Open\-T\-K.\-Input.\-Mouse\-Device Class Reference}
+\label{class_open_t_k_1_1_input_1_1_mouse_device}\index{Open\-T\-K.\-Input.\-Mouse\-Device@{Open\-T\-K.\-Input.\-Mouse\-Device}}
+}
+
+
+Represents a mouse device and provides methods to query its status.  
+
+
+Inheritance diagram for Open\-T\-K.\-Input.\-Mouse\-Device\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_open_t_k_1_1_input_1_1_mouse_device}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a58acad12c9337d1ace173b6131f1ff95}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Calculates the hash code for this instance. \end{DoxyCompactList}\item 
+override string \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a347569de00bc02fc3392f156f3fb4faa}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String that describes this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a0c31489165ae480b490e8ab0aa375fab}{Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a string describing this \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device}{Mouse\-Device}. \end{DoxyCompactList}\item 
+\hyperlink{namespace_open_t_k_1_1_input_a1d147c6256b0adaa5288eec90ed93270}{Input\-Device\-Type} \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a4583df744630520f932eca2d821d5aa8}{Device\-Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating the Input\-Device\-Type of this Input\-Device. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_af253d36f1acd03668ef5153948089294}{Number\-Of\-Buttons}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the number of buttons on this \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device}{Mouse\-Device}. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_ace88c5884e2e50314644aedc8d29efcc}{Number\-Of\-Wheels}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the number of wheels on this \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device}{Mouse\-Device}. \end{DoxyCompactList}\item 
+Int\-Ptr \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a8ddb35f6a104a3db46481d2290d76f57}{Device\-I\-D}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an Int\-Ptr representing a device dependent I\-D. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a903b16fe9f4b3b1054cfbc8051b3752b}{Wheel}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the absolute wheel position in integer units. To support high-\/precision mice, it is recommended to use \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_ace88f976bb7b736216cf785f3679dadd}{Wheel\-Precise} instead. \end{DoxyCompactList}\item 
+float \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_ace88f976bb7b736216cf785f3679dadd}{Wheel\-Precise}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the absolute wheel position in floating-\/point units. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_afc266b67cf1809bb2d27d231ae5d2dd5}{X}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the absolute x position of the pointer, in window pixel coordinates. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_aabbc4ab5371df1be49ad704927ff7e99}{Y}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the absolute y position of the pointer, in window pixel coordinates. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a810e7103dac839c811324ef808365f8e}{this\mbox{[}\-Mouse\-Button button\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating the state of the specified Mouse\-Button. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a834230a316172123e7dc9eccdfe9ac5c}{Wheel\-Delta}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the relative wheel movement. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a4f6d5b4e04871884c0b20c0b005b5336}{X\-Delta}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the relative x movement of the pointer, in pixel coordinates. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_ab1689cd29ee92df3c5ca955b166636e4}{Y\-Delta}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an integer representing the relative y movement of the pointer, in pixel coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\-Handler$<$ \hyperlink{class_open_t_k_1_1_input_1_1_mouse_move_event_args}{Mouse\-Move\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_ae98bb40aa03f634ecb53a73971dd9097}{Move} = delegate \{ \}
+\begin{DoxyCompactList}\small\item\em Occurs when the mouse's position is moved. \end{DoxyCompactList}\item 
+Event\-Handler\\*
+$<$ \hyperlink{class_open_t_k_1_1_input_1_1_mouse_button_event_args}{Mouse\-Button\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a6d161629ddeb7adefb6f8332824778bd}{Button\-Down} = delegate \{ \}
+\begin{DoxyCompactList}\small\item\em Occurs when a button is pressed. \end{DoxyCompactList}\item 
+Event\-Handler\\*
+$<$ \hyperlink{class_open_t_k_1_1_input_1_1_mouse_button_event_args}{Mouse\-Button\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a244f6f68b32bfe3f745e2b8087e970e8}{Button\-Up} = delegate \{ \}
+\begin{DoxyCompactList}\small\item\em Occurs when a button is released. \end{DoxyCompactList}\item 
+Event\-Handler$<$ \hyperlink{class_open_t_k_1_1_input_1_1_mouse_wheel_event_args}{Mouse\-Wheel\-Event\-Args} $>$ \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_a4bee8a35ae92c6d4f74868934a5c2475}{Wheel\-Changed} = delegate \{ \}
+\begin{DoxyCompactList}\small\item\em Occurs when one of the mouse wheels is moved. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a mouse device and provides methods to query its status. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a58acad12c9337d1ace173b6131f1ff95}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Input.\-Mouse\-Device.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a58acad12c9337d1ace173b6131f1ff95}
+
+
+Calculates the hash code for this instance. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a347569de00bc02fc3392f156f3fb4faa}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Input.\-Mouse\-Device.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a347569de00bc02fc3392f156f3fb4faa}
+
+
+Returns a System.\-String that describes this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-String that describes this instance.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a0c31489165ae480b490e8ab0aa375fab}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Description@{Description}}
+\index{Description@{Description}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Description}]{\setlength{\rightskip}{0pt plus 5cm}string Open\-T\-K.\-Input.\-Mouse\-Device.\-Description\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a0c31489165ae480b490e8ab0aa375fab}
+
+
+Gets a string describing this \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device}{Mouse\-Device}. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a8ddb35f6a104a3db46481d2290d76f57}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Device\-I\-D@{Device\-I\-D}}
+\index{Device\-I\-D@{Device\-I\-D}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Device\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Ptr Open\-T\-K.\-Input.\-Mouse\-Device.\-Device\-I\-D\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a8ddb35f6a104a3db46481d2290d76f57}
+
+
+Gets an Int\-Ptr representing a device dependent I\-D. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a4583df744630520f932eca2d821d5aa8}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Device\-Type@{Device\-Type}}
+\index{Device\-Type@{Device\-Type}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Device\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input\-Device\-Type} Open\-T\-K.\-Input.\-Mouse\-Device.\-Device\-Type\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a4583df744630520f932eca2d821d5aa8}
+
+
+Gets a value indicating the Input\-Device\-Type of this Input\-Device. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_af253d36f1acd03668ef5153948089294}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Number\-Of\-Buttons@{Number\-Of\-Buttons}}
+\index{Number\-Of\-Buttons@{Number\-Of\-Buttons}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Number\-Of\-Buttons}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Device.\-Number\-Of\-Buttons\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_af253d36f1acd03668ef5153948089294}
+
+
+Gets an integer representing the number of buttons on this \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device}{Mouse\-Device}. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_ace88c5884e2e50314644aedc8d29efcc}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Number\-Of\-Wheels@{Number\-Of\-Wheels}}
+\index{Number\-Of\-Wheels@{Number\-Of\-Wheels}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Number\-Of\-Wheels}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Device.\-Number\-Of\-Wheels\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_ace88c5884e2e50314644aedc8d29efcc}
+
+
+Gets an integer representing the number of wheels on this \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device}{Mouse\-Device}. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a810e7103dac839c811324ef808365f8e}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!this\mbox{[}\-Mouse\-Button button\mbox{]}@{this[Mouse\-Button button]}}
+\index{this\mbox{[}\-Mouse\-Button button\mbox{]}@{this[Mouse\-Button button]}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{this[Mouse\-Button button]}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Mouse\-Device.\-this\mbox{[}{\bf Mouse\-Button} button\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a810e7103dac839c811324ef808365f8e}
+
+
+Gets a System.\-Boolean indicating the state of the specified Mouse\-Button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The Mouse\-Button to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the Mouse\-Button is pressed, false otherwise.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a903b16fe9f4b3b1054cfbc8051b3752b}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Wheel@{Wheel}}
+\index{Wheel@{Wheel}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Wheel}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Device.\-Wheel\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a903b16fe9f4b3b1054cfbc8051b3752b}
+
+
+Gets the absolute wheel position in integer units. To support high-\/precision mice, it is recommended to use \hyperlink{class_open_t_k_1_1_input_1_1_mouse_device_ace88f976bb7b736216cf785f3679dadd}{Wheel\-Precise} instead. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a834230a316172123e7dc9eccdfe9ac5c}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Wheel\-Delta@{Wheel\-Delta}}
+\index{Wheel\-Delta@{Wheel\-Delta}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Wheel\-Delta}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Device.\-Wheel\-Delta\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a834230a316172123e7dc9eccdfe9ac5c}
+
+
+Gets an integer representing the relative wheel movement. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_ace88f976bb7b736216cf785f3679dadd}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Wheel\-Precise@{Wheel\-Precise}}
+\index{Wheel\-Precise@{Wheel\-Precise}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Wheel\-Precise}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Input.\-Mouse\-Device.\-Wheel\-Precise\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_ace88f976bb7b736216cf785f3679dadd}
+
+
+Gets the absolute wheel position in floating-\/point units. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_afc266b67cf1809bb2d27d231ae5d2dd5}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!X@{X}}
+\index{X@{X}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Device.\-X\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_afc266b67cf1809bb2d27d231ae5d2dd5}
+
+
+Gets an integer representing the absolute x position of the pointer, in window pixel coordinates. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a4f6d5b4e04871884c0b20c0b005b5336}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!X\-Delta@{X\-Delta}}
+\index{X\-Delta@{X\-Delta}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{X\-Delta}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Device.\-X\-Delta\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a4f6d5b4e04871884c0b20c0b005b5336}
+
+
+Gets an integer representing the relative x movement of the pointer, in pixel coordinates. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_aabbc4ab5371df1be49ad704927ff7e99}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Y@{Y}}
+\index{Y@{Y}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Device.\-Y\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_aabbc4ab5371df1be49ad704927ff7e99}
+
+
+Gets an integer representing the absolute y position of the pointer, in window pixel coordinates. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_ab1689cd29ee92df3c5ca955b166636e4}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Y\-Delta@{Y\-Delta}}
+\index{Y\-Delta@{Y\-Delta}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Y\-Delta}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Input.\-Mouse\-Device.\-Y\-Delta\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_ab1689cd29ee92df3c5ca955b166636e4}
+
+
+Gets an integer representing the relative y movement of the pointer, in pixel coordinates. 
+
+
+
+\subsection{Event Documentation}
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a6d161629ddeb7adefb6f8332824778bd}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Button\-Down@{Button\-Down}}
+\index{Button\-Down@{Button\-Down}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Button\-Down}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Mouse\-Button\-Event\-Args}$>$ Open\-T\-K.\-Input.\-Mouse\-Device.\-Button\-Down = delegate \{ \}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a6d161629ddeb7adefb6f8332824778bd}
+
+
+Occurs when a button is pressed. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a244f6f68b32bfe3f745e2b8087e970e8}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Button\-Up@{Button\-Up}}
+\index{Button\-Up@{Button\-Up}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Button\-Up}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Mouse\-Button\-Event\-Args}$>$ Open\-T\-K.\-Input.\-Mouse\-Device.\-Button\-Up = delegate \{ \}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a244f6f68b32bfe3f745e2b8087e970e8}
+
+
+Occurs when a button is released. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_ae98bb40aa03f634ecb53a73971dd9097}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Move@{Move}}
+\index{Move@{Move}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Move}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Mouse\-Move\-Event\-Args}$>$ Open\-T\-K.\-Input.\-Mouse\-Device.\-Move = delegate \{ \}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_ae98bb40aa03f634ecb53a73971dd9097}
+
+
+Occurs when the mouse's position is moved. 
+
+\hypertarget{class_open_t_k_1_1_input_1_1_mouse_device_a4bee8a35ae92c6d4f74868934a5c2475}{\index{Open\-T\-K\-::\-Input\-::\-Mouse\-Device@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}!Wheel\-Changed@{Wheel\-Changed}}
+\index{Wheel\-Changed@{Wheel\-Changed}!OpenTK::Input::MouseDevice@{Open\-T\-K\-::\-Input\-::\-Mouse\-Device}}
+\subsubsection[{Wheel\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Handler$<${\bf Mouse\-Wheel\-Event\-Args}$>$ Open\-T\-K.\-Input.\-Mouse\-Device.\-Wheel\-Changed = delegate \{ \}}}\label{class_open_t_k_1_1_input_1_1_mouse_device_a4bee8a35ae92c6d4f74868934a5c2475}
+
+
+Occurs when one of the mouse wheels is moved. 
+

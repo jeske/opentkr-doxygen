@@ -1,0 +1,2270 @@
+\hypertarget{struct_open_t_k_1_1_vector3d}{\section{Open\-T\-K.\-Vector3d Struct Reference}
+\label{struct_open_t_k_1_1_vector3d}\index{Open\-T\-K.\-Vector3d@{Open\-T\-K.\-Vector3d}}
+}
+
+
+Represents a 3\-D vector using three double-\/precision floating-\/point numbers.  
+
+
+
+
+Inherits I\-Equatable$<$ Vector3d $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_open_t_k_1_1_vector3d_a02358e64cb6d3d31799125c1d24cb294}{Vector3d} (double value)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d_aa606a775cb7818232c511ef06af38565}{Vector3d} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d_a2286933384d774b643611fcb15426cc0}{Vector3d} (\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} v)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance from the given \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d_ac82e74577ed1b8c3483c4fc497ab6e8c}{Vector3d} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} v)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance from the given \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d_a5177e1a86c590b993afe3abc20aaa3e7}{Vector3d} (\hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d} v)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance from the given \hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d}. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_adc445ad9a941c590dc447c6d2f7ccb34}{Add} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Add the Vector passed as parameter to this instance.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_ab7fd01601025bd6f0af1db19215bb464}{Add} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Add the Vector passed as parameter to this instance.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_aab98cdc60c3ee632c2c31aa6ff73bc5c}{Sub} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Subtract the Vector passed as parameter from this instance.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_a692dcef55111b47eb83e35372ecff544}{Sub} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Subtract the Vector passed as parameter from this instance.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_ae290c47012c01c4abbe5c0ec93bcd026}{Mult} (double f)
+\begin{DoxyCompactList}\small\item\em Multiply this instance by a scalar.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_a32b8dae5103dc2eb4dbb02210a003d83}{Div} (double f)
+\begin{DoxyCompactList}\small\item\em Divide this instance by a scalar.\end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a4143dc72cf7c9850c1225a7c4ab65963}{Normalized} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} scaled to unit length. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_a5096b75ce9daa19ffca7db45feb85415}{Normalize} ()
+\begin{DoxyCompactList}\small\item\em Scales the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} to unit length. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_a44b3f4f59aa64e1dfefdc2f714de544b}{Normalize\-Fast} ()
+\begin{DoxyCompactList}\small\item\em Scales the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} to approximately unit length. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_a36c3fa94dd653353e08eb0ff1bf10ce0}{Scale} (double sx, double sy, double sz)
+\begin{DoxyCompactList}\small\item\em Scales the current \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} by the given amounts. \end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_a6bfb88dfaa9794d8caf747019c085dfb}{Scale} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} scale)
+\begin{DoxyCompactList}\small\item\em Scales this instance by the given parameter.\end{DoxyCompactList}\item 
+void \hyperlink{struct_open_t_k_1_1_vector3d_a250b4e8eb8b4ca8d2b1bf67fb27d7568}{Scale} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} scale)
+\begin{DoxyCompactList}\small\item\em Scales this instance by the given parameter.\end{DoxyCompactList}\item 
+override string \hyperlink{struct_open_t_k_1_1_vector3d_ab3abad1c646b9c5952867f4d9bea077a}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. \end{DoxyCompactList}\item 
+override int \hyperlink{struct_open_t_k_1_1_vector3d_a3b7f65557039ff2ee2586686ee8ded4a}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Returns the hashcode for this instance. \end{DoxyCompactList}\item 
+override bool \hyperlink{struct_open_t_k_1_1_vector3d_ac93f701e73a3b72deb2df5bca6bd83cc}{Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Indicates whether this instance and a specified object are equal. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_vector3d_a999d83b4d83ce030026d7c59e895d002}{Equals} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} other)
+\begin{DoxyCompactList}\small\item\em Indicates whether the current vector is equal to another vector.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a78df40f0631ca6fd74944b1f8ac9e20b}{Sub} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b)
+\begin{DoxyCompactList}\small\item\em Subtract one Vector from another \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a5bf0f4a3b881cfe3a88a3b4e75a86aa4}{Sub} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Subtract one Vector from another \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a816913e521c522fd0ac4fe8da8ee850c}{Mult} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, double f)
+\begin{DoxyCompactList}\small\item\em Multiply a vector and a scalar \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a6b782a5823060ed26170944622c94cc9}{Mult} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, double f, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Multiply a vector and a scalar \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a40572545a7c1dda9815ca4c41a12fe57}{Div} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, double f)
+\begin{DoxyCompactList}\small\item\em Divide a vector by a scalar \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_ae29ea2c48d8c832e9cbfd66a7a8e9ef9}{Div} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, double f, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Divide a vector by a scalar \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a000813142e2eca31cd127cf8ef1ce10b}{Add} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b)
+\begin{DoxyCompactList}\small\item\em Adds two vectors. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_affeec46e718fdb8f8142980756a6e543}{Add} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Adds two vectors. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a72dba90498927eeedcd7c44bd353cbed}{Subtract} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b)
+\begin{DoxyCompactList}\small\item\em Subtract one Vector from another \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_af4ccc73aca284e11959b1ff121f8fbc7}{Subtract} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Subtract one Vector from another \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a7bf42bd9ec3f90548104af9ca8c9da4b}{Multiply} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vector, double scale)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by a scalar. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a4308dccb089abe36ba817bda4ddd0633}{Multiply} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vector, double scale, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a7079a428810b58995b4a1865d9695d28}{Multiply} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vector, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} scale)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by the components a vector (scale). \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_acd8421962a9e4ddf3b12f80368a750f5}{Multiply} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vector, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} scale, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by the components of a vector (scale). \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a41e2e84739b70b5302281ac799586760}{Divide} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vector, double scale)
+\begin{DoxyCompactList}\small\item\em Divides a vector by a scalar. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a0639a0d73e3978bf9720ff7b1228b9a4}{Divide} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vector, double scale, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Divides a vector by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a75e526d29ab50ffbcb2290087cc9ab30}{Divide} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vector, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} scale)
+\begin{DoxyCompactList}\small\item\em Divides a vector by the components of a vector (scale). \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a4603043bb746f7921aa124392348997a}{Divide} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vector, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} scale, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Divide a vector by the components of a vector (scale). \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_af9c428e9141aa1d67b6c3a3b6c9c19e9}{Component\-Min} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b)
+\begin{DoxyCompactList}\small\item\em Calculate the component-\/wise minimum of two vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_aaf69f7b58e905d3fd535d5510a2b4b90}{Component\-Min} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Calculate the component-\/wise minimum of two vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a1f3653005760ef494642e954414bc774}{Component\-Max} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b)
+\begin{DoxyCompactList}\small\item\em Calculate the component-\/wise maximum of two vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a7595f16dd6bd992c0927567abdbd64b6}{Component\-Max} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Calculate the component-\/wise maximum of two vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a6da3a63025e7c6eb996a3437b312a7ed}{Min} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Returns the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} with the minimum magnitude \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a4e45c635ab5ef76f811381bd006c11af}{Max} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Returns the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} with the minimum magnitude \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_ae9a2d2346830c76998265c5d77ebece7}{Clamp} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} min, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} max)
+\begin{DoxyCompactList}\small\item\em Clamp a vector to the given minimum and maximum vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_ac96aa54f03a61f6c3a022d37e0316dee}{Clamp} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} min, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} max, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Clamp a vector to the given minimum and maximum vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a491a35dda1a3afc7e623884f1ae175a1}{Normalize} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec)
+\begin{DoxyCompactList}\small\item\em Scale a vector to unit length \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a33fbddd9977c1a289967ba0e1497d1b5}{Normalize} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Scale a vector to unit length \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a78b9fa216eb61a3489467def86e5b771}{Normalize\-Fast} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec)
+\begin{DoxyCompactList}\small\item\em Scale a vector to approximately unit length \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_abbecf0ee466bd83cdc59b045b8af1788}{Normalize\-Fast} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Scale a vector to approximately unit length \end{DoxyCompactList}\item 
+static double \hyperlink{struct_open_t_k_1_1_vector3d_a11344599553ecbd7d4b5a8bb7d629f12}{Dot} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Calculate the dot (scalar) product of two vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a9e94fbdfa30466c8846baf0027e19e13}{Dot} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right, out double result)
+\begin{DoxyCompactList}\small\item\em Calculate the dot (scalar) product of two vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_afae6501c77bff8155399399d14852813}{Cross} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Caclulate the cross (vector) product of two vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_ac0c6f9e6851a01b794c5c0c299ef2673}{Cross} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Caclulate the cross (vector) product of two vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_ad83b3030cfda37a4c06348fedbc65ff0}{Lerp} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b, double blend)
+\begin{DoxyCompactList}\small\item\em Returns a new Vector that is the linear blend of the 2 given Vectors \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a9a6222623dade122dbd385514490f196}{Lerp} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b, double blend, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Returns a new Vector that is the linear blend of the 2 given Vectors \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a75358f7bb6fd68ec708d084fa36c0663}{Bary\-Centric} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} c, double u, double v)
+\begin{DoxyCompactList}\small\item\em Interpolate 3 Vectors using Barycentric coordinates \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a48a0c572c01d771d5903661242d25672}{Bary\-Centric} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} a, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} b, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} c, double u, double v, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Interpolate 3 Vectors using Barycentric coordinates\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a2f33e9f148b468ed15a70f40ac948fe7}{Transform\-Vector} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat)
+\begin{DoxyCompactList}\small\item\em Transform a direction vector by the given Matrix Assumes the matrix has a bottom row of (0,0,0,1), that is the translation part is ignored. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_aaa12b4d37c1de0624670ebf8aeb39811}{Transform\-Vector} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, ref \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Transform a direction vector by the given Matrix Assumes the matrix has a bottom row of (0,0,0,1), that is the translation part is ignored. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a5788e03915793e548f9a63496d2b4e40}{Transform\-Normal} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} norm, \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat)
+\begin{DoxyCompactList}\small\item\em Transform a Normal by the given Matrix\end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a5cf4cc6c9d66c028d0f66a0a5d3ee5fb}{Transform\-Normal} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} norm, ref \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Transform a Normal by the given Matrix\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a50813ed03f4685983c7f6513c7271847}{Transform\-Normal\-Inverse} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} norm, \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} inv\-Mat)
+\begin{DoxyCompactList}\small\item\em Transform a Normal by the (transpose of the) given Matrix\end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a7481a150ba39c7e6f7dcedd2b9365969}{Transform\-Normal\-Inverse} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} norm, ref \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} inv\-Mat, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Transform a Normal by the (transpose of the) given Matrix\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_acfca4b52cf2fb9dc64156a624dd0545d}{Transform\-Position} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} pos, \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat)
+\begin{DoxyCompactList}\small\item\em Transform a Position by the given Matrix\end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a249ee6f2d34de7cc267cefada316fb5b}{Transform\-Position} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} pos, ref \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Transform a Position by the given Matrix\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_af14d87cf6330c7381b3773cd165032a2}{Transform} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat)
+\begin{DoxyCompactList}\small\item\em Transform a Vector by the given Matrix\end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_ac001fabab6214fa4d83aebf9f766eeb2}{Transform} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, ref \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Transform a Vector by the given Matrix\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a9c8b5c060958dd56893fe5a6cf21245d}{Transform} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} quat)
+\begin{DoxyCompactList}\small\item\em Transforms a vector by a quaternion rotation. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a5db7b54819e762a9cd16db732e4846fe}{Transform} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, ref \hyperlink{struct_open_t_k_1_1_quaterniond}{Quaterniond} quat, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Transforms a vector by a quaternion rotation. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_aa776e9fd6b0881d20814397a155e1341}{Transform\-Perspective} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat)
+\begin{DoxyCompactList}\small\item\em Transform a \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} by the given Matrix, and project the resulting \hyperlink{struct_open_t_k_1_1_vector4}{Vector4} back to a \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a8f7a7ad8674db5e6b3937dd6f9902910}{Transform\-Perspective} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, ref \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat, out \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} result)
+\begin{DoxyCompactList}\small\item\em Transform a \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} by the given Matrix, and project the resulting \hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d} back to a \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}\end{DoxyCompactList}\item 
+static double \hyperlink{struct_open_t_k_1_1_vector3d_aef221b17efd144a5da84bb8827e46d20}{Calculate\-Angle} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} first, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} second)
+\begin{DoxyCompactList}\small\item\em Calculates the angle (in radians) between two vectors. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_open_t_k_1_1_vector3d_a6c5209a6296a2d3dd6f0be6e64dc1209}{Calculate\-Angle} (ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} first, ref \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} second, out double result)
+\begin{DoxyCompactList}\small\item\em Calculates the angle (in radians) between two vectors.\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a9c1682494023790eb13cec857d4a95d6}{operator+} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Adds two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a10aef80dffe323a3c43db9329adff1c2}{operator-\/} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Subtracts two instances. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a1ac5dcc8891cc0d8eeb309e2ef4fd87b}{operator-\/} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec)
+\begin{DoxyCompactList}\small\item\em Negates an instance. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_aa1c51b2bbe6e2adf39b63e9c6e09af40}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, double scale)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_aab0e909ef74f4f29f9b307183b55a300}{operator$\ast$} (double scale, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a scalar. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a8ab18f6f16bb04b10b60b23956ec329c}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, \hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_acb92a8ba0d2439567b09d503a5388369}{operator$\ast$} (\hyperlink{struct_open_t_k_1_1_matrix4d}{Matrix4d} mat, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec)
+\begin{DoxyCompactList}\small\item\em Multiplies an instance by a matrix. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a207436ca4cb857eced58727aa513763f}{operator/} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} vec, double scale)
+\begin{DoxyCompactList}\small\item\em Divides an instance by a scalar. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_vector3d_a26c18a277d3551a7bce1607a034b4b3b}{operator==} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for equality. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_vector3d_ae24bedde1d9f1fcb4bbf5d647dcdea2a}{operator!=} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} left, \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} right)
+\begin{DoxyCompactList}\small\item\em Compares two instances for inequality. \end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d_a2e09d81252a6ec595b736f29c447f52f}{operator Vector3d} (\hyperlink{struct_open_t_k_1_1_vector3}{Vector3} v3)
+\begin{DoxyCompactList}\small\item\em Converts \hyperlink{struct_open_t_k_1_1_vector3}{Open\-T\-K.\-Vector3} to \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d}.\end{DoxyCompactList}\item 
+static \hyperlink{struct_open_t_k_1_1_vector3d_aa29e45d1a757cdc73d8c91ea7b38f36d}{operator Vector3} (\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} v3d)
+\begin{DoxyCompactList}\small\item\em Converts \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} to \hyperlink{struct_open_t_k_1_1_vector3}{Open\-T\-K.\-Vector3}.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{struct_open_t_k_1_1_vector3d_a1259c1afde67e1518d723d9e150c9c9e}{X}
+\begin{DoxyCompactList}\small\item\em The X component of the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_vector3d_a8cb2eeeb8cf190e7aeab39af66a2ec5e}{Y}
+\begin{DoxyCompactList}\small\item\em The Y component of the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_vector3d_a894d99bd161ab4ad52a45702f48641d5}{Z}
+\begin{DoxyCompactList}\small\item\em The Z component of the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a1df7baf64afca7d17602d5f072e188c9}{Unit\-X} = new \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}(1, 0, 0)
+\begin{DoxyCompactList}\small\item\em Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} that points towards the X-\/axis. \end{DoxyCompactList}\item 
+static readonly \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a020b45e3c1a0b417aff18e3deb4a9942}{Unit\-Y} = new \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}(0, 1, 0)
+\begin{DoxyCompactList}\small\item\em Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} that points towards the Y-\/axis. \end{DoxyCompactList}\item 
+static readonly \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_aa843d07a35e3d275f117d252877d2e55}{Unit\-Z} = new \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}(0, 0, 1)
+\begin{DoxyCompactList}\small\item\em /// Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} that points towards the Z-\/axis. \end{DoxyCompactList}\item 
+static readonly \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_ab7ac2adf76ddd6450d2a1e10ca2e22c1}{Zero} = new \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}(0, 0, 0)
+\begin{DoxyCompactList}\small\item\em Defines a zero-\/length \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. \end{DoxyCompactList}\item 
+static readonly \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a41eced555e80b5f7f7146ddddb165e85}{One} = new \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}(1, 1, 1)
+\begin{DoxyCompactList}\small\item\em Defines an instance with all components set to 1. \end{DoxyCompactList}\item 
+static readonly int \hyperlink{struct_open_t_k_1_1_vector3d_a5390299765c81e1b1f04850ee26c2a5e}{Size\-In\-Bytes} = Marshal.\-Size\-Of(new \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}())
+\begin{DoxyCompactList}\small\item\em Defines the size of the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} struct in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{struct_open_t_k_1_1_vector3d_a0052ef76359efe834947565dcabe91fc}{this\mbox{[}int index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the value at the index of the Vector. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_vector3d_a554332540dcf9bac5720fdb26d5e96c2}{Length}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the length (magnitude) of the vector. \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_vector3d_ae08ae4196dadb5dfb4baf0ab27b1ee57}{Length\-Fast}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an approximation of the vector length (magnitude). \end{DoxyCompactList}\item 
+double \hyperlink{struct_open_t_k_1_1_vector3d_aaad32d6807957c3db9e5d32f00571e70}{Length\-Squared}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the square of the vector length (magnitude). \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector3d_ae67054daed5a4c1e080b1550d4022276}{Xy}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the X and Y components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector3d_a7072875ab2d574f202617f985311cd0d}{Xz}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the X and Z components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector3d_a2085dfeb2b1f46e06bbf5429369cf473}{Yx}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Y and X components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector3d_aa4e666b501c263a4dbc03f2aadee8c18}{Yz}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Y and Z components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector3d_a80d1ecc7d4722af5295bbacec4d4f47f}{Zx}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Z and X components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} \hyperlink{struct_open_t_k_1_1_vector3d_ad49db3a01526f1557d1b8144d560ccaf}{Zy}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Z and Y components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_ab7f5d1a104fcf24bb79cccb06dfbc99d}{Xzy}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the X, Z, and Y components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a2ae98c94c4978c88492ff24351b40941}{Yxz}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the Y, X, and Z components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_acbf0f74c431fac06fb539f935a3e82cc}{Yzx}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the Y, Z, and X components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a258be4f58bae23c1e48513647f9f0ad7}{Zxy}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the Z, X, and Y components of this instance. \end{DoxyCompactList}\item 
+\hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} \hyperlink{struct_open_t_k_1_1_vector3d_a858976422e349beaf8e1de8153d2eece}{Zyx}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the Z, Y, and X components of this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a 3\-D vector using three double-\/precision floating-\/point numbers. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_open_t_k_1_1_vector3d_a02358e64cb6d3d31799125c1d24cb294}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Vector3d@{Vector3d}}
+\index{Vector3d@{Vector3d}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Vector3d}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Vector3d.\-Vector3d (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a02358e64cb6d3d31799125c1d24cb294}
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value that will initialize this instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_aa606a775cb7818232c511ef06af38565}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Vector3d@{Vector3d}}
+\index{Vector3d@{Vector3d}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Vector3d}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Vector3d.\-Vector3d (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{z}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_aa606a775cb7818232c511ef06af38565}
+
+
+Constructs a new \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component of the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}.\\
+\hline
+{\em y} & The y component of the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}.\\
+\hline
+{\em z} & The z component of the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a2286933384d774b643611fcb15426cc0}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Vector3d@{Vector3d}}
+\index{Vector3d@{Vector3d}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Vector3d}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Vector3d.\-Vector3d (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2d}}]{v}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a2286933384d774b643611fcb15426cc0}
+
+
+Constructs a new instance from the given \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The \hyperlink{struct_open_t_k_1_1_vector2d}{Vector2d} to copy components from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_ac82e74577ed1b8c3483c4fc497ab6e8c}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Vector3d@{Vector3d}}
+\index{Vector3d@{Vector3d}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Vector3d}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Vector3d.\-Vector3d (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{v}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_ac82e74577ed1b8c3483c4fc497ab6e8c}
+
+
+Constructs a new instance from the given \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} to copy components from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a5177e1a86c590b993afe3abc20aaa3e7}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Vector3d@{Vector3d}}
+\index{Vector3d@{Vector3d}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Vector3d}]{\setlength{\rightskip}{0pt plus 5cm}Open\-T\-K.\-Vector3d.\-Vector3d (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector4d}}]{v}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a5177e1a86c590b993afe3abc20aaa3e7}
+
+
+Constructs a new instance from the given \hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The \hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d} to copy components from.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_vector3d_adc445ad9a941c590dc447c6d2f7ccb34}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_adc445ad9a941c590dc447c6d2f7ccb34}
+
+
+Add the Vector passed as parameter to this instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Right operand. This parameter is only read from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_ab7fd01601025bd6f0af1db19215bb464}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Add (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_ab7fd01601025bd6f0af1db19215bb464}
+
+
+Add the Vector passed as parameter to this instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Right operand. This parameter is only read from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a000813142e2eca31cd127cf8ef1ce10b}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{a, }
+\item[{{\bf Vector3d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a000813142e2eca31cd127cf8ef1ce10b}
+
+
+Adds two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Left operand.\\
+\hline
+{\em b} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_affeec46e718fdb8f8142980756a6e543}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Add@{Add}}
+\index{Add@{Add}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Add (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{a, }
+\item[{ref {\bf Vector3d}}]{b, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_affeec46e718fdb8f8142980756a6e543}
+
+
+Adds two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Left operand.\\
+\hline
+{\em b} & Right operand.\\
+\hline
+{\em result} & Result of operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a75358f7bb6fd68ec708d084fa36c0663}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Bary\-Centric@{Bary\-Centric}}
+\index{Bary\-Centric@{Bary\-Centric}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Bary\-Centric}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Bary\-Centric (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{a, }
+\item[{{\bf Vector3d}}]{b, }
+\item[{{\bf Vector3d}}]{c, }
+\item[{double}]{u, }
+\item[{double}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a75358f7bb6fd68ec708d084fa36c0663}
+
+
+Interpolate 3 Vectors using Barycentric coordinates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First input Vector\\
+\hline
+{\em b} & Second input Vector\\
+\hline
+{\em c} & Third input Vector\\
+\hline
+{\em u} & First Barycentric Coordinate\\
+\hline
+{\em v} & Second Barycentric Coordinate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a when u=v=0, b when u=1,v=0, c when u=0,v=1, and a linear combination of a,b,c otherwise
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a48a0c572c01d771d5903661242d25672}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Bary\-Centric@{Bary\-Centric}}
+\index{Bary\-Centric@{Bary\-Centric}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Bary\-Centric}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Bary\-Centric (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{a, }
+\item[{ref {\bf Vector3d}}]{b, }
+\item[{ref {\bf Vector3d}}]{c, }
+\item[{double}]{u, }
+\item[{double}]{v, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a48a0c572c01d771d5903661242d25672}
+
+
+Interpolate 3 Vectors using Barycentric coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First input Vector.\\
+\hline
+{\em b} & Second input Vector.\\
+\hline
+{\em c} & Third input Vector.\\
+\hline
+{\em u} & First Barycentric Coordinate.\\
+\hline
+{\em v} & Second Barycentric Coordinate.\\
+\hline
+{\em result} & Output Vector. a when u=v=0, b when u=1,v=0, c when u=0,v=1, and a linear combination of a,b,c otherwise\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_aef221b17efd144a5da84bb8827e46d20}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Calculate\-Angle@{Calculate\-Angle}}
+\index{Calculate\-Angle@{Calculate\-Angle}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Calculate\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}static double Open\-T\-K.\-Vector3d.\-Calculate\-Angle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{first, }
+\item[{{\bf Vector3d}}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_aef221b17efd144a5da84bb8827e46d20}
+
+
+Calculates the angle (in radians) between two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first vector.\\
+\hline
+{\em second} & The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Angle (in radians) between the vectors.
+\end{DoxyReturn}
+
+
+Note that the returned angle is never bigger than the constant Pi.\hypertarget{struct_open_t_k_1_1_vector3d_a6c5209a6296a2d3dd6f0be6e64dc1209}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Calculate\-Angle@{Calculate\-Angle}}
+\index{Calculate\-Angle@{Calculate\-Angle}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Calculate\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Calculate\-Angle (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{first, }
+\item[{ref {\bf Vector3d}}]{second, }
+\item[{out double}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a6c5209a6296a2d3dd6f0be6e64dc1209}
+
+
+Calculates the angle (in radians) between two vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first vector.\\
+\hline
+{\em second} & The second vector.\\
+\hline
+{\em result} & Angle (in radians) between the vectors.\\
+\hline
+\end{DoxyParams}
+
+
+Note that the returned angle is never bigger than the constant Pi.\hypertarget{struct_open_t_k_1_1_vector3d_ae9a2d2346830c76998265c5d77ebece7}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Clamp}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Clamp (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec, }
+\item[{{\bf Vector3d}}]{min, }
+\item[{{\bf Vector3d}}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_ae9a2d2346830c76998265c5d77ebece7}
+
+
+Clamp a vector to the given minimum and maximum vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & \hyperlink{namespace_open_t_k_1_1_input}{Input} vector\\
+\hline
+{\em min} & Minimum vector\\
+\hline
+{\em max} & Maximum vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clamped vector
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_ac96aa54f03a61f6c3a022d37e0316dee}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Clamp}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Clamp (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vec, }
+\item[{ref {\bf Vector3d}}]{min, }
+\item[{ref {\bf Vector3d}}]{max, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_ac96aa54f03a61f6c3a022d37e0316dee}
+
+
+Clamp a vector to the given minimum and maximum vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & \hyperlink{namespace_open_t_k_1_1_input}{Input} vector\\
+\hline
+{\em min} & Minimum vector\\
+\hline
+{\em max} & Maximum vector\\
+\hline
+{\em result} & The clamped vector\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a1f3653005760ef494642e954414bc774}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Component\-Max@{Component\-Max}}
+\index{Component\-Max@{Component\-Max}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Component\-Max}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Component\-Max (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{a, }
+\item[{{\bf Vector3d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a1f3653005760ef494642e954414bc774}
+
+
+Calculate the component-\/wise maximum of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The component-\/wise maximum
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a7595f16dd6bd992c0927567abdbd64b6}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Component\-Max@{Component\-Max}}
+\index{Component\-Max@{Component\-Max}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Component\-Max}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Component\-Max (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{a, }
+\item[{ref {\bf Vector3d}}]{b, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a7595f16dd6bd992c0927567abdbd64b6}
+
+
+Calculate the component-\/wise maximum of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+{\em result} & The component-\/wise maximum\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_af9c428e9141aa1d67b6c3a3b6c9c19e9}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Component\-Min@{Component\-Min}}
+\index{Component\-Min@{Component\-Min}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Component\-Min}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Component\-Min (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{a, }
+\item[{{\bf Vector3d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_af9c428e9141aa1d67b6c3a3b6c9c19e9}
+
+
+Calculate the component-\/wise minimum of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The component-\/wise minimum
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_aaf69f7b58e905d3fd535d5510a2b4b90}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Component\-Min@{Component\-Min}}
+\index{Component\-Min@{Component\-Min}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Component\-Min}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Component\-Min (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{a, }
+\item[{ref {\bf Vector3d}}]{b, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_aaf69f7b58e905d3fd535d5510a2b4b90}
+
+
+Calculate the component-\/wise minimum of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+{\em result} & The component-\/wise minimum\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_afae6501c77bff8155399399d14852813}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Cross@{Cross}}
+\index{Cross@{Cross}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Cross}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Cross (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{left, }
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_afae6501c77bff8155399399d14852813}
+
+
+Caclulate the cross (vector) product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & First operand\\
+\hline
+{\em right} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cross product of the two inputs
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_ac0c6f9e6851a01b794c5c0c299ef2673}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Cross@{Cross}}
+\index{Cross@{Cross}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Cross}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Cross (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{left, }
+\item[{ref {\bf Vector3d}}]{right, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_ac0c6f9e6851a01b794c5c0c299ef2673}
+
+
+Caclulate the cross (vector) product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & First operand\\
+\hline
+{\em right} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cross product of the two inputs
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The cross product of the two inputs\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a32b8dae5103dc2eb4dbb02210a003d83}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Div@{Div}}
+\index{Div@{Div}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Div}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Div (
+\begin{DoxyParamCaption}
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a32b8dae5103dc2eb4dbb02210a003d83}
+
+
+Divide this instance by a scalar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Scalar operand.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a40572545a7c1dda9815ca4c41a12fe57}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Div@{Div}}
+\index{Div@{Div}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Div}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Div (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{a, }
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a40572545a7c1dda9815ca4c41a12fe57}
+
+
+Divide a vector by a scalar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector operand\\
+\hline
+{\em f} & Scalar operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the division
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_ae29ea2c48d8c832e9cbfd66a7a8e9ef9}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Div@{Div}}
+\index{Div@{Div}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Div}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Div (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{a, }
+\item[{double}]{f, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_ae29ea2c48d8c832e9cbfd66a7a8e9ef9}
+
+
+Divide a vector by a scalar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector operand\\
+\hline
+{\em f} & Scalar operand\\
+\hline
+{\em result} & Result of the division\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a41e2e84739b70b5302281ac799586760}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Divide@{Divide}}
+\index{Divide@{Divide}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Divide (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vector, }
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a41e2e84739b70b5302281ac799586760}
+
+
+Divides a vector by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a0639a0d73e3978bf9720ff7b1228b9a4}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Divide@{Divide}}
+\index{Divide@{Divide}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Divide (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vector, }
+\item[{double}]{scale, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a0639a0d73e3978bf9720ff7b1228b9a4}
+
+
+Divides a vector by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+{\em result} & Result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a75e526d29ab50ffbcb2290087cc9ab30}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Divide@{Divide}}
+\index{Divide@{Divide}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Divide (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vector, }
+\item[{{\bf Vector3d}}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a75e526d29ab50ffbcb2290087cc9ab30}
+
+
+Divides a vector by the components of a vector (scale). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a4603043bb746f7921aa124392348997a}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Divide@{Divide}}
+\index{Divide@{Divide}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Divide (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vector, }
+\item[{ref {\bf Vector3d}}]{scale, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a4603043bb746f7921aa124392348997a}
+
+
+Divide a vector by the components of a vector (scale). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+{\em result} & Result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a11344599553ecbd7d4b5a8bb7d629f12}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Dot@{Dot}}
+\index{Dot@{Dot}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Dot}]{\setlength{\rightskip}{0pt plus 5cm}static double Open\-T\-K.\-Vector3d.\-Dot (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{left, }
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a11344599553ecbd7d4b5a8bb7d629f12}
+
+
+Calculate the dot (scalar) product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & First operand\\
+\hline
+{\em right} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dot product of the two inputs
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a9e94fbdfa30466c8846baf0027e19e13}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Dot@{Dot}}
+\index{Dot@{Dot}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Dot}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Dot (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{left, }
+\item[{ref {\bf Vector3d}}]{right, }
+\item[{out double}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a9e94fbdfa30466c8846baf0027e19e13}
+
+
+Calculate the dot (scalar) product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & First operand\\
+\hline
+{\em right} & Second operand\\
+\hline
+{\em result} & The dot product of the two inputs\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_ac93f701e73a3b72deb2df5bca6bd83cc}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Vector3d.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_ac93f701e73a3b72deb2df5bca6bd83cc}
+
+
+Indicates whether this instance and a specified object are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instances are equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a999d83b4d83ce030026d7c59e895d002}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Vector3d.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a999d83b4d83ce030026d7c59e895d002}
+
+
+Indicates whether the current vector is equal to another vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A vector to compare with this vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the current vector is equal to the vector parameter; otherwise, false.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a3b7f65557039ff2ee2586686ee8ded4a}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Vector3d.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a3b7f65557039ff2ee2586686ee8ded4a}
+
+
+Returns the hashcode for this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-Int32 containing the unique hashcode for this instance.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_ad83b3030cfda37a4c06348fedbc65ff0}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Lerp}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Lerp (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{a, }
+\item[{{\bf Vector3d}}]{b, }
+\item[{double}]{blend}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_ad83b3030cfda37a4c06348fedbc65ff0}
+
+
+Returns a new Vector that is the linear blend of the 2 given Vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First input vector\\
+\hline
+{\em b} & Second input vector\\
+\hline
+{\em blend} & The blend factor. a when blend=0, b when blend=1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a when blend=0, b when blend=1, and a linear combination otherwise
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a9a6222623dade122dbd385514490f196}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Lerp}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Lerp (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{a, }
+\item[{ref {\bf Vector3d}}]{b, }
+\item[{double}]{blend, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a9a6222623dade122dbd385514490f196}
+
+
+Returns a new Vector that is the linear blend of the 2 given Vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First input vector\\
+\hline
+{\em b} & Second input vector\\
+\hline
+{\em blend} & The blend factor. a when blend=0, b when blend=1.\\
+\hline
+{\em result} & a when blend=0, b when blend=1, and a linear combination otherwise\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a4e45c635ab5ef76f811381bd006c11af}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Max@{Max}}
+\index{Max@{Max}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Max}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Max (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{left, }
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a4e45c635ab5ef76f811381bd006c11af}
+
+
+Returns the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} with the minimum magnitude 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left operand\\
+\hline
+{\em right} & Right operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The minimum \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a6da3a63025e7c6eb996a3437b312a7ed}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Min@{Min}}
+\index{Min@{Min}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Min}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Min (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{left, }
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a6da3a63025e7c6eb996a3437b312a7ed}
+
+
+Returns the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} with the minimum magnitude 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left operand\\
+\hline
+{\em right} & Right operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The minimum \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_ae290c47012c01c4abbe5c0ec93bcd026}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_ae290c47012c01c4abbe5c0ec93bcd026}
+
+
+Multiply this instance by a scalar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Scalar operand.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a816913e521c522fd0ac4fe8da8ee850c}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{a, }
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a816913e521c522fd0ac4fe8da8ee850c}
+
+
+Multiply a vector and a scalar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector operand\\
+\hline
+{\em f} & Scalar operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the multiplication
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a6b782a5823060ed26170944622c94cc9}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Mult@{Mult}}
+\index{Mult@{Mult}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Mult}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Mult (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{a, }
+\item[{double}]{f, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a6b782a5823060ed26170944622c94cc9}
+
+
+Multiply a vector and a scalar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector operand\\
+\hline
+{\em f} & Scalar operand\\
+\hline
+{\em result} & Result of the multiplication\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a7bf42bd9ec3f90548104af9ca8c9da4b}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vector, }
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a7bf42bd9ec3f90548104af9ca8c9da4b}
+
+
+Multiplies a vector by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a4308dccb089abe36ba817bda4ddd0633}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vector, }
+\item[{double}]{scale, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a4308dccb089abe36ba817bda4ddd0633}
+
+
+Multiplies a vector by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+{\em result} & Result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a7079a428810b58995b4a1865d9695d28}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vector, }
+\item[{{\bf Vector3d}}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a7079a428810b58995b4a1865d9695d28}
+
+
+Multiplies a vector by the components a vector (scale). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_acd8421962a9e4ddf3b12f80368a750f5}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Multiply (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vector, }
+\item[{ref {\bf Vector3d}}]{scale, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_acd8421962a9e4ddf3b12f80368a750f5}
+
+
+Multiplies a vector by the components of a vector (scale). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Left operand.\\
+\hline
+{\em scale} & Right operand.\\
+\hline
+{\em result} & Result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a5096b75ce9daa19ffca7db45feb85415}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a5096b75ce9daa19ffca7db45feb85415}
+
+
+Scales the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} to unit length. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a491a35dda1a3afc7e623884f1ae175a1}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Normalize (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a491a35dda1a3afc7e623884f1ae175a1}
+
+
+Scale a vector to unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The input vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized vector
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a33fbddd9977c1a289967ba0e1497d1b5}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Normalize (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vec, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a33fbddd9977c1a289967ba0e1497d1b5}
+
+
+Scale a vector to unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The input vector\\
+\hline
+{\em result} & The normalized vector\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a4143dc72cf7c9850c1225a7c4ab65963}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Normalized}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3d} Open\-T\-K.\-Vector3d.\-Normalized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a4143dc72cf7c9850c1225a7c4ab65963}
+
+
+Returns a copy of the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} scaled to unit length. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a44b3f4f59aa64e1dfefdc2f714de544b}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Normalize\-Fast@{Normalize\-Fast}}
+\index{Normalize\-Fast@{Normalize\-Fast}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Normalize\-Fast}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Normalize\-Fast (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a44b3f4f59aa64e1dfefdc2f714de544b}
+
+
+Scales the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} to approximately unit length. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a78b9fa216eb61a3489467def86e5b771}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Normalize\-Fast@{Normalize\-Fast}}
+\index{Normalize\-Fast@{Normalize\-Fast}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Normalize\-Fast}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Normalize\-Fast (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a78b9fa216eb61a3489467def86e5b771}
+
+
+Scale a vector to approximately unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The input vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized vector
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_abbecf0ee466bd83cdc59b045b8af1788}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Normalize\-Fast@{Normalize\-Fast}}
+\index{Normalize\-Fast@{Normalize\-Fast}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Normalize\-Fast}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Normalize\-Fast (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vec, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_abbecf0ee466bd83cdc59b045b8af1788}
+
+
+Scale a vector to approximately unit length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The input vector\\
+\hline
+{\em result} & The normalized vector\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_aa29e45d1a757cdc73d8c91ea7b38f36d}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator Vector3@{operator Vector3}}
+\index{operator Vector3@{operator Vector3}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator Vector3}]{\setlength{\rightskip}{0pt plus 5cm}static Open\-T\-K.\-Vector3d.\-operator {\bf Vector3} (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{v3d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_aa29e45d1a757cdc73d8c91ea7b38f36d}
+
+
+Converts \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} to \hyperlink{struct_open_t_k_1_1_vector3}{Open\-T\-K.\-Vector3}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v3d} & The \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a2e09d81252a6ec595b736f29c447f52f}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator Vector3d@{operator Vector3d}}
+\index{operator Vector3d@{operator Vector3d}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator Vector3d}]{\setlength{\rightskip}{0pt plus 5cm}static Open\-T\-K.\-Vector3d.\-operator {\bf Vector3d} (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{v3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a2e09d81252a6ec595b736f29c447f52f}
+
+
+Converts \hyperlink{struct_open_t_k_1_1_vector3}{Open\-T\-K.\-Vector3} to \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v3} & The \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_ae24bedde1d9f1fcb4bbf5d647dcdea2a}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Vector3d.\-operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{left, }
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_ae24bedde1d9f1fcb4bbf5d647dcdea2a}
+
+
+Compares two instances for inequality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left does not equa lright; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_aa1c51b2bbe6e2adf39b63e9c6e09af40}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec, }
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_aa1c51b2bbe6e2adf39b63e9c6e09af40}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_aab0e909ef74f4f29f9b307183b55a300}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{scale, }
+\item[{{\bf Vector3d}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_aab0e909ef74f4f29f9b307183b55a300}
+
+
+Multiplies an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The scalar.\\
+\hline
+{\em vec} & The instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a8ab18f6f16bb04b10b60b23956ec329c}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec, }
+\item[{{\bf Matrix4d}}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a8ab18f6f16bb04b10b60b23956ec329c}
+
+
+Multiplies an instance by a matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The scalar.\\
+\hline
+{\em vec} & The matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_acb92a8ba0d2439567b09d503a5388369}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4d}}]{mat, }
+\item[{{\bf Vector3d}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_acb92a8ba0d2439567b09d503a5388369}
+
+
+Multiplies an instance by a matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The matrix.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a9c1682494023790eb13cec857d4a95d6}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator+@{operator+}}
+\index{operator+@{operator+}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{left, }
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a9c1682494023790eb13cec857d4a95d6}
+
+
+Adds two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a10aef80dffe323a3c43db9329adff1c2}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{left, }
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a10aef80dffe323a3c43db9329adff1c2}
+
+
+Subtracts two instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a1ac5dcc8891cc0d8eeb309e2ef4fd87b}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a1ac5dcc8891cc0d8eeb309e2ef4fd87b}
+
+
+Negates an instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a207436ca4cb857eced58727aa513763f}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator/@{operator/}}
+\index{operator/@{operator/}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec, }
+\item[{double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a207436ca4cb857eced58727aa513763f}
+
+
+Divides an instance by a scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The instance.\\
+\hline
+{\em scale} & The scalar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the calculation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a26c18a277d3551a7bce1607a034b4b3b}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!operator==@{operator==}}
+\index{operator==@{operator==}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Vector3d.\-operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{left, }
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a26c18a277d3551a7bce1607a034b4b3b}
+
+
+Compares two instances for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance.\\
+\hline
+{\em right} & The second instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if left equals right; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a36c3fa94dd653353e08eb0ff1bf10ce0}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Scale@{Scale}}
+\index{Scale@{Scale}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Scale (
+\begin{DoxyParamCaption}
+\item[{double}]{sx, }
+\item[{double}]{sy, }
+\item[{double}]{sz}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a36c3fa94dd653353e08eb0ff1bf10ce0}
+
+
+Scales the current \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} by the given amounts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & The scale of the X component.\\
+\hline
+{\em sy} & The scale of the Y component.\\
+\hline
+{\em sz} & The scale of the Z component.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a6bfb88dfaa9794d8caf747019c085dfb}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Scale@{Scale}}
+\index{Scale@{Scale}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Scale (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{scale}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a6bfb88dfaa9794d8caf747019c085dfb}
+
+
+Scales this instance by the given parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The scaling of the individual components.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a250b4e8eb8b4ca8d2b1bf67fb27d7568}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Scale@{Scale}}
+\index{Scale@{Scale}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Scale (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{scale}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a250b4e8eb8b4ca8d2b1bf67fb27d7568}
+
+
+Scales this instance by the given parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The scaling of the individual components.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_aab98cdc60c3ee632c2c31aa6ff73bc5c}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_aab98cdc60c3ee632c2c31aa6ff73bc5c}
+
+
+Subtract the Vector passed as parameter from this instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Right operand. This parameter is only read from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a692dcef55111b47eb83e35372ecff544}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Vector3d.\-Sub (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{right}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_a692dcef55111b47eb83e35372ecff544}
+
+
+Subtract the Vector passed as parameter from this instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Right operand. This parameter is only read from.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a78df40f0631ca6fd74944b1f8ac9e20b}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{a, }
+\item[{{\bf Vector3d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a78df40f0631ca6fd74944b1f8ac9e20b}
+
+
+Subtract one Vector from another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of subtraction
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a5bf0f4a3b881cfe3a88a3b4e75a86aa4}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Sub@{Sub}}
+\index{Sub@{Sub}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Sub}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Sub (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{a, }
+\item[{ref {\bf Vector3d}}]{b, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a5bf0f4a3b881cfe3a88a3b4e75a86aa4}
+
+
+Subtract one Vector from another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+{\em result} & Result of subtraction\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a72dba90498927eeedcd7c44bd353cbed}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Subtract (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{a, }
+\item[{{\bf Vector3d}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a72dba90498927eeedcd7c44bd353cbed}
+
+
+Subtract one Vector from another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of subtraction
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_af4ccc73aca284e11959b1ff121f8fbc7}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Subtract (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{a, }
+\item[{ref {\bf Vector3d}}]{b, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_af4ccc73aca284e11959b1ff121f8fbc7}
+
+
+Subtract one Vector from another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand\\
+\hline
+{\em b} & Second operand\\
+\hline
+{\em result} & Result of subtraction\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_ab3abad1c646b9c5952867f4d9bea077a}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Vector3d.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_vector3d_ab3abad1c646b9c5952867f4d9bea077a}
+
+
+Returns a System.\-String that represents the current \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_af14d87cf6330c7381b3773cd165032a2}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform@{Transform}}
+\index{Transform@{Transform}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec, }
+\item[{{\bf Matrix4d}}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_af14d87cf6330c7381b3773cd165032a2}
+
+
+Transform a Vector by the given Matrix
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_ac001fabab6214fa4d83aebf9f766eeb2}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform@{Transform}}
+\index{Transform@{Transform}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Transform (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vec, }
+\item[{ref {\bf Matrix4d}}]{mat, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_ac001fabab6214fa4d83aebf9f766eeb2}
+
+
+Transform a Vector by the given Matrix
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+{\em result} & The transformed vector\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a9c8b5c060958dd56893fe5a6cf21245d}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform@{Transform}}
+\index{Transform@{Transform}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec, }
+\item[{{\bf Quaterniond}}]{quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a9c8b5c060958dd56893fe5a6cf21245d}
+
+
+Transforms a vector by a quaternion rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform.\\
+\hline
+{\em quat} & The quaternion to rotate the vector by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the operation.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a5db7b54819e762a9cd16db732e4846fe}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform@{Transform}}
+\index{Transform@{Transform}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Transform (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vec, }
+\item[{ref {\bf Quaterniond}}]{quat, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a5db7b54819e762a9cd16db732e4846fe}
+
+
+Transforms a vector by a quaternion rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform.\\
+\hline
+{\em quat} & The quaternion to rotate the vector by.\\
+\hline
+{\em result} & The result of the operation.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a5788e03915793e548f9a63496d2b4e40}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Normal@{Transform\-Normal}}
+\index{Transform\-Normal@{Transform\-Normal}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Normal}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Transform\-Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{norm, }
+\item[{{\bf Matrix4d}}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a5788e03915793e548f9a63496d2b4e40}
+
+
+Transform a Normal by the given Matrix
+
+This calculates the inverse of the given matrix, use Transform\-Normal\-Inverse if you already have the inverse to avoid this extra calculation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em norm} & The normal to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed normal
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a5cf4cc6c9d66c028d0f66a0a5d3ee5fb}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Normal@{Transform\-Normal}}
+\index{Transform\-Normal@{Transform\-Normal}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Normal}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Transform\-Normal (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{norm, }
+\item[{ref {\bf Matrix4d}}]{mat, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a5cf4cc6c9d66c028d0f66a0a5d3ee5fb}
+
+
+Transform a Normal by the given Matrix
+
+This calculates the inverse of the given matrix, use Transform\-Normal\-Inverse if you already have the inverse to avoid this extra calculation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em norm} & The normal to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+{\em result} & The transformed normal\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a50813ed03f4685983c7f6513c7271847}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Normal\-Inverse@{Transform\-Normal\-Inverse}}
+\index{Transform\-Normal\-Inverse@{Transform\-Normal\-Inverse}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Normal\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Transform\-Normal\-Inverse (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{norm, }
+\item[{{\bf Matrix4d}}]{inv\-Mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a50813ed03f4685983c7f6513c7271847}
+
+
+Transform a Normal by the (transpose of the) given Matrix
+
+This version doesn't calculate the inverse matrix. Use this version if you already have the inverse of the desired transform to hand 
+
+
+\begin{DoxyParams}{Parameters}
+{\em norm} & The normal to transform\\
+\hline
+{\em inv\-Mat} & The inverse of the desired transformation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed normal
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a7481a150ba39c7e6f7dcedd2b9365969}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Normal\-Inverse@{Transform\-Normal\-Inverse}}
+\index{Transform\-Normal\-Inverse@{Transform\-Normal\-Inverse}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Normal\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Transform\-Normal\-Inverse (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{norm, }
+\item[{ref {\bf Matrix4d}}]{inv\-Mat, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a7481a150ba39c7e6f7dcedd2b9365969}
+
+
+Transform a Normal by the (transpose of the) given Matrix
+
+This version doesn't calculate the inverse matrix. Use this version if you already have the inverse of the desired transform to hand 
+
+
+\begin{DoxyParams}{Parameters}
+{\em norm} & The normal to transform\\
+\hline
+{\em inv\-Mat} & The inverse of the desired transformation\\
+\hline
+{\em result} & The transformed normal\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_aa776e9fd6b0881d20814397a155e1341}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Perspective@{Transform\-Perspective}}
+\index{Transform\-Perspective@{Transform\-Perspective}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Perspective}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Transform\-Perspective (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec, }
+\item[{{\bf Matrix4d}}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_aa776e9fd6b0881d20814397a155e1341}
+
+
+Transform a \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} by the given Matrix, and project the resulting \hyperlink{struct_open_t_k_1_1_vector4}{Vector4} back to a \hyperlink{struct_open_t_k_1_1_vector3}{Vector3} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a8f7a7ad8674db5e6b3937dd6f9902910}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Perspective@{Transform\-Perspective}}
+\index{Transform\-Perspective@{Transform\-Perspective}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Perspective}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Transform\-Perspective (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vec, }
+\item[{ref {\bf Matrix4d}}]{mat, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a8f7a7ad8674db5e6b3937dd6f9902910}
+
+
+Transform a \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} by the given Matrix, and project the resulting \hyperlink{struct_open_t_k_1_1_vector4d}{Vector4d} back to a \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+{\em result} & The transformed vector\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_acfca4b52cf2fb9dc64156a624dd0545d}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Position@{Transform\-Position}}
+\index{Transform\-Position@{Transform\-Position}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Position}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Transform\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{pos, }
+\item[{{\bf Matrix4d}}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_acfca4b52cf2fb9dc64156a624dd0545d}
+
+
+Transform a Position by the given Matrix
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed position
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_a249ee6f2d34de7cc267cefada316fb5b}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Position@{Transform\-Position}}
+\index{Transform\-Position@{Transform\-Position}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Position}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Transform\-Position (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{pos, }
+\item[{ref {\bf Matrix4d}}]{mat, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a249ee6f2d34de7cc267cefada316fb5b}
+
+
+Transform a Position by the given Matrix
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+{\em result} & The transformed position\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_vector3d_a2f33e9f148b468ed15a70f40ac948fe7}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Vector@{Transform\-Vector}}
+\index{Transform\-Vector@{Transform\-Vector}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Transform\-Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3d}}]{vec, }
+\item[{{\bf Matrix4d}}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a2f33e9f148b468ed15a70f40ac948fe7}
+
+
+Transform a direction vector by the given Matrix Assumes the matrix has a bottom row of (0,0,0,1), that is the translation part is ignored. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_vector3d_aaa12b4d37c1de0624670ebf8aeb39811}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Transform\-Vector@{Transform\-Vector}}
+\index{Transform\-Vector@{Transform\-Vector}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Transform\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}static void Open\-T\-K.\-Vector3d.\-Transform\-Vector (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Vector3d}}]{vec, }
+\item[{ref {\bf Matrix4d}}]{mat, }
+\item[{out {\bf Vector3d}}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_aaa12b4d37c1de0624670ebf8aeb39811}
+
+
+Transform a direction vector by the given Matrix Assumes the matrix has a bottom row of (0,0,0,1), that is the translation part is ignored. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector to transform\\
+\hline
+{\em mat} & The desired transformation\\
+\hline
+{\em result} & The transformed vector\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_open_t_k_1_1_vector3d_a41eced555e80b5f7f7146ddddb165e85}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!One@{One}}
+\index{One@{One}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{One}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Vector3d} Open\-T\-K.\-Vector3d.\-One = new {\bf Vector3d}(1, 1, 1)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a41eced555e80b5f7f7146ddddb165e85}
+
+
+Defines an instance with all components set to 1. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a5390299765c81e1b1f04850ee26c2a5e}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Size\-In\-Bytes@{Size\-In\-Bytes}}
+\index{Size\-In\-Bytes@{Size\-In\-Bytes}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Size\-In\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}readonly int Open\-T\-K.\-Vector3d.\-Size\-In\-Bytes = Marshal.\-Size\-Of(new {\bf Vector3d}())\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a5390299765c81e1b1f04850ee26c2a5e}
+
+
+Defines the size of the \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} struct in bytes. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a1df7baf64afca7d17602d5f072e188c9}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Unit\-X@{Unit\-X}}
+\index{Unit\-X@{Unit\-X}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Unit\-X}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Unit\-X = new {\bf Vector3d}(1, 0, 0)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a1df7baf64afca7d17602d5f072e188c9}
+
+
+Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} that points towards the X-\/axis. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a020b45e3c1a0b417aff18e3deb4a9942}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Unit\-Y@{Unit\-Y}}
+\index{Unit\-Y@{Unit\-Y}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Unit\-Y}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Unit\-Y = new {\bf Vector3d}(0, 1, 0)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_a020b45e3c1a0b417aff18e3deb4a9942}
+
+
+Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} that points towards the Y-\/axis. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_aa843d07a35e3d275f117d252877d2e55}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Unit\-Z@{Unit\-Z}}
+\index{Unit\-Z@{Unit\-Z}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Unit\-Z}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Unit\-Z = new {\bf Vector3d}(0, 0, 1)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_aa843d07a35e3d275f117d252877d2e55}
+
+
+/// Defines a unit-\/length \hyperlink{struct_open_t_k_1_1_vector3d}{Vector3d} that points towards the Z-\/axis. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a1259c1afde67e1518d723d9e150c9c9e}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!X@{X}}
+\index{X@{X}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector3d.\-X}}\label{struct_open_t_k_1_1_vector3d_a1259c1afde67e1518d723d9e150c9c9e}
+
+
+The X component of the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a8cb2eeeb8cf190e7aeab39af66a2ec5e}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Y@{Y}}
+\index{Y@{Y}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector3d.\-Y}}\label{struct_open_t_k_1_1_vector3d_a8cb2eeeb8cf190e7aeab39af66a2ec5e}
+
+
+The Y component of the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a894d99bd161ab4ad52a45702f48641d5}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Z@{Z}}
+\index{Z@{Z}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector3d.\-Z}}\label{struct_open_t_k_1_1_vector3d_a894d99bd161ab4ad52a45702f48641d5}
+
+
+The Z component of the \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_ab7ac2adf76ddd6450d2a1e10ca2e22c1}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Zero@{Zero}}
+\index{Zero@{Zero}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Zero}]{\setlength{\rightskip}{0pt plus 5cm}readonly {\bf Vector3d} Open\-T\-K.\-Vector3d.\-Zero = new {\bf Vector3d}(0, 0, 0)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_vector3d_ab7ac2adf76ddd6450d2a1e10ca2e22c1}
+
+
+Defines a zero-\/length \hyperlink{struct_open_t_k_1_1_vector3}{Vector3}. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_vector3d_a554332540dcf9bac5720fdb26d5e96c2}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Length@{Length}}
+\index{Length@{Length}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector3d.\-Length\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_vector3d_a554332540dcf9bac5720fdb26d5e96c2}
+
+
+Gets the length (magnitude) of the vector. 
+
+\hyperlink{struct_open_t_k_1_1_vector3d_ae08ae4196dadb5dfb4baf0ab27b1ee57}{Length\-Fast} \begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_open_t_k_1_1_vector3d_aaad32d6807957c3db9e5d32f00571e70}{Length\-Squared}
+
+
+\end{DoxySeeAlso}
+\hypertarget{struct_open_t_k_1_1_vector3d_ae08ae4196dadb5dfb4baf0ab27b1ee57}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Length\-Fast@{Length\-Fast}}
+\index{Length\-Fast@{Length\-Fast}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Length\-Fast}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector3d.\-Length\-Fast\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_vector3d_ae08ae4196dadb5dfb4baf0ab27b1ee57}
+
+
+Gets an approximation of the vector length (magnitude). 
+
+This property uses an approximation of the square root function to calculate vector magnitude, with an upper error bound of 0.\-001. 
+
+\hyperlink{struct_open_t_k_1_1_vector3d_a554332540dcf9bac5720fdb26d5e96c2}{Length} \begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_open_t_k_1_1_vector3d_aaad32d6807957c3db9e5d32f00571e70}{Length\-Squared}
+
+
+\end{DoxySeeAlso}
+\hypertarget{struct_open_t_k_1_1_vector3d_aaad32d6807957c3db9e5d32f00571e70}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Length\-Squared@{Length\-Squared}}
+\index{Length\-Squared@{Length\-Squared}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Length\-Squared}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector3d.\-Length\-Squared\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_vector3d_aaad32d6807957c3db9e5d32f00571e70}
+
+
+Gets the square of the vector length (magnitude). 
+
+This property avoids the costly square root operation required by the Length property. This makes it more suitable for comparisons. 
+
+\hyperlink{struct_open_t_k_1_1_vector3d_a554332540dcf9bac5720fdb26d5e96c2}{Length} \begin{DoxySeeAlso}{See Also}
+\hyperlink{struct_open_t_k_1_1_vector3d_ae08ae4196dadb5dfb4baf0ab27b1ee57}{Length\-Fast}
+
+
+\end{DoxySeeAlso}
+\hypertarget{struct_open_t_k_1_1_vector3d_a0052ef76359efe834947565dcabe91fc}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!this\mbox{[}int index\mbox{]}@{this[int index]}}
+\index{this\mbox{[}int index\mbox{]}@{this[int index]}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{this[int index]}]{\setlength{\rightskip}{0pt plus 5cm}double Open\-T\-K.\-Vector3d.\-this\mbox{[}int index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_a0052ef76359efe834947565dcabe91fc}
+
+
+Gets or sets the value at the index of the Vector. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_ae67054daed5a4c1e080b1550d4022276}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Xy@{Xy}}
+\index{Xy@{Xy}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Xy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector3d.\-Xy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_ae67054daed5a4c1e080b1550d4022276}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the X and Y components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a7072875ab2d574f202617f985311cd0d}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Xz@{Xz}}
+\index{Xz@{Xz}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Xz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector3d.\-Xz\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_a7072875ab2d574f202617f985311cd0d}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the X and Z components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_ab7f5d1a104fcf24bb79cccb06dfbc99d}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Xzy@{Xzy}}
+\index{Xzy@{Xzy}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Xzy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3d} Open\-T\-K.\-Vector3d.\-Xzy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_ab7f5d1a104fcf24bb79cccb06dfbc99d}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the X, Z, and Y components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a2085dfeb2b1f46e06bbf5429369cf473}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Yx@{Yx}}
+\index{Yx@{Yx}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Yx}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector3d.\-Yx\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_a2085dfeb2b1f46e06bbf5429369cf473}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Y and X components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a2ae98c94c4978c88492ff24351b40941}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Yxz@{Yxz}}
+\index{Yxz@{Yxz}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Yxz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3d} Open\-T\-K.\-Vector3d.\-Yxz\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_a2ae98c94c4978c88492ff24351b40941}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the Y, X, and Z components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_aa4e666b501c263a4dbc03f2aadee8c18}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Yz@{Yz}}
+\index{Yz@{Yz}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Yz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector3d.\-Yz\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_aa4e666b501c263a4dbc03f2aadee8c18}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Y and Z components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_acbf0f74c431fac06fb539f935a3e82cc}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Yzx@{Yzx}}
+\index{Yzx@{Yzx}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Yzx}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3d} Open\-T\-K.\-Vector3d.\-Yzx\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_acbf0f74c431fac06fb539f935a3e82cc}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the Y, Z, and X components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a80d1ecc7d4722af5295bbacec4d4f47f}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Zx@{Zx}}
+\index{Zx@{Zx}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Zx}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector3d.\-Zx\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_a80d1ecc7d4722af5295bbacec4d4f47f}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Z and X components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a258be4f58bae23c1e48513647f9f0ad7}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Zxy@{Zxy}}
+\index{Zxy@{Zxy}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Zxy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3d} Open\-T\-K.\-Vector3d.\-Zxy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_a258be4f58bae23c1e48513647f9f0ad7}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the Z, X, and Y components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_ad49db3a01526f1557d1b8144d560ccaf}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Zy@{Zy}}
+\index{Zy@{Zy}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Zy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2d} Open\-T\-K.\-Vector3d.\-Zy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_ad49db3a01526f1557d1b8144d560ccaf}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector2d}{Open\-T\-K.\-Vector2d} with the Z and Y components of this instance. 
+
+\hypertarget{struct_open_t_k_1_1_vector3d_a858976422e349beaf8e1de8153d2eece}{\index{Open\-T\-K\-::\-Vector3d@{Open\-T\-K\-::\-Vector3d}!Zyx@{Zyx}}
+\index{Zyx@{Zyx}!OpenTK::Vector3d@{Open\-T\-K\-::\-Vector3d}}
+\subsubsection[{Zyx}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3d} Open\-T\-K.\-Vector3d.\-Zyx\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_vector3d_a858976422e349beaf8e1de8153d2eece}
+
+
+Gets or sets an \hyperlink{struct_open_t_k_1_1_vector3d}{Open\-T\-K.\-Vector3d} with the Z, Y, and X components of this instance. 
+

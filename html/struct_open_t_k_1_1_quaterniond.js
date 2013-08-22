@@ -1,0 +1,26 @@
+var struct_open_t_k_1_1_quaterniond =
+[
+    [ "Quaterniond", "struct_open_t_k_1_1_quaterniond.html#a1ee2a28457c7e883a659acec6f5b5d47", null ],
+    [ "Quaterniond", "struct_open_t_k_1_1_quaterniond.html#a4953ca5777002ec5c80853e61ee80b28", null ],
+    [ "Conjugate", "struct_open_t_k_1_1_quaterniond.html#a9760ac06e29a3ab52d62958057cbbd5b", null ],
+    [ "Equals", "struct_open_t_k_1_1_quaterniond.html#afbac036863da104ad691f0bb7f08bb28", null ],
+    [ "Equals", "struct_open_t_k_1_1_quaterniond.html#a65b02dfedb9ceb37b138829fa886c317", null ],
+    [ "GetHashCode", "struct_open_t_k_1_1_quaterniond.html#a220b1fc82beba2b29084ada276e6d421", null ],
+    [ "Invert", "struct_open_t_k_1_1_quaterniond.html#a03a329b2336cbef70733160519b085b7", null ],
+    [ "Inverted", "struct_open_t_k_1_1_quaterniond.html#a7d1148da4d01d90a65334951e8ddce54", null ],
+    [ "Normalize", "struct_open_t_k_1_1_quaterniond.html#a4430185311f5a7fa97a782f9a10006b6", null ],
+    [ "Normalized", "struct_open_t_k_1_1_quaterniond.html#a1ad44113a826afafe4664c96446a8e82", null ],
+    [ "ToAxisAngle", "struct_open_t_k_1_1_quaterniond.html#a98e59d928b8269c719d328fa14eb82ca", null ],
+    [ "ToAxisAngle", "struct_open_t_k_1_1_quaterniond.html#accfe115adc1ec4bf1f184ab9f33ad3f1", null ],
+    [ "ToString", "struct_open_t_k_1_1_quaterniond.html#a5efa27da965ea0d68c399b47bc3b36de", null ],
+    [ "w", "struct_open_t_k_1_1_quaterniond.html#a3483a6660a55ce2def20bbe60a4da48d", null ],
+    [ "xyz", "struct_open_t_k_1_1_quaterniond.html#a8c3288352505ef3e1aa87278d08fc129", null ],
+    [ "Length", "struct_open_t_k_1_1_quaterniond.html#a8759a8c86b72c93aed6739c00b076cf3", null ],
+    [ "LengthSquared", "struct_open_t_k_1_1_quaterniond.html#a3a3405ecb859e0bec87c04f68ea81583", null ],
+    [ "W", "struct_open_t_k_1_1_quaterniond.html#a6407599296d528ce64964114eb7d6745", null ],
+    [ "X", "struct_open_t_k_1_1_quaterniond.html#ad327401a2d49e95a009185f844238046", null ],
+    [ "XYZ", "struct_open_t_k_1_1_quaterniond.html#aaa7eee901e44e92bdeeaa260f100f3ea", null ],
+    [ "Xyz", "struct_open_t_k_1_1_quaterniond.html#a4be7aa1af1afd9ab2f1cba872a191f70", null ],
+    [ "Y", "struct_open_t_k_1_1_quaterniond.html#ad1e8a8564cc57374f5db3569238b2a77", null ],
+    [ "Z", "struct_open_t_k_1_1_quaterniond.html#a5dfcea3ee6e2541d0539ec4947a8677c", null ]
+];

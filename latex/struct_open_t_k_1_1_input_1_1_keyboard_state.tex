@@ -1,0 +1,277 @@
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state}{\section{Open\-T\-K.\-Input.\-Keyboard\-State Struct Reference}
+\label{struct_open_t_k_1_1_input_1_1_keyboard_state}\index{Open\-T\-K.\-Input.\-Keyboard\-State@{Open\-T\-K.\-Input.\-Keyboard\-State}}
+}
+
+
+Encapsulates the state of a Keyboard device.  
+
+
+
+
+Inherits I\-Equatable$<$ Keyboard\-State $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_af465d03917b4415870d88e9c76aa8e9c}{Is\-Key\-Down} (\hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Key} key)
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this key is down. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_a50265eda3ea3e708ead82ed921248534}{Is\-Key\-Down} (short code)
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this scan code is down. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_ab9faa763d0612d0a656939173c4682fb}{Is\-Key\-Up} (\hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Key} key)
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this key is up. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_adb8b3beb1973f041c0c0cd618e426dd5}{Is\-Key\-Up} (short code)
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this scan code is down. \end{DoxyCompactList}\item 
+override bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_a1f7cc96814ce8ff75cf21e5b5ce18084}{Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Compares to an object instance for equality. \end{DoxyCompactList}\item 
+override int \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_aca706a349deade910c4036d83fd3b953}{Get\-Hash\-Code} ()
+\begin{DoxyCompactList}\small\item\em Generates a hashcode for the current instance. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_a23d088c31c8e586b72e8e7f56ae7519a}{Equals} (\hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} other)
+\begin{DoxyCompactList}\small\item\em Compares two \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instances. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_abaf52efe90ec70ac0f268bdd4b33d9ca}{operator==} (\hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} left, \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} right)
+\begin{DoxyCompactList}\small\item\em Checks whether two \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instances are equal. \end{DoxyCompactList}\item 
+static bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_aea747029dc303914c8b96be5713bd78c}{operator!=} (\hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} left, \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} right)
+\begin{DoxyCompactList}\small\item\em Checks whether two \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instances are not equal. \end{DoxyCompactList}\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_ae8c6e2da3601f6c367d3eb62b6159512}{static void {\bfseries Validate\-Offset} (int offset, bool Scan\-Code)}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_ae8c6e2da3601f6c367d3eb62b6159512}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_a8f3281c1b87f17d582cd5d55ad5563e4}{const int {\bfseries Int\-Size} = sizeof(int)}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_a8f3281c1b87f17d582cd5d55ad5563e4}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_a8403012262b0f5e40c65fa8adf509dc0}{const int {\bfseries Num\-Ints} = ((int)Key.\-Last\-Key + Int\-Size -\/ 1) / Int\-Size}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_a8403012262b0f5e40c65fa8adf509dc0}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_a838e223d6b78694e430bc425b2e76417}{unsafe fixed int {\bfseries Keys} \mbox{[}Num\-Ints\mbox{]}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_a838e223d6b78694e430bc425b2e76417}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_aa7f7f5d209d2a5c86af827ec40d2222b}{const int {\bfseries Codes\-Size} = 256}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_aa7f7f5d209d2a5c86af827ec40d2222b}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_a9b720d00488883dc4d11112929d897ea}{unsafe fixed int {\bfseries Codes} \mbox{[}Codes\-Size\mbox{]}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_a9b720d00488883dc4d11112929d897ea}
+
+\item 
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_acbe554e47e47a7c9b877e85bed3dc7e5}{bool {\bfseries is\-\_\-connected}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_acbe554e47e47a7c9b877e85bed3dc7e5}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_a407bff9cc22f30a385a9c0dc17fb81a4}{this\mbox{[}\-Key key\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the specified \hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Open\-T\-K.\-Input.\-Key} is pressed. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_ab91b7bdd0c271b1b95ee3f22bee72320}{this\mbox{[}short code\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether the specified \hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Open\-T\-K.\-Input.\-Key} is pressed. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state_a4b3faa1844c0b779665cc3fb42148bb4}{Is\-Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean indicating whether this keyboard is connected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encapsulates the state of a Keyboard device. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_a1f7cc96814ce8ff75cf21e5b5ce18084}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}override bool Open\-T\-K.\-Input.\-Keyboard\-State.\-Equals (
+\begin{DoxyParamCaption}
+\item[{object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_a1f7cc96814ce8ff75cf21e5b5ce18084}
+
+
+Compares to an object instance for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The System.\-Object to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this instance is equal to obj; false otherwise. 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_a23d088c31c8e586b72e8e7f56ae7519a}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!Equals@{Equals}}
+\index{Equals@{Equals}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-State.\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Keyboard\-State}}]{other}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_a23d088c31c8e586b72e8e7f56ae7519a}
+
+
+Compares two \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instances. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The instance to compare two.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if both instances are equal; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_aca706a349deade910c4036d83fd3b953}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!Get\-Hash\-Code@{Get\-Hash\-Code}}
+\index{Get\-Hash\-Code@{Get\-Hash\-Code}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{Get\-Hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}override int Open\-T\-K.\-Input.\-Keyboard\-State.\-Get\-Hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_aca706a349deade910c4036d83fd3b953}
+
+
+Generates a hashcode for the current instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-Int32 represting the hashcode for this instance. 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_af465d03917b4415870d88e9c76aa8e9c}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!Is\-Key\-Down@{Is\-Key\-Down}}
+\index{Is\-Key\-Down@{Is\-Key\-Down}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{Is\-Key\-Down}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-State.\-Is\-Key\-Down (
+\begin{DoxyParamCaption}
+\item[{{\bf Key}}]{key}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_af465d03917b4415870d88e9c76aa8e9c}
+
+
+Gets a System.\-Boolean indicating whether this key is down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The \hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Open\-T\-K.\-Input.\-Key} to check.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_a50265eda3ea3e708ead82ed921248534}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!Is\-Key\-Down@{Is\-Key\-Down}}
+\index{Is\-Key\-Down@{Is\-Key\-Down}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{Is\-Key\-Down}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-State.\-Is\-Key\-Down (
+\begin{DoxyParamCaption}
+\item[{short}]{code}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_a50265eda3ea3e708ead82ed921248534}
+
+
+Gets a System.\-Boolean indicating whether this scan code is down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The scan code to check.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_ab9faa763d0612d0a656939173c4682fb}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!Is\-Key\-Up@{Is\-Key\-Up}}
+\index{Is\-Key\-Up@{Is\-Key\-Up}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{Is\-Key\-Up}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-State.\-Is\-Key\-Up (
+\begin{DoxyParamCaption}
+\item[{{\bf Key}}]{key}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_ab9faa763d0612d0a656939173c4682fb}
+
+
+Gets a System.\-Boolean indicating whether this key is up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The \hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Open\-T\-K.\-Input.\-Key} to check.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_adb8b3beb1973f041c0c0cd618e426dd5}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!Is\-Key\-Up@{Is\-Key\-Up}}
+\index{Is\-Key\-Up@{Is\-Key\-Up}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{Is\-Key\-Up}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-State.\-Is\-Key\-Up (
+\begin{DoxyParamCaption}
+\item[{short}]{code}
+\end{DoxyParamCaption}
+)}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_adb8b3beb1973f041c0c0cd618e426dd5}
+
+
+Gets a System.\-Boolean indicating whether this scan code is down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The scan code to check.\\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_aea747029dc303914c8b96be5713bd78c}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Input.\-Keyboard\-State.\-operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Keyboard\-State}}]{left, }
+\item[{{\bf Keyboard\-State}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_aea747029dc303914c8b96be5713bd78c}
+
+
+Checks whether two \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instances are not equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & A \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instance. \\
+\hline
+{\em right} & A \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both left is not equal to right; false otherwise. 
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_abaf52efe90ec70ac0f268bdd4b33d9ca}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!operator==@{operator==}}
+\index{operator==@{operator==}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}static bool Open\-T\-K.\-Input.\-Keyboard\-State.\-operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Keyboard\-State}}]{left, }
+\item[{{\bf Keyboard\-State}}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_abaf52efe90ec70ac0f268bdd4b33d9ca}
+
+
+Checks whether two \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instances are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & A \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instance. \\
+\hline
+{\em right} & A \hyperlink{struct_open_t_k_1_1_input_1_1_keyboard_state}{Keyboard\-State} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both left is equal to right; false otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_a4b3faa1844c0b779665cc3fb42148bb4}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!Is\-Connected@{Is\-Connected}}
+\index{Is\-Connected@{Is\-Connected}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{Is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-State.\-Is\-Connected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_a4b3faa1844c0b779665cc3fb42148bb4}
+
+
+Gets a System.\-Boolean indicating whether this keyboard is connected. 
+
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_a407bff9cc22f30a385a9c0dc17fb81a4}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!this\mbox{[}\-Key key\mbox{]}@{this[Key key]}}
+\index{this\mbox{[}\-Key key\mbox{]}@{this[Key key]}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{this[Key key]}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-State.\-this\mbox{[}{\bf Key} key\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_a407bff9cc22f30a385a9c0dc17fb81a4}
+
+
+Gets a System.\-Boolean indicating whether the specified \hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Open\-T\-K.\-Input.\-Key} is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The \hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Open\-T\-K.\-Input.\-Key} to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if key is pressed; false otherwise.
+\end{DoxyReturn}
+\hypertarget{struct_open_t_k_1_1_input_1_1_keyboard_state_ab91b7bdd0c271b1b95ee3f22bee72320}{\index{Open\-T\-K\-::\-Input\-::\-Keyboard\-State@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}!this\mbox{[}short code\mbox{]}@{this[short code]}}
+\index{this\mbox{[}short code\mbox{]}@{this[short code]}!OpenTK::Input::KeyboardState@{Open\-T\-K\-::\-Input\-::\-Keyboard\-State}}
+\subsubsection[{this[short code]}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Input.\-Keyboard\-State.\-this\mbox{[}short code\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_open_t_k_1_1_input_1_1_keyboard_state_ab91b7bdd0c271b1b95ee3f22bee72320}
+
+
+Gets a System.\-Boolean indicating whether the specified \hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Open\-T\-K.\-Input.\-Key} is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The \hyperlink{namespace_open_t_k_1_1_input_a30415d20dcc907a84693777cc0bdf1c7}{Open\-T\-K.\-Input.\-Key} to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if key is pressed; false otherwise.
+\end{DoxyReturn}

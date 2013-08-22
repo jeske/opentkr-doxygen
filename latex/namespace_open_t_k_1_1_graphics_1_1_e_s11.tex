@@ -1,0 +1,1475 @@
+\hypertarget{namespace_open_t_k_1_1_graphics_1_1_e_s11}{\section{Package Open\-T\-K.\-Graphics.\-E\-S11}
+\label{namespace_open_t_k_1_1_graphics_1_1_e_s11}\index{Open\-T\-K.\-Graphics.\-E\-S11@{Open\-T\-K.\-Graphics.\-E\-S11}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_open_t_k_1_1_graphics_1_1_e_s11_1_1_g_l}{G\-L}
+\begin{DoxyCompactList}\small\item\em Provides access to \hyperlink{namespace_open_t_k_1_1_graphics_1_1_open_g_l}{Open\-G\-L} E\-S 1.\-1 methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries All} \-: int \{ \\*
+{\bfseries False} = ((int)0), 
+{\bfseries No\-Error} = ((int)0), 
+{\bfseries None\-Oes} = ((int)0), 
+{\bfseries Zero} = ((int)0), 
+\\*
+{\bfseries Points} = ((int)0x0000), 
+{\bfseries Depth\-Buffer\-Bit} = ((int)0x00000100), 
+{\bfseries Stencil\-Buffer\-Bit} = ((int)0x00000400), 
+{\bfseries Color\-Buffer\-Bit} = ((int)0x00004000), 
+\\*
+{\bfseries Lines} = ((int)0x0001), 
+{\bfseries Line\-Loop} = ((int)0x0002), 
+{\bfseries Line\-Strip} = ((int)0x0003), 
+{\bfseries Triangles} = ((int)0x0004), 
+\\*
+{\bfseries Triangle\-Strip} = ((int)0x0005), 
+{\bfseries Triangle\-Fan} = ((int)0x0006), 
+{\bfseries Add} = ((int)0x0104), 
+{\bfseries Never} = ((int)0x0200), 
+\\*
+{\bfseries Less} = ((int)0x0201), 
+{\bfseries Equal} = ((int)0x0202), 
+{\bfseries Lequal} = ((int)0x0203), 
+{\bfseries Greater} = ((int)0x0204), 
+\\*
+{\bfseries Notequal} = ((int)0x0205), 
+{\bfseries Gequal} = ((int)0x0206), 
+{\bfseries Always} = ((int)0x0207), 
+{\bfseries Src\-Color} = ((int)0x0300), 
+\\*
+{\bfseries One\-Minus\-Src\-Color} = ((int)0x0301), 
+{\bfseries Src\-Alpha} = ((int)0x0302), 
+{\bfseries One\-Minus\-Src\-Alpha} = ((int)0x0303), 
+{\bfseries Dst\-Alpha} = ((int)0x0304), 
+\\*
+{\bfseries One\-Minus\-Dst\-Alpha} = ((int)0x0305), 
+{\bfseries Dst\-Color} = ((int)0x0306), 
+{\bfseries One\-Minus\-Dst\-Color} = ((int)0x0307), 
+{\bfseries Src\-Alpha\-Saturate} = ((int)0x0308), 
+\\*
+{\bfseries Front} = ((int)0x0404), 
+{\bfseries Back} = ((int)0x0405), 
+{\bfseries Front\-And\-Back} = ((int)0x0408), 
+{\bfseries Invalid\-Enum} = ((int)0x0500), 
+\\*
+{\bfseries Invalid\-Value} = ((int)0x0501), 
+{\bfseries Invalid\-Operation} = ((int)0x0502), 
+{\bfseries Stack\-Overflow} = ((int)0x0503), 
+{\bfseries Stack\-Underflow} = ((int)0x0504), 
+\\*
+{\bfseries Out\-Of\-Memory} = ((int)0x0505), 
+{\bfseries Invalid\-Framebuffer\-Operation\-Oes} = ((int)0x0506), 
+{\bfseries Exp} = ((int)0x0800), 
+{\bfseries Exp2} = ((int)0x0801), 
+\\*
+{\bfseries Cw} = ((int)0x0900), 
+{\bfseries Ccw} = ((int)0x0901), 
+{\bfseries Current\-Color} = ((int)0x0\-B00), 
+{\bfseries Current\-Normal} = ((int)0x0\-B02), 
+\\*
+{\bfseries Current\-Texture\-Coords} = ((int)0x0\-B03), 
+{\bfseries Point\-Smooth} = ((int)0x0\-B10), 
+{\bfseries Point\-Size} = ((int)0x0\-B11), 
+{\bfseries Smooth\-Point\-Size\-Range} = ((int)0x0\-B12), 
+\\*
+{\bfseries Line\-Smooth} = ((int)0x0\-B20), 
+{\bfseries Line\-Width} = ((int)0x0\-B21), 
+{\bfseries Smooth\-Line\-Width\-Range} = ((int)0x0\-B22), 
+{\bfseries Cull\-Face} = ((int)0x0\-B44), 
+\\*
+{\bfseries Cull\-Face\-Mode} = ((int)0x0\-B45), 
+{\bfseries Front\-Face} = ((int)0x0\-B46), 
+{\bfseries Lighting} = ((int)0x0\-B50), 
+{\bfseries Light\-Model\-Two\-Side} = ((int)0x0\-B52), 
+\\*
+{\bfseries Light\-Model\-Ambient} = ((int)0x0\-B53), 
+{\bfseries Shade\-Model} = ((int)0x0\-B54), 
+{\bfseries Color\-Material} = ((int)0x0\-B57), 
+{\bfseries Fog} = ((int)0x0\-B60), 
+\\*
+{\bfseries Fog\-Density} = ((int)0x0\-B62), 
+{\bfseries Fog\-Start} = ((int)0x0\-B63), 
+{\bfseries Fog\-End} = ((int)0x0\-B64), 
+{\bfseries Fog\-Mode} = ((int)0x0\-B65), 
+\\*
+{\bfseries Fog\-Color} = ((int)0x0\-B66), 
+{\bfseries Depth\-Range} = ((int)0x0\-B70), 
+{\bfseries Depth\-Test} = ((int)0x0\-B71), 
+{\bfseries Depth\-Writemask} = ((int)0x0\-B72), 
+\\*
+{\bfseries Depth\-Clear\-Value} = ((int)0x0\-B73), 
+{\bfseries Depth\-Func} = ((int)0x0\-B74), 
+{\bfseries Stencil\-Test} = ((int)0x0\-B90), 
+{\bfseries Stencil\-Clear\-Value} = ((int)0x0\-B91), 
+\\*
+{\bfseries Stencil\-Func} = ((int)0x0\-B92), 
+{\bfseries Stencil\-Value\-Mask} = ((int)0x0\-B93), 
+{\bfseries Stencil\-Fail} = ((int)0x0\-B94), 
+{\bfseries Stencil\-Pass\-Depth\-Fail} = ((int)0x0\-B95), 
+\\*
+{\bfseries Stencil\-Pass\-Depth\-Pass} = ((int)0x0\-B96), 
+{\bfseries Stencil\-Ref} = ((int)0x0\-B97), 
+{\bfseries Stencil\-Writemask} = ((int)0x0\-B98), 
+{\bfseries Matrix\-Mode} = ((int)0x0\-B\-A0), 
+\\*
+{\bfseries Normalize} = ((int)0x0\-B\-A1), 
+{\bfseries Viewport} = ((int)0x0\-B\-A2), 
+{\bfseries Modelview\-Stack\-Depth} = ((int)0x0\-B\-A3), 
+{\bfseries Projection\-Stack\-Depth} = ((int)0x0\-B\-A4), 
+\\*
+{\bfseries Texture\-Stack\-Depth} = ((int)0x0\-B\-A5), 
+{\bfseries Modelview\-Matrix} = ((int)0x0\-B\-A6), 
+{\bfseries Projection\-Matrix} = ((int)0x0\-B\-A7), 
+{\bfseries Texture\-Matrix} = ((int)0x0\-B\-A8), 
+\\*
+{\bfseries Alpha\-Test} = ((int)0x0\-B\-C0), 
+{\bfseries Alpha\-Test\-Func} = ((int)0x0\-B\-C1), 
+{\bfseries Alpha\-Test\-Ref} = ((int)0x0\-B\-C2), 
+{\bfseries Dither} = ((int)0x0\-B\-D0), 
+\\*
+{\bfseries Blend\-Dst} = ((int)0x0\-B\-E0), 
+{\bfseries Blend\-Src} = ((int)0x0\-B\-E1), 
+{\bfseries Blend} = ((int)0x0\-B\-E2), 
+{\bfseries Logic\-Op\-Mode} = ((int)0x0\-B\-F0), 
+\\*
+{\bfseries Color\-Logic\-Op} = ((int)0x0\-B\-F2), 
+{\bfseries Scissor\-Box} = ((int)0x0\-C10), 
+{\bfseries Scissor\-Test} = ((int)0x0\-C11), 
+{\bfseries Color\-Clear\-Value} = ((int)0x0\-C22), 
+\\*
+{\bfseries Color\-Writemask} = ((int)0x0\-C23), 
+{\bfseries Perspective\-Correction\-Hint} = ((int)0x0\-C50), 
+{\bfseries Point\-Smooth\-Hint} = ((int)0x0\-C51), 
+{\bfseries Line\-Smooth\-Hint} = ((int)0x0\-C52), 
+\\*
+{\bfseries Fog\-Hint} = ((int)0x0\-C54), 
+{\bfseries Unpack\-Alignment} = ((int)0x0\-C\-F5), 
+{\bfseries Pack\-Alignment} = ((int)0x0\-D05), 
+{\bfseries Alpha\-Scale} = ((int)0x0\-D1\-C), 
+\\*
+{\bfseries Max\-Lights} = ((int)0x0\-D31), 
+{\bfseries Max\-Clip\-Planes} = ((int)0x0\-D32), 
+{\bfseries Max\-Clip\-Planes\-Img} = ((int)0x0\-D32), 
+{\bfseries Max\-Texture\-Size} = ((int)0x0\-D33), 
+\\*
+{\bfseries Max\-Modelview\-Stack\-Depth} = ((int)0x0\-D36), 
+{\bfseries Max\-Projection\-Stack\-Depth} = ((int)0x0\-D38), 
+{\bfseries Max\-Texture\-Stack\-Depth} = ((int)0x0\-D39), 
+{\bfseries Max\-Viewport\-Dims} = ((int)0x0\-D3\-A), 
+\\*
+{\bfseries Subpixel\-Bits} = ((int)0x0\-D50), 
+{\bfseries Red\-Bits} = ((int)0x0\-D52), 
+{\bfseries Green\-Bits} = ((int)0x0\-D53), 
+{\bfseries Blue\-Bits} = ((int)0x0\-D54), 
+\\*
+{\bfseries Alpha\-Bits} = ((int)0x0\-D55), 
+{\bfseries Depth\-Bits} = ((int)0x0\-D56), 
+{\bfseries Stencil\-Bits} = ((int)0x0\-D57), 
+{\bfseries Texture2\-D} = ((int)0x0\-D\-E1), 
+\\*
+{\bfseries Dont\-Care} = ((int)0x1100), 
+{\bfseries Fastest} = ((int)0x1101), 
+{\bfseries Nicest} = ((int)0x1102), 
+{\bfseries Ambient} = ((int)0x1200), 
+\\*
+{\bfseries Diffuse} = ((int)0x1201), 
+{\bfseries Specular} = ((int)0x1202), 
+{\bfseries Position} = ((int)0x1203), 
+{\bfseries Spot\-Direction} = ((int)0x1204), 
+\\*
+{\bfseries Spot\-Exponent} = ((int)0x1205), 
+{\bfseries Spot\-Cutoff} = ((int)0x1206), 
+{\bfseries Constant\-Attenuation} = ((int)0x1207), 
+{\bfseries Linear\-Attenuation} = ((int)0x1208), 
+\\*
+{\bfseries Quadratic\-Attenuation} = ((int)0x1209), 
+{\bfseries Byte} = ((int)0x1400), 
+{\bfseries Unsigned\-Byte} = ((int)0x1401), 
+{\bfseries Short} = ((int)0x1402), 
+\\*
+{\bfseries Unsigned\-Short} = ((int)0x1403), 
+{\bfseries Float} = ((int)0x1406), 
+{\bfseries Fixed} = ((int)0x140\-C), 
+{\bfseries Fixed\-Oes} = ((int)0x140\-C), 
+\\*
+{\bfseries Clear} = ((int)0x1500), 
+{\bfseries And} = ((int)0x1501), 
+{\bfseries And\-Reverse} = ((int)0x1502), 
+{\bfseries Copy} = ((int)0x1503), 
+\\*
+{\bfseries And\-Inverted} = ((int)0x1504), 
+{\bfseries Noop} = ((int)0x1505), 
+{\bfseries Xor} = ((int)0x1506), 
+{\bfseries Or} = ((int)0x1507), 
+\\*
+{\bfseries Nor} = ((int)0x1508), 
+{\bfseries Equiv} = ((int)0x1509), 
+{\bfseries Invert} = ((int)0x150\-A), 
+{\bfseries Or\-Reverse} = ((int)0x150\-B), 
+\\*
+{\bfseries Copy\-Inverted} = ((int)0x150\-C), 
+{\bfseries Or\-Inverted} = ((int)0x150\-D), 
+{\bfseries Nand} = ((int)0x150\-E), 
+{\bfseries Set} = ((int)0x150\-F), 
+\\*
+{\bfseries Emission} = ((int)0x1600), 
+{\bfseries Shininess} = ((int)0x1601), 
+{\bfseries Ambient\-And\-Diffuse} = ((int)0x1602), 
+{\bfseries Modelview} = ((int)0x1700), 
+\\*
+{\bfseries Projection} = ((int)0x1701), 
+{\bfseries Texture} = ((int)0x1702), 
+{\bfseries Alpha} = ((int)0x1906), 
+{\bfseries Rgb} = ((int)0x1907), 
+\\*
+{\bfseries Rgba} = ((int)0x1908), 
+{\bfseries Luminance} = ((int)0x1909), 
+{\bfseries Luminance\-Alpha} = ((int)0x190\-A), 
+{\bfseries Flat} = ((int)0x1\-D00), 
+\\*
+{\bfseries Smooth} = ((int)0x1\-D01), 
+{\bfseries Keep} = ((int)0x1\-E00), 
+{\bfseries Replace} = ((int)0x1\-E01), 
+{\bfseries Incr} = ((int)0x1\-E02), 
+\\*
+{\bfseries Decr} = ((int)0x1\-E03), 
+{\bfseries Vendor} = ((int)0x1\-F00), 
+{\bfseries Renderer} = ((int)0x1\-F01), 
+{\bfseries Version} = ((int)0x1\-F02), 
+\\*
+{\bfseries Extensions} = ((int)0x1\-F03), 
+{\bfseries Modulate} = ((int)0x2100), 
+{\bfseries Decal} = ((int)0x2101), 
+{\bfseries Texture\-Env\-Mode} = ((int)0x2200), 
+\\*
+{\bfseries Texture\-Env\-Color} = ((int)0x2201), 
+{\bfseries Texture\-Env} = ((int)0x2300), 
+{\bfseries Texture\-Gen\-Mode\-Oes} = ((int)0x2500), 
+{\bfseries Nearest} = ((int)0x2600), 
+\\*
+{\bfseries Linear} = ((int)0x2601), 
+{\bfseries Nearest\-Mipmap\-Nearest} = ((int)0x2700), 
+{\bfseries Linear\-Mipmap\-Nearest} = ((int)0x2701), 
+{\bfseries Nearest\-Mipmap\-Linear} = ((int)0x2702), 
+\\*
+{\bfseries Linear\-Mipmap\-Linear} = ((int)0x2703), 
+{\bfseries Texture\-Mag\-Filter} = ((int)0x2800), 
+{\bfseries Texture\-Min\-Filter} = ((int)0x2801), 
+{\bfseries Texture\-Wrap\-S} = ((int)0x2802), 
+\\*
+{\bfseries Texture\-Wrap\-T} = ((int)0x2803), 
+{\bfseries Repeat} = ((int)0x2901), 
+{\bfseries Polygon\-Offset\-Units} = ((int)0x2\-A00), 
+{\bfseries Clip\-Plane0} = ((int)0x3000), 
+\\*
+{\bfseries Clip\-Plane0\-Img} = ((int)0x3000), 
+{\bfseries Clip\-Plane1} = ((int)0x3001), 
+{\bfseries Clip\-Plane1\-Img} = ((int)0x3001), 
+{\bfseries Clip\-Plane2} = ((int)0x3002), 
+\\*
+{\bfseries Clip\-Plane2\-Img} = ((int)0x3002), 
+{\bfseries Clip\-Plane3} = ((int)0x3003), 
+{\bfseries Clip\-Plane3\-Img} = ((int)0x3003), 
+{\bfseries Clip\-Plane4} = ((int)0x3004), 
+\\*
+{\bfseries Clip\-Plane4\-Img} = ((int)0x3004), 
+{\bfseries Clip\-Plane5} = ((int)0x3005), 
+{\bfseries Clip\-Plane5\-Img} = ((int)0x3005), 
+{\bfseries Light0} = ((int)0x4000), 
+\\*
+{\bfseries Light1} = ((int)0x4001), 
+{\bfseries Light2} = ((int)0x4002), 
+{\bfseries Light3} = ((int)0x4003), 
+{\bfseries Light4} = ((int)0x4004), 
+\\*
+{\bfseries Light5} = ((int)0x4005), 
+{\bfseries Light6} = ((int)0x4006), 
+{\bfseries Light7} = ((int)0x4007), 
+{\bfseries Func\-Add\-Oes} = ((int)0x8006), 
+\\*
+{\bfseries Blend\-Equation\-Oes} = ((int)0x8009), 
+{\bfseries Blend\-Equation\-Rgb\-Oes} = ((int)0x8009), 
+{\bfseries Func\-Subtract\-Oes} = ((int)0x800\-A), 
+{\bfseries Func\-Reverse\-Subtract\-Oes} = ((int)0x800\-B), 
+\\*
+{\bfseries Unsigned\-Short4444} = ((int)0x8033), 
+{\bfseries Unsigned\-Short5551} = ((int)0x8034), 
+{\bfseries Polygon\-Offset\-Fill} = ((int)0x8037), 
+{\bfseries Polygon\-Offset\-Factor} = ((int)0x8038), 
+\\*
+{\bfseries Rescale\-Normal} = ((int)0x803\-A), 
+{\bfseries Rgb8\-Oes} = ((int)0x8051), 
+{\bfseries Rgba4\-Oes} = ((int)0x8056), 
+{\bfseries Rgb5\-A1\-Oes} = ((int)0x8057), 
+\\*
+{\bfseries Rgba8\-Oes} = ((int)0x8058), 
+{\bfseries Texture\-Binding2\-D} = ((int)0x8069), 
+{\bfseries Vertex\-Array} = ((int)0x8074), 
+{\bfseries Normal\-Array} = ((int)0x8075), 
+\\*
+{\bfseries Color\-Array} = ((int)0x8076), 
+{\bfseries Texture\-Coord\-Array} = ((int)0x8078), 
+{\bfseries Vertex\-Array\-Size} = ((int)0x807\-A), 
+{\bfseries Vertex\-Array\-Type} = ((int)0x807\-B), 
+\\*
+{\bfseries Vertex\-Array\-Stride} = ((int)0x807\-C), 
+{\bfseries Normal\-Array\-Type} = ((int)0x807\-E), 
+{\bfseries Normal\-Array\-Stride} = ((int)0x807\-F), 
+{\bfseries Color\-Array\-Size} = ((int)0x8081), 
+\\*
+{\bfseries Color\-Array\-Type} = ((int)0x8082), 
+{\bfseries Color\-Array\-Stride} = ((int)0x8083), 
+{\bfseries Texture\-Coord\-Array\-Size} = ((int)0x8088), 
+{\bfseries Texture\-Coord\-Array\-Type} = ((int)0x8089), 
+\\*
+{\bfseries Texture\-Coord\-Array\-Stride} = ((int)0x808\-A), 
+{\bfseries Vertex\-Array\-Pointer} = ((int)0x808\-E), 
+{\bfseries Normal\-Array\-Pointer} = ((int)0x808\-F), 
+{\bfseries Color\-Array\-Pointer} = ((int)0x8090), 
+\\*
+{\bfseries Texture\-Coord\-Array\-Pointer} = ((int)0x8092), 
+{\bfseries Multisample} = ((int)0x809\-D), 
+{\bfseries Sample\-Alpha\-To\-Coverage} = ((int)0x809\-E), 
+{\bfseries Sample\-Alpha\-To\-One} = ((int)0x809\-F), 
+\\*
+{\bfseries Sample\-Coverage} = ((int)0x80\-A0), 
+{\bfseries Sample\-Buffers} = ((int)0x80\-A8), 
+{\bfseries Samples} = ((int)0x80\-A9), 
+{\bfseries Sample\-Coverage\-Value} = ((int)0x80\-A\-A), 
+\\*
+{\bfseries Sample\-Coverage\-Invert} = ((int)0x80\-A\-B), 
+{\bfseries Blend\-Dst\-Rgb\-Oes} = ((int)0x80\-C8), 
+{\bfseries Blend\-Src\-Rgb\-Oes} = ((int)0x80\-C9), 
+{\bfseries Blend\-Dst\-Alpha\-Oes} = ((int)0x80\-C\-A), 
+\\*
+{\bfseries Blend\-Src\-Alpha\-Oes} = ((int)0x80\-C\-B), 
+{\bfseries Bgra} = ((int)0x80\-E1), 
+{\bfseries Point\-Size\-Min} = ((int)0x8126), 
+{\bfseries Point\-Size\-Max} = ((int)0x8127), 
+\\*
+{\bfseries Point\-Fade\-Threshold\-Size} = ((int)0x8128), 
+{\bfseries Point\-Distance\-Attenuation} = ((int)0x8129), 
+{\bfseries Clamp\-To\-Edge} = ((int)0x812\-F), 
+{\bfseries Generate\-Mipmap} = ((int)0x8191), 
+\\*
+{\bfseries Generate\-Mipmap\-Hint} = ((int)0x8192), 
+{\bfseries Depth\-Component16\-Oes} = ((int)0x81\-A5), 
+{\bfseries Depth\-Component24\-Oes} = ((int)0x81\-A6), 
+{\bfseries Depth\-Component32\-Oes} = ((int)0x81\-A7), 
+\\*
+{\bfseries Unsigned\-Short565} = ((int)0x8363), 
+{\bfseries Unsigned\-Short4444\-Rev} = ((int)0x8365), 
+{\bfseries Unsigned\-Short1555\-Rev} = ((int)0x8366), 
+{\bfseries Mirrored\-Repeat\-Oes} = ((int)0x8370), 
+\\*
+{\bfseries Aliased\-Point\-Size\-Range} = ((int)0x846\-D), 
+{\bfseries Aliased\-Line\-Width\-Range} = ((int)0x846\-E), 
+{\bfseries Texture0} = ((int)0x84\-C0), 
+{\bfseries Texture1} = ((int)0x84\-C1), 
+\\*
+{\bfseries Texture2} = ((int)0x84\-C2), 
+{\bfseries Texture3} = ((int)0x84\-C3), 
+{\bfseries Texture4} = ((int)0x84\-C4), 
+{\bfseries Texture5} = ((int)0x84\-C5), 
+\\*
+{\bfseries Texture6} = ((int)0x84\-C6), 
+{\bfseries Texture7} = ((int)0x84\-C7), 
+{\bfseries Texture8} = ((int)0x84\-C8), 
+{\bfseries Texture9} = ((int)0x84\-C9), 
+\\*
+{\bfseries Texture10} = ((int)0x84\-C\-A), 
+{\bfseries Texture11} = ((int)0x84\-C\-B), 
+{\bfseries Texture12} = ((int)0x84\-C\-C), 
+{\bfseries Texture13} = ((int)0x84\-C\-D), 
+\\*
+{\bfseries Texture14} = ((int)0x84\-C\-E), 
+{\bfseries Texture15} = ((int)0x84\-C\-F), 
+{\bfseries Texture16} = ((int)0x84\-D0), 
+{\bfseries Texture17} = ((int)0x84\-D1), 
+\\*
+{\bfseries Texture18} = ((int)0x84\-D2), 
+{\bfseries Texture19} = ((int)0x84\-D3), 
+{\bfseries Texture20} = ((int)0x84\-D4), 
+{\bfseries Texture21} = ((int)0x84\-D5), 
+\\*
+{\bfseries Texture22} = ((int)0x84\-D6), 
+{\bfseries Texture23} = ((int)0x84\-D7), 
+{\bfseries Texture24} = ((int)0x84\-D8), 
+{\bfseries Texture25} = ((int)0x84\-D9), 
+\\*
+{\bfseries Texture26} = ((int)0x84\-D\-A), 
+{\bfseries Texture27} = ((int)0x84\-D\-B), 
+{\bfseries Texture28} = ((int)0x84\-D\-C), 
+{\bfseries Texture29} = ((int)0x84\-D\-D), 
+\\*
+{\bfseries Texture30} = ((int)0x84\-D\-E), 
+{\bfseries Texture31} = ((int)0x84\-D\-F), 
+{\bfseries Active\-Texture} = ((int)0x84\-E0), 
+{\bfseries Client\-Active\-Texture} = ((int)0x84\-E1), 
+\\*
+{\bfseries Max\-Texture\-Units} = ((int)0x84\-E2), 
+{\bfseries Subtract} = ((int)0x84\-E7), 
+{\bfseries Max\-Renderbuffer\-Size\-Oes} = ((int)0x84\-E8), 
+{\bfseries All\-Completed\-Nv} = ((int)0x84\-F2), 
+\\*
+{\bfseries Fence\-Status\-Nv} = ((int)0x84\-F3), 
+{\bfseries Fence\-Condition\-Nv} = ((int)0x84\-F4), 
+{\bfseries Depth\-Stencil\-Oes} = ((int)0x84\-F9), 
+{\bfseries Unsigned\-Int248\-Oes} = ((int)0x84\-F\-A), 
+\\*
+{\bfseries Texture\-Max\-Anisotropy\-Ext} = ((int)0x84\-F\-E), 
+{\bfseries Max\-Texture\-Max\-Anisotropy\-Ext} = ((int)0x84\-F\-F), 
+{\bfseries Incr\-Wrap\-Oes} = ((int)0x8507), 
+{\bfseries Decr\-Wrap\-Oes} = ((int)0x8508), 
+\\*
+{\bfseries Normal\-Map\-Oes} = ((int)0x8511), 
+{\bfseries Reflection\-Map\-Oes} = ((int)0x8512), 
+{\bfseries Texture\-Cube\-Map\-Oes} = ((int)0x8513), 
+{\bfseries Texture\-Binding\-Cube\-Map\-Oes} = ((int)0x8514), 
+\\*
+{\bfseries Texture\-Cube\-Map\-Positive\-X\-Oes} = ((int)0x8515), 
+{\bfseries Texture\-Cube\-Map\-Negative\-X\-Oes} = ((int)0x8516), 
+{\bfseries Texture\-Cube\-Map\-Positive\-Y\-Oes} = ((int)0x8517), 
+{\bfseries Texture\-Cube\-Map\-Negative\-Y\-Oes} = ((int)0x8518), 
+\\*
+{\bfseries Texture\-Cube\-Map\-Positive\-Z\-Oes} = ((int)0x8519), 
+{\bfseries Texture\-Cube\-Map\-Negative\-Z\-Oes} = ((int)0x851\-A), 
+{\bfseries Max\-Cube\-Map\-Texture\-Size\-Oes} = ((int)0x851\-C), 
+{\bfseries Combine} = ((int)0x8570), 
+\\*
+{\bfseries Combine\-Rgb} = ((int)0x8571), 
+{\bfseries Combine\-Alpha} = ((int)0x8572), 
+{\bfseries Rgb\-Scale} = ((int)0x8573), 
+{\bfseries Add\-Signed} = ((int)0x8574), 
+\\*
+{\bfseries Interpolate} = ((int)0x8575), 
+{\bfseries Constant} = ((int)0x8576), 
+{\bfseries Primary\-Color} = ((int)0x8577), 
+{\bfseries Previous} = ((int)0x8578), 
+\\*
+{\bfseries Src0\-Rgb} = ((int)0x8580), 
+{\bfseries Src1\-Rgb} = ((int)0x8581), 
+{\bfseries Src2\-Rgb} = ((int)0x8582), 
+{\bfseries Src0\-Alpha} = ((int)0x8588), 
+\\*
+{\bfseries Src1\-Alpha} = ((int)0x8589), 
+{\bfseries Src2\-Alpha} = ((int)0x858\-A), 
+{\bfseries Operand0\-Rgb} = ((int)0x8590), 
+{\bfseries Operand1\-Rgb} = ((int)0x8591), 
+\\*
+{\bfseries Operand2\-Rgb} = ((int)0x8592), 
+{\bfseries Operand0\-Alpha} = ((int)0x8598), 
+{\bfseries Operand1\-Alpha} = ((int)0x8599), 
+{\bfseries Operand2\-Alpha} = ((int)0x859\-A), 
+\\*
+{\bfseries Num\-Compressed\-Texture\-Formats} = ((int)0x86\-A2), 
+{\bfseries Compressed\-Texture\-Formats} = ((int)0x86\-A3), 
+{\bfseries Max\-Vertex\-Units\-Oes} = ((int)0x86\-A4), 
+{\bfseries Weight\-Array\-Type\-Oes} = ((int)0x86\-A9), 
+\\*
+{\bfseries Weight\-Array\-Stride\-Oes} = ((int)0x86\-A\-A), 
+{\bfseries Weight\-Array\-Size\-Oes} = ((int)0x86\-A\-B), 
+{\bfseries Weight\-Array\-Pointer\-Oes} = ((int)0x86\-A\-C), 
+{\bfseries Weight\-Array\-Oes} = ((int)0x86\-A\-D), 
+\\*
+{\bfseries Dot3\-Rgb} = ((int)0x86\-A\-E), 
+{\bfseries Dot3\-Rgba} = ((int)0x86\-A\-F), 
+{\bfseries Dot3\-Rgba\-Img} = ((int)0x86\-A\-F), 
+{\bfseries Buffer\-Size} = ((int)0x8764), 
+\\*
+{\bfseries Buffer\-Usage} = ((int)0x8765), 
+{\bfseries Atc\-Rgba\-Interpolated\-Alpha\-Amd} = ((int)0x87\-E\-E), 
+{\bfseries Gl3\-Dc\-X\-Amd} = ((int)0x87\-F9), 
+{\bfseries Gl3\-Dc\-Xy\-Amd} = ((int)0x87\-F\-A), 
+\\*
+{\bfseries Blend\-Equation\-Alpha\-Oes} = ((int)0x883\-D), 
+{\bfseries Matrix\-Palette\-Oes} = ((int)0x8840), 
+{\bfseries Max\-Palette\-Matrices\-Oes} = ((int)0x8842), 
+{\bfseries Current\-Palette\-Matrix\-Oes} = ((int)0x8843), 
+\\*
+{\bfseries Matrix\-Index\-Array\-Oes} = ((int)0x8844), 
+{\bfseries Matrix\-Index\-Array\-Size\-Oes} = ((int)0x8846), 
+{\bfseries Matrix\-Index\-Array\-Type\-Oes} = ((int)0x8847), 
+{\bfseries Matrix\-Index\-Array\-Stride\-Oes} = ((int)0x8848), 
+\\*
+{\bfseries Matrix\-Index\-Array\-Pointer\-Oes} = ((int)0x8849), 
+{\bfseries Point\-Sprite\-Oes} = ((int)0x8861), 
+{\bfseries Coord\-Replace\-Oes} = ((int)0x8862), 
+{\bfseries Array\-Buffer} = ((int)0x8892), 
+\\*
+{\bfseries Element\-Array\-Buffer} = ((int)0x8893), 
+{\bfseries Array\-Buffer\-Binding} = ((int)0x8894), 
+{\bfseries Element\-Array\-Buffer\-Binding} = ((int)0x8895), 
+{\bfseries Vertex\-Array\-Buffer\-Binding} = ((int)0x8896), 
+\\*
+{\bfseries Normal\-Array\-Buffer\-Binding} = ((int)0x8897), 
+{\bfseries Color\-Array\-Buffer\-Binding} = ((int)0x8898), 
+{\bfseries Texture\-Coord\-Array\-Buffer\-Binding} = ((int)0x889\-A), 
+{\bfseries Weight\-Array\-Buffer\-Binding\-Oes} = ((int)0x889\-E), 
+\\*
+{\bfseries Write\-Only\-Oes} = ((int)0x88\-B9), 
+{\bfseries Buffer\-Access\-Oes} = ((int)0x88\-B\-B), 
+{\bfseries Buffer\-Mapped\-Oes} = ((int)0x88\-B\-C), 
+{\bfseries Buffer\-Map\-Pointer\-Oes} = ((int)0x88\-B\-D), 
+\\*
+{\bfseries Static\-Draw} = ((int)0x88\-E4), 
+{\bfseries Dynamic\-Draw} = ((int)0x88\-E8), 
+{\bfseries Depth24\-Stencil8\-Oes} = ((int)0x88\-F0), 
+{\bfseries Point\-Size\-Array\-Type\-Oes} = ((int)0x898\-A), 
+\\*
+{\bfseries Point\-Size\-Array\-Stride\-Oes} = ((int)0x898\-B), 
+{\bfseries Point\-Size\-Array\-Pointer\-Oes} = ((int)0x898\-C), 
+{\bfseries Modelview\-Matrix\-Float\-As\-Int\-Bits\-Oes} = ((int)0x898\-D), 
+{\bfseries Projection\-Matrix\-Float\-As\-Int\-Bits\-Oes} = ((int)0x898\-E), 
+\\*
+{\bfseries Texture\-Matrix\-Float\-As\-Int\-Bits\-Oes} = ((int)0x898\-F), 
+{\bfseries Palette4\-Rgb8\-Oes} = ((int)0x8\-B90), 
+{\bfseries Palette4\-Rgba8\-Oes} = ((int)0x8\-B91), 
+{\bfseries Palette4\-R5\-G6\-B5\-Oes} = ((int)0x8\-B92), 
+\\*
+{\bfseries Palette4\-Rgba4\-Oes} = ((int)0x8\-B93), 
+{\bfseries Palette4\-Rgb5\-A1\-Oes} = ((int)0x8\-B94), 
+{\bfseries Palette8\-Rgb8\-Oes} = ((int)0x8\-B95), 
+{\bfseries Palette8\-Rgba8\-Oes} = ((int)0x8\-B96), 
+\\*
+{\bfseries Palette8\-R5\-G6\-B5\-Oes} = ((int)0x8\-B97), 
+{\bfseries Palette8\-Rgba4\-Oes} = ((int)0x8\-B98), 
+{\bfseries Palette8\-Rgb5\-A1\-Oes} = ((int)0x8\-B99), 
+{\bfseries Implementation\-Color\-Read\-Type\-Oes} = ((int)0x8\-B9\-A), 
+\\*
+{\bfseries Implementation\-Color\-Read\-Format\-Oes} = ((int)0x8\-B9\-B), 
+{\bfseries Point\-Size\-Array\-Oes} = ((int)0x8\-B9\-C), 
+{\bfseries Texture\-Crop\-Rect\-Oes} = ((int)0x8\-B9\-D), 
+{\bfseries Matrix\-Index\-Array\-Buffer\-Binding\-Oes} = ((int)0x8\-B9\-E), 
+\\*
+{\bfseries Point\-Size\-Array\-Buffer\-Binding\-Oes} = ((int)0x8\-B9\-F), 
+{\bfseries Compressed\-Rgb\-Pvrtc4\-Bppv1\-Img} = ((int)0x8\-C00), 
+{\bfseries Compressed\-Rgb\-Pvrtc2\-Bppv1\-Img} = ((int)0x8\-C01), 
+{\bfseries Compressed\-Rgba\-Pvrtc4\-Bppv1\-Img} = ((int)0x8\-C02), 
+\\*
+{\bfseries Compressed\-Rgba\-Pvrtc2\-Bppv1\-Img} = ((int)0x8\-C03), 
+{\bfseries Modulate\-Color\-Img} = ((int)0x8\-C04), 
+{\bfseries Recip\-Add\-Signed\-Alpha\-Img} = ((int)0x8\-C05), 
+{\bfseries Texture\-Alpha\-Modulate\-Img} = ((int)0x8\-C06), 
+\\*
+{\bfseries Factor\-Alpha\-Modulate\-Img} = ((int)0x8\-C07), 
+{\bfseries Fragment\-Alpha\-Modulate\-Img} = ((int)0x8\-C08), 
+{\bfseries Add\-Blend\-Img} = ((int)0x8\-C09), 
+{\bfseries Atc\-Rgb\-Amd} = ((int)0x8\-C92), 
+\\*
+{\bfseries Atc\-Rgba\-Explicit\-Alpha\-Amd} = ((int)0x8\-C93), 
+{\bfseries Framebuffer\-Binding\-Oes} = ((int)0x8\-C\-A6), 
+{\bfseries Renderbuffer\-Binding\-Oes} = ((int)0x8\-C\-A7), 
+{\bfseries Framebuffer\-Attachment\-Object\-Type\-Oes} = ((int)0x8\-C\-D0), 
+\\*
+{\bfseries Framebuffer\-Attachment\-Object\-Name\-Oes} = ((int)0x8\-C\-D1), 
+{\bfseries Framebuffer\-Attachment\-Texture\-Level\-Oes} = ((int)0x8\-C\-D2), 
+{\bfseries Framebuffer\-Attachment\-Texture\-Cube\-Map\-Face\-Oes} = ((int)0x8\-C\-D3), 
+{\bfseries Framebuffer\-Complete\-Oes} = ((int)0x8\-C\-D5), 
+\\*
+{\bfseries Framebuffer\-Incomplete\-Attachment\-Oes} = ((int)0x8\-C\-D6), 
+{\bfseries Framebuffer\-Incomplete\-Missing\-Attachment\-Oes} = ((int)0x8\-C\-D7), 
+{\bfseries Framebuffer\-Incomplete\-Dimensions\-Oes} = ((int)0x8\-C\-D9), 
+{\bfseries Framebuffer\-Incomplete\-Formats\-Oes} = ((int)0x8\-C\-D\-A), 
+\\*
+{\bfseries Framebuffer\-Unsupported\-Oes} = ((int)0x8\-C\-D\-D), 
+{\bfseries Color\-Attachment0\-Oes} = ((int)0x8\-C\-E0), 
+{\bfseries Depth\-Attachment\-Oes} = ((int)0x8\-D00), 
+{\bfseries Stencil\-Attachment\-Oes} = ((int)0x8\-D20), 
+\\*
+{\bfseries Framebuffer\-Oes} = ((int)0x8\-D40), 
+{\bfseries Renderbuffer\-Oes} = ((int)0x8\-D41), 
+{\bfseries Renderbuffer\-Width\-Oes} = ((int)0x8\-D42), 
+{\bfseries Renderbuffer\-Height\-Oes} = ((int)0x8\-D43), 
+\\*
+{\bfseries Renderbuffer\-Internal\-Format\-Oes} = ((int)0x8\-D44), 
+{\bfseries Stencil\-Index1\-Oes} = ((int)0x8\-D46), 
+{\bfseries Stencil\-Index4\-Oes} = ((int)0x8\-D47), 
+{\bfseries Stencil\-Index8\-Oes} = ((int)0x8\-D48), 
+\\*
+{\bfseries Renderbuffer\-Red\-Size\-Oes} = ((int)0x8\-D50), 
+{\bfseries Renderbuffer\-Green\-Size\-Oes} = ((int)0x8\-D51), 
+{\bfseries Renderbuffer\-Blue\-Size\-Oes} = ((int)0x8\-D52), 
+{\bfseries Renderbuffer\-Alpha\-Size\-Oes} = ((int)0x8\-D53), 
+\\*
+{\bfseries Renderbuffer\-Depth\-Size\-Oes} = ((int)0x8\-D54), 
+{\bfseries Renderbuffer\-Stencil\-Size\-Oes} = ((int)0x8\-D55), 
+{\bfseries Texture\-Gen\-Str\-Oes} = ((int)0x8\-D60), 
+{\bfseries Rgb565\-Oes} = ((int)0x8\-D62), 
+\\*
+{\bfseries Etc1\-Rgb8\-Oes} = ((int)0x8\-D64), 
+{\bfseries Perfmon\-Global\-Mode\-Qcom} = ((int)0x8\-F\-A0), 
+{\bfseries Amd\-Compressed3\-Dc\-Texture} = ((int)1), 
+{\bfseries Amd\-Compressed\-Atc\-Texture} = ((int)1), 
+\\*
+{\bfseries Ext\-Texture\-Filter\-Anisotropic} = ((int)1), 
+{\bfseries Ext\-Texture\-Format\-Bgra8888} = ((int)1), 
+{\bfseries Img\-Read\-Format} = ((int)1), 
+{\bfseries Img\-Texture\-Compression\-Pvrtc} = ((int)1), 
+\\*
+{\bfseries Img\-Texture\-Env\-Enhanced\-Fixed\-Function} = ((int)1), 
+{\bfseries Img\-User\-Clip\-Plane} = ((int)1), 
+{\bfseries Nv\-Fence} = ((int)1), 
+{\bfseries Oes\-Blend\-Equation\-Separate} = ((int)1), 
+\\*
+{\bfseries Oes\-Blend\-Func\-Separate} = ((int)1), 
+{\bfseries Oes\-Blend\-Subtract} = ((int)1), 
+{\bfseries Oes\-Byte\-Coordinates} = ((int)1), 
+{\bfseries Oes\-Compressed\-Etc1\-Rgb8\-Texture} = ((int)1), 
+\\*
+{\bfseries Oes\-Compressed\-Paletted\-Texture} = ((int)1), 
+{\bfseries Oes\-Depth24} = ((int)1), 
+{\bfseries Oes\-Depth32} = ((int)1), 
+{\bfseries Oes\-Draw\-Texture} = ((int)1), 
+\\*
+{\bfseries Oes\-Egl\-Image} = ((int)1), 
+{\bfseries Oes\-Element\-Index\-Uint} = ((int)1), 
+{\bfseries Oes\-Extended\-Matrix\-Palette} = ((int)1), 
+{\bfseries Oes\-Fbo\-Render\-Mipmap} = ((int)1), 
+\\*
+{\bfseries Oes\-Fixed\-Point} = ((int)1), 
+{\bfseries Oes\-Framebuffer\-Object} = ((int)1), 
+{\bfseries Oes\-Mapbuffer} = ((int)1), 
+{\bfseries Oes\-Matrix\-Get} = ((int)1), 
+\\*
+{\bfseries Oes\-Matrix\-Palette} = ((int)1), 
+{\bfseries Oes\-Packed\-Depth\-Stencil} = ((int)1), 
+{\bfseries Oes\-Point\-Size\-Array} = ((int)1), 
+{\bfseries Oes\-Point\-Sprite} = ((int)1), 
+\\*
+{\bfseries Oes\-Query\-Matrix} = ((int)1), 
+{\bfseries Oes\-Read\-Format} = ((int)1), 
+{\bfseries Oes\-Rgb8\-Rgba8} = ((int)1), 
+{\bfseries Oes\-Single\-Precision} = ((int)1), 
+\\*
+{\bfseries Oes\-Stencil1} = ((int)1), 
+{\bfseries Oes\-Stencil4} = ((int)1), 
+{\bfseries Oes\-Stencil8} = ((int)1), 
+{\bfseries Oes\-Stencil\-Wrap} = ((int)1), 
+\\*
+{\bfseries Oes\-Texture\-Cube\-Map} = ((int)1), 
+{\bfseries Oes\-Texture\-Env\-Crossbar} = ((int)1), 
+{\bfseries Oes\-Texture\-Mirrored\-Repeat} = ((int)1), 
+{\bfseries One} = ((int)1), 
+\\*
+{\bfseries Qcom\-Driver\-Control} = ((int)1), 
+{\bfseries Qcom\-Perfmon\-Global\-Mode} = ((int)1), 
+{\bfseries True} = ((int)1), 
+{\bfseries Version\-Es\-Cl10} = ((int)1), 
+\\*
+{\bfseries Version\-Es\-Cl11} = ((int)1), 
+{\bfseries Version\-Es\-Cm10} = ((int)1), 
+{\bfseries Version\-Es\-Cm11} = ((int)1)
+ \}
+\item 
+enum {\bfseries Alpha\-Function} \-: int \{ \\*
+{\bfseries Never} = ((int)0x0200), 
+{\bfseries Less} = ((int)0x0201), 
+{\bfseries Equal} = ((int)0x0202), 
+{\bfseries Lequal} = ((int)0x0203), 
+\\*
+{\bfseries Greater} = ((int)0x0204), 
+{\bfseries Notequal} = ((int)0x0205), 
+{\bfseries Gequal} = ((int)0x0206), 
+{\bfseries Always} = ((int)0x0207)
+ \}
+\item 
+enum {\bfseries Amd\-Compressed3\-Dctexture} \-: int \{ {\bfseries Gl3\-Dc\-X\-Amd} = ((int)0x87\-F9), 
+{\bfseries Gl3\-Dc\-Xy\-Amd} = ((int)0x87\-F\-A), 
+{\bfseries Amd\-Compressed3\-Dc\-Texture} = ((int)1)
+ \}
+\item 
+enum {\bfseries Amd\-Compressed\-Atctexture} \-: int \{ {\bfseries Atc\-Rgba\-Interpolated\-Alpha\-Amd} = ((int)0x87\-E\-E), 
+{\bfseries Atc\-Rgb\-Amd} = ((int)0x8\-C92), 
+{\bfseries Atc\-Rgba\-Explicit\-Alpha\-Amd} = ((int)0x8\-C93), 
+{\bfseries Amd\-Compressed\-Atc\-Texture} = ((int)1)
+ \}
+\item 
+enum {\bfseries Begin\-Mode} \-: int \{ \\*
+{\bfseries Points} = ((int)0x0000), 
+{\bfseries Lines} = ((int)0x0001), 
+{\bfseries Line\-Loop} = ((int)0x0002), 
+{\bfseries Line\-Strip} = ((int)0x0003), 
+\\*
+{\bfseries Triangles} = ((int)0x0004), 
+{\bfseries Triangle\-Strip} = ((int)0x0005), 
+{\bfseries Triangle\-Fan} = ((int)0x0006)
+ \}
+\item 
+enum {\bfseries Blending\-Factor\-Dest} \-: int \{ \\*
+{\bfseries Zero} = ((int)0), 
+{\bfseries Src\-Color} = ((int)0x0300), 
+{\bfseries One\-Minus\-Src\-Color} = ((int)0x0301), 
+{\bfseries Src\-Alpha} = ((int)0x0302), 
+\\*
+{\bfseries One\-Minus\-Src\-Alpha} = ((int)0x0303), 
+{\bfseries Dst\-Alpha} = ((int)0x0304), 
+{\bfseries One\-Minus\-Dst\-Alpha} = ((int)0x0305), 
+{\bfseries One} = ((int)1)
+ \}
+\item 
+enum {\bfseries Blending\-Factor\-Src} \-: int \{ {\bfseries Dst\-Color} = ((int)0x0306), 
+{\bfseries One\-Minus\-Dst\-Color} = ((int)0x0307), 
+{\bfseries Src\-Alpha\-Saturate} = ((int)0x0308)
+ \}
+\item 
+enum {\bfseries Boolean} \-: int \{ {\bfseries False} = ((int)0), 
+{\bfseries True} = ((int)1)
+ \}
+\item 
+enum {\bfseries Buffer\-Objects} \-: int \{ \\*
+{\bfseries Buffer\-Size} = ((int)0x8764), 
+{\bfseries Buffer\-Usage} = ((int)0x8765), 
+{\bfseries Array\-Buffer} = ((int)0x8892), 
+{\bfseries Element\-Array\-Buffer} = ((int)0x8893), 
+\\*
+{\bfseries Array\-Buffer\-Binding} = ((int)0x8894), 
+{\bfseries Element\-Array\-Buffer\-Binding} = ((int)0x8895), 
+{\bfseries Vertex\-Array\-Buffer\-Binding} = ((int)0x8896), 
+{\bfseries Normal\-Array\-Buffer\-Binding} = ((int)0x8897), 
+\\*
+{\bfseries Color\-Array\-Buffer\-Binding} = ((int)0x8898), 
+{\bfseries Texture\-Coord\-Array\-Buffer\-Binding} = ((int)0x889\-A), 
+{\bfseries Static\-Draw} = ((int)0x88\-E4), 
+{\bfseries Dynamic\-Draw} = ((int)0x88\-E8)
+ \}
+\item 
+enum {\bfseries Clear\-Buffer\-Mask} \-: int \{ {\bfseries Depth\-Buffer\-Bit} = ((int)0x00000100), 
+{\bfseries Stencil\-Buffer\-Bit} = ((int)0x00000400), 
+{\bfseries Color\-Buffer\-Bit} = ((int)0x00004000)
+ \}
+\item 
+enum {\bfseries Clip\-Plane\-Name} \-: int \{ \\*
+{\bfseries Clip\-Plane0} = ((int)0x3000), 
+{\bfseries Clip\-Plane1} = ((int)0x3001), 
+{\bfseries Clip\-Plane2} = ((int)0x3002), 
+{\bfseries Clip\-Plane3} = ((int)0x3003), 
+\\*
+{\bfseries Clip\-Plane4} = ((int)0x3004), 
+{\bfseries Clip\-Plane5} = ((int)0x3005)
+ \}
+\item 
+enum {\bfseries Cull\-Face\-Mode} \-: int \{ {\bfseries Front} = ((int)0x0404), 
+{\bfseries Back} = ((int)0x0405), 
+{\bfseries Front\-And\-Back} = ((int)0x0408)
+ \}
+\item 
+enum {\bfseries Data\-Type} \-: int \{ \\*
+{\bfseries Byte} = ((int)0x1400), 
+{\bfseries Unsigned\-Byte} = ((int)0x1401), 
+{\bfseries Short} = ((int)0x1402), 
+{\bfseries Unsigned\-Short} = ((int)0x1403), 
+\\*
+{\bfseries Float} = ((int)0x1406), 
+{\bfseries Fixed} = ((int)0x140\-C)
+ \}
+\item 
+enum {\bfseries Enable\-Cap} \-: int \{ \\*
+{\bfseries Point\-Smooth} = ((int)0x0\-B10), 
+{\bfseries Line\-Smooth} = ((int)0x0\-B20), 
+{\bfseries Cull\-Face} = ((int)0x0\-B44), 
+{\bfseries Lighting} = ((int)0x0\-B50), 
+\\*
+{\bfseries Color\-Material} = ((int)0x0\-B57), 
+{\bfseries Fog} = ((int)0x0\-B60), 
+{\bfseries Depth\-Test} = ((int)0x0\-B71), 
+{\bfseries Stencil\-Test} = ((int)0x0\-B90), 
+\\*
+{\bfseries Normalize} = ((int)0x0\-B\-A1), 
+{\bfseries Alpha\-Test} = ((int)0x0\-B\-C0), 
+{\bfseries Dither} = ((int)0x0\-B\-D0), 
+{\bfseries Blend} = ((int)0x0\-B\-E2), 
+\\*
+{\bfseries Color\-Logic\-Op} = ((int)0x0\-B\-F2), 
+{\bfseries Scissor\-Test} = ((int)0x0\-C11), 
+{\bfseries Texture2\-D} = ((int)0x0\-D\-E1), 
+{\bfseries Polygon\-Offset\-Fill} = ((int)0x8037), 
+\\*
+{\bfseries Rescale\-Normal} = ((int)0x803\-A), 
+{\bfseries Vertex\-Array} = ((int)0x8074), 
+{\bfseries Normal\-Array} = ((int)0x8075), 
+{\bfseries Color\-Array} = ((int)0x8076), 
+\\*
+{\bfseries Texture\-Coord\-Array} = ((int)0x8078), 
+{\bfseries Multisample} = ((int)0x809\-D), 
+{\bfseries Sample\-Alpha\-To\-Coverage} = ((int)0x809\-E), 
+{\bfseries Sample\-Alpha\-To\-One} = ((int)0x809\-F), 
+\\*
+{\bfseries Sample\-Coverage} = ((int)0x80\-A0)
+ \}
+\item 
+enum {\bfseries Error\-Code} \-: int \{ \\*
+{\bfseries No\-Error} = ((int)0), 
+{\bfseries Invalid\-Enum} = ((int)0x0500), 
+{\bfseries Invalid\-Value} = ((int)0x0501), 
+{\bfseries Invalid\-Operation} = ((int)0x0502), 
+\\*
+{\bfseries Stack\-Overflow} = ((int)0x0503), 
+{\bfseries Stack\-Underflow} = ((int)0x0504), 
+{\bfseries Out\-Of\-Memory} = ((int)0x0505)
+ \}
+\item 
+enum {\bfseries Ext\-Texture\-Filter\-Anisotropic} \-: int \{ {\bfseries Texture\-Max\-Anisotropy\-Ext} = ((int)0x84\-F\-E), 
+{\bfseries Max\-Texture\-Max\-Anisotropy\-Ext} = ((int)0x84\-F\-F), 
+{\bfseries Ext\-Texture\-Filter\-Anisotropic} = ((int)1)
+ \}
+\item 
+enum {\bfseries Ext\-Texture\-Format\-Bgra8888} \-: int \{ {\bfseries Bgra} = ((int)0x80\-E1), 
+{\bfseries Ext\-Texture\-Format\-Bgra8888} = ((int)1)
+ \}
+\item 
+enum {\bfseries Fog\-Mode} \-: int \{ {\bfseries Exp} = ((int)0x0800), 
+{\bfseries Exp2} = ((int)0x0801)
+ \}
+\item 
+enum {\bfseries Fog\-Parameter} \-: int \{ \\*
+{\bfseries Fog\-Density} = ((int)0x0\-B62), 
+{\bfseries Fog\-Start} = ((int)0x0\-B63), 
+{\bfseries Fog\-End} = ((int)0x0\-B64), 
+{\bfseries Fog\-Mode} = ((int)0x0\-B65), 
+\\*
+{\bfseries Fog\-Color} = ((int)0x0\-B66)
+ \}
+\item 
+enum {\bfseries Front\-Face\-Direction} \-: int \{ {\bfseries Cw} = ((int)0x0900), 
+{\bfseries Ccw} = ((int)0x0901)
+ \}
+\item 
+enum {\bfseries Get\-P\-Name} \-: int \{ \\*
+{\bfseries Current\-Color} = ((int)0x0\-B00), 
+{\bfseries Current\-Normal} = ((int)0x0\-B02), 
+{\bfseries Current\-Texture\-Coords} = ((int)0x0\-B03), 
+{\bfseries Point\-Size} = ((int)0x0\-B11), 
+\\*
+{\bfseries Smooth\-Point\-Size\-Range} = ((int)0x0\-B12), 
+{\bfseries Line\-Width} = ((int)0x0\-B21), 
+{\bfseries Smooth\-Line\-Width\-Range} = ((int)0x0\-B22), 
+{\bfseries Cull\-Face\-Mode} = ((int)0x0\-B45), 
+\\*
+{\bfseries Front\-Face} = ((int)0x0\-B46), 
+{\bfseries Shade\-Model} = ((int)0x0\-B54), 
+{\bfseries Depth\-Range} = ((int)0x0\-B70), 
+{\bfseries Depth\-Writemask} = ((int)0x0\-B72), 
+\\*
+{\bfseries Depth\-Clear\-Value} = ((int)0x0\-B73), 
+{\bfseries Depth\-Func} = ((int)0x0\-B74), 
+{\bfseries Stencil\-Clear\-Value} = ((int)0x0\-B91), 
+{\bfseries Stencil\-Func} = ((int)0x0\-B92), 
+\\*
+{\bfseries Stencil\-Value\-Mask} = ((int)0x0\-B93), 
+{\bfseries Stencil\-Fail} = ((int)0x0\-B94), 
+{\bfseries Stencil\-Pass\-Depth\-Fail} = ((int)0x0\-B95), 
+{\bfseries Stencil\-Pass\-Depth\-Pass} = ((int)0x0\-B96), 
+\\*
+{\bfseries Stencil\-Ref} = ((int)0x0\-B97), 
+{\bfseries Stencil\-Writemask} = ((int)0x0\-B98), 
+{\bfseries Matrix\-Mode} = ((int)0x0\-B\-A0), 
+{\bfseries Viewport} = ((int)0x0\-B\-A2), 
+\\*
+{\bfseries Modelview\-Stack\-Depth} = ((int)0x0\-B\-A3), 
+{\bfseries Projection\-Stack\-Depth} = ((int)0x0\-B\-A4), 
+{\bfseries Texture\-Stack\-Depth} = ((int)0x0\-B\-A5), 
+{\bfseries Modelview\-Matrix} = ((int)0x0\-B\-A6), 
+\\*
+{\bfseries Projection\-Matrix} = ((int)0x0\-B\-A7), 
+{\bfseries Texture\-Matrix} = ((int)0x0\-B\-A8), 
+{\bfseries Alpha\-Test\-Func} = ((int)0x0\-B\-C1), 
+{\bfseries Alpha\-Test\-Ref} = ((int)0x0\-B\-C2), 
+\\*
+{\bfseries Blend\-Dst} = ((int)0x0\-B\-E0), 
+{\bfseries Blend\-Src} = ((int)0x0\-B\-E1), 
+{\bfseries Logic\-Op\-Mode} = ((int)0x0\-B\-F0), 
+{\bfseries Scissor\-Box} = ((int)0x0\-C10), 
+\\*
+{\bfseries Scissor\-Test} = ((int)0x0\-C11), 
+{\bfseries Color\-Clear\-Value} = ((int)0x0\-C22), 
+{\bfseries Color\-Writemask} = ((int)0x0\-C23), 
+{\bfseries Unpack\-Alignment} = ((int)0x0\-C\-F5), 
+\\*
+{\bfseries Pack\-Alignment} = ((int)0x0\-D05), 
+{\bfseries Max\-Lights} = ((int)0x0\-D31), 
+{\bfseries Max\-Clip\-Planes} = ((int)0x0\-D32), 
+{\bfseries Max\-Texture\-Size} = ((int)0x0\-D33), 
+\\*
+{\bfseries Max\-Modelview\-Stack\-Depth} = ((int)0x0\-D36), 
+{\bfseries Max\-Projection\-Stack\-Depth} = ((int)0x0\-D38), 
+{\bfseries Max\-Texture\-Stack\-Depth} = ((int)0x0\-D39), 
+{\bfseries Max\-Viewport\-Dims} = ((int)0x0\-D3\-A), 
+\\*
+{\bfseries Subpixel\-Bits} = ((int)0x0\-D50), 
+{\bfseries Red\-Bits} = ((int)0x0\-D52), 
+{\bfseries Green\-Bits} = ((int)0x0\-D53), 
+{\bfseries Blue\-Bits} = ((int)0x0\-D54), 
+\\*
+{\bfseries Alpha\-Bits} = ((int)0x0\-D55), 
+{\bfseries Depth\-Bits} = ((int)0x0\-D56), 
+{\bfseries Stencil\-Bits} = ((int)0x0\-D57), 
+{\bfseries Polygon\-Offset\-Units} = ((int)0x2\-A00), 
+\\*
+{\bfseries Polygon\-Offset\-Fill} = ((int)0x8037), 
+{\bfseries Polygon\-Offset\-Factor} = ((int)0x8038), 
+{\bfseries Texture\-Binding2\-D} = ((int)0x8069), 
+{\bfseries Vertex\-Array\-Size} = ((int)0x807\-A), 
+\\*
+{\bfseries Vertex\-Array\-Type} = ((int)0x807\-B), 
+{\bfseries Vertex\-Array\-Stride} = ((int)0x807\-C), 
+{\bfseries Normal\-Array\-Type} = ((int)0x807\-E), 
+{\bfseries Normal\-Array\-Stride} = ((int)0x807\-F), 
+\\*
+{\bfseries Color\-Array\-Size} = ((int)0x8081), 
+{\bfseries Color\-Array\-Type} = ((int)0x8082), 
+{\bfseries Color\-Array\-Stride} = ((int)0x8083), 
+{\bfseries Texture\-Coord\-Array\-Size} = ((int)0x8088), 
+\\*
+{\bfseries Texture\-Coord\-Array\-Type} = ((int)0x8089), 
+{\bfseries Texture\-Coord\-Array\-Stride} = ((int)0x808\-A), 
+{\bfseries Vertex\-Array\-Pointer} = ((int)0x808\-E), 
+{\bfseries Normal\-Array\-Pointer} = ((int)0x808\-F), 
+\\*
+{\bfseries Color\-Array\-Pointer} = ((int)0x8090), 
+{\bfseries Texture\-Coord\-Array\-Pointer} = ((int)0x8092), 
+{\bfseries Sample\-Buffers} = ((int)0x80\-A8), 
+{\bfseries Samples} = ((int)0x80\-A9), 
+\\*
+{\bfseries Sample\-Coverage\-Value} = ((int)0x80\-A\-A), 
+{\bfseries Sample\-Coverage\-Invert} = ((int)0x80\-A\-B), 
+{\bfseries Point\-Size\-Min} = ((int)0x8126), 
+{\bfseries Point\-Size\-Max} = ((int)0x8127), 
+\\*
+{\bfseries Point\-Fade\-Threshold\-Size} = ((int)0x8128), 
+{\bfseries Point\-Distance\-Attenuation} = ((int)0x8129), 
+{\bfseries Aliased\-Point\-Size\-Range} = ((int)0x846\-D), 
+{\bfseries Aliased\-Line\-Width\-Range} = ((int)0x846\-E), 
+\\*
+{\bfseries Max\-Texture\-Units} = ((int)0x84\-E2)
+ \}
+\item 
+enum {\bfseries Get\-Texture\-Parameter} \-: int \{ {\bfseries Num\-Compressed\-Texture\-Formats} = ((int)0x86\-A2), 
+{\bfseries Compressed\-Texture\-Formats} = ((int)0x86\-A3)
+ \}
+\item 
+enum {\bfseries Hint\-Mode} \-: int \{ {\bfseries Dont\-Care} = ((int)0x1100), 
+{\bfseries Fastest} = ((int)0x1101), 
+{\bfseries Nicest} = ((int)0x1102)
+ \}
+\item 
+enum {\bfseries Hint\-Target} \-: int \{ \\*
+{\bfseries Perspective\-Correction\-Hint} = ((int)0x0\-C50), 
+{\bfseries Point\-Smooth\-Hint} = ((int)0x0\-C51), 
+{\bfseries Line\-Smooth\-Hint} = ((int)0x0\-C52), 
+{\bfseries Fog\-Hint} = ((int)0x0\-C54), 
+\\*
+{\bfseries Generate\-Mipmap\-Hint} = ((int)0x8192)
+ \}
+\item 
+enum {\bfseries Imgread\-Format} \-: int \{ {\bfseries Bgra} = ((int)0x80\-E1), 
+{\bfseries Unsigned\-Short4444\-Rev} = ((int)0x8365), 
+{\bfseries Unsigned\-Short1555\-Rev} = ((int)0x8366), 
+{\bfseries Img\-Read\-Format} = ((int)1)
+ \}
+\item 
+enum {\bfseries Imgtexture\-Compression\-Pvrtc} \-: int \{ \\*
+{\bfseries Compressed\-Rgb\-Pvrtc4\-Bppv1\-Img} = ((int)0x8\-C00), 
+{\bfseries Compressed\-Rgb\-Pvrtc2\-Bppv1\-Img} = ((int)0x8\-C01), 
+{\bfseries Compressed\-Rgba\-Pvrtc4\-Bppv1\-Img} = ((int)0x8\-C02), 
+{\bfseries Compressed\-Rgba\-Pvrtc2\-Bppv1\-Img} = ((int)0x8\-C03), 
+\\*
+{\bfseries Img\-Texture\-Compression\-Pvrtc} = ((int)1)
+ \}
+\item 
+enum {\bfseries Imgtexture\-Env\-Enhanced\-Fixed\-Function} \-: int \{ \\*
+{\bfseries Dot3\-Rgba\-Img} = ((int)0x86\-A\-F), 
+{\bfseries Modulate\-Color\-Img} = ((int)0x8\-C04), 
+{\bfseries Recip\-Add\-Signed\-Alpha\-Img} = ((int)0x8\-C05), 
+{\bfseries Texture\-Alpha\-Modulate\-Img} = ((int)0x8\-C06), 
+\\*
+{\bfseries Factor\-Alpha\-Modulate\-Img} = ((int)0x8\-C07), 
+{\bfseries Fragment\-Alpha\-Modulate\-Img} = ((int)0x8\-C08), 
+{\bfseries Add\-Blend\-Img} = ((int)0x8\-C09), 
+{\bfseries Img\-Texture\-Env\-Enhanced\-Fixed\-Function} = ((int)1)
+ \}
+\item 
+enum {\bfseries Imguser\-Clip\-Plane} \-: int \{ \\*
+{\bfseries Max\-Clip\-Planes\-Img} = ((int)0x0\-D32), 
+{\bfseries Clip\-Plane0\-Img} = ((int)0x3000), 
+{\bfseries Clip\-Plane1\-Img} = ((int)0x3001), 
+{\bfseries Clip\-Plane2\-Img} = ((int)0x3002), 
+\\*
+{\bfseries Clip\-Plane3\-Img} = ((int)0x3003), 
+{\bfseries Clip\-Plane4\-Img} = ((int)0x3004), 
+{\bfseries Clip\-Plane5\-Img} = ((int)0x3005), 
+{\bfseries Img\-User\-Clip\-Plane} = ((int)1)
+ \}
+\item 
+enum {\bfseries Light\-Model\-Parameter} \-: int \{ {\bfseries Light\-Model\-Two\-Side} = ((int)0x0\-B52), 
+{\bfseries Light\-Model\-Ambient} = ((int)0x0\-B53)
+ \}
+\item 
+enum {\bfseries Light\-Name} \-: int \{ \\*
+{\bfseries Light0} = ((int)0x4000), 
+{\bfseries Light1} = ((int)0x4001), 
+{\bfseries Light2} = ((int)0x4002), 
+{\bfseries Light3} = ((int)0x4003), 
+\\*
+{\bfseries Light4} = ((int)0x4004), 
+{\bfseries Light5} = ((int)0x4005), 
+{\bfseries Light6} = ((int)0x4006), 
+{\bfseries Light7} = ((int)0x4007)
+ \}
+\item 
+enum {\bfseries Light\-Parameter} \-: int \{ \\*
+{\bfseries Ambient} = ((int)0x1200), 
+{\bfseries Diffuse} = ((int)0x1201), 
+{\bfseries Specular} = ((int)0x1202), 
+{\bfseries Position} = ((int)0x1203), 
+\\*
+{\bfseries Spot\-Direction} = ((int)0x1204), 
+{\bfseries Spot\-Exponent} = ((int)0x1205), 
+{\bfseries Spot\-Cutoff} = ((int)0x1206), 
+{\bfseries Constant\-Attenuation} = ((int)0x1207), 
+\\*
+{\bfseries Linear\-Attenuation} = ((int)0x1208), 
+{\bfseries Quadratic\-Attenuation} = ((int)0x1209)
+ \}
+\item 
+enum {\bfseries Logic\-Op} \-: int \{ \\*
+{\bfseries Clear} = ((int)0x1500), 
+{\bfseries And} = ((int)0x1501), 
+{\bfseries And\-Reverse} = ((int)0x1502), 
+{\bfseries Copy} = ((int)0x1503), 
+\\*
+{\bfseries And\-Inverted} = ((int)0x1504), 
+{\bfseries Noop} = ((int)0x1505), 
+{\bfseries Xor} = ((int)0x1506), 
+{\bfseries Or} = ((int)0x1507), 
+\\*
+{\bfseries Nor} = ((int)0x1508), 
+{\bfseries Equiv} = ((int)0x1509), 
+{\bfseries Invert} = ((int)0x150\-A), 
+{\bfseries Or\-Reverse} = ((int)0x150\-B), 
+\\*
+{\bfseries Copy\-Inverted} = ((int)0x150\-C), 
+{\bfseries Or\-Inverted} = ((int)0x150\-D), 
+{\bfseries Nand} = ((int)0x150\-E), 
+{\bfseries Set} = ((int)0x150\-F)
+ \}
+\item 
+enum {\bfseries Material\-Parameter} \-: int \{ {\bfseries Emission} = ((int)0x1600), 
+{\bfseries Shininess} = ((int)0x1601), 
+{\bfseries Ambient\-And\-Diffuse} = ((int)0x1602)
+ \}
+\item 
+enum {\bfseries Matrix\-Mode} \-: int \{ {\bfseries Modelview} = ((int)0x1700), 
+{\bfseries Projection} = ((int)0x1701), 
+{\bfseries Texture} = ((int)0x1702)
+ \}
+\item 
+enum {\bfseries Nvfence} \-: int \{ {\bfseries All\-Completed\-Nv} = ((int)0x84\-F2), 
+{\bfseries Fence\-Status\-Nv} = ((int)0x84\-F3), 
+{\bfseries Fence\-Condition\-Nv} = ((int)0x84\-F4), 
+{\bfseries Nv\-Fence} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Blend\-Equation\-Separate} \-: int \{ {\bfseries Blend\-Equation\-Rgb\-Oes} = ((int)0x8009), 
+{\bfseries Blend\-Equation\-Alpha\-Oes} = ((int)0x883\-D), 
+{\bfseries Oes\-Blend\-Equation\-Separate} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Blend\-Func\-Separate} \-: int \{ \\*
+{\bfseries Blend\-Dst\-Rgb\-Oes} = ((int)0x80\-C8), 
+{\bfseries Blend\-Src\-Rgb\-Oes} = ((int)0x80\-C9), 
+{\bfseries Blend\-Dst\-Alpha\-Oes} = ((int)0x80\-C\-A), 
+{\bfseries Blend\-Src\-Alpha\-Oes} = ((int)0x80\-C\-B), 
+\\*
+{\bfseries Oes\-Blend\-Func\-Separate} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Blend\-Subtract} \-: int \{ \\*
+{\bfseries Func\-Add\-Oes} = ((int)0x8006), 
+{\bfseries Blend\-Equation\-Oes} = ((int)0x8009), 
+{\bfseries Func\-Subtract\-Oes} = ((int)0x800\-A), 
+{\bfseries Func\-Reverse\-Subtract\-Oes} = ((int)0x800\-B), 
+\\*
+{\bfseries Oes\-Blend\-Subtract} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Byte\-Coordinates} \-: int \{ {\bfseries Oes\-Byte\-Coordinates} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Compressed\-Etc1\-Rgb8\-Texture} \-: int \{ {\bfseries Etc1\-Rgb8\-Oes} = ((int)0x8\-D64), 
+{\bfseries Oes\-Compressed\-Etc1\-Rgb8\-Texture} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Compressed\-Paletted\-Texture} \-: int \{ \\*
+{\bfseries Palette4\-Rgb8\-Oes} = ((int)0x8\-B90), 
+{\bfseries Palette4\-Rgba8\-Oes} = ((int)0x8\-B91), 
+{\bfseries Palette4\-R5\-G6\-B5\-Oes} = ((int)0x8\-B92), 
+{\bfseries Palette4\-Rgba4\-Oes} = ((int)0x8\-B93), 
+\\*
+{\bfseries Palette4\-Rgb5\-A1\-Oes} = ((int)0x8\-B94), 
+{\bfseries Palette8\-Rgb8\-Oes} = ((int)0x8\-B95), 
+{\bfseries Palette8\-Rgba8\-Oes} = ((int)0x8\-B96), 
+{\bfseries Palette8\-R5\-G6\-B5\-Oes} = ((int)0x8\-B97), 
+\\*
+{\bfseries Palette8\-Rgba4\-Oes} = ((int)0x8\-B98), 
+{\bfseries Palette8\-Rgb5\-A1\-Oes} = ((int)0x8\-B99), 
+{\bfseries Oes\-Compressed\-Paletted\-Texture} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Depth24} \-: int \{ {\bfseries Depth\-Component24\-Oes} = ((int)0x81\-A6), 
+{\bfseries Oes\-Depth24} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Depth32} \-: int \{ {\bfseries Depth\-Component32\-Oes} = ((int)0x81\-A7), 
+{\bfseries Oes\-Depth32} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Draw\-Texture} \-: int \{ {\bfseries Texture\-Crop\-Rect\-Oes} = ((int)0x8\-B9\-D), 
+{\bfseries Oes\-Draw\-Texture} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Eglimage} \-: int \{ {\bfseries Oes\-Egl\-Image} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Element\-Index\-Uint} \-: int \{ {\bfseries Oes\-Element\-Index\-Uint} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Extended\-Matrix\-Palette} \-: int \{ {\bfseries Oes\-Extended\-Matrix\-Palette} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Fbo\-Render\-Mipmap} \-: int \{ {\bfseries Oes\-Fbo\-Render\-Mipmap} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Fixed\-Point} \-: int \{ {\bfseries Fixed\-Oes} = ((int)0x140\-C), 
+{\bfseries Oes\-Fixed\-Point} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Framebuffer\-Object} \-: int \{ \\*
+{\bfseries None\-Oes} = ((int)0), 
+{\bfseries Invalid\-Framebuffer\-Operation\-Oes} = ((int)0x0506), 
+{\bfseries Rgba4\-Oes} = ((int)0x8056), 
+{\bfseries Rgb5\-A1\-Oes} = ((int)0x8057), 
+\\*
+{\bfseries Depth\-Component16\-Oes} = ((int)0x81\-A5), 
+{\bfseries Max\-Renderbuffer\-Size\-Oes} = ((int)0x84\-E8), 
+{\bfseries Framebuffer\-Binding\-Oes} = ((int)0x8\-C\-A6), 
+{\bfseries Renderbuffer\-Binding\-Oes} = ((int)0x8\-C\-A7), 
+\\*
+{\bfseries Framebuffer\-Attachment\-Object\-Type\-Oes} = ((int)0x8\-C\-D0), 
+{\bfseries Framebuffer\-Attachment\-Object\-Name\-Oes} = ((int)0x8\-C\-D1), 
+{\bfseries Framebuffer\-Attachment\-Texture\-Level\-Oes} = ((int)0x8\-C\-D2), 
+{\bfseries Framebuffer\-Attachment\-Texture\-Cube\-Map\-Face\-Oes} = ((int)0x8\-C\-D3), 
+\\*
+{\bfseries Framebuffer\-Complete\-Oes} = ((int)0x8\-C\-D5), 
+{\bfseries Framebuffer\-Incomplete\-Attachment\-Oes} = ((int)0x8\-C\-D6), 
+{\bfseries Framebuffer\-Incomplete\-Missing\-Attachment\-Oes} = ((int)0x8\-C\-D7), 
+{\bfseries Framebuffer\-Incomplete\-Dimensions\-Oes} = ((int)0x8\-C\-D9), 
+\\*
+{\bfseries Framebuffer\-Incomplete\-Formats\-Oes} = ((int)0x8\-C\-D\-A), 
+{\bfseries Framebuffer\-Unsupported\-Oes} = ((int)0x8\-C\-D\-D), 
+{\bfseries Color\-Attachment0\-Oes} = ((int)0x8\-C\-E0), 
+{\bfseries Depth\-Attachment\-Oes} = ((int)0x8\-D00), 
+\\*
+{\bfseries Stencil\-Attachment\-Oes} = ((int)0x8\-D20), 
+{\bfseries Framebuffer\-Oes} = ((int)0x8\-D40), 
+{\bfseries Renderbuffer\-Oes} = ((int)0x8\-D41), 
+{\bfseries Renderbuffer\-Width\-Oes} = ((int)0x8\-D42), 
+\\*
+{\bfseries Renderbuffer\-Height\-Oes} = ((int)0x8\-D43), 
+{\bfseries Renderbuffer\-Internal\-Format\-Oes} = ((int)0x8\-D44), 
+{\bfseries Renderbuffer\-Red\-Size\-Oes} = ((int)0x8\-D50), 
+{\bfseries Renderbuffer\-Green\-Size\-Oes} = ((int)0x8\-D51), 
+\\*
+{\bfseries Renderbuffer\-Blue\-Size\-Oes} = ((int)0x8\-D52), 
+{\bfseries Renderbuffer\-Alpha\-Size\-Oes} = ((int)0x8\-D53), 
+{\bfseries Renderbuffer\-Depth\-Size\-Oes} = ((int)0x8\-D54), 
+{\bfseries Renderbuffer\-Stencil\-Size\-Oes} = ((int)0x8\-D55), 
+\\*
+{\bfseries Rgb565\-Oes} = ((int)0x8\-D62), 
+{\bfseries Oes\-Framebuffer\-Object} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Mapbuffer} \-: int \{ \\*
+{\bfseries Write\-Only\-Oes} = ((int)0x88\-B9), 
+{\bfseries Buffer\-Access\-Oes} = ((int)0x88\-B\-B), 
+{\bfseries Buffer\-Mapped\-Oes} = ((int)0x88\-B\-C), 
+{\bfseries Buffer\-Map\-Pointer\-Oes} = ((int)0x88\-B\-D), 
+\\*
+{\bfseries Oes\-Mapbuffer} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Matrix\-Get} \-: int \{ {\bfseries Modelview\-Matrix\-Float\-As\-Int\-Bits\-Oes} = ((int)0x898\-D), 
+{\bfseries Projection\-Matrix\-Float\-As\-Int\-Bits\-Oes} = ((int)0x898\-E), 
+{\bfseries Texture\-Matrix\-Float\-As\-Int\-Bits\-Oes} = ((int)0x898\-F), 
+{\bfseries Oes\-Matrix\-Get} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Matrix\-Palette} \-: int \{ \\*
+{\bfseries Max\-Vertex\-Units\-Oes} = ((int)0x86\-A4), 
+{\bfseries Weight\-Array\-Type\-Oes} = ((int)0x86\-A9), 
+{\bfseries Weight\-Array\-Stride\-Oes} = ((int)0x86\-A\-A), 
+{\bfseries Weight\-Array\-Size\-Oes} = ((int)0x86\-A\-B), 
+\\*
+{\bfseries Weight\-Array\-Pointer\-Oes} = ((int)0x86\-A\-C), 
+{\bfseries Weight\-Array\-Oes} = ((int)0x86\-A\-D), 
+{\bfseries Matrix\-Palette\-Oes} = ((int)0x8840), 
+{\bfseries Max\-Palette\-Matrices\-Oes} = ((int)0x8842), 
+\\*
+{\bfseries Current\-Palette\-Matrix\-Oes} = ((int)0x8843), 
+{\bfseries Matrix\-Index\-Array\-Oes} = ((int)0x8844), 
+{\bfseries Matrix\-Index\-Array\-Size\-Oes} = ((int)0x8846), 
+{\bfseries Matrix\-Index\-Array\-Type\-Oes} = ((int)0x8847), 
+\\*
+{\bfseries Matrix\-Index\-Array\-Stride\-Oes} = ((int)0x8848), 
+{\bfseries Matrix\-Index\-Array\-Pointer\-Oes} = ((int)0x8849), 
+{\bfseries Weight\-Array\-Buffer\-Binding\-Oes} = ((int)0x889\-E), 
+{\bfseries Matrix\-Index\-Array\-Buffer\-Binding\-Oes} = ((int)0x8\-B9\-E), 
+\\*
+{\bfseries Oes\-Matrix\-Palette} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Packed\-Depth\-Stencil} \-: int \{ {\bfseries Depth\-Stencil\-Oes} = ((int)0x84\-F9), 
+{\bfseries Unsigned\-Int248\-Oes} = ((int)0x84\-F\-A), 
+{\bfseries Depth24\-Stencil8\-Oes} = ((int)0x88\-F0), 
+{\bfseries Oes\-Packed\-Depth\-Stencil} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Point\-Size\-Array} \-: int \{ \\*
+{\bfseries Point\-Size\-Array\-Type\-Oes} = ((int)0x898\-A), 
+{\bfseries Point\-Size\-Array\-Stride\-Oes} = ((int)0x898\-B), 
+{\bfseries Point\-Size\-Array\-Pointer\-Oes} = ((int)0x898\-C), 
+{\bfseries Point\-Size\-Array\-Oes} = ((int)0x8\-B9\-C), 
+\\*
+{\bfseries Point\-Size\-Array\-Buffer\-Binding\-Oes} = ((int)0x8\-B9\-F), 
+{\bfseries Oes\-Point\-Size\-Array} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Point\-Sprite} \-: int \{ {\bfseries Point\-Sprite\-Oes} = ((int)0x8861), 
+{\bfseries Coord\-Replace\-Oes} = ((int)0x8862), 
+{\bfseries Oes\-Point\-Sprite} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Query\-Matrix} \-: int \{ {\bfseries Oes\-Query\-Matrix} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Read\-Format} \-: int \{ {\bfseries Implementation\-Color\-Read\-Type\-Oes} = ((int)0x8\-B9\-A), 
+{\bfseries Implementation\-Color\-Read\-Format\-Oes} = ((int)0x8\-B9\-B), 
+{\bfseries Oes\-Read\-Format} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Rgb8\-Rgba8} \-: int \{ {\bfseries Rgb8\-Oes} = ((int)0x8051), 
+{\bfseries Rgba8\-Oes} = ((int)0x8058), 
+{\bfseries Oes\-Rgb8\-Rgba8} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Single\-Precision} \-: int \{ {\bfseries Oes\-Single\-Precision} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Stencil1} \-: int \{ {\bfseries Stencil\-Index1\-Oes} = ((int)0x8\-D46), 
+{\bfseries Oes\-Stencil1} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Stencil4} \-: int \{ {\bfseries Stencil\-Index4\-Oes} = ((int)0x8\-D47), 
+{\bfseries Oes\-Stencil4} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Stencil8} \-: int \{ {\bfseries Stencil\-Index8\-Oes} = ((int)0x8\-D48), 
+{\bfseries Oes\-Stencil8} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Stencil\-Wrap} \-: int \{ {\bfseries Incr\-Wrap\-Oes} = ((int)0x8507), 
+{\bfseries Decr\-Wrap\-Oes} = ((int)0x8508), 
+{\bfseries Oes\-Stencil\-Wrap} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Texture\-Cube\-Map} \-: int \{ \\*
+{\bfseries Texture\-Gen\-Mode\-Oes} = ((int)0x2500), 
+{\bfseries Normal\-Map\-Oes} = ((int)0x8511), 
+{\bfseries Reflection\-Map\-Oes} = ((int)0x8512), 
+{\bfseries Texture\-Cube\-Map\-Oes} = ((int)0x8513), 
+\\*
+{\bfseries Texture\-Binding\-Cube\-Map\-Oes} = ((int)0x8514), 
+{\bfseries Texture\-Cube\-Map\-Positive\-X\-Oes} = ((int)0x8515), 
+{\bfseries Texture\-Cube\-Map\-Negative\-X\-Oes} = ((int)0x8516), 
+{\bfseries Texture\-Cube\-Map\-Positive\-Y\-Oes} = ((int)0x8517), 
+\\*
+{\bfseries Texture\-Cube\-Map\-Negative\-Y\-Oes} = ((int)0x8518), 
+{\bfseries Texture\-Cube\-Map\-Positive\-Z\-Oes} = ((int)0x8519), 
+{\bfseries Texture\-Cube\-Map\-Negative\-Z\-Oes} = ((int)0x851\-A), 
+{\bfseries Max\-Cube\-Map\-Texture\-Size\-Oes} = ((int)0x851\-C), 
+\\*
+{\bfseries Texture\-Gen\-Str\-Oes} = ((int)0x8\-D60), 
+{\bfseries Oes\-Texture\-Cube\-Map} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Texture\-Env\-Crossbar} \-: int \{ {\bfseries Oes\-Texture\-Env\-Crossbar} = ((int)1)
+ \}
+\item 
+enum {\bfseries Oes\-Texture\-Mirrored\-Repeat} \-: int \{ {\bfseries Mirrored\-Repeat\-Oes} = ((int)0x8370), 
+{\bfseries Oes\-Texture\-Mirrored\-Repeat} = ((int)1)
+ \}
+\item 
+enum {\bfseries Open\-Glescore\-Versions} \-: int \{ {\bfseries Version\-Es\-Cl10} = ((int)1), 
+{\bfseries Version\-Es\-Cl11} = ((int)1), 
+{\bfseries Version\-Es\-Cm10} = ((int)1), 
+{\bfseries Version\-Es\-Cm11} = ((int)1)
+ \}
+\item 
+enum {\bfseries Pixel\-Format} \-: int \{ \\*
+{\bfseries Alpha} = ((int)0x1906), 
+{\bfseries Rgb} = ((int)0x1907), 
+{\bfseries Rgba} = ((int)0x1908), 
+{\bfseries Luminance} = ((int)0x1909), 
+\\*
+{\bfseries Luminance\-Alpha} = ((int)0x190\-A)
+ \}
+\item 
+enum {\bfseries Pixel\-Store\-Parameter} \-: int \{ {\bfseries Unpack\-Alignment} = ((int)0x0\-C\-F5), 
+{\bfseries Pack\-Alignment} = ((int)0x0\-D05)
+ \}
+\item 
+enum {\bfseries Pixel\-Type} \-: int \{ {\bfseries Unsigned\-Short4444} = ((int)0x8033), 
+{\bfseries Unsigned\-Short5551} = ((int)0x8034), 
+{\bfseries Unsigned\-Short565} = ((int)0x8363)
+ \}
+\item 
+enum {\bfseries Qcom\-Driver\-Control} \-: int \{ {\bfseries Qcom\-Driver\-Control} = ((int)1)
+ \}
+\item 
+enum {\bfseries Qcom\-Perfmon\-Global\-Mode} \-: int \{ {\bfseries Perfmon\-Global\-Mode\-Qcom} = ((int)0x8\-F\-A0), 
+{\bfseries Qcom\-Perfmon\-Global\-Mode} = ((int)1)
+ \}
+\item 
+enum {\bfseries Shading\-Model} \-: int \{ {\bfseries Flat} = ((int)0x1\-D00), 
+{\bfseries Smooth} = ((int)0x1\-D01)
+ \}
+\item 
+enum {\bfseries Stencil\-Op} \-: int \{ {\bfseries Keep} = ((int)0x1\-E00), 
+{\bfseries Replace} = ((int)0x1\-E01), 
+{\bfseries Incr} = ((int)0x1\-E02), 
+{\bfseries Decr} = ((int)0x1\-E03)
+ \}
+\item 
+enum {\bfseries String\-Name} \-: int \{ {\bfseries Vendor} = ((int)0x1\-F00), 
+{\bfseries Renderer} = ((int)0x1\-F01), 
+{\bfseries Version} = ((int)0x1\-F02), 
+{\bfseries Extensions} = ((int)0x1\-F03)
+ \}
+\item 
+enum {\bfseries Texture\-Combine\-Dot3} \-: int \{ \\*
+{\bfseries Alpha\-Scale} = ((int)0x0\-D1\-C), 
+{\bfseries Subtract} = ((int)0x84\-E7), 
+{\bfseries Combine} = ((int)0x8570), 
+{\bfseries Combine\-Rgb} = ((int)0x8571), 
+\\*
+{\bfseries Combine\-Alpha} = ((int)0x8572), 
+{\bfseries Rgb\-Scale} = ((int)0x8573), 
+{\bfseries Add\-Signed} = ((int)0x8574), 
+{\bfseries Interpolate} = ((int)0x8575), 
+\\*
+{\bfseries Constant} = ((int)0x8576), 
+{\bfseries Primary\-Color} = ((int)0x8577), 
+{\bfseries Previous} = ((int)0x8578), 
+{\bfseries Src0\-Rgb} = ((int)0x8580), 
+\\*
+{\bfseries Src1\-Rgb} = ((int)0x8581), 
+{\bfseries Src2\-Rgb} = ((int)0x8582), 
+{\bfseries Src0\-Alpha} = ((int)0x8588), 
+{\bfseries Src1\-Alpha} = ((int)0x8589), 
+\\*
+{\bfseries Src2\-Alpha} = ((int)0x858\-A), 
+{\bfseries Operand0\-Rgb} = ((int)0x8590), 
+{\bfseries Operand1\-Rgb} = ((int)0x8591), 
+{\bfseries Operand2\-Rgb} = ((int)0x8592), 
+\\*
+{\bfseries Operand0\-Alpha} = ((int)0x8598), 
+{\bfseries Operand1\-Alpha} = ((int)0x8599), 
+{\bfseries Operand2\-Alpha} = ((int)0x859\-A), 
+{\bfseries Dot3\-Rgb} = ((int)0x86\-A\-E), 
+\\*
+{\bfseries Dot3\-Rgba} = ((int)0x86\-A\-F)
+ \}
+\item 
+enum {\bfseries Texture\-Env\-Mode} \-: int \{ {\bfseries Add} = ((int)0x0104), 
+{\bfseries Modulate} = ((int)0x2100), 
+{\bfseries Decal} = ((int)0x2101)
+ \}
+\item 
+enum {\bfseries Texture\-Env\-Parameter} \-: int \{ {\bfseries Texture\-Env\-Mode} = ((int)0x2200), 
+{\bfseries Texture\-Env\-Color} = ((int)0x2201)
+ \}
+\item 
+enum {\bfseries Texture\-Env\-Target} \-: int \{ {\bfseries Texture\-Env} = ((int)0x2300)
+ \}
+\item 
+enum {\bfseries Texture\-Mag\-Filter} \-: int \{ {\bfseries Nearest} = ((int)0x2600), 
+{\bfseries Linear} = ((int)0x2601)
+ \}
+\item 
+enum {\bfseries Texture\-Min\-Filter} \-: int \{ {\bfseries Nearest\-Mipmap\-Nearest} = ((int)0x2700), 
+{\bfseries Linear\-Mipmap\-Nearest} = ((int)0x2701), 
+{\bfseries Nearest\-Mipmap\-Linear} = ((int)0x2702), 
+{\bfseries Linear\-Mipmap\-Linear} = ((int)0x2703)
+ \}
+\item 
+enum {\bfseries Texture\-Parameter\-Name} \-: int \{ \\*
+{\bfseries Texture\-Mag\-Filter} = ((int)0x2800), 
+{\bfseries Texture\-Min\-Filter} = ((int)0x2801), 
+{\bfseries Texture\-Wrap\-S} = ((int)0x2802), 
+{\bfseries Texture\-Wrap\-T} = ((int)0x2803), 
+\\*
+{\bfseries Generate\-Mipmap} = ((int)0x8191)
+ \}
+\item 
+enum {\bfseries Texture\-Unit} \-: int \{ \\*
+{\bfseries Texture0} = ((int)0x84\-C0), 
+{\bfseries Texture1} = ((int)0x84\-C1), 
+{\bfseries Texture2} = ((int)0x84\-C2), 
+{\bfseries Texture3} = ((int)0x84\-C3), 
+\\*
+{\bfseries Texture4} = ((int)0x84\-C4), 
+{\bfseries Texture5} = ((int)0x84\-C5), 
+{\bfseries Texture6} = ((int)0x84\-C6), 
+{\bfseries Texture7} = ((int)0x84\-C7), 
+\\*
+{\bfseries Texture8} = ((int)0x84\-C8), 
+{\bfseries Texture9} = ((int)0x84\-C9), 
+{\bfseries Texture10} = ((int)0x84\-C\-A), 
+{\bfseries Texture11} = ((int)0x84\-C\-B), 
+\\*
+{\bfseries Texture12} = ((int)0x84\-C\-C), 
+{\bfseries Texture13} = ((int)0x84\-C\-D), 
+{\bfseries Texture14} = ((int)0x84\-C\-E), 
+{\bfseries Texture15} = ((int)0x84\-C\-F), 
+\\*
+{\bfseries Texture16} = ((int)0x84\-D0), 
+{\bfseries Texture17} = ((int)0x84\-D1), 
+{\bfseries Texture18} = ((int)0x84\-D2), 
+{\bfseries Texture19} = ((int)0x84\-D3), 
+\\*
+{\bfseries Texture20} = ((int)0x84\-D4), 
+{\bfseries Texture21} = ((int)0x84\-D5), 
+{\bfseries Texture22} = ((int)0x84\-D6), 
+{\bfseries Texture23} = ((int)0x84\-D7), 
+\\*
+{\bfseries Texture24} = ((int)0x84\-D8), 
+{\bfseries Texture25} = ((int)0x84\-D9), 
+{\bfseries Texture26} = ((int)0x84\-D\-A), 
+{\bfseries Texture27} = ((int)0x84\-D\-B), 
+\\*
+{\bfseries Texture28} = ((int)0x84\-D\-C), 
+{\bfseries Texture29} = ((int)0x84\-D\-D), 
+{\bfseries Texture30} = ((int)0x84\-D\-E), 
+{\bfseries Texture31} = ((int)0x84\-D\-F), 
+\\*
+{\bfseries Active\-Texture} = ((int)0x84\-E0), 
+{\bfseries Client\-Active\-Texture} = ((int)0x84\-E1)
+ \}
+\item 
+enum {\bfseries Texture\-Wrap\-Mode} \-: int \{ {\bfseries Repeat} = ((int)0x2901), 
+{\bfseries Clamp\-To\-Edge} = ((int)0x812\-F)
+ \}
+\end{DoxyCompactItemize}

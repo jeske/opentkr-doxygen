@@ -1,0 +1,257 @@
+\hypertarget{class_open_t_k_1_1_display_device}{\section{Open\-T\-K.\-Display\-Device Class Reference}
+\label{class_open_t_k_1_1_display_device}\index{Open\-T\-K.\-Display\-Device@{Open\-T\-K.\-Display\-Device}}
+}
+
+
+Defines a display device on the underlying system, and provides methods to query and change its display parameters.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_t_k_1_1_display_resolution}{Display\-Resolution} \hyperlink{class_open_t_k_1_1_display_device_ad2882c9f3dc2236e2ada0ef2c4df11d2}{Select\-Resolution} (int width, int height, int bits\-Per\-Pixel, float refresh\-Rate)
+\begin{DoxyCompactList}\small\item\em Selects an available resolution that matches the specified parameters. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_display_device_ac993a7370baae2f590e71abe57c5b3b8}{Change\-Resolution} (\hyperlink{class_open_t_k_1_1_display_resolution}{Display\-Resolution} resolution)
+\begin{DoxyCompactList}\small\item\em Changes the resolution of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_display_device_a0accb55553a4d11804954b9675007404}{Change\-Resolution} (int width, int height, int bits\-Per\-Pixel, float refresh\-Rate)
+\begin{DoxyCompactList}\small\item\em Changes the resolution of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.\end{DoxyCompactList}\item 
+void \hyperlink{class_open_t_k_1_1_display_device_afec8cf22992c7c17ce1c6921f651378f}{Restore\-Resolution} ()
+\begin{DoxyCompactList}\small\item\em Restores the original resolution of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.\end{DoxyCompactList}\item 
+override string \hyperlink{class_open_t_k_1_1_display_device_a96b1b8d8248b8e524e45eba59b2ab00f}{To\-String} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\-String representing this \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} \hyperlink{class_open_t_k_1_1_display_device_afed73feb8e68d477cf314b33c351e661}{Get\-Display} (\hyperlink{namespace_open_t_k_a2869ea59bcff91cc6cc331f36c616389}{Display\-Index} index)
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} for the specified \hyperlink{namespace_open_t_k_a2869ea59bcff91cc6cc331f36c616389}{Display\-Index}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle \hyperlink{class_open_t_k_1_1_display_device_a8bd53ee06b975cd39ae8c296f42c72ab}{Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the bounds of this instance in pixel coordinates.. \end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_display_device_a43b8973ddea03c873aa0006785d7da4d}{Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Int32 that contains the width of this display in pixels.\end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_display_device_aa5120fc7bcbcfad2ab9178762b248a8b}{Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Int32 that contains the height of this display in pixels.\end{DoxyCompactList}\item 
+int \hyperlink{class_open_t_k_1_1_display_device_af22b160771cce81304e997ea883efcb0}{Bits\-Per\-Pixel}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Int32 that contains number of bits per pixel of this display. Typical values include 8, 16, 24 and 32.\end{DoxyCompactList}\item 
+float \hyperlink{class_open_t_k_1_1_display_device_aeafbdb3c00fd95587654742b62ff7145}{Refresh\-Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Single representing the vertical refresh rate of this display. \end{DoxyCompactList}\item 
+bool \hyperlink{class_open_t_k_1_1_display_device_a45910e472c9487f77a80d2eaf699b0cf}{Is\-Primary}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a System.\-Boolean that indicates whether this Display is the primary Display in systems with multiple Displays.\end{DoxyCompactList}\item 
+I\-List$<$ \hyperlink{class_open_t_k_1_1_display_resolution}{Display\-Resolution} $>$ \hyperlink{class_open_t_k_1_1_display_device_a804b7e126c368b782811bc458019a7cd}{Available\-Resolutions}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the list of \hyperlink{class_open_t_k_1_1_display_resolution}{Display\-Resolution} objects available on this device. \end{DoxyCompactList}\item 
+static I\-List$<$ \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} $>$ \hyperlink{class_open_t_k_1_1_display_device_afd22a63fc37c530c7fd19886d439d04c}{Available\-Displays}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the list of available \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} objects. This function allocates memory. \end{DoxyCompactList}\item 
+static \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} \hyperlink{class_open_t_k_1_1_display_device_a2148505e367fc6d6d66ebfd80a9e91e5}{Default}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the default (primary) display of this system.\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines a display device on the underlying system, and provides methods to query and change its display parameters. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_t_k_1_1_display_device_ac993a7370baae2f590e71abe57c5b3b8}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Change\-Resolution@{Change\-Resolution}}
+\index{Change\-Resolution@{Change\-Resolution}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Change\-Resolution}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Display\-Device.\-Change\-Resolution (
+\begin{DoxyParamCaption}
+\item[{{\bf Display\-Resolution}}]{resolution}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_display_device_ac993a7370baae2f590e71abe57c5b3b8}
+
+
+Changes the resolution of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resolution} & The resolution to set. \hyperlink{class_open_t_k_1_1_display_device_ad2882c9f3dc2236e2ada0ef2c4df11d2}{Display\-Device.\-Select\-Resolution}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode_exception}{Graphics.\-Graphics\-Mode\-Exception}} & Thrown if the requested resolution could not be set.\\
+\hline
+\end{DoxyExceptions}
+
+
+If the specified resolution is null, this function will restore the original \hyperlink{class_open_t_k_1_1_display_resolution}{Display\-Resolution}.\hypertarget{class_open_t_k_1_1_display_device_a0accb55553a4d11804954b9675007404}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Change\-Resolution@{Change\-Resolution}}
+\index{Change\-Resolution@{Change\-Resolution}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Change\-Resolution}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Display\-Device.\-Change\-Resolution (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{bits\-Per\-Pixel, }
+\item[{float}]{refresh\-Rate}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_display_device_a0accb55553a4d11804954b9675007404}
+
+
+Changes the resolution of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The new width of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.\\
+\hline
+{\em height} & The new height of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.\\
+\hline
+{\em bits\-Per\-Pixel} & The new bits per pixel of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.\\
+\hline
+{\em refresh\-Rate} & The new refresh rate of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode_exception}{Graphics.\-Graphics\-Mode\-Exception}} & Thrown if the requested resolution could not be set.\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_open_t_k_1_1_display_device_afed73feb8e68d477cf314b33c351e661}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Get\-Display@{Get\-Display}}
+\index{Get\-Display@{Get\-Display}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Get\-Display}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Display\-Device} Open\-T\-K.\-Display\-Device.\-Get\-Display (
+\begin{DoxyParamCaption}
+\item[{{\bf Display\-Index}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_open_t_k_1_1_display_device_afed73feb8e68d477cf314b33c351e661}
+
+
+Gets the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} for the specified \hyperlink{namespace_open_t_k_a2869ea59bcff91cc6cc331f36c616389}{Display\-Index}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The \hyperlink{namespace_open_t_k_a2869ea59bcff91cc6cc331f36c616389}{Display\-Index} that defines the desired display.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} or null, if no device corresponds to the specified index.
+\end{DoxyReturn}
+\hypertarget{class_open_t_k_1_1_display_device_afec8cf22992c7c17ce1c6921f651378f}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Restore\-Resolution@{Restore\-Resolution}}
+\index{Restore\-Resolution@{Restore\-Resolution}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Restore\-Resolution}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-T\-K.\-Display\-Device.\-Restore\-Resolution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_display_device_afec8cf22992c7c17ce1c6921f651378f}
+
+
+Restores the original resolution of the \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_open_t_k_1_1_graphics_1_1_graphics_mode_exception}{Graphics.\-Graphics\-Mode\-Exception}} & Thrown if the original resolution could not be restored.\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_open_t_k_1_1_display_device_ad2882c9f3dc2236e2ada0ef2c4df11d2}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Select\-Resolution@{Select\-Resolution}}
+\index{Select\-Resolution@{Select\-Resolution}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Select\-Resolution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Display\-Resolution} Open\-T\-K.\-Display\-Device.\-Select\-Resolution (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{bits\-Per\-Pixel, }
+\item[{float}]{refresh\-Rate}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_display_device_ad2882c9f3dc2236e2ada0ef2c4df11d2}
+
+
+Selects an available resolution that matches the specified parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the requested resolution in pixels.\\
+\hline
+{\em height} & The height of the requested resolution in pixels.\\
+\hline
+{\em bits\-Per\-Pixel} & The bits per pixel of the requested resolution.\\
+\hline
+{\em refresh\-Rate} & The refresh rate of the requested resolution in hertz.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested \hyperlink{class_open_t_k_1_1_display_resolution}{Display\-Resolution} or null if the parameters cannot be met.
+\end{DoxyReturn}
+
+
+If a matching resolution is not found, this function will retry ignoring the specified refresh rate, bits per pixel and resolution, in this order. If a matching resolution still doesn't exist, this function will return the current resolution.
+
+A parameter set to 0 or negative numbers will not be used in the search (e.\-g. if refresh\-Rate is 0, any refresh rate will be considered valid).
+
+This function allocates memory.\hypertarget{class_open_t_k_1_1_display_device_a96b1b8d8248b8e524e45eba59b2ab00f}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!To\-String@{To\-String}}
+\index{To\-String@{To\-String}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{To\-String}]{\setlength{\rightskip}{0pt plus 5cm}override string Open\-T\-K.\-Display\-Device.\-To\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_open_t_k_1_1_display_device_a96b1b8d8248b8e524e45eba59b2ab00f}
+
+
+Returns a System.\-String representing this \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}. 
+
+\begin{DoxyReturn}{Returns}
+A System.\-String representing this \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device}.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_t_k_1_1_display_device_afd22a63fc37c530c7fd19886d439d04c}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Available\-Displays@{Available\-Displays}}
+\index{Available\-Displays@{Available\-Displays}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Available\-Displays}]{\setlength{\rightskip}{0pt plus 5cm}I\-List$<${\bf Display\-Device}$>$ Open\-T\-K.\-Display\-Device.\-Available\-Displays\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}}\label{class_open_t_k_1_1_display_device_afd22a63fc37c530c7fd19886d439d04c}
+
+
+Gets the list of available \hyperlink{class_open_t_k_1_1_display_device}{Display\-Device} objects. This function allocates memory. 
+
+\hypertarget{class_open_t_k_1_1_display_device_a804b7e126c368b782811bc458019a7cd}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Available\-Resolutions@{Available\-Resolutions}}
+\index{Available\-Resolutions@{Available\-Resolutions}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Available\-Resolutions}]{\setlength{\rightskip}{0pt plus 5cm}I\-List$<${\bf Display\-Resolution}$>$ Open\-T\-K.\-Display\-Device.\-Available\-Resolutions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_display_device_a804b7e126c368b782811bc458019a7cd}
+
+
+Gets the list of \hyperlink{class_open_t_k_1_1_display_resolution}{Display\-Resolution} objects available on this device. 
+
+\hypertarget{class_open_t_k_1_1_display_device_af22b160771cce81304e997ea883efcb0}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Bits\-Per\-Pixel@{Bits\-Per\-Pixel}}
+\index{Bits\-Per\-Pixel@{Bits\-Per\-Pixel}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Bits\-Per\-Pixel}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Display\-Device.\-Bits\-Per\-Pixel\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_display_device_af22b160771cce81304e997ea883efcb0}
+
+
+Gets a System.\-Int32 that contains number of bits per pixel of this display. Typical values include 8, 16, 24 and 32.
+
+\hypertarget{class_open_t_k_1_1_display_device_a8bd53ee06b975cd39ae8c296f42c72ab}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Bounds@{Bounds}}
+\index{Bounds@{Bounds}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Bounds}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle Open\-T\-K.\-Display\-Device.\-Bounds\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_display_device_a8bd53ee06b975cd39ae8c296f42c72ab}
+
+
+Gets the bounds of this instance in pixel coordinates.. 
+
+\hypertarget{class_open_t_k_1_1_display_device_a2148505e367fc6d6d66ebfd80a9e91e5}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Default@{Default}}
+\index{Default@{Default}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Default}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Display\-Device} Open\-T\-K.\-Display\-Device.\-Default\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}}\label{class_open_t_k_1_1_display_device_a2148505e367fc6d6d66ebfd80a9e91e5}
+
+
+Gets the default (primary) display of this system.
+
+\hypertarget{class_open_t_k_1_1_display_device_aa5120fc7bcbcfad2ab9178762b248a8b}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Height@{Height}}
+\index{Height@{Height}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Height}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Display\-Device.\-Height\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_display_device_aa5120fc7bcbcfad2ab9178762b248a8b}
+
+
+Gets a System.\-Int32 that contains the height of this display in pixels.
+
+\hypertarget{class_open_t_k_1_1_display_device_a45910e472c9487f77a80d2eaf699b0cf}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Is\-Primary@{Is\-Primary}}
+\index{Is\-Primary@{Is\-Primary}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Is\-Primary}]{\setlength{\rightskip}{0pt plus 5cm}bool Open\-T\-K.\-Display\-Device.\-Is\-Primary\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_display_device_a45910e472c9487f77a80d2eaf699b0cf}
+
+
+Gets a System.\-Boolean that indicates whether this Display is the primary Display in systems with multiple Displays.
+
+\hypertarget{class_open_t_k_1_1_display_device_aeafbdb3c00fd95587654742b62ff7145}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Refresh\-Rate@{Refresh\-Rate}}
+\index{Refresh\-Rate@{Refresh\-Rate}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Refresh\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}float Open\-T\-K.\-Display\-Device.\-Refresh\-Rate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_open_t_k_1_1_display_device_aeafbdb3c00fd95587654742b62ff7145}
+
+
+Gets a System.\-Single representing the vertical refresh rate of this display. 
+
+\hypertarget{class_open_t_k_1_1_display_device_a43b8973ddea03c873aa0006785d7da4d}{\index{Open\-T\-K\-::\-Display\-Device@{Open\-T\-K\-::\-Display\-Device}!Width@{Width}}
+\index{Width@{Width}!OpenTK::DisplayDevice@{Open\-T\-K\-::\-Display\-Device}}
+\subsubsection[{Width}]{\setlength{\rightskip}{0pt plus 5cm}int Open\-T\-K.\-Display\-Device.\-Width\hspace{0.3cm}{\ttfamily [get]}}}\label{class_open_t_k_1_1_display_device_a43b8973ddea03c873aa0006785d7da4d}
+
+
+Gets a System.\-Int32 that contains the width of this display in pixels.
+
